@@ -12,7 +12,7 @@ is
 
    procedure Init is
    begin
-      Put_Line("Initializing system");
+      -- ** Put_Line("Initializing system");
 
       -- ** Post => (for all I in Users'Range => Users(I) = False),
       for I in Users'Range loop
@@ -41,12 +41,25 @@ is
       end loop;
       -- ** Test.Print_Everyones_Footsteps;
 
+      -- ** Reset location records
+      -- ** (for all I in Locations'Range => Locations(I) = (0.0, 0.0))
       for I in Locations'Range loop
          Locations(I) := (0.0,0.0);
       end loop;
-      Test.Print_Everyones_Location;
-      -- (for all I in Locations'Range => Locations(I) = (0.0, 0.0));
-      Put_Line("Initialization finished");
+      -- ** Test.Print_Everyones_Location;
+
+      -- ** Put_Line("Initialization finished");
    end Init;
+
+   procedure CreateUser (NewUser : out UserID) is
+   begin
+     -- ** Pre => LatestUser < UserID'Last,
+     -- ** Post => Users(NewUser) = True;
+      if LatestUser < UserID'Last then
+         Users(LatestUser) := True;
+         NewUser := LatestUser;
+      end if;
+      Test.Print_UserID_Status;
+   end CreateUser;
 
 end AccountManagementSystem;

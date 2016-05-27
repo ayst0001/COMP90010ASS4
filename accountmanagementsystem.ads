@@ -54,9 +54,9 @@ is
      (for all I in MFootsteps'Range => MFootsteps(I) = Footsteps'First) and
      (for all I in Locations'Range => Locations(I) = (0.0, 0.0));
      
---   procedure CreateUser(NewUser : out UserID) with
---     Pre => LatestUser < UserID'Last,
---     Post => Users(NewUser) = True;
+   procedure CreateUser(NewUser : out UserID) with
+     Pre => LatestUser < UserID'Last,
+     Post => Users(NewUser) = True;
    
    
    -- ** Insurer Operation, ** added some permission check

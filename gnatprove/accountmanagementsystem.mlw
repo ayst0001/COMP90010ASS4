@@ -9942,57 +9942,35 @@ module Accountmanagementsystem__init__L20s__T21s
 
 end
 
-(* Module for axiomatizing type "T1b" defined at accountmanagementsystem.adb:14, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T1b
+(* Module for axiomatizing type "T1b" defined at accountmanagementsystem.adb:18, created in Gnat2Why.Types.Translate_Type *)
+module Accountmanagementsystem__init__L_1__T1b
  use import "_gnatprove_standard".Main
  use import "int".Int
- use        Standard__character
- use        Array__Int
 
- type component_type  = 
-  Standard__character.character
+ type t1b 
  
  function first 
    :int =
-  1
+  ( -1 )
  
  function last 
    :int =
-  19
+  100
  
- clone export "ada__model".Constr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
+ predicate in_range
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = t1b, 
  function first = first, 
  function last = last, 
- type index_rep_type = int
- 
- type t1b  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Standard__character.to_rep, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
+ predicate in_range = in_range
 
 end
 
-(* Module for axiomatizing type "T2b" defined at accountmanagementsystem.adb:15, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L_1__T2b
+(* Module for axiomatizing type "T2b" defined at accountmanagementsystem.adb:25, created in Gnat2Why.Types.Translate_Type *)
+module Accountmanagementsystem__init__L_2__T2b
  use import "_gnatprove_standard".Main
  use import "int".Int
 
@@ -10018,8 +9996,8 @@ module Accountmanagementsystem__init__L_1__T2b
 
 end
 
-(* Module for axiomatizing type "T3b" defined at accountmanagementsystem.adb:20, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L_2__T3b
+(* Module for axiomatizing type "T3b" defined at accountmanagementsystem.adb:32, created in Gnat2Why.Types.Translate_Type *)
+module Accountmanagementsystem__init__L_3__T3b
  use import "_gnatprove_standard".Main
  use import "int".Int
 
@@ -10045,52 +10023,57 @@ module Accountmanagementsystem__init__L_2__T3b
 
 end
 
-(* Module for axiomatizing type "T4b" defined at accountmanagementsystem.adb:31, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T4b
+(* Module for axiomatizing type "T4b" defined at accountmanagementsystem.adb:39, created in Gnat2Why.Types.Translate_Type *)
+module Accountmanagementsystem__init__L_4__T4b
  use import "_gnatprove_standard".Main
  use import "int".Int
- use        Standard__character
- use        Array__Int
 
- type component_type  = 
-  Standard__character.character
+ type t4b 
  
  function first 
    :int =
-  1
+  ( -1 )
  
  function last 
    :int =
-  23
+  100
  
- clone export "ada__model".Constr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
+ predicate in_range
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = t4b, 
  function first = first, 
  function last = last, 
- type index_rep_type = int
+ predicate in_range = in_range
+
+end
+
+(* Module for axiomatizing type "T5b" defined at accountmanagementsystem.adb:46, created in Gnat2Why.Types.Translate_Type *)
+module Accountmanagementsystem__init__L_5__T5b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type t5b 
  
- type t4b  = 
-  __t
- 
- function index_Index_one 
+ function first 
    :int =
-  1
+  ( -1 )
  
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Standard__character.to_rep, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
+ function last 
+   :int =
+  100
+ 
+ predicate in_range
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = t5b, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
 
 end
 (* Module for defining a ref holding the value of variable "stream" defined at a-stream.ads:58, created in Gnat2Why.Decls.Translate_Variable *)
@@ -11177,7 +11160,7 @@ module Accountmanagementsystem__locationpermissions__axiom
 
 end
 
-(* Module for defining a ref holding the value of variable "i" defined at accountmanagementsystem.adb:15, created in Gnat2Why.Decls.Translate_Variable *)
+(* Module for defining a ref holding the value of variable "i" defined at accountmanagementsystem.adb:18, created in Gnat2Why.Decls.Translate_Variable *)
 module Accountmanagementsystem__init__L_1__i
  use import "_gnatprove_standard".Main
 
@@ -11188,14 +11171,14 @@ module Accountmanagementsystem__init__L_1__i
 
 end
 
-(* Module giving an empty axiom for the entity "i" defined at accountmanagementsystem.adb:15, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "i" defined at accountmanagementsystem.adb:18, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Accountmanagementsystem__init__L_1__i__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for defining a ref holding the value of variable "i" defined at accountmanagementsystem.adb:20, created in Gnat2Why.Decls.Translate_Variable *)
+(* Module for defining a ref holding the value of variable "i" defined at accountmanagementsystem.adb:25, created in Gnat2Why.Decls.Translate_Variable *)
 module Accountmanagementsystem__init__L_2__i
  use import "_gnatprove_standard".Main
 
@@ -11206,8 +11189,62 @@ module Accountmanagementsystem__init__L_2__i
 
 end
 
-(* Module giving an empty axiom for the entity "i" defined at accountmanagementsystem.adb:20, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "i" defined at accountmanagementsystem.adb:25, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Accountmanagementsystem__init__L_2__i__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining a ref holding the value of variable "i" defined at accountmanagementsystem.adb:32, created in Gnat2Why.Decls.Translate_Variable *)
+module Accountmanagementsystem__init__L_3__i
+ use import "_gnatprove_standard".Main
+
+ val i "GP_CE_Relevant"  : ref int
+ 
+ function attr__ATTRIBUTE_ADDRESS "GP_CE_Relevant" 
+   :int
+
+end
+
+(* Module giving an empty axiom for the entity "i" defined at accountmanagementsystem.adb:32, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__init__L_3__i__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining a ref holding the value of variable "i" defined at accountmanagementsystem.adb:39, created in Gnat2Why.Decls.Translate_Variable *)
+module Accountmanagementsystem__init__L_4__i
+ use import "_gnatprove_standard".Main
+
+ val i "GP_CE_Relevant"  : ref int
+ 
+ function attr__ATTRIBUTE_ADDRESS "GP_CE_Relevant" 
+   :int
+
+end
+
+(* Module giving an empty axiom for the entity "i" defined at accountmanagementsystem.adb:39, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__init__L_4__i__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining a ref holding the value of variable "i" defined at accountmanagementsystem.adb:46, created in Gnat2Why.Decls.Translate_Variable *)
+module Accountmanagementsystem__init__L_5__i
+ use import "_gnatprove_standard".Main
+
+ val i "GP_CE_Relevant"  : ref int
+ 
+ function attr__ATTRIBUTE_ADDRESS "GP_CE_Relevant" 
+   :int
+
+end
+
+(* Module giving an empty axiom for the entity "i" defined at accountmanagementsystem.adb:46, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__init__L_5__i__axiom
  use import "_gnatprove_standard".Main
 
 
@@ -11870,6 +11907,41 @@ module Ada__text_io__initialize_standard_files
 
 end
 
+(* Module for possibly declaring a logic function for "print_userid_status" defined at test.ads:4, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Test__print_userid_status
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "print_everyones_friend" defined at test.ads:5, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Test__print_everyones_friend
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "print_everyones_vitals" defined at test.ads:6, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Test__print_everyones_vitals
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "print_everyones_footsteps" defined at test.ads:7, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Test__print_everyones_footsteps
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "print_everyones_location" defined at test.ads:8, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Test__print_everyones_location
+ use import "_gnatprove_standard".Main
+
+
+end
+
 (* Module for possibly declaring a logic function for "init" defined at accountmanagementsystem.ads:50, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Accountmanagementsystem__init
  use import "_gnatprove_standard".Main
@@ -11877,7 +11949,7 @@ module Accountmanagementsystem__init
 
 end
 
-(* Module for defining the loop exit exception for the loop"L_1" defined at accountmanagementsystem.adb:15, created in Gnat2Why.Decls.Translate_Loop_Entity *)
+(* Module for defining the loop exit exception for the loop"L_1" defined at accountmanagementsystem.adb:18, created in Gnat2Why.Decls.Translate_Loop_Entity *)
 module Accountmanagementsystem__init__L_1
  use import "_gnatprove_standard".Main
 
@@ -11885,14 +11957,14 @@ module Accountmanagementsystem__init__L_1
 
 end
 
-(* Module giving an empty axiom for the entity "L_1" defined at accountmanagementsystem.adb:15, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "L_1" defined at accountmanagementsystem.adb:18, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Accountmanagementsystem__init__L_1__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for defining the loop exit exception for the loop"L_2" defined at accountmanagementsystem.adb:20, created in Gnat2Why.Decls.Translate_Loop_Entity *)
+(* Module for defining the loop exit exception for the loop"L_2" defined at accountmanagementsystem.adb:25, created in Gnat2Why.Decls.Translate_Loop_Entity *)
 module Accountmanagementsystem__init__L_2
  use import "_gnatprove_standard".Main
 
@@ -11900,30 +11972,55 @@ module Accountmanagementsystem__init__L_2
 
 end
 
-(* Module giving an empty axiom for the entity "L_2" defined at accountmanagementsystem.adb:20, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "L_2" defined at accountmanagementsystem.adb:25, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Accountmanagementsystem__init__L_2__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for defining a value for string literal  defined at accountmanagementsystem.adb:14, created in Gnat2Why.Expr.Transform_String_Literal *)
-module Temp___standard__accountmanagementsystem_57
+(* Module for defining the loop exit exception for the loop"L_3" defined at accountmanagementsystem.adb:32, created in Gnat2Why.Decls.Translate_Loop_Entity *)
+module Accountmanagementsystem__init__L_3
  use import "_gnatprove_standard".Main
- use        Accountmanagementsystem__init__T1b
 
- function temp___standard__accountmanagementsystem_57 
-   :Accountmanagementsystem__init__T1b.t1b
+ exception L_3
 
 end
 
-(* Module for defining a value for string literal  defined at accountmanagementsystem.adb:31, created in Gnat2Why.Expr.Transform_String_Literal *)
-module Temp___standard__accountmanagementsystem_63
+(* Module giving an empty axiom for the entity "L_3" defined at accountmanagementsystem.adb:32, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__init__L_3__axiom
  use import "_gnatprove_standard".Main
- use        Accountmanagementsystem__init__T4b
 
- function temp___standard__accountmanagementsystem_63 
-   :Accountmanagementsystem__init__T4b.t4b
+
+end
+
+(* Module for defining the loop exit exception for the loop"L_4" defined at accountmanagementsystem.adb:39, created in Gnat2Why.Decls.Translate_Loop_Entity *)
+module Accountmanagementsystem__init__L_4
+ use import "_gnatprove_standard".Main
+
+ exception L_4
+
+end
+
+(* Module giving an empty axiom for the entity "L_4" defined at accountmanagementsystem.adb:39, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__init__L_4__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the loop exit exception for the loop"L_5" defined at accountmanagementsystem.adb:46, created in Gnat2Why.Decls.Translate_Loop_Entity *)
+module Accountmanagementsystem__init__L_5
+ use import "_gnatprove_standard".Main
+
+ exception L_5
+
+end
+
+(* Module giving an empty axiom for the entity "L_5" defined at accountmanagementsystem.adb:46, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__init__L_5__axiom
+ use import "_gnatprove_standard".Main
+
 
 end
 (* Module giving axioms for the type entity "short_short_integer", created in Gnat2Why.Types.Generate_Type_Completion *)
@@ -13804,29 +13901,36 @@ module Accountmanagementsystem__init__L20s__T21s__axiom
 
 end
 
-(* Module giving axioms for the type entity "T1b" defined at accountmanagementsystem.adb:14, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T1b__axiom
+(* Module giving axioms for the type entity "T1b" defined at accountmanagementsystem.adb:18, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Accountmanagementsystem__init__L_1__T1b__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "T2b" defined at accountmanagementsystem.adb:15, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L_1__T2b__axiom
+(* Module giving axioms for the type entity "T2b" defined at accountmanagementsystem.adb:25, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Accountmanagementsystem__init__L_2__T2b__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "T3b" defined at accountmanagementsystem.adb:20, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L_2__T3b__axiom
+(* Module giving axioms for the type entity "T3b" defined at accountmanagementsystem.adb:32, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Accountmanagementsystem__init__L_3__T3b__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "T4b" defined at accountmanagementsystem.adb:31, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T4b__axiom
+(* Module giving axioms for the type entity "T4b" defined at accountmanagementsystem.adb:39, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Accountmanagementsystem__init__L_4__T4b__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for the type entity "T5b" defined at accountmanagementsystem.adb:46, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Accountmanagementsystem__init__L_5__T5b__axiom
  use import "_gnatprove_standard".Main
 
 
@@ -16410,13 +16514,88 @@ module Ada__text_io__initialize_standard_files__axiom
 
 end
 
+(* Module for declaring a program function (and possibly an axiom) for "print_userid_status" defined at test.ads:4, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Test__print_userid_status__axiom
+ use        Accountmanagementsystem__users
+ use import "_gnatprove_standard".Main
+ use        Accountmanagementsystem__users
+
+ val print_userid_status 
+   (__void_param : unit)  :unit
+  requires { true }
+  ensures { true }
+  reads {Accountmanagementsystem__users.users }
+
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "print_everyones_friend" defined at test.ads:5, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Test__print_everyones_friend__axiom
+ use        Accountmanagementsystem__friends
+ use import "_gnatprove_standard".Main
+ use        Accountmanagementsystem__friends
+
+ val print_everyones_friend 
+   (__void_param : unit)  :unit
+  requires { true }
+  ensures { true }
+  reads {Accountmanagementsystem__friends.friends }
+
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "print_everyones_vitals" defined at test.ads:6, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Test__print_everyones_vitals__axiom
+ use        Accountmanagementsystem__vitals
+ use import "_gnatprove_standard".Main
+ use        Accountmanagementsystem__vitals
+
+ val print_everyones_vitals 
+   (__void_param : unit)  :unit
+  requires { true }
+  ensures { true }
+  reads {Accountmanagementsystem__vitals.vitals }
+
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "print_everyones_footsteps" defined at test.ads:7, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Test__print_everyones_footsteps__axiom
+ use        Accountmanagementsystem__mfootsteps
+ use import "_gnatprove_standard".Main
+ use        Accountmanagementsystem__mfootsteps
+
+ val print_everyones_footsteps 
+   (__void_param : unit)  :unit
+  requires { true }
+  ensures { true }
+  reads {Accountmanagementsystem__mfootsteps.mfootsteps }
+
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "print_everyones_location" defined at test.ads:8, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Test__print_everyones_location__axiom
+ use        Accountmanagementsystem__locations
+ use import "_gnatprove_standard".Main
+ use        Accountmanagementsystem__locations
+
+ val print_everyones_location 
+   (__void_param : unit)  :unit
+  requires { true }
+  ensures { true }
+  reads {Accountmanagementsystem__locations.locations }
+
+
+end
+
 (* Module for declaring a program function (and possibly an axiom) for "init" defined at accountmanagementsystem.ads:50, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
 module Accountmanagementsystem__init__axiom
+ use        Accountmanagementsystem__users
  use        Accountmanagementsystem__friends
  use        Accountmanagementsystem__vitals
  use        Accountmanagementsystem__mfootsteps
  use        Accountmanagementsystem__locations
- use        Accountmanagementsystem__users
  use import "_gnatprove_standard".Main
  use import "int".Int
  use import "real".RealInfix
@@ -16447,8 +16626,7 @@ module Accountmanagementsystem__init__axiom
    ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__bpm.to_rep (Array__Int.get !Accountmanagementsystem__vitals.vitals i)) = ( -1 )) )) ) /\ (forall i  : int.
    ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__footsteps.to_rep (Array__Int.get !Accountmanagementsystem__mfootsteps.mfootsteps i)) = 0) )) ) /\ (forall i  : int.
    ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__gpslocation.bool_eq (Array__Int.get !Accountmanagementsystem__locations.locations i) { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real (0.0E-1)); Measures__gpslocation.rec__long = (Measures__longitude.of_real (0.0E-1)) } }) = True) )) ) }
-  reads {Accountmanagementsystem__friends.friends, Accountmanagementsystem__vitals.vitals, Accountmanagementsystem__mfootsteps.mfootsteps, Accountmanagementsystem__locations.locations }
-  writes {Accountmanagementsystem__users.users }
+  writes {Accountmanagementsystem__users.users, Accountmanagementsystem__friends.friends, Accountmanagementsystem__vitals.vitals, Accountmanagementsystem__mfootsteps.mfootsteps, Accountmanagementsystem__locations.locations }
 
 
 end
@@ -16500,13 +16678,13 @@ module Accountmanagementsystem__package_def
   abstract ensures {true}(Main.___ignore((if (((if ((Measures__userid.first <= Measures__userid.last)) then (
    ((Measures__userid.last - Measures__userid.first) + 1)) else (
    0)) > 0)) then (
-   abstract ensures {true}(Main.___ignore((let temp___standard__accountmanagementsystem_36 = (any Measures__gpslocation.gpslocation
+   abstract ensures {true}(Main.___ignore((let temp___standard__accountmanagementsystem_40 = (any Measures__gpslocation.gpslocation
    requires {true} 
    ensures {true} 
    ) in (
-    ( (if ((Measures__gpslocation.lat__pred(temp___standard__accountmanagementsystem_36))) then (
+    ( (if ((Measures__gpslocation.lat__pred(temp___standard__accountmanagementsystem_40))) then (
      abstract ensures {true}(Main.___ignore(())) end ));
-    (if ((Measures__gpslocation.long__pred(temp___standard__accountmanagementsystem_36))) then (
+    (if ((Measures__gpslocation.long__pred(temp___standard__accountmanagementsystem_40))) then (
      abstract ensures {true}(Main.___ignore(())) end )) )))
    )) end )))) end ;
   abstract ensures {true}(Main.___ignore((if ((Boolean.andb(((if ((Measures__userid.first <= Measures__userid.last)) then (
@@ -16527,7 +16705,7 @@ module Accountmanagementsystem__package_def
    ((Measures__userid.last - Measures__userid.first) + 1)) else (
    0)) > 0)))) then (
    abstract ensures {true}(Main.___ignore(())) end )))) end ;
-  ( "GP_Sloc:accountmanagementsystem.adb:34:1" () ) ) )
+  ( "GP_Sloc:accountmanagementsystem.adb:54:1" () ) ) )
 end
 
 (* Module for checking contracts and absence of run-time errors in subprogram "init" defined at accountmanagementsystem.ads:50, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
@@ -16538,7 +16716,6 @@ module Accountmanagementsystem__init__subprogram_def
  use import "real".RealInfix
  use        "_gnatprove_standard".Main
  use        "_gnatprove_standard".Boolean
- use        Standard__string
  use        Array__Int
  use        Measures__userid
  use        Measures__bpm
@@ -16546,8 +16723,6 @@ module Accountmanagementsystem__init__subprogram_def
  use        Measures__latitude
  use        Measures__longitude
  use        Measures__gpslocation
- use        Ada__text_io__put__4__axiom
- use        Ada__text_io__put_line__2__axiom
  use        Accountmanagementsystem__usersarray
  use        Accountmanagementsystem__useruserarray
  use        Accountmanagementsystem__vitalsarray
@@ -16562,16 +16737,22 @@ module Accountmanagementsystem__init__subprogram_def
  use        Accountmanagementsystem__init__L_1__i
  use        Accountmanagementsystem__init__L_2
  use        Accountmanagementsystem__init__L_2__i
- use        Temp___standard__accountmanagementsystem_57
- use        Temp___standard__accountmanagementsystem_63
- use        Standard__positive__axiom
- use        Standard__character__axiom
- use        Standard__string__axiom
- use        Standard__integer__axiom
+ use        Accountmanagementsystem__init__L_3
+ use        Accountmanagementsystem__init__L_3__i
+ use        Accountmanagementsystem__init__L_4
+ use        Accountmanagementsystem__init__L_4__i
+ use        Accountmanagementsystem__init__L_5
+ use        Accountmanagementsystem__init__L_5__i
  use        Accountmanagementsystem__init__L_1__i__axiom
  use        Accountmanagementsystem__init__L_2__i__axiom
+ use        Accountmanagementsystem__init__L_3__i__axiom
+ use        Accountmanagementsystem__init__L_4__i__axiom
+ use        Accountmanagementsystem__init__L_5__i__axiom
  use        Accountmanagementsystem__init__L_1__axiom
  use        Accountmanagementsystem__init__L_2__axiom
+ use        Accountmanagementsystem__init__L_3__axiom
+ use        Accountmanagementsystem__init__L_4__axiom
+ use        Accountmanagementsystem__init__L_5__axiom
  use        Accountmanagementsystem__usersarray__axiom
  use        Accountmanagementsystem__useruserarray__axiom
  use        Accountmanagementsystem__vitalsarray__axiom
@@ -16588,19 +16769,17 @@ module Accountmanagementsystem__init__subprogram_def
  use        Measures__latitude__axiom
  use        Measures__longitude__axiom
  use        Measures__gpslocation__axiom
- use        Ada__text_io__put__4__axiom
- use        Ada__text_io__put_line__2__axiom
 
  let def "W:diverges:N" "GP_Subp:accountmanagementsystem.ads:50" 
    (__void_param : unit) 
   requires { true }
   ensures { ( "GP_Reason:VC_POSTCONDITION" "GP_Id:0" "GP_Sloc:accountmanagementsystem.ads:51:14" "comment:     Post => (for all I in Users'Range => Users(I) = False) and
              ^ accountmanagementsystem.ads:51:14:VC_POSTCONDITION" "GP_Shape:pragargs__and" "keep_on_simp" ( ( ( ( (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2620" "GP_Sloc:accountmanagementsystem.ads:51:43" ( ((Array__Int.get !Accountmanagementsystem__users.users i) = True) <-> false ) ) )) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2637" "GP_Sloc:accountmanagementsystem.ads:52:37" ((Measures__userid.to_rep (Array__Int.get !Accountmanagementsystem__friends.friends i)) = ( -1 )) ) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2656" "GP_Sloc:accountmanagementsystem.ads:53:36" ((Measures__bpm.to_rep (Array__Int.get !Accountmanagementsystem__vitals.vitals i)) = ( -1 )) ) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2675" "GP_Sloc:accountmanagementsystem.ads:54:40" ((Measures__footsteps.to_rep (Array__Int.get !Accountmanagementsystem__mfootsteps.mfootsteps i)) = 0) ) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2693" "GP_Sloc:accountmanagementsystem.ads:55:39" ((Measures__gpslocation.bool_eq (Array__Int.get !Accountmanagementsystem__locations.locations i) { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real (0.0E-1)); Measures__gpslocation.rec__long = (Measures__longitude.of_real (0.0E-1)) } }) = True) ) )) ) ) }
+   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2699" "GP_Sloc:accountmanagementsystem.ads:51:43" ( ((Array__Int.get !Accountmanagementsystem__users.users i) = True) <-> false ) ) )) /\ (forall i  : int.
+   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2716" "GP_Sloc:accountmanagementsystem.ads:52:37" ((Measures__userid.to_rep (Array__Int.get !Accountmanagementsystem__friends.friends i)) = ( -1 )) ) )) ) /\ (forall i  : int.
+   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2735" "GP_Sloc:accountmanagementsystem.ads:53:36" ((Measures__bpm.to_rep (Array__Int.get !Accountmanagementsystem__vitals.vitals i)) = ( -1 )) ) )) ) /\ (forall i  : int.
+   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2754" "GP_Sloc:accountmanagementsystem.ads:54:40" ((Measures__footsteps.to_rep (Array__Int.get !Accountmanagementsystem__mfootsteps.mfootsteps i)) = 0) ) )) ) /\ (forall i  : int.
+   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2772" "GP_Sloc:accountmanagementsystem.ads:55:39" ((Measures__gpslocation.bool_eq (Array__Int.get !Accountmanagementsystem__locations.locations i) { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real (0.0E-1)); Measures__gpslocation.rec__long = (Measures__longitude.of_real (0.0E-1)) } }) = True) ) )) ) ) }
 
    =
   ( () (* Assume dynamic property of params of the subprogram accountmanagementsystem.ads:50 *)
@@ -16618,31 +16797,30 @@ module Accountmanagementsystem__init__subprogram_def
   () (* Body of the subprogram accountmanagementsystem.ads:50 *)
   ;
   try
-   ( ( "GP_Sloc:accountmanagementsystem.adb:14:7" (Ada__text_io__put_line__2__axiom.put_line__2((Standard__string.of_array(Temp___standard__accountmanagementsystem_57.temp___standard__accountmanagementsystem_57) (1) (19)))) );
-   ( "GP_Sloc:accountmanagementsystem.adb:15:28" (let temp___standard__accountmanagementsystem_59 = ( -1 ) in (
-   (let temp___standard__accountmanagementsystem_60 = 100 in (
-    ( Accountmanagementsystem__init__L_1__i.i := ( temp___standard__accountmanagementsystem_59 );
-    () (* Translation of an Ada loop from accountmanagementsystem.adb:15 *)
+   ( ( "GP_Sloc:accountmanagementsystem.adb:18:28" (let temp___standard__accountmanagementsystem_62 = ( -1 ) in (
+   (let temp___standard__accountmanagementsystem_63 = 100 in (
+    ( Accountmanagementsystem__init__L_1__i.i := ( temp___standard__accountmanagementsystem_62 );
+    () (* Translation of an Ada loop from accountmanagementsystem.adb:18 *)
     ;
-    (if ((Boolean.andb((temp___standard__accountmanagementsystem_59 <= !Accountmanagementsystem__init__L_1__i.i)) ((!Accountmanagementsystem__init__L_1__i.i <= temp___standard__accountmanagementsystem_60)))) then (
+    (if ((Boolean.andb((temp___standard__accountmanagementsystem_62 <= !Accountmanagementsystem__init__L_1__i.i)) ((!Accountmanagementsystem__init__L_1__i.i <= temp___standard__accountmanagementsystem_63)))) then (
      try
-      ( () (* First unroling of the loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:15 *)
+      ( () (* First unroling of the loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:18 *)
       ;
-      () (* While loop translating the Ada loop from accountmanagementsystem.adb:15 *)
+      () (* While loop translating the Ada loop from accountmanagementsystem.adb:18 *)
       ;
       while True do
-       ( ( () (* Assume implicit invariants from the loop accountmanagementsystem.adb:15 *)
+       ( ( () (* Assume implicit invariants from the loop accountmanagementsystem.adb:18 *)
        ;
        assume { ( (( -1 ) <= !Accountmanagementsystem__init__L_1__i.i) /\ (!Accountmanagementsystem__init__L_1__i.i <= 100) ) };
-       () (* Check for absence of RTE in the invariant of loop accountmanagementsystem.adb:15 *)
+       () (* Check for absence of RTE in the invariant of loop accountmanagementsystem.adb:18 *)
         );
-       ( () (* Loop statements appearing after the loop invariant of loop accountmanagementsystem.adb:15 *)
+       ( () (* Loop statements appearing after the loop invariant of loop accountmanagementsystem.adb:18 *)
        ;
-       ( "GP_Sloc:accountmanagementsystem.adb:16:19" Accountmanagementsystem__users.users := ( (Array__Int.set(!Accountmanagementsystem__users.users) (!Accountmanagementsystem__init__L_1__i.i) ((Boolean.of_int(0)))) ) );
+       ( "GP_Sloc:accountmanagementsystem.adb:19:19" Accountmanagementsystem__users.users := ( (Array__Int.set(!Accountmanagementsystem__users.users) (!Accountmanagementsystem__init__L_1__i.i) ((Boolean.of_int(0)))) ) );
        Accountmanagementsystem__init__L_1__i.i := ( (!Accountmanagementsystem__init__L_1__i.i + 1) );
-       () (* Check for the exit condition and loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:15 *)
+       () (* Check for the exit condition and loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:18 *)
        ;
-       (if ((!Accountmanagementsystem__init__L_1__i.i <= temp___standard__accountmanagementsystem_60)) then (
+       (if ((!Accountmanagementsystem__init__L_1__i.i <= temp___standard__accountmanagementsystem_63)) then (
         ()) else (
         raise Accountmanagementsystem__init__L_1.L_1)) ) )
       done )
@@ -16651,31 +16829,30 @@ module Accountmanagementsystem__init__subprogram_def
      end)) )))
    ))
     );
-   ( "GP_Sloc:accountmanagementsystem.adb:20:28" (let temp___standard__accountmanagementsystem_61 = ( -1 ) in (
-   (let temp___standard__accountmanagementsystem_62 = 100 in (
-    ( Accountmanagementsystem__init__L_2__i.i := ( temp___standard__accountmanagementsystem_61 );
-    () (* Translation of an Ada loop from accountmanagementsystem.adb:20 *)
+   ( "GP_Sloc:accountmanagementsystem.adb:25:30" (let temp___standard__accountmanagementsystem_65 = ( -1 ) in (
+   (let temp___standard__accountmanagementsystem_66 = 100 in (
+    ( Accountmanagementsystem__init__L_2__i.i := ( temp___standard__accountmanagementsystem_65 );
+    () (* Translation of an Ada loop from accountmanagementsystem.adb:25 *)
     ;
-    (if ((Boolean.andb((temp___standard__accountmanagementsystem_61 <= !Accountmanagementsystem__init__L_2__i.i)) ((!Accountmanagementsystem__init__L_2__i.i <= temp___standard__accountmanagementsystem_62)))) then (
+    (if ((Boolean.andb((temp___standard__accountmanagementsystem_65 <= !Accountmanagementsystem__init__L_2__i.i)) ((!Accountmanagementsystem__init__L_2__i.i <= temp___standard__accountmanagementsystem_66)))) then (
      try
-      ( () (* First unroling of the loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:20 *)
+      ( () (* First unroling of the loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:25 *)
       ;
-      () (* While loop translating the Ada loop from accountmanagementsystem.adb:20 *)
+      () (* While loop translating the Ada loop from accountmanagementsystem.adb:25 *)
       ;
       while True do
-       ( ( () (* Assume implicit invariants from the loop accountmanagementsystem.adb:20 *)
+       ( ( () (* Assume implicit invariants from the loop accountmanagementsystem.adb:25 *)
        ;
        assume { ( (( -1 ) <= !Accountmanagementsystem__init__L_2__i.i) /\ (!Accountmanagementsystem__init__L_2__i.i <= 100) ) };
-       () (* Check for absence of RTE in the invariant of loop accountmanagementsystem.adb:20 *)
+       () (* Check for absence of RTE in the invariant of loop accountmanagementsystem.adb:25 *)
         );
-       ( () (* Loop statements appearing after the loop invariant of loop accountmanagementsystem.adb:20 *)
+       ( () (* Loop statements appearing after the loop invariant of loop accountmanagementsystem.adb:25 *)
        ;
-       ( "GP_Sloc:accountmanagementsystem.adb:21:10" (Ada__text_io__put__4__axiom.put__4((Standard__string.to_string((Measures__userid.attr__ATTRIBUTE_IMAGE(!Accountmanagementsystem__init__L_2__i.i)))))) );
-       ( "GP_Sloc:accountmanagementsystem.adb:22:10" (Ada__text_io__put_line__2__axiom.put_line__2((Standard__string.to_string((Boolean.attr__ATTRIBUTE_IMAGE((Array__Int.get(!Accountmanagementsystem__users.users) (!Accountmanagementsystem__init__L_2__i.i)))))))) );
+       ( "GP_Sloc:accountmanagementsystem.adb:26:21" Accountmanagementsystem__friends.friends := ( (Array__Int.set(!Accountmanagementsystem__friends.friends) (!Accountmanagementsystem__init__L_2__i.i) ((Measures__userid.of_rep(( -1 ))))) ) );
        Accountmanagementsystem__init__L_2__i.i := ( (!Accountmanagementsystem__init__L_2__i.i + 1) );
-       () (* Check for the exit condition and loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:20 *)
+       () (* Check for the exit condition and loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:25 *)
        ;
-       (if ((!Accountmanagementsystem__init__L_2__i.i <= temp___standard__accountmanagementsystem_62)) then (
+       (if ((!Accountmanagementsystem__init__L_2__i.i <= temp___standard__accountmanagementsystem_66)) then (
         ()) else (
         raise Accountmanagementsystem__init__L_2.L_2)) ) )
       done )
@@ -16684,7 +16861,102 @@ module Accountmanagementsystem__init__subprogram_def
      end)) )))
    ))
     );
-   ( "GP_Sloc:accountmanagementsystem.adb:31:7" (Ada__text_io__put_line__2__axiom.put_line__2((Standard__string.of_array(Temp___standard__accountmanagementsystem_63.temp___standard__accountmanagementsystem_63) (1) (23)))) );
+   ( "GP_Sloc:accountmanagementsystem.adb:32:29" (let temp___standard__accountmanagementsystem_68 = ( -1 ) in (
+   (let temp___standard__accountmanagementsystem_69 = 100 in (
+    ( Accountmanagementsystem__init__L_3__i.i := ( temp___standard__accountmanagementsystem_68 );
+    () (* Translation of an Ada loop from accountmanagementsystem.adb:32 *)
+    ;
+    (if ((Boolean.andb((temp___standard__accountmanagementsystem_68 <= !Accountmanagementsystem__init__L_3__i.i)) ((!Accountmanagementsystem__init__L_3__i.i <= temp___standard__accountmanagementsystem_69)))) then (
+     try
+      ( () (* First unroling of the loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:32 *)
+      ;
+      () (* While loop translating the Ada loop from accountmanagementsystem.adb:32 *)
+      ;
+      while True do
+       ( ( () (* Assume implicit invariants from the loop accountmanagementsystem.adb:32 *)
+       ;
+       assume { ( (( -1 ) <= !Accountmanagementsystem__init__L_3__i.i) /\ (!Accountmanagementsystem__init__L_3__i.i <= 100) ) };
+       () (* Check for absence of RTE in the invariant of loop accountmanagementsystem.adb:32 *)
+        );
+       ( () (* Loop statements appearing after the loop invariant of loop accountmanagementsystem.adb:32 *)
+       ;
+       ( "GP_Sloc:accountmanagementsystem.adb:33:20" Accountmanagementsystem__vitals.vitals := ( (Array__Int.set(!Accountmanagementsystem__vitals.vitals) (!Accountmanagementsystem__init__L_3__i.i) ((Measures__bpm.of_rep(( -1 ))))) ) );
+       Accountmanagementsystem__init__L_3__i.i := ( (!Accountmanagementsystem__init__L_3__i.i + 1) );
+       () (* Check for the exit condition and loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:32 *)
+       ;
+       (if ((!Accountmanagementsystem__init__L_3__i.i <= temp___standard__accountmanagementsystem_69)) then (
+        ()) else (
+        raise Accountmanagementsystem__init__L_3.L_3)) ) )
+      done )
+     with
+      Accountmanagementsystem__init__L_3.L_3 -> ()
+     end)) )))
+   ))
+    );
+   ( "GP_Sloc:accountmanagementsystem.adb:39:33" (let temp___standard__accountmanagementsystem_71 = ( -1 ) in (
+   (let temp___standard__accountmanagementsystem_72 = 100 in (
+    ( Accountmanagementsystem__init__L_4__i.i := ( temp___standard__accountmanagementsystem_71 );
+    () (* Translation of an Ada loop from accountmanagementsystem.adb:39 *)
+    ;
+    (if ((Boolean.andb((temp___standard__accountmanagementsystem_71 <= !Accountmanagementsystem__init__L_4__i.i)) ((!Accountmanagementsystem__init__L_4__i.i <= temp___standard__accountmanagementsystem_72)))) then (
+     try
+      ( () (* First unroling of the loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:39 *)
+      ;
+      () (* While loop translating the Ada loop from accountmanagementsystem.adb:39 *)
+      ;
+      while True do
+       ( ( () (* Assume implicit invariants from the loop accountmanagementsystem.adb:39 *)
+       ;
+       assume { ( (( -1 ) <= !Accountmanagementsystem__init__L_4__i.i) /\ (!Accountmanagementsystem__init__L_4__i.i <= 100) ) };
+       () (* Check for absence of RTE in the invariant of loop accountmanagementsystem.adb:39 *)
+        );
+       ( () (* Loop statements appearing after the loop invariant of loop accountmanagementsystem.adb:39 *)
+       ;
+       ( "GP_Sloc:accountmanagementsystem.adb:40:24" Accountmanagementsystem__mfootsteps.mfootsteps := ( (Array__Int.set(!Accountmanagementsystem__mfootsteps.mfootsteps) (!Accountmanagementsystem__init__L_4__i.i) ((Measures__footsteps.of_rep(0)))) ) );
+       Accountmanagementsystem__init__L_4__i.i := ( (!Accountmanagementsystem__init__L_4__i.i + 1) );
+       () (* Check for the exit condition and loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:39 *)
+       ;
+       (if ((!Accountmanagementsystem__init__L_4__i.i <= temp___standard__accountmanagementsystem_72)) then (
+        ()) else (
+        raise Accountmanagementsystem__init__L_4.L_4)) ) )
+      done )
+     with
+      Accountmanagementsystem__init__L_4.L_4 -> ()
+     end)) )))
+   ))
+    );
+   ( "GP_Sloc:accountmanagementsystem.adb:46:32" (let temp___standard__accountmanagementsystem_74 = ( -1 ) in (
+   (let temp___standard__accountmanagementsystem_75 = 100 in (
+    ( Accountmanagementsystem__init__L_5__i.i := ( temp___standard__accountmanagementsystem_74 );
+    () (* Translation of an Ada loop from accountmanagementsystem.adb:46 *)
+    ;
+    (if ((Boolean.andb((temp___standard__accountmanagementsystem_74 <= !Accountmanagementsystem__init__L_5__i.i)) ((!Accountmanagementsystem__init__L_5__i.i <= temp___standard__accountmanagementsystem_75)))) then (
+     try
+      ( () (* First unroling of the loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:46 *)
+      ;
+      () (* While loop translating the Ada loop from accountmanagementsystem.adb:46 *)
+      ;
+      while True do
+       ( ( () (* Assume implicit invariants from the loop accountmanagementsystem.adb:46 *)
+       ;
+       assume { ( (( -1 ) <= !Accountmanagementsystem__init__L_5__i.i) /\ (!Accountmanagementsystem__init__L_5__i.i <= 100) ) };
+       () (* Check for absence of RTE in the invariant of loop accountmanagementsystem.adb:46 *)
+        );
+       ( () (* Loop statements appearing after the loop invariant of loop accountmanagementsystem.adb:46 *)
+       ;
+       ( "GP_Sloc:accountmanagementsystem.adb:47:23" Accountmanagementsystem__locations.locations := ( (Array__Int.set(!Accountmanagementsystem__locations.locations) (!Accountmanagementsystem__init__L_5__i.i) ({ Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real((0.0E-1))); Measures__gpslocation.rec__long = (Measures__longitude.of_real((0.0E-1))) } })) ) );
+       Accountmanagementsystem__init__L_5__i.i := ( (!Accountmanagementsystem__init__L_5__i.i + 1) );
+       () (* Check for the exit condition and loop statements appearing before the loop invariant of loop accountmanagementsystem.adb:46 *)
+       ;
+       (if ((!Accountmanagementsystem__init__L_5__i.i <= temp___standard__accountmanagementsystem_75)) then (
+        ()) else (
+        raise Accountmanagementsystem__init__L_5.L_5)) ) )
+      done )
+     with
+      Accountmanagementsystem__init__L_5.L_5 -> ()
+     end)) )))
+   ))
+    );
    raise Return__exc )
   with
    Return__exc -> ()

@@ -5,14 +5,14 @@ P GP ZX
 RN
 RV NO_ELABORATION_CODE
 
-U test%b		test.adb		b54ef560 OO PK
+U test%b		test.adb		eb0638d7 OO PK
 W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
 W measures%s		measures.ads		measures.ali
 W text_io%s		text_io.ads		text_io.ali
 
-U test%s		test.ads		cf8f767f EE OO PK
+U test%s		test.ads		70b61a26 EE OO PK
 
-D accountmanagementsystem.ads  20160527133809 1a71f32f accountmanagementsystem%s
+D accountmanagementsystem.ads  20160527162521 fef34c77 accountmanagementsystem%s
 D ada.ads		20150506105328 3ffc8e18 ada%s
 D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
@@ -25,8 +25,8 @@ D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
 D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
 D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
-D test.ads		20160527154835 cf8f767f test%s
-D test.adb		20160527155000 5b7e5dc4 test%b
+D test.ads		20160527155510 70b61a26 test%s
+D test.adb		20160527160217 5e8d4372 test%b
 D text_io.ads		20150506105330 45d626c9 text_io%s
 X 1 accountmanagementsystem.ads
 12K9*AccountManagementSystem 206e28 15|4w6 4r35
@@ -34,35 +34,44 @@ X 1 accountmanagementsystem.ads
 20A9*UserUserArray(8|6I9)<8|6I9>
 23A9*VitalsArray(8|10I9)<8|6I9>
 24A9*FootstepsArray(8|14I9)<8|6I9>
+25A9*LocationsArray(8|19R9)<8|6I9>
 31a4*Users{17A9} 15|14r16 18r33
 36a4*Friends{20A9} 15|25r16 29r32
 39a4*Vitals{23A9} 15|36r16 40r29
-40a4*MFootsteps{24A9} 15|46r16 50r35
+40a4*MFootsteps{24A9} 15|47r16 51r35
+41a4*Locations{25A9} 15|58r16 62r30 64r29
 X 5 a-textio.ads
-242U14*Put 15|15s10 16s10 17s10 26s10 27s10 28s10 37s10 38s10 39s10 47s10
-. 48s10 49s10
-263U14*Put_Line 15|13s7 18s10 24s7 29s10 35s7 40s10 50s10
+242U14*Put 15|15s10 16s10 17s10 26s10 27s10 28s10 37s10 38s10 39s10 48s10
+. 49s10 50s10 59s10 60s10 61s10 62s10 63s10 64s10
+263U14*Put_Line 15|13s7 18s10 24s7 29s10 35s7 40s10 46s7 51s10 57s7 65s10
 X 8 measures.ads
 2K9*Measures 25e13 15|6w6 6r20
-6I9*UserID<integer> 15|16r14 27r14 29r19 38r15 48r14
+6I9*UserID<integer> 15|16r14 27r14 29r19 38r15 49r14 60r14
 10I9*BPM<integer> 15|40r19
-14I9*Footsteps<integer> 15|50r19
+14I9*Footsteps<integer> 15|51r19
+17F9*Latitude<float> 15|64r14
+18F9*Longitude<float> 15|62r14
+21f10*Lat{17F9} 15|64r42
+22f10*Long{18F9} 15|62r43
 X 14 test.ads
-1K9*Test 9l5 9e9 15|8b14 55l5 55t9
+1K9*Test 10l5 10e9 15|8b14 70l5 70t9
 4U14*Print_UserID_Status 15|11b14 20l8 20t27
 5U14*Print_Everyones_Friend 15|22b14 31l8 31t30
 6U14*Print_Everyones_Vitals 15|33b14 42l8 42t30
-7U14*Print_Everyones_Footsteps 15|44b14 52l11 52t36
+7U14*Print_Everyones_Footsteps 15|44b14 53l11 53t36
+8U14*Print_Everyones_Location 15|55b14 68l8 68t32
 X 15 test.adb
 14i11 I<integer> 16r27 18r39
 25i11 I<integer> 27r27 29r40
 36i11 I<integer> 38r28 40r36
-46i11 I<integer> 48r27 50r46
+47i11 I<integer> 49r27 51r46
+58i11 I<integer> 60r27 62r40 64r39
 X 16 text_io.ads
 24K9*Text_IO=24:29 15|5w6 5r19
 FD 1 accountmanagementsystem.ads
 FS .1 12K9 accountmanagementsystem
 FS .2 50U14 accountmanagementsystem__init
+FS .3 57U14 accountmanagementsystem__createuser
 FD 2 ada.ads
 FS .1 16K9 ada
 FD 3 a-ioexce.ads
@@ -276,23 +285,27 @@ FS .2 4U14 test__print_userid_status
 FS .3 5U14 test__print_everyones_friend
 FS .4 6U14 test__print_everyones_vitals
 FS .5 7U14 test__print_everyones_footsteps
+FS .6 8U14 test__print_everyones_location
 FD 15 test.adb
 FS .1 8K14 standard__test -> 14.1
 FS .2 11U14 test__print_userid_status -> 14.2
 FS .3 22U14 test__print_everyones_friend -> 14.3
 FS .4 33U14 test__print_everyones_vitals -> 14.4
 FS .5 44U14 test__print_everyones_footsteps -> 14.5
+FS .6 55U14 test__print_everyones_location -> 14.6
 FD 16 text_io.ads
 FX 1 accountmanagementsystem.ads .1 accountmanagementsystem
 F 31*4 accountmanagementsystem__users 15|.2:14r16 18r33
 F 36*4 accountmanagementsystem__friends 15|.3:25r16 29r32
 F 39*4 accountmanagementsystem__vitals 15|.4:36r16 40r29
-F 40*4 accountmanagementsystem__mfootsteps 15|.5:46r16 50r35
+F 40*4 accountmanagementsystem__mfootsteps 15|.5:47r16 51r35
+F 41*4 accountmanagementsystem__locations 15|.6:58r16 62r30 64r29
 FX 5 a-textio.ads .1 ada__text_io
 F 242*14 ada__text_io__put__4 15|.2:15s10 16s10 17s10 .3:26s10 27s10 28s10
-. .4:37s10 38s10 39s10 .5:47s10 48s10 49s10
+. .4:37s10 38s10 39s10 .5:48s10 49s10 50s10 .6:59s10 60s10 61s10 62s10 63s10
+. 64s10
 F 263*14 ada__text_io__put_line__2 15|.2:13s7 18s10 .3:24s7 29s10 .4:35s7
-. 40s10 .5:50s10
+. 40s10 .5:46s7 51s10 .6:57s7 65s10
 FX 15 test.adb .2 test__print_userid_status
 F 14*11 test__print_userid_status__L_1__i 16c27 18c39
 FX 15 test.adb .3 test__print_everyones_friend
@@ -300,7 +313,9 @@ F 25*11 test__print_everyones_friend__L_2__i 27c27 29c40
 FX 15 test.adb .4 test__print_everyones_vitals
 F 36*11 test__print_everyones_vitals__L_3__i 38c28 40c36
 FX 15 test.adb .5 test__print_everyones_footsteps
-F 46*11 test__print_everyones_footsteps__L_4__i 48c27 50c46
+F 47*11 test__print_everyones_footsteps__L_4__i 49c27 51c46
+FX 15 test.adb .6 test__print_everyones_location
+F 58*11 test__print_everyones_location__L_5__i 60c27 62c40 64c39
 
 GG S FA test__print_userid_status
 GG VP
@@ -332,6 +347,15 @@ GG LS
 GG S FA test__print_everyones_footsteps
 GG VP
 GG VI accountmanagementsystem__mfootsteps
+GG VO
+GG CP
+GG CD ada__text_io__put_line__2 ada__text_io__put__4
+GG CC
+GG LV
+GG LS
+GG S FA test__print_everyones_location
+GG VP
+GG VI accountmanagementsystem__locations
 GG VO
 GG CP
 GG CD ada__text_io__put_line__2 ada__text_io__put__4

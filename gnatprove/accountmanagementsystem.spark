@@ -11,6 +11,16 @@
       "spark": "all"
     },
     {
+      "name": "AccountManagementSystem.CreateUser",
+      "sloc": [
+        {
+          "file": "accountmanagementsystem.ads",
+          "line": 57
+        }
+      ],
+      "spark": "all"
+    },
+    {
       "name": "AccountManagementSystem",
       "sloc": [
         {
@@ -24,19 +34,37 @@
   "flow": [
     {
       "file": "accountmanagementsystem.ads",
-      "line": 50,
-      "col": 14,
+      "line": 57,
+      "col": 25,
       "rule": "UNINITIALIZED",
-      "severity": "info",
+      "severity": "medium",
       "entity": {
-        "name": "AccountManagementSystem.Init",
+        "name": "AccountManagementSystem.CreateUser",
         "sloc": [
           {
             "file": "accountmanagementsystem.ads",
-            "line": 50
+            "line": 57
           }
         ]
-      }
+      },
+      "msg_id": 0
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 59,
+      "col": 20,
+      "rule": "UNINITIALIZED",
+      "severity": "medium",
+      "entity": {
+        "name": "AccountManagementSystem.CreateUser",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 57
+          }
+        ]
+      },
+      "msg_id": 1
     },
     {
       "file": "accountmanagementsystem.ads",
@@ -104,8 +132,8 @@
     },
     {
       "file": "accountmanagementsystem.ads",
-      "line": 52,
-      "col": 37,
+      "line": 50,
+      "col": 14,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -170,6 +198,22 @@
       "file": "accountmanagementsystem.ads",
       "line": 55,
       "col": 39,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 50
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 52,
+      "col": 37,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -248,7 +292,7 @@
     },
     {
       "file": "accountmanagementsystem.adb",
-      "line": 45,
+      "line": 47,
       "col": 23,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -266,18 +310,6 @@
   "assumptions": [
     {
       "assumptions": [
-        {
-          "predicate": "CLAIM_EFFECTS",
-          "arg": {
-            "name": "Ada.Text_IO.Put_Line",
-            "sloc": [
-              {
-                "file": "a-textio.ads",
-                "line": 263
-              }
-            ]
-          }
-        }
       ],
       "claim": {
         "predicate": "CLAIM_EFFECTS",

@@ -2693,12 +2693,12 @@
  </transf>
  </goal>
 </theory>
-<theory name="Accountmanagementsystem__init__subprogram_def" sum="3e68dd13134cd6b02fa36a63480452be" expanded="true">
+<theory name="Accountmanagementsystem__init__subprogram_def" sum="42cd896f1199a65f0b4cd3d1a0d554d9" expanded="true">
  <goal name="WP_parameter def" expl="VC for def" expanded="true">
  <transf name="split_goal_wp" expanded="true">
   <goal name="WP_parameter def.1" expl="1. VC for def">
   <proof prover="0"><result status="timeout" time="0.98"/></proof>
-  <proof prover="1"><result status="timeout" time="0.98"/></proof>
+  <proof prover="1"><result status="timeout" time="0.96"/></proof>
   </goal>
  </transf>
  </goal>

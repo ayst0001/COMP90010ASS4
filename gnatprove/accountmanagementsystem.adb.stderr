@@ -1,4 +1,2 @@
-accountmanagementsystem.adb:15:07: warning: no Global contract available for "Put_Line"
-accountmanagementsystem.adb:15:07: warning: assuming "Put_Line" has no effect on global items
-accountmanagementsystem.adb:48:07: warning: no Global contract available for "Put_Line"
-accountmanagementsystem.adb:48:07: warning: assuming "Put_Line" has no effect on global items
+accountmanagementsystem.ads:57:25: medium: "NewUser" might not be initialized in "CreateUser"[#0]
+accountmanagementsystem.ads:59:20: medium: "NewUser" might not be initialized[#1]

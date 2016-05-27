@@ -1,6 +1,7 @@
 Analyzed 2 units
-in unit accountmanagementsystem, 2 subprograms and packages out of 2 analyzed
+in unit accountmanagementsystem, 3 subprograms and packages out of 3 analyzed
   AccountManagementSystem at accountmanagementsystem.ads:12 flow analyzed (0 errors and 0 warnings)
+  AccountManagementSystem.CreateUser at accountmanagementsystem.ads:57 flow analyzed (0 errors and 2 warnings)
   AccountManagementSystem.Init at accountmanagementsystem.ads:50 flow analyzed (0 errors and 0 warnings)
 in unit run, 0 subprograms and packages out of 1 analyzed
   Run at run.adb:5 skipped
