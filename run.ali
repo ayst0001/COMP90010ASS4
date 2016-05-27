@@ -1,0 +1,55 @@
+V "GNAT Lib v2015"
+M P W=b
+A -mmacosx-version-min=10.11.4
+A -gnatA
+A -mtune=core2
+A -fPIC
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U run%b			run.adb			f52b7100 NE OO SU
+W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W measures%s		measures.ads		measures.ali
+
+D accountmanagementsystem.ads  20160527133809 1a71f32f accountmanagementsystem%s
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
+D measures.ads		20160321052727 7e180b3d measures%s
+D run.adb		20160527134653 a92f7cc6 run%b
+D system.ads		20150506105331 100301f7 system%s
+D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
+X 1 accountmanagementsystem.ads
+12K9*AccountManagementSystem 206e28 12|3w6 3r35 7r4
+50U14*Init 12|7s28
+X 2 ada.ads
+16K9*Ada 19e8 12|2r6 2r23
+X 7 a-textio.ads
+49K13*Text_IO 471e16 12|2w10 2r27
+X 11 measures.ads
+2K9*Measures 25e13 12|1w6 1r20
+X 12 run.adb
+5U11*Run 5b11 8l5 8t8
+

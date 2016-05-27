@@ -1,0 +1,22 @@
+[MAPPING FILE]
+/private/var/folders/dl/ffg4v3cd23sbd80kvwr9t8dh0000gn/T/GNAT-TEMP-000037.TMP
+[TOOLCHAIN VERSION]
+ada
+GNAT 2015
+[MAIN BASE NAME]
+accountmanagementsystem
+[COMPILER PATH]
+/usr/local/gnat/bin/gcc
+[COMPILER LEADING SWITCHES]
+-c
+-x
+ada
+-gnatA
+[MAIN DEPENDENCY FILE]
+/Users/raywong/Documents/workspace/Ada/Assignment4/accountmanagementsystem.ali
+[DEPENDENCY FILES]
+[BINDING OPTIONS]
+gnatbind_prefix=
+[PROJECT FILES]
+/Users/raywong/Documents/workspace/Ada/Assignment4/assignment4.gpr
+20160527134050

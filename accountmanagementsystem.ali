@@ -1,0 +1,85 @@
+V "GNAT Lib v2015"
+A -mmacosx-version-min=10.11.4
+A -gnatA
+A -mtune=core2
+A -fPIC
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U accountmanagementsystem%b  accountmanagementsystem.adb  402fc32b NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W measures%s		measures.ads		measures.ali
+
+U accountmanagementsystem%s  accountmanagementsystem.ads  6469f812 EE NE OO PK
+W measures%s		measures.ads		measures.ali
+
+D accountmanagementsystem.ads  20160527133809 1a71f32f accountmanagementsystem%s
+D accountmanagementsystem.adb  20160527150213 1c2bceed accountmanagementsystem%b
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
+D measures.ads		20160321052727 7e180b3d measures%s
+D system.ads		20150506105331 100301f7 system%s
+D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
+X 1 accountmanagementsystem.ads
+12K9*AccountManagementSystem 206l5 206e28 2|8b14 44l5 44t28
+17A9*UsersArray(boolean)<12|6I9> 31r12
+20A9*UserUserArray(12|6I9)<12|6I9> 35r15 36r14
+23A9*VitalsArray(12|10I9)<12|6I9> 39r13
+24A9*FootstepsArray(12|14I9)<12|6I9> 40r17
+25A9*LocationsArray(12|19R9)<12|6I9> 41r16
+28A9*UserUserBooleanArray(boolean)<12|6I9><12|6I9> 44r24 45r27 46r26
+31a4*Users{17A9} 51r28 51r43 2|17r16 18m10
+32i4*LatestUser{12|6I9}
+35a4*Insurers{20A9}
+36a4*Friends{20A9} 52r20 52r37 2|28r16 29m10
+39a4*Vitals{23A9} 53r20 53r36
+40a4*MFootsteps{24A9} 54r20 54r40
+41a4*Locations{25A9} 55r20 55r39
+44a4*VitalsPermissions{28A9}
+45a4*FootstepsPermissions{28A9}
+46a4*LocationPermissions{28A9}
+50U14*Init 2|12b14 42l8 42t12
+51i23 I<integer> 51r49
+52i15 I<integer> 52r45
+53i15 I<integer> 53r43
+54i15 I<integer> 54r51
+55i15 I<integer> 55r49
+X 2 accountmanagementsystem.adb
+17i11 I<integer> 18r16
+28i11 I<integer> 29r18
+X 3 ada.ads
+16K9*Ada 2|6r6 6r23 3|19e8
+X 8 a-textio.ads
+49K13*Text_IO 2|6w10 6r27 8|471e16
+X 12 measures.ads
+2K9*Measures 1|4w6 4r20 2|5w6 5r20 12|25e13
+6I9*UserID<integer> 1|17r29 20r32 20r43 23r30 24r33 25r33 28r39 28r47 32r17
+. 32r27 52r50 2|29r24
+10I9*BPM<integer> 1|23r41 53r48
+14I9*Footsteps<integer> 1|24r44 54r56
+19R9*GPSLocation 1|25r44 12|23e17
+
