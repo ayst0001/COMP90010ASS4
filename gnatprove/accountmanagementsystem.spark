@@ -56,8 +56,40 @@
     },
     {
       "file": "accountmanagementsystem.ads",
-      "line": 51,
-      "col": 43,
+      "line": 50,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 50
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 50,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 50
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 50,
+      "col": 14,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -87,8 +119,72 @@
       }
     },
     {
+      "file": "accountmanagementsystem.ads",
+      "line": 53,
+      "col": 36,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 50
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 54,
+      "col": 40,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 50
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 51,
+      "col": 43,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 50
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 55,
+      "col": 39,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 50
+          }
+        ]
+      }
+    },
+    {
       "file": "accountmanagementsystem.adb",
-      "line": 18,
+      "line": 19,
       "col": 19,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -104,8 +200,56 @@
     },
     {
       "file": "accountmanagementsystem.adb",
-      "line": 29,
+      "line": 26,
       "col": 21,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 50
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.adb",
+      "line": 33,
+      "col": 20,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 50
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.adb",
+      "line": 40,
+      "col": 24,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 50
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.adb",
+      "line": 45,
+      "col": 23,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {

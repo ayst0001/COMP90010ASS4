@@ -1,0 +1,94 @@
+V "GNAT Lib v2015"
+A -mmacosx-version-min=10.11.4
+A -gnatA
+A -mtune=core2
+A -fPIC
+P ZX
+
+RN
+RV NO_ENUMERATION_MAPS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U test%b		test.adb		0f84878f NE OO PK
+W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
+W measures%s		measures.ads		measures.ali
+W system.img_bool%s	s-imgboo.adb		s-imgboo.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.img_real%s	s-imgrea.adb		s-imgrea.ali
+W text_io%s		text_io.ads		text_io.ali
+
+U test%s		test.ads		70b61a26 EE NE OO PK
+
+D accountmanagementsystem.ads  20160527133809 1a71f32f accountmanagementsystem%s
+D ada.ads		20150506105328 3ffc8e18 ada%s
+D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
+D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
+D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
+D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
+D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20150506105327 6033a23f interfaces%s
+D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
+D measures.ads		20160321052727 7e180b3d measures%s
+D system.ads		20150506105331 100301f7 system%s
+D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
+D s-exctab.ads		20150506105331 54135002 system.exception_table%s
+D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
+D s-imgboo.ads		20150506105327 f5d971eb system.img_bool%s
+D s-imgint.ads		20150506105328 02dbe0c2 system.img_int%s
+D s-imgrea.ads		20150506105326 c7a851e2 system.img_real%s
+D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
+D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
+D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150506105331 fa0a3617 system.standard_library%s
+D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
+D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
+D test.ads		20160527155510 70b61a26 test%s
+D test.adb		20160527160217 5e8d4372 test%b
+D text_io.ads		20150506105330 45d626c9 text_io%s
+X 1 accountmanagementsystem.ads
+12K9*AccountManagementSystem 206e28 28|4w6 4r35
+17A9*UsersArray(boolean)<11|6I9>
+20A9*UserUserArray(11|6I9)<11|6I9>
+23A9*VitalsArray(11|10I9)<11|6I9>
+24A9*FootstepsArray(11|14I9)<11|6I9>
+25A9*LocationsArray(11|19R9)<11|6I9>
+31a4*Users{17A9} 28|14r16 18r33
+36a4*Friends{20A9} 28|25r16 29r32
+39a4*Vitals{23A9} 28|36r16 40r29
+40a4*MFootsteps{24A9} 28|47r16 51r35
+41a4*Locations{25A9} 28|58r16 62r30 64r29
+X 7 a-textio.ads
+242U14*Put 28|15s10 16s10 17s10 26s10 27s10 28s10 37s10 38s10 39s10 48s10
+. 49s10 50s10 59s10 60s10 61s10 62s10 63s10 64s10
+263U14*Put_Line 28|13s7 18s10 24s7 29s10 35s7 40s10 46s7 51s10 57s7 65s10
+X 11 measures.ads
+2K9*Measures 25e13 28|6w6 6r20
+6I9*UserID<integer> 28|16r14 27r14 29r19 38r15 49r14 60r14
+10I9*BPM<integer> 28|40r19
+14I9*Footsteps<integer> 28|51r19
+17F9*Latitude<float> 28|64r14
+18F9*Longitude<float> 28|62r14
+21f10*Lat{17F9} 28|64r42
+22f10*Long{18F9} 28|62r43
+X 27 test.ads
+1K9*Test 10l5 10e9 28|8b14 70l5 70t9
+4U14*Print_UserID_Status 28|11b14 20l8 20t27
+5U14*Print_Everyones_Friend 28|22b14 31l8 31t30
+6U14*Print_Everyones_Vitals 28|33b14 42l8 42t30
+7U14*Print_Everyones_Footsteps 28|44b14 53l11 53t36
+8U14*Print_Everyones_Location 28|55b14 68l8 68t32
+X 28 test.adb
+14i11 I<integer> 16r27 18r39
+25i11 I<integer> 27r27 29r40
+36i11 I<integer> 38r28 40r36
+47i11 I<integer> 49r27 51r46
+58i11 I<integer> 60r27 62r40 64r39
+X 29 text_io.ads
+24K9*Text_IO=24:29 28|5w6 5r19
+

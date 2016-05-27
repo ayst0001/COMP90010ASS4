@@ -11,7 +11,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U run%b			run.adb			f52b7100 NE OO SU
+U run%b			run.adb			3bdabc66 NE OO SU
 W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -28,7 +28,7 @@ D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
 D interfac.ads		20150506105327 6033a23f interfaces%s
 D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
 D measures.ads		20160321052727 7e180b3d measures%s
-D run.adb		20160527134653 a92f7cc6 run%b
+D run.adb		20160527151433 67deb1a0 run%b
 D system.ads		20150506105331 100301f7 system%s
 D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
 D s-exctab.ads		20150506105331 54135002 system.exception_table%s
@@ -42,7 +42,7 @@ D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
 X 1 accountmanagementsystem.ads
-12K9*AccountManagementSystem 206e28 12|3w6 3r35 7r4
+12K9*AccountManagementSystem 206e28 12|3w6 7r4
 50U14*Init 12|7s28
 X 2 ada.ads
 16K9*Ada 19e8 12|2r6 2r23

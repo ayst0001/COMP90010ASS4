@@ -1,0 +1,38 @@
+test.adb:13:07: warning: no Global contract available for "Put_Line"
+test.adb:13:07: warning: assuming "Put_Line" has no effect on global items
+test.adb:15:10: warning: no Global contract available for "Put"
+test.adb:15:10: warning: assuming "Put" has no effect on global items
+test.adb:16:10: warning: no Global contract available for "Put"
+test.adb:16:10: warning: assuming "Put" has no effect on global items
+test.adb:17:10: warning: no Global contract available for "Put"
+test.adb:17:10: warning: assuming "Put" has no effect on global items
+test.adb:18:10: warning: no Global contract available for "Put_Line"
+test.adb:18:10: warning: assuming "Put_Line" has no effect on global items
+test.adb:24:07: warning: no Global contract available for "Put_Line"
+test.adb:24:07: warning: assuming "Put_Line" has no effect on global items
+test.adb:26:10: warning: no Global contract available for "Put"
+test.adb:26:10: warning: assuming "Put" has no effect on global items
+test.adb:27:10: warning: no Global contract available for "Put"
+test.adb:27:10: warning: assuming "Put" has no effect on global items
+test.adb:28:10: warning: no Global contract available for "Put"
+test.adb:28:10: warning: assuming "Put" has no effect on global items
+test.adb:29:10: warning: no Global contract available for "Put_Line"
+test.adb:29:10: warning: assuming "Put_Line" has no effect on global items
+test.adb:35:07: warning: no Global contract available for "Put_Line"
+test.adb:35:07: warning: assuming "Put_Line" has no effect on global items
+test.adb:37:10: warning: no Global contract available for "Put"
+test.adb:37:10: warning: assuming "Put" has no effect on global items
+test.adb:38:10: warning: no Global contract available for "Put"
+test.adb:38:10: warning: assuming "Put" has no effect on global items
+test.adb:39:10: warning: no Global contract available for "Put"
+test.adb:39:10: warning: assuming "Put" has no effect on global items
+test.adb:40:10: warning: no Global contract available for "Put_Line"
+test.adb:40:10: warning: assuming "Put_Line" has no effect on global items
+test.adb:47:10: warning: no Global contract available for "Put"
+test.adb:47:10: warning: assuming "Put" has no effect on global items
+test.adb:48:10: warning: no Global contract available for "Put"
+test.adb:48:10: warning: assuming "Put" has no effect on global items
+test.adb:49:10: warning: no Global contract available for "Put"
+test.adb:49:10: warning: assuming "Put" has no effect on global items
+test.adb:50:10: warning: no Global contract available for "Put_Line"
+test.adb:50:10: warning: assuming "Put_Line" has no effect on global items

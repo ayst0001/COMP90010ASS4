@@ -9,10 +9,11 @@ package body ada_main is
 
    E74 : Short_Integer; pragma Import (Ada, E74, "system__os_lib_E");
    E15 : Short_Integer; pragma Import (Ada, E15, "system__soft_links_E");
+   E85 : Short_Integer; pragma Import (Ada, E85, "system__fat_llf_E");
    E25 : Short_Integer; pragma Import (Ada, E25, "system__exception_table_E");
-   E48 : Short_Integer; pragma Import (Ada, E48, "ada__io_exceptions_E");
-   E50 : Short_Integer; pragma Import (Ada, E50, "ada__tags_E");
-   E47 : Short_Integer; pragma Import (Ada, E47, "ada__streams_E");
+   E61 : Short_Integer; pragma Import (Ada, E61, "ada__io_exceptions_E");
+   E08 : Short_Integer; pragma Import (Ada, E08, "ada__tags_E");
+   E60 : Short_Integer; pragma Import (Ada, E60, "ada__streams_E");
    E72 : Short_Integer; pragma Import (Ada, E72, "interfaces__c_E");
    E27 : Short_Integer; pragma Import (Ada, E27, "system__exceptions_E");
    E77 : Short_Integer; pragma Import (Ada, E77, "system__file_control_block_E");
@@ -20,8 +21,9 @@ package body ada_main is
    E70 : Short_Integer; pragma Import (Ada, E70, "system__finalization_root_E");
    E68 : Short_Integer; pragma Import (Ada, E68, "ada__finalization_E");
    E19 : Short_Integer; pragma Import (Ada, E19, "system__secondary_stack_E");
-   E08 : Short_Integer; pragma Import (Ada, E08, "ada__text_io_E");
+   E58 : Short_Integer; pragma Import (Ada, E58, "ada__text_io_E");
    E05 : Short_Integer; pragma Import (Ada, E05, "accountmanagementsystem_E");
+   E80 : Short_Integer; pragma Import (Ada, E80, "test_E");
 
    Local_Priority_Specific_Dispatching : constant String := "";
    Local_Interrupt_States : constant String := "";
@@ -30,7 +32,7 @@ package body ada_main is
 
    procedure finalize_library is
    begin
-      E08 := E08 - 1;
+      E58 := E58 - 1;
       declare
          procedure F1;
          pragma Import (Ada, F1, "ada__text_io__finalize_spec");
@@ -134,13 +136,15 @@ package body ada_main is
       Finalize_Library_Objects := finalize_library'access;
 
       System.Soft_Links'Elab_Spec;
+      System.Fat_Llf'Elab_Spec;
+      E85 := E85 + 1;
       System.Exception_Table'Elab_Body;
       E25 := E25 + 1;
       Ada.Io_Exceptions'Elab_Spec;
-      E48 := E48 + 1;
+      E61 := E61 + 1;
       Ada.Tags'Elab_Spec;
       Ada.Streams'Elab_Spec;
-      E47 := E47 + 1;
+      E60 := E60 + 1;
       Interfaces.C'Elab_Spec;
       System.Exceptions'Elab_Spec;
       E27 := E27 + 1;
@@ -154,7 +158,7 @@ package body ada_main is
       E66 := E66 + 1;
       E72 := E72 + 1;
       Ada.Tags'Elab_Body;
-      E50 := E50 + 1;
+      E08 := E08 + 1;
       System.Soft_Links'Elab_Body;
       E15 := E15 + 1;
       System.Os_Lib'Elab_Body;
@@ -163,7 +167,8 @@ package body ada_main is
       E19 := E19 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
-      E08 := E08 + 1;
+      E58 := E58 + 1;
+      E80 := E80 + 1;
       E05 := E05 + 1;
    end adainit;
 
@@ -201,8 +206,9 @@ package body ada_main is
 
 --  BEGIN Object file/option list
    --   /Users/raywong/Documents/workspace/Ada/Assignment4/measures.o
-   --   /Users/raywong/Documents/workspace/Ada/Assignment4/accountmanagementsystem.o
    --   /Users/raywong/Documents/workspace/Ada/Assignment4/Run.o
+   --   /Users/raywong/Documents/workspace/Ada/Assignment4/Test.o
+   --   /Users/raywong/Documents/workspace/Ada/Assignment4/accountmanagementsystem.o
    --   -L/Users/raywong/Documents/workspace/Ada/Assignment4/
    --   -L/Users/raywong/Documents/workspace/Ada/Assignment4/
    --   -L/usr/local/gnat/lib/gcc/x86_64-apple-darwin13.4.0/4.9.3/adalib/
