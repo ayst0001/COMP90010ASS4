@@ -6,14 +6,13 @@ A -fPIC
 P ZX
 
 RN
-RV NO_DIRECT_BOOLEAN_OPERATORS
 RV NO_ENUMERATION_MAPS
 RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U test%b		test.adb		160802ce NE OO PK
+U test%b		test.adb		a99ff2d9 NE OO PK
 W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
 W measures%s		measures.ads		measures.ali
 W system.img_bool%s	s-imgboo.adb		s-imgboo.ali
@@ -21,7 +20,7 @@ W system.img_int%s	s-imgint.adb		s-imgint.ali
 W system.img_real%s	s-imgrea.adb		s-imgrea.ali
 W text_io%s		text_io.ads		text_io.ali
 
-U test%s		test.ads		a03f0ec5 EE NE OO PK
+U test%s		test.ads		107b8052 EE NE OO PK
 
 D accountmanagementsystem.ads  20160528153931 b2e23e72 accountmanagementsystem%s
 D ada.ads		20150506105328 3ffc8e18 ada%s
@@ -49,8 +48,8 @@ D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
 D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
-D test.ads		20160528133123 a03f0ec5 test%s
-D test.adb		20160528133813 3f1b1f8d test%b
+D test.ads		20160528155029 107b8052 test%s
+D test.adb		20160528155029 30c8610d test%b
 D text_io.ads		20150506105330 45d626c9 text_io%s
 X 1 accountmanagementsystem.ads
 12K9*AccountManagementSystem 205e28 28|4w6 4r35
@@ -59,7 +58,7 @@ X 1 accountmanagementsystem.ads
 23A9*VitalsArray(11|10I9)<11|6I9>
 24A9*FootstepsArray(11|14I9)<11|6I9>
 25A9*LocationsArray(11|19R9)<11|6I9>
-31a4*Users{17A9} 28|14r16 18r33 85r16 86r45
+31a4*Users{17A9} 28|14r16 18r33
 35a4*Insurers{20A9} 28|36r16 40r32
 36a4*Friends{20A9} 28|25r16 29r32
 39a4*Vitals{23A9} 28|47r16 51r29
@@ -67,9 +66,9 @@ X 1 accountmanagementsystem.ads
 41a4*Locations{25A9} 28|69r16 73r29 75r30
 X 7 a-textio.ads
 242U14*Put 28|15s10 16s10 17s10 26s10 27s10 28s10 37s10 38s10 39s10 48s10
-. 49s10 50s10 59s10 60s10 61s10 70s10 71s10 72s10 73s10 74s10 75s10 88s7
+. 49s10 50s10 59s10 60s10 61s10 70s10 71s10 72s10 73s10 74s10 75s10
 263U14*Put_Line 28|13s7 18s10 24s7 29s10 35s7 40s10 46s7 51s10 57s7 62s10
-. 68s7 76s10 89s7
+. 68s7 76s10
 X 11 measures.ads
 2K9*Measures 25e13 28|6w6 6r20
 6I9*UserID<integer> 28|16r14 27r14 29r19 38r14 40r19 49r15 60r14 71r14
@@ -80,14 +79,13 @@ X 11 measures.ads
 21f10*Lat{17F9} 28|73r42
 22f10*Long{18F9} 28|75r43
 X 27 test.ads
-1K9*Test 12l5 12e9 28|8b14 93l5 93t9
+1K9*Test 11l5 11e9 28|8b14 83l5 83t9
 4U14*Print_UserID_Status 28|11b14 20l8 20t27
 5U14*Print_Everyones_Friend 28|22b14 31l8 31t30
 6U14*Print_Everyones_Vitals 28|44b14 53l8 53t30
 7U14*Print_Everyones_Footsteps 28|55b14 64l11 64t36
 8U14*Print_Everyones_Location 28|66b14 79l8 79t32
 9U14*Print_Everyones_Insurer 28|33b14 42l11 42t34
-10U14*Verify_Init 28|81b14 90l8 90t19
 X 28 test.adb
 14i11 I<integer> 16r27 18r39
 25i11 I<integer> 27r27 29r40
@@ -95,8 +93,6 @@ X 28 test.adb
 47i11 I<integer> 49r28 51r36
 58i11 I<integer> 60r27 62r46
 69i11 I<integer> 71r27 73r39 75r40
-82b7 Identifier{boolean} 84m7 86m10 86r25 89r30
-85i11 I<integer> 86r51
 X 29 text_io.ads
 24K9*Text_IO=24:29 28|5w6 5r19
 

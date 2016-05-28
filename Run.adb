@@ -11,10 +11,8 @@ begin
    -- ** Test.Print_Everyones_Vitals;
    -- ** Test.Print_Everyones_Footsteps;
    -- ** Test.Print_Everyones_Location;
-   Test.Verify_Init;
 
    -- ** AccountManagementSystem.CreateUser;
-
 
    AccountManagementSystem.Users(3) := True;
    AccountManagementSystem.Users(4) := True;

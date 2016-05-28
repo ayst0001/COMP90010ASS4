@@ -12,7 +12,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U run%b			run.adb			2b462a44 NE OO SU
+U run%b			run.adb			2676b8e0 NE OO SU
 W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -33,7 +33,7 @@ D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
 D interfac.ads		20150506105327 6033a23f interfaces%s
 D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
 D measures.ads		20160321052727 7e180b3d measures%s
-D run.adb		20160528154802 7feee41a run%b
+D run.adb		20160528155029 c29af829 run%b
 D system.ads		20150506105331 100301f7 system%s
 D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
 D s-exctab.ads		20150506105331 54135002 system.exception_table%s
@@ -48,29 +48,28 @@ D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
 D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
-D test.ads		20160528133123 a03f0ec5 test%s
+D test.ads		20160528155029 107b8052 test%s
 X 1 accountmanagementsystem.ads
-12K9*AccountManagementSystem 205e28 13|3w6 3r35 8r4 19r4 20r4 23r4 26r26
-. 37r4
+12K9*AccountManagementSystem 205e28 13|3w6 3r35 8r4 17r4 18r4 21r4 24r26
+. 35r4
 17A9*UsersArray(boolean)<12|6I9>
 28A9*UserUserBooleanArray(boolean)<12|6I9><12|6I9>
-31a4*Users{17A9} 13|19m28 20m28
-45a4*VitalsPermissions{28A9} 13|38r27
+31a4*Users{17A9} 13|17m28 18m28
+45a4*VitalsPermissions{28A9} 13|36r27
 51U14*Init 13|8s28
-84U14*SetFriend 13|23s28
-91V13*ReadFriend{12|6I9} 13|26s50
-149U14*UpdateVitalsPermissions 13|37s28
+84U14*SetFriend 13|21s28
+91V13*ReadFriend{12|6I9} 13|24s50
+149U14*UpdateVitalsPermissions 13|35s28
 X 3 ada.ads
 16K9*Ada 19e8 13|2r6 2r23
 X 8 a-textio.ads
 49K13*Text_IO 471e16 13|2w10 2r27
-263U14*Put_Line 13|26s4 38s4
+263U14*Put_Line 13|24s4 36s4
 X 12 measures.ads
 2K9*Measures 25e13 13|1w6 1r20
-6I9*UserID<integer> 13|26r13
+6I9*UserID<integer> 13|24r13
 X 13 run.adb
-6U11*Run 6b11 40l5 40t8
+6U11*Run 6b11 38l5 38t8
 X 28 test.ads
-1K9*Test 13|4w6 4r16 14r4 28|12e9
-10U14*Verify_Init 13|14s9
+1K9*Test 13|4w6 4r16 28|11e9
 

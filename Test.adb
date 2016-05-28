@@ -78,16 +78,6 @@ is
 
    end Print_Everyones_Location;
 
-   procedure Verify_Init is
-      Identifier : Boolean;
-   begin
-      Identifier := True;
-      for I in Users'Range loop
-         Identifier := (Identifier and (not Users(I)));
-      end loop;
-      Put("The Init procedure's is verified as: ");
-      Put_Line(Boolean'Image(Identifier));
-   end Verify_Init;
 
 
 end Test;
