@@ -70,9 +70,9 @@ is
          Put("UserID");
          Put(UserID'Image(I));
          Put("'s current location is: (");
-         Put(Longitude'Image(Locations(I).Long));
-         Put(",");
          Put(Latitude'Image(Locations(I).Lat));
+         Put(",");
+         Put(Longitude'Image(Locations(I).Long));
          Put_Line(")");
       end loop;
 

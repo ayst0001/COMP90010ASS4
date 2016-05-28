@@ -70,8 +70,7 @@ is
              (FootstepsPermissions(Wearer, Insurers'Old(Wearer)) = False) and
              (LocationPermissions(Wearer, Insurers'Old(Wearer)) = False);
               
---   function ReadInsurer(Wearer : in UserID) return UserID
---   is (Insurers(Wearer));
+   function ReadInsurer(Wearer : in UserID) return UserID is (Insurers(Wearer));
 
 --   procedure RemoveInsurer(Wearer : in UserID) with
 --     Pre => Insurers(Wearer) /= UserID'First,
@@ -82,15 +81,14 @@ is
    
 
    -- ** Friend Operation, ** added some permission check
---   procedure SetFriend(Wearer : in UserID; Friend : in UserID) with
---     Pre => Wearer in Users'Range and Friend in Users'Range,
---     Post => (Friends = Friends'Old'Update(Wearer => Friend)) and
---             (VitalsPermissions(Wearer, Friends'Old(Wearer)) = False) and
---             (FootstepsPermissions(Wearer, Friends'Old(Wearer)) = False) and
---             (LocationPermissions(Wearer, Friends'Old(Wearer)) = False);
+   procedure SetFriend(Wearer : in UserID; Friend : in UserID) with
+     Pre => Wearer in Users'Range and Friend in Users'Range,
+     Post => (Friends = Friends'Old'Update(Wearer => Friend)) and
+             (VitalsPermissions(Wearer, Friends'Old(Wearer)) = False) and
+             (FootstepsPermissions(Wearer, Friends'Old(Wearer)) = False) and
+             (LocationPermissions(Wearer, Friends'Old(Wearer)) = False);
               
---   function ReadFriend(Wearer : in UserID) return UserID
---   is (Friends(Wearer));
+   function ReadFriend(Wearer : in UserID) return UserID is (Friends(Wearer));
 
 --   procedure RemoveFriend(Wearer : in UserID) with
 --     Pre => Friends(Wearer) /= UserID'First,
@@ -101,19 +99,19 @@ is
    
 
    -- Update Data
---   procedure UpdateVitals(Wearer : in UserID; NewVitals : in BPM) with
---     Pre => Wearer in Users'Range,
---     Post => Vitals = Vitals'Old'Update(Wearer => NewVitals);
+   procedure UpdateVitals(Wearer : in UserID; NewVitals : in BPM) with
+     Pre => Wearer in Users'Range,
+     Post => Vitals = Vitals'Old'Update(Wearer => NewVitals);
    
---   procedure UpdateFootsteps(Wearer : in UserID; NewFootsteps : in Footsteps)
---     with
---     Pre => Wearer in Users'Range,
---     Post => MFootsteps = MFootsteps'Old'Update(Wearer => NewFootsteps);
+   procedure UpdateFootsteps(Wearer : in UserID; NewFootsteps : in Footsteps)
+     with
+     Pre => Wearer in Users'Range,
+     Post => MFootsteps = MFootsteps'Old'Update(Wearer => NewFootsteps);
      
---   procedure UpdateLocation(Wearer : in UserID; NewLocation : in GPSLocation) 
---     with
---     Pre => Wearer in Users'Range,
---     Post => Locations = Locations'Old'Update(Wearer => NewLocation);
+   procedure UpdateLocation(Wearer : in UserID; NewLocation : in GPSLocation) 
+     with
+     Pre => Wearer in Users'Range,
+     Post => Locations = Locations'Old'Update(Wearer => NewLocation);
      
    -- An partial, incorrect specification.
    -- Note that there is no need for a corresponding body for this function. 

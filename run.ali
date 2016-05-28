@@ -7,18 +7,20 @@ A -fPIC
 P ZX
 
 RN
+RV NO_FLOATING_POINT
 RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U run%b			run.adb			8a7298cb NE OO SU
+U run%b			run.adb			8b86b934 NE OO SU
 W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
 W ada%s			ada.ads			ada.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W measures%s		measures.ads		measures.ali
 W test%s		test.adb		test.ali
 
-D accountmanagementsystem.ads  20160528103707 535978b3 accountmanagementsystem%s
+D accountmanagementsystem.ads  20160528131750 a9030d87 accountmanagementsystem%s
 D ada.ads		20150506105328 3ffc8e18 ada%s
 D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
 D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
@@ -29,7 +31,7 @@ D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
 D interfac.ads		20150506105327 6033a23f interfaces%s
 D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
 D measures.ads		20160321052727 7e180b3d measures%s
-D run.adb		20160528105047 8f259ec3 run%b
+D run.adb		20160528131853 748bca08 run%b
 D system.ads		20150506105331 100301f7 system%s
 D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
 D s-exctab.ads		20150506105331 54135002 system.exception_table%s
@@ -44,8 +46,11 @@ D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
 D test.ads		20160528104710 107b8052 test%s
 X 1 accountmanagementsystem.ads
-12K9*AccountManagementSystem 207e28 12|3w6 8r4
+12K9*AccountManagementSystem 205e28 12|3w6 8r4 18r4 19r4 33r4
+17A9*UsersArray(boolean)<11|6I9>
+31a4*Users{17A9} 12|18m28 19m28
 51U14*Init 12|8s28
+111U14*UpdateLocation 12|33s28
 X 2 ada.ads
 16K9*Ada 19e8 12|2r6 2r23
 X 7 a-textio.ads
@@ -53,8 +58,8 @@ X 7 a-textio.ads
 X 11 measures.ads
 2K9*Measures 25e13 12|1w6 1r20
 X 12 run.adb
-6U11*Run 6b11 23l5 23t8
+6U11*Run 6b11 36l5 36t8
 X 25 test.ads
-1K9*Test 12|4w6 4r16 13r6 25|11e9
-8U14*Print_Everyones_Location 12|13s11
+1K9*Test 12|4w6 4r16 34r4 25|11e9
+8U14*Print_Everyones_Location 12|34s9
 

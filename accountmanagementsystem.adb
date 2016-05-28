@@ -76,6 +76,53 @@ is
          -- ** Error handling?
          -- Put_Line("Wearer or Insurer specified does not exist!");
          end if;
-      end SetInsurer;
+   end SetInsurer;
+
+   procedure SetFriend(Wearer : in UserID; Friend : in UserID) is
+   begin
+      -- ** Pre => Wearer in Users'Range and Friend in Users'Range
+      if (Users(Wearer) and Users(Friend)) then
+         -- ** (VitalsPermissions(Wearer, Friends'Old(Wearer)) = False)
+         -- ** (FootstepsPermissions(Wearer, Friends'Old(Wearer)) = False)
+         -- ** (LocationPermissions(Wearer, Friends'Old(Wearer)) = False)
+         VitalsPermissions(Wearer,Friends(Wearer)) := False;
+         FootstepsPermissions(Wearer, Friends(Wearer)) := False;
+         LocationPermissions(Wearer, Friends(Wearer)) := False;
+         -- ** (Friends = Friends'Old'Update(Wearer => Friend))
+         Friends(Wearer) := Friend;
+      -- else
+         -- ** Error handling?
+         -- ** Put_Line("Wearer or Friend specified does not exist!");
+      end if;
+   end SetFriend;
+
+   procedure UpdateVitals(Wearer : in UserID; NewVitals : in BPM) is
+   begin
+      -- ** Pre => Wearer in Users'Range
+      if (Users(Wearer)) then
+         -- ** Post => Vitals = Vitals'Old'Update(Wearer => NewVitals)
+         Vitals(Wearer) := NewVitals;
+         end if;
+   end UpdateVitals;
+
+   procedure UpdateFootsteps(Wearer : in UserID; NewFootsteps : in Footsteps) is
+   begin
+      -- ** Pre => Wearer in Users'Range
+      if (Users(Wearer)) then
+         -- ** Post=>MFootsteps = MFootsteps'Old'Update(Wearer => NewFootsteps)
+         MFootsteps(Wearer) := NewFootsteps;
+         end if;
+   end UpdateFootsteps;
+
+   procedure UpdateLocation(Wearer : in UserID; NewLocation : in GPSLocation) is
+   begin
+      -- ** Pre => Wearer in Users'Range
+      if (Users(Wearer)) then
+         -- ** Post => Locations = Locations'Old'Update(Wearer => NewLocation)
+         Locations(Wearer) := NewLocation;
+         end if;
+      end UpdateLocation;
+
+
 
 end AccountManagementSystem;
