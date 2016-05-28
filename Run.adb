@@ -1,6 +1,6 @@
 with Measures; use Measures;
 with Ada.Text_IO; use Ada.Text_IO;
-with AccountManagementSystem;
+with AccountManagementSystem; use AccountManagementSystem;
 with Test; use Test;
 
 procedure Run is
@@ -20,10 +20,10 @@ begin
    AccountManagementSystem.Users(4) := True;
    -- Test.Print_UserID_Status;
    -- AccountManagementSystem.SetInsurer(1,2);
-   -- AccountManagementSystem.SetFriend(3,4);
+   AccountManagementSystem.SetFriend(3,4);
    -- Test.Print_Everyones_Insurer;
    -- Put_Line(UserID'Image(AccountManagementSystem.ReadInsurer(1)));
-   -- Put_Line(UserID'Image(AccountManagementSystem.ReadFriend(3)));
+   Put_Line(UserID'Image(AccountManagementSystem.ReadFriend(3)));
 
    -- AccountManagementSystem.UpdateVitals(3, 102);
    -- Test.Print_Everyones_Vitals;
@@ -33,5 +33,8 @@ begin
 
    -- AccountManagementSystem.UpdateLocation(3,(3.5,2.7));
    -- Test.Print_Everyones_Location;
+
+   AccountManagementSystem.UpdateVitalsPermissions(3,4,True);
+   Put_Line(Boolean'Image(VitalsPermissions(3,4)));
 
 end Run;

@@ -146,55 +146,55 @@ is
                                            then Locations(TargetUser)
                                            else (0.0,0.0));
           
---   procedure UpdateVitalsPermissions(Wearer : in UserID; 
---  				     Other : in UserID;
---                                     Allow : in Boolean)
---   with
---       Pre => Wearer in Users'Range and Other in Users'Range,
---       Post => (if Allow = True then (
---                  Other = Insurers(Wearer)||
---                 Other = Friends(Wearer)||
---                  Other = 0)
---                else
---                  Other /= Wearer
---               ) and
---               (VitalsPermissions = VitalsPermissions'Old'Update(
---                 (Wearer, Other), Allow)
---               );
+   procedure UpdateVitalsPermissions(Wearer : in UserID; 
+  				     Other : in UserID;
+                                     Allow : in Boolean)
+   with
+       Pre => Wearer in Users'Range and Other in Users'Range,
+       Post => (if Allow = True then (
+                  Other = Insurers(Wearer) or
+                 Other = Friends(Wearer) or
+                  Other = 0)
+                else
+                  Other /= Wearer
+               ) and
+               (VitalsPermissions = VitalsPermissions'Old'Update(
+                 (Wearer, Other), Allow)
+               );
 
---   procedure UpdateFootstepsPermissions(Wearer : in UserID; 
---  					Other : in UserID;
---                                        Allow : in Boolean)
---   with
---       Pre => Wearer in Users'Range and Other in Users'Range,
---       Post => (if Allow = True then (
---                  Other = Insurers(Wearer)||
---                  Other = Friends(Wearer)||
---                  Other = 0)
---                else
---                  Other /= Wearer
---                  Other /= Insurers(Wearer)     -- ** insurer always footsteps
---               ) and
---               (FootstepsPermissions = FootstepsPermissions'Old'Update(
---                 (Wearer, Other), Allow)
---               );
+   procedure UpdateFootstepsPermissions(Wearer : in UserID; 
+  					Other : in UserID;
+                                        Allow : in Boolean)
+   with
+       Pre => Wearer in Users'Range and Other in Users'Range,
+       Post => (if Allow = True then (
+                  Other = Insurers(Wearer) or
+                  Other = Friends(Wearer) or
+                  Other = 0)
+                else
+                  Other /= Wearer and
+                  Other /= Insurers(Wearer)     -- ** insurer always footsteps
+               ) and
+               (FootstepsPermissions = FootstepsPermissions'Old'Update(
+                 (Wearer, Other), Allow)
+               );
      
---   procedure UpdateLocationPermissions(Wearer : in UserID;
---  				       Other : in UserID;
---                                       Allow : in Boolean)
---   with
---       Pre => Wearer in Users'Range and Other in Users'Range,
---       Post => (if Allow = True then (
---                  Other = Insurers(Wearer)||
---                  Other = Friends(Wearer)||
---                  Other = 0)
---                else
---                  Other /= Wearer
---                  Other /= 0                   -- ** emergency always location
---               ) and
---               (LocationPermissions = LocationPermissions'Old'Update(
---                 (Wearer, Other), Allow)
---               );;
+   procedure UpdateLocationPermissions(Wearer : in UserID;
+  				       Other : in UserID;
+                                       Allow : in Boolean)
+   with
+       Pre => Wearer in Users'Range and Other in Users'Range,
+       Post => (if Allow = True then (
+                  Other = Insurers(Wearer) or
+                  Other = Friends(Wearer) or
+                  Other = 0)
+                else
+                  Other /= Wearer and
+                  Other /= 0                   -- ** emergency always location
+               ) and
+               (LocationPermissions = LocationPermissions'Old'Update(
+                 (Wearer, Other), Allow)
+               );
 
 --   procedure ContactEmergency(Wearer : in UserID; 
 --                            Location : in GPSLocation; 

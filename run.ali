@@ -7,18 +7,22 @@ A -fPIC
 P ZX
 
 RN
+RV NO_ENUMERATION_MAPS
 RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U run%b			run.adb			77bbc9a8 NE OO SU
+U run%b			run.adb			2b462a44 NE OO SU
 W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W measures%s		measures.ads		measures.ali
+W system.img_bool%s	s-imgboo.adb		s-imgboo.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
 W test%s		test.adb		test.ali
 
-D accountmanagementsystem.ads  20160528134432 1e483209 accountmanagementsystem%s
+D accountmanagementsystem.ads  20160528153931 b2e23e72 accountmanagementsystem%s
+D accountmanagementsystem.adb  20160528153938 79a9779f accountmanagementsystem%b
 D ada.ads		20150506105328 3ffc8e18 ada%s
 D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
 D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
@@ -29,11 +33,13 @@ D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
 D interfac.ads		20150506105327 6033a23f interfaces%s
 D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
 D measures.ads		20160321052727 7e180b3d measures%s
-D run.adb		20160528133831 8fb90b8d run%b
+D run.adb		20160528154802 7feee41a run%b
 D system.ads		20150506105331 100301f7 system%s
 D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
 D s-exctab.ads		20150506105331 54135002 system.exception_table%s
 D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
+D s-imgboo.ads		20150506105327 f5d971eb system.img_bool%s
+D s-imgint.ads		20150506105328 02dbe0c2 system.img_int%s
 D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
 D s-soflin.ads		20150506105328 aa763b52 system.soft_links%s
 D s-stache.ads		20150506105332 a37c21ec system.stack_checking%s
@@ -44,19 +50,27 @@ D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
 D test.ads		20160528133123 a03f0ec5 test%s
 X 1 accountmanagementsystem.ads
-12K9*AccountManagementSystem 205e28 12|3w6 8r4 19r4 20r4
-17A9*UsersArray(boolean)<11|6I9>
-31a4*Users{17A9} 12|19m28 20m28
-51U14*Init 12|8s28
-X 2 ada.ads
-16K9*Ada 19e8 12|2r6 2r23
-X 7 a-textio.ads
-49K13*Text_IO 471e16 12|2w10 2r27
-X 11 measures.ads
-2K9*Measures 25e13 12|1w6 1r20
-X 12 run.adb
-6U11*Run 6b11 37l5 37t8
-X 25 test.ads
-1K9*Test 12|4w6 4r16 14r4 25|12e9
-10U14*Verify_Init 12|14s9
+12K9*AccountManagementSystem 205e28 13|3w6 3r35 8r4 19r4 20r4 23r4 26r26
+. 37r4
+17A9*UsersArray(boolean)<12|6I9>
+28A9*UserUserBooleanArray(boolean)<12|6I9><12|6I9>
+31a4*Users{17A9} 13|19m28 20m28
+45a4*VitalsPermissions{28A9} 13|38r27
+51U14*Init 13|8s28
+84U14*SetFriend 13|23s28
+91V13*ReadFriend{12|6I9} 13|26s50
+149U14*UpdateVitalsPermissions 13|37s28
+X 3 ada.ads
+16K9*Ada 19e8 13|2r6 2r23
+X 8 a-textio.ads
+49K13*Text_IO 471e16 13|2w10 2r27
+263U14*Put_Line 13|26s4 38s4
+X 12 measures.ads
+2K9*Measures 25e13 13|1w6 1r20
+6I9*UserID<integer> 13|26r13
+X 13 run.adb
+6U11*Run 6b11 40l5 40t8
+X 28 test.ads
+1K9*Test 13|4w6 4r16 14r4 28|12e9
+10U14*Verify_Init 13|14s9
 

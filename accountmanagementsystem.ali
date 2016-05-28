@@ -12,18 +12,18 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U accountmanagementsystem%b  accountmanagementsystem.adb  94f78c67 NE OO PK
+U accountmanagementsystem%b  accountmanagementsystem.adb  2d01b9c1 NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W measures%s		measures.ads		measures.ali
 W test%s		test.adb		test.ali
 
-U accountmanagementsystem%s  accountmanagementsystem.ads  60503934 EE NE OO PK
+U accountmanagementsystem%s  accountmanagementsystem.ads  ccfa354f EE NE OO PK
 W measures%s		measures.ads		measures.ali
 
-D accountmanagementsystem.ads  20160528134432 1e483209 accountmanagementsystem%s
-D accountmanagementsystem.adb  20160528134451 6cf54e42 accountmanagementsystem%b
+D accountmanagementsystem.ads  20160528153931 b2e23e72 accountmanagementsystem%s
+D accountmanagementsystem.adb  20160528153938 79a9779f accountmanagementsystem%b
 D ada.ads		20150506105328 3ffc8e18 ada%s
 D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
 D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
@@ -48,7 +48,7 @@ D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
 D test.ads		20160528133123 a03f0ec5 test%s
 X 1 accountmanagementsystem.ads
-12K9*AccountManagementSystem 205l5 205e28 2|9b14 172l5 172t28
+12K9*AccountManagementSystem 205l5 205e28 2|9b14 255l5 255t28
 17A9*UsersArray(boolean)<12|6I9> 31r12
 20A9*UserUserArray(12|6I9)<12|6I9> 35r15 36r14
 23A9*VitalsArray(12|10I9)<12|6I9> 39r13
@@ -56,22 +56,26 @@ X 1 accountmanagementsystem.ads
 25A9*LocationsArray(12|19R9)<12|6I9> 41r16
 28A9*UserUserBooleanArray(boolean)<12|6I9><12|6I9> 45r24 46r27 47r26
 31a4*Users{17A9} 52r28 52r43 65r23 65r50 85r23 85r49 103r23 108r23 113r23
-. 2|18r16 19m10 63r11 63r29 84r11 84r29 102r11 111r11 120r11
+. 153r25 153r50 169r25 169r50 186r25 186r50 2|18r16 19m10 63r11 63r29 84r11
+. 84r29 102r11 111r11 120r11 173r11 173r29 201r11 201r29 230r11 230r29
 32i4*LatestUser{12|6I9}
-35a4*Insurers{20A9} 66r15 66r26 69r41 70r44 71r43 73r63 2|67r36 68r39 69r38
-. 71m10
+35a4*Insurers{20A9} 66r15 66r26 69r41 70r44 71r43 73r63 155r27 171r27 176r28
+. 188r27 2|67r36 68r39 69r38 71m10 185r25 214r25 217r48 243r24
 36a4*Friends{20A9} 53r20 53r37 86r15 86r25 87r41 88r44 89r43 91r62 120r11
-. 2|24r16 25m10 88r35 89r39 90r38 92m10
+. 156r26 172r27 189r27 2|24r16 25m10 88r35 89r39 90r38 92m10 186r27 215r27
+. 244r23
 39a4*Vitals{23A9} 54r20 54r36 104r14 104r23 121r11 131r49 2|30r16 31m10 104m10
 . 134r17
 40a4*MFootsteps{24A9} 55r20 55r40 109r14 109r27 139r49 2|36r16 37m10 113m10
 . 148r17
 41a4*Locations{25A9} 56r20 56r39 114r14 114r26 146r49 2|42r16 43m10 122m10
 . 162r17
-45a4*VitalsPermissions{28A9} 69r15 87r15 130r21 2|67m10 88m10 133r10
-46a4*FootstepsPermissions{28A9} 67r15 67r38 70r15 88r15 138r21 2|68m10 74m10
-. 89m10 147r10
-47a4*LocationPermissions{28A9} 71r15 89r15 145r21 2|69m10 90m10 161r10
+45a4*VitalsPermissions{28A9} 69r15 87r15 130r21 161r17 161r37 2|67m10 88m10
+. 133r10 189m19
+46a4*FootstepsPermissions{28A9} 67r15 67r38 70r15 88r15 138r21 178r17 178r40
+. 2|68m10 74m10 89m10 147r10 218m19
+47a4*LocationPermissions{28A9} 71r15 89r15 145r21 195r17 195r39 2|69m10 90m10
+. 161r10 247m19
 51U14*Init 2|13b14 47l8 47t12
 52i23 I<integer> 52r49
 53i15 I<integer> 53r45
@@ -111,6 +115,24 @@ X 1 accountmanagementsystem.ads
 142V13*ReadLocation{12|19R9} 142>26 142>49 144r17 2|154b13 166l8 166t20
 142i26 Requester{12|6I9} 145r53 2|154b26 161r42
 142i49 TargetUser{12|6I9} 145r41 146r59 2|154b49 161r30 162r27
+149U14*UpdateVitalsPermissions 149>38 150>38 151>38 2|168b14 194l8 194t31
+149i38 Wearer{12|6I9} 153r15 155r36 156r34 159r28 2|168b38 173r17 185r34
+. 186r35 188r29 189r37
+150i38 Other{12|6I9} 153r41 155r19 156r18 157r19 159r19 2|169b38 173r35 185r17
+. 186r19 187r19 188r20 189r45
+151b38 Allow{boolean} 154r20 2|170b38 184r13
+165U14*UpdateFootstepsPermissions 165>41 166>41 167>41 2|196b14 223l8 223t34
+165i41 Wearer{12|6I9} 169r15 171r36 172r35 175r28 176r37 2|196b41 201r17
+. 214r34 215r35 217r28 217r57 218r40
+166i41 Other{12|6I9} 169r41 171r19 172r19 173r19 175r19 176r19 2|197b41 201r35
+. 214r17 215r19 216r19 217r19 217r39 218r48
+167b41 Allow{boolean} 170r20 2|198b41 213r13
+182U14*UpdateLocationPermissions 182>40 183>40 184>40 2|225b14 252l8 252t33
+182i40 Wearer{12|6I9} 186r15 188r36 189r35 192r28 2|225b40 230r17 243r33
+. 244r31 246r28 247r39
+183i40 Other{12|6I9} 186r41 188r19 189r19 190r19 192r19 193r19 2|226b40 230r35
+. 243r16 244r15 245r15 246r19 246r39 247r46
+184b40 Allow{boolean} 187r20 2|227b40 242r13
 X 2 accountmanagementsystem.adb
 18i11 I<integer> 19r16
 24i11 I<integer> 25r18
@@ -125,9 +147,10 @@ X 12 measures.ads
 2K9*Measures 1|4w6 4r20 2|5w6 5r20 12|25e13
 6I9*UserID<integer> 1|17r29 20r32 20r43 23r30 24r33 25r33 28r39 28r47 32r17
 . 32r27 53r50 64r37 64r58 73r37 73r52 84r36 84r56 91r36 91r51 102r39 106r42
-. 111r41 119r39 119r63 127r43 127r67 135r42 135r66 142r41 142r65 2|25r24
-. 60r37 60r58 81r36 81r56 99r39 108r42 117r41 126r43 126r67 140r42 140r66
-. 154r41 154r65
+. 111r41 119r39 119r63 127r43 127r67 135r42 135r66 142r41 142r65 149r50 150r49
+. 165r53 166r52 182r52 183r51 2|25r24 60r37 60r58 81r36 81r56 99r39 108r42
+. 117r41 126r43 126r67 140r42 140r66 154r41 154r65 168r50 169r49 196r53 197r52
+. 225r52 226r51
 10I9*BPM<integer> 1|23r41 54r48 102r62 119r78 122r13 128r35 132r49 2|31r23
 . 99r62 127r35 136r17
 14I9*Footsteps<integer> 1|24r44 55r56 106r68 136r34 140r49 2|37r27 108r68
