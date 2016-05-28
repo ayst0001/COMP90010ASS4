@@ -11,6 +11,7 @@ begin
    -- ** Test.Print_Everyones_Vitals;
    -- ** Test.Print_Everyones_Footsteps;
    -- ** Test.Print_Everyones_Location;
+   Test.Verify_Init;
 
    -- ** AccountManagementSystem.CreateUser;
 
@@ -30,7 +31,7 @@ begin
    -- AccountManagementSystem.UpdateFootsteps(3, 703);
    -- Test.Print_Everyones_Footsteps;
 
-   AccountManagementSystem.UpdateLocation(3,(3.5,2.7));
-   Test.Print_Everyones_Location;
+   -- AccountManagementSystem.UpdateLocation(3,(3.5,2.7));
+   -- Test.Print_Everyones_Location;
 
 end Run;

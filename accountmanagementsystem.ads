@@ -116,35 +116,35 @@ is
    -- An partial, incorrect specification.
    -- Note that there is no need for a corresponding body for this function. 
    -- These are best suited for functions that have simple control flow
---   function ReadVitals(Requester : in UserID; TargetUser : in UserID) return BPM 
---   is (if Friends(TargetUser) = Requester then
---          Vitals(TargetUser)
---       else BPM'First);
+   function ReadVitals(Requester : in UserID; TargetUser : in UserID) return BPM 
+   is (if Friends(TargetUser) = Requester then
+          Vitals(TargetUser)
+       else BPM'First);
    
    -- An alternative specification using postconditions. These require package
    -- bodies, and are better suited to functions with non-trivial control flow,
    -- and are required for functions with preconditions
---   function ReadVitals_Alt(Requester : in UserID; TargetUser : in UserID)
---                           return BPM
---   with Post => ReadVitals_Alt'Result = (if 
---                    VitalsPermissions(TargetUser, Requester)= True
---                                           then Vitals(TargetUser)
---                                           else BPM'First);
+   function ReadVitals_Alt(Requester : in UserID; TargetUser : in UserID)
+                           return BPM
+   with Post => ReadVitals_Alt'Result = (if 
+                    VitalsPermissions(TargetUser, Requester)= True
+                                           then Vitals(TargetUser)
+                                           else BPM'First);
    
    -- ** Continued
---   function ReadFootsteps(Requester : in UserID; TargetUser : in UserID) 
---                          return Footsteps
---   with Post => ReadFootsteps'Result = (if 
---                    FootstepsPermissions(TargetUser, Requester)= True
---                                           then MFootsteps(TargetUser)
---                                           else Footsteps'First);
+   function ReadFootsteps(Requester : in UserID; TargetUser : in UserID) 
+                          return Footsteps
+   with Post => ReadFootsteps'Result = (if 
+                    FootstepsPermissions(TargetUser, Requester)= True
+                                           then MFootsteps(TargetUser)
+                                           else Footsteps'First);
    
---   function ReadLocation(Requester : in UserID; TargetUser : in UserID)
---                         return GPSLocation
---   with Post => ReadLocation'Result = (if 
---                    LocationPermissions(TargetUser, Requester)= True
---                                           then Locations(TargetUser)
---                                           else GPSLocation'First);
+   function ReadLocation(Requester : in UserID; TargetUser : in UserID)
+                         return GPSLocation
+   with Post => ReadLocation'Result = (if 
+                    LocationPermissions(TargetUser, Requester)= True
+                                           then Locations(TargetUser)
+                                           else (0.0,0.0));
           
 --   procedure UpdateVitalsPermissions(Wearer : in UserID; 
 --  				     Other : in UserID;

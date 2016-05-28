@@ -7,5 +7,6 @@ is
    procedure Print_Everyones_Footsteps;
    procedure Print_Everyones_Location;
    procedure Print_Everyones_Insurer;
+   procedure Verify_Init;
 
 end Test;

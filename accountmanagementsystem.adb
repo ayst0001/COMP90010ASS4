@@ -121,7 +121,51 @@ is
          -- ** Post => Locations = Locations'Old'Update(Wearer => NewLocation)
          Locations(Wearer) := NewLocation;
          end if;
-      end UpdateLocation;
+   end UpdateLocation;
+
+   function ReadVitals_Alt(Requester : in UserID; TargetUser : in UserID)
+                           return BPM is
+   begin
+      -- ** Post => ReadVitals_Alt'Result = (if
+      -- **              VitalsPermissions(TargetUser, Requester)= True
+      -- **                                     then Vitals(TargetUser)
+      -- **                                     else BPM'First);
+      if VitalsPermissions(TargetUser, Requester) then
+         return Vitals(TargetUser);
+      else
+         return BPM'First;
+      end if;
+   end ReadVitals_Alt;
+
+   function ReadFootsteps(Requester : in UserID; TargetUser : in UserID)
+                          return Footsteps is
+   begin
+      -- ** Post => ReadFootsteps'Result = (if
+      -- **              FootstepsPermissions(TargetUser, Requester)= True
+      -- **                                     then MFootsteps(TargetUser)
+      -- **                                     else Footsteps'First);
+      if FootstepsPermissions(TargetUser, Requester) then
+         return MFootsteps(TargetUser);
+      else
+         return Footsteps'First;
+      end if;
+   end ReadFootsteps;
+
+   function ReadLocation(Requester : in UserID; TargetUser : in UserID)
+                         return GPSLocation is
+   begin
+      -- ** Post => ReadLocation'Result = (if
+      -- **              LocationPermissions(TargetUser, Requester)= True
+      -- **                                     then Locations(TargetUser)
+      -- **                                     else (0.0,0.0));
+      if LocationPermissions(TargetUser, Requester) then
+         return Locations(TargetUser);
+      else
+         return (0.0,0.0);
+      end if;
+   end ReadLocation;
+
+
 
 
 
