@@ -5,14 +5,14 @@ P GP ZX
 RN
 RV NO_ELABORATION_CODE
 
-U test%b		test.adb		eb0638d7 OO PK
+U test%b		test.adb		46ac0c13 OO PK
 W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
 W measures%s		measures.ads		measures.ali
 W text_io%s		text_io.ads		text_io.ali
 
 U test%s		test.ads		70b61a26 EE OO PK
 
-D accountmanagementsystem.ads  20160527162521 fef34c77 accountmanagementsystem%s
+D accountmanagementsystem.ads  20160528103707 535978b3 accountmanagementsystem%s
 D ada.ads		20150506105328 3ffc8e18 ada%s
 D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
@@ -29,7 +29,7 @@ D test.ads		20160527155510 70b61a26 test%s
 D test.adb		20160527160217 5e8d4372 test%b
 D text_io.ads		20150506105330 45d626c9 text_io%s
 X 1 accountmanagementsystem.ads
-12K9*AccountManagementSystem 206e28 15|4w6 4r35
+12K9*AccountManagementSystem 207e28 15|4w6 4r35
 17A9*UsersArray(boolean)<8|6I9>
 20A9*UserUserArray(8|6I9)<8|6I9>
 23A9*VitalsArray(8|10I9)<8|6I9>
@@ -70,8 +70,8 @@ X 16 text_io.ads
 24K9*Text_IO=24:29 15|5w6 5r19
 FD 1 accountmanagementsystem.ads
 FS .1 12K9 accountmanagementsystem
-FS .2 50U14 accountmanagementsystem__init
-FS .3 57U14 accountmanagementsystem__createuser
+FS .2 51U14 accountmanagementsystem__init
+FS .3 64U14 accountmanagementsystem__setinsurer
 FD 2 ada.ads
 FS .1 16K9 ada
 FD 3 a-ioexce.ads
@@ -317,48 +317,3 @@ F 47*11 test__print_everyones_footsteps__L_4__i 49c27 51c46
 FX 15 test.adb .6 test__print_everyones_location
 F 58*11 test__print_everyones_location__L_5__i 60c27 62c40 64c39
 
-GG S FA test__print_userid_status
-GG VP
-GG VI accountmanagementsystem__users
-GG VO
-GG CP
-GG CD ada__text_io__put_line__2 ada__text_io__put__4
-GG CC
-GG LV
-GG LS
-GG S FA test__print_everyones_friend
-GG VP
-GG VI accountmanagementsystem__friends
-GG VO
-GG CP
-GG CD ada__text_io__put_line__2 ada__text_io__put__4
-GG CC
-GG LV
-GG LS
-GG S FA test__print_everyones_vitals
-GG VP
-GG VI accountmanagementsystem__vitals
-GG VO
-GG CP
-GG CD ada__text_io__put_line__2 ada__text_io__put__4
-GG CC
-GG LV
-GG LS
-GG S FA test__print_everyones_footsteps
-GG VP
-GG VI accountmanagementsystem__mfootsteps
-GG VO
-GG CP
-GG CD ada__text_io__put_line__2 ada__text_io__put__4
-GG CC
-GG LV
-GG LS
-GG S FA test__print_everyones_location
-GG VP
-GG VI accountmanagementsystem__locations
-GG VO
-GG CP
-GG CD ada__text_io__put_line__2 ada__text_io__put__4
-GG CC
-GG LV
-GG LS

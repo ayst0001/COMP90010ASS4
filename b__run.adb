@@ -206,9 +206,9 @@ package body ada_main is
 
 --  BEGIN Object file/option list
    --   /Users/raywong/Documents/workspace/Ada/Assignment4/measures.o
-   --   /Users/raywong/Documents/workspace/Ada/Assignment4/Run.o
    --   /Users/raywong/Documents/workspace/Ada/Assignment4/Test.o
    --   /Users/raywong/Documents/workspace/Ada/Assignment4/accountmanagementsystem.o
+   --   /Users/raywong/Documents/workspace/Ada/Assignment4/Run.o
    --   -L/Users/raywong/Documents/workspace/Ada/Assignment4/
    --   -L/Users/raywong/Documents/workspace/Ada/Assignment4/
    --   -L/usr/local/gnat/lib/gcc/x86_64-apple-darwin13.4.0/4.9.3/adalib/

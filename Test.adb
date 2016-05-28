@@ -30,6 +30,17 @@ is
       end loop;
    end Print_Everyones_Friend;
 
+   procedure Print_Everyones_Insurer is
+   begin
+      Put_Line("Printing every user's insurer");
+      for I in Insurers'Range loop
+         Put("UserID");
+         Put(UserID'Image(I));
+         Put("'s insurer is: ");
+         Put_Line(UserID'Image(Insurers(I)));
+         end loop;
+      end Print_Everyones_Insurer;
+
    procedure Print_Everyones_Vitals is
    begin
       Put_Line("Printing every user's current vital reading");

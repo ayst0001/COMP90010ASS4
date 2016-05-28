@@ -41,6 +41,7 @@ is
    Locations : LocationsArray;
    
    -- ** Each users' permission to other users of each data
+   -- ** the later UserID has the permission to read the former UserID
    VitalsPermissions : UserUserBooleanArray;
    FootstepsPermissions : UserUserBooleanArray;
    LocationPermissions : UserUserBooleanArray;
@@ -54,20 +55,20 @@ is
      (for all I in MFootsteps'Range => MFootsteps(I) = Footsteps'First) and
      (for all I in Locations'Range => Locations(I) = (0.0, 0.0));
      
-   procedure CreateUser(NewUser : out UserID) with
-     Pre => LatestUser < UserID'Last,
-     Post => Users(NewUser) = True;
+--   procedure CreateUser(NewUser : out UserID) with
+--     Pre => LatestUser < UserID'Last,
+--     Post => Users(NewUser) = True;
    
    
    -- ** Insurer Operation, ** added some permission check
---   procedure SetInsurer(Wearer : in UserID; Insurer : in UserID) with
---     Pre => Wearer in Users'Range and Insurer in Users'Range,
---     Post => (Insurers = Insurers'Old'Update(Wearer => Insurer)) and
---             (FootstepsPermissions = FootstepsPermissions'Old'Update(
---               (Wearer, Insurer), True)) and 
---             (VitalsPermissions(Wearer, Insurers'Old(Wearer)) = False) and
---             (FootstepsPermissions(Wearer, Insurers'Old(Wearer)) = False) and
---             (LocationPermissions(Wearer, Insurers'Old(Wearer)) = False);
+   procedure SetInsurer(Wearer : in UserID; Insurer : in UserID) with
+     Pre => Wearer in Users'Range and Insurer in Users'Range,
+     Post => (Insurers = Insurers'Old'Update(Wearer => Insurer)) and
+             (FootstepsPermissions = FootstepsPermissions'Old'Update(
+               (Wearer, Insurer), True)) and 
+             (VitalsPermissions(Wearer, Insurers'Old(Wearer)) = False) and
+             (FootstepsPermissions(Wearer, Insurers'Old(Wearer)) = False) and
+             (LocationPermissions(Wearer, Insurers'Old(Wearer)) = False);
               
 --   function ReadInsurer(Wearer : in UserID) return UserID
 --   is (Insurers(Wearer));

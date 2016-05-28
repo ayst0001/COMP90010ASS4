@@ -5,9 +5,9 @@ b__run.o
 20160527134615
 [BOUND OBJECT FILES]
 /Users/raywong/Documents/workspace/Ada/Assignment4/measures.o
-/Users/raywong/Documents/workspace/Ada/Assignment4/Run.o
 /Users/raywong/Documents/workspace/Ada/Assignment4/Test.o
 /Users/raywong/Documents/workspace/Ada/Assignment4/accountmanagementsystem.o
+/Users/raywong/Documents/workspace/Ada/Assignment4/Run.o
 [GENERATED SOURCE FILES]
 b__run.ads
 b__run.adb

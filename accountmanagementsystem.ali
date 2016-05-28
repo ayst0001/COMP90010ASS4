@@ -1,5 +1,5 @@
 V "GNAT Lib v2015"
-A -mmacosx-version-min=10.11.4
+A -mmacosx-version-min=10.11.5
 A -gnatA
 A -mtune=core2
 A -fPIC
@@ -12,18 +12,18 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U accountmanagementsystem%b  accountmanagementsystem.adb  53c5174c NE OO PK
+U accountmanagementsystem%b  accountmanagementsystem.adb  70809f13 NE OO PK
 W ada%s			ada.ads			ada.ali
 W ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W measures%s		measures.ads		measures.ali
 W test%s		test.adb		test.ali
 
-U accountmanagementsystem%s  accountmanagementsystem.ads  80eb474a EE NE OO PK
+U accountmanagementsystem%s  accountmanagementsystem.ads  2d41738e EE NE OO PK
 W measures%s		measures.ads		measures.ali
 
-D accountmanagementsystem.ads  20160527162521 fef34c77 accountmanagementsystem%s
-D accountmanagementsystem.adb  20160527162245 9bf5bff4 accountmanagementsystem%b
+D accountmanagementsystem.ads  20160528103707 535978b3 accountmanagementsystem%s
+D accountmanagementsystem.adb  20160528105033 75d7991b accountmanagementsystem%b
 D ada.ads		20150506105328 3ffc8e18 ada%s
 D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
 D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
@@ -46,39 +46,41 @@ D s-stoele.ads		20150506105332 2dc34a04 system.storage_elements%s
 D s-traent.ads		20150506105327 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
-D test.ads		20160527155510 70b61a26 test%s
+D test.ads		20160528104710 107b8052 test%s
 X 1 accountmanagementsystem.ads
-12K9*AccountManagementSystem 206l5 206e28 2|9b14 65l5 65t28
+12K9*AccountManagementSystem 207l5 207e28 2|9b14 82l5 82t28
 17A9*UsersArray(boolean)<12|6I9> 31r12
 20A9*UserUserArray(12|6I9)<12|6I9> 35r15 36r14
 23A9*VitalsArray(12|10I9)<12|6I9> 39r13
 24A9*FootstepsArray(12|14I9)<12|6I9> 40r17
 25A9*LocationsArray(12|19R9)<12|6I9> 41r16
-28A9*UserUserBooleanArray(boolean)<12|6I9><12|6I9> 44r24 45r27 46r26
-31a4*Users{17A9} 51r28 51r43 59r14 2|18r16 19m10 59m10
-32i4*LatestUser{12|6I9} 58r13 2|58r10 59r16 60r21
-35a4*Insurers{20A9}
-36a4*Friends{20A9} 52r20 52r37 2|25r16 26m10
-39a4*Vitals{23A9} 53r20 53r36 2|32r16 33m10
-40a4*MFootsteps{24A9} 54r20 54r40 2|39r16 40m10
-41a4*Locations{25A9} 55r20 55r39 2|46r16 47m10
-44a4*VitalsPermissions{28A9}
-45a4*FootstepsPermissions{28A9}
-46a4*LocationPermissions{28A9}
-50U14*Init 2|13b14 52l8 52t12
-51i23 I<integer> 51r49
-52i15 I<integer> 52r45
-53i15 I<integer> 53r43
-54i15 I<integer> 54r51
-55i15 I<integer> 55r49
-57U14*CreateUser 57<25 2|54b14 63l8 63t18
-57i25 NewUser{12|6I9} 59r20 2|54b26 60m10
+28A9*UserUserBooleanArray(boolean)<12|6I9><12|6I9> 45r24 46r27 47r26
+31a4*Users{17A9} 52r28 52r43 65r23 65r50 2|18r16 19m10 63r11 63r29
+32i4*LatestUser{12|6I9}
+35a4*Insurers{20A9} 66r15 66r26 69r41 70r44 71r43 2|67r36 68r39 69r38 71m10
+36a4*Friends{20A9} 53r20 53r37 2|24r16 25m10
+39a4*Vitals{23A9} 54r20 54r36 2|30r16 31m10
+40a4*MFootsteps{24A9} 55r20 55r40 2|36r16 37m10
+41a4*Locations{25A9} 56r20 56r39 2|42r16 43m10
+45a4*VitalsPermissions{28A9} 69r15 2|67m10
+46a4*FootstepsPermissions{28A9} 67r15 67r38 70r15 2|68m10 74m10
+47a4*LocationPermissions{28A9} 71r15 2|69m10
+51U14*Init 2|13b14 47l8 47t12
+52i23 I<integer> 52r49
+53i15 I<integer> 53r45
+54i15 I<integer> 54r43
+55i15 I<integer> 55r51
+56i15 I<integer> 56r49
+64U14*SetInsurer 64>25 64>45 2|60b14 80l11 80t21
+64i25 Wearer{12|6I9} 65r13 66r46 69r33 69r54 70r36 70r57 71r35 71r56 2|60b25
+. 63r17 67r28 67r45 68r31 68r48 69r30 69r47 71r19 74r31
+64i45 Insurer{12|6I9} 65r39 66r56 2|60b45 63r35 71r30 74r39
 X 2 accountmanagementsystem.adb
 18i11 I<integer> 19r16
-25i11 I<integer> 26r18
-32i11 I<integer> 33r17
-39i11 I<integer> 40r21
-46i11 I<integer> 47r20
+24i11 I<integer> 25r18
+30i11 I<integer> 31r17
+36i11 I<integer> 37r21
+42i11 I<integer> 43r20
 X 3 ada.ads
 16K9*Ada 2|6r6 6r23 3|19e8
 X 8 a-textio.ads
@@ -86,11 +88,10 @@ X 8 a-textio.ads
 X 12 measures.ads
 2K9*Measures 1|4w6 4r20 2|5w6 5r20 12|25e13
 6I9*UserID<integer> 1|17r29 20r32 20r43 23r30 24r33 25r33 28r39 28r47 32r17
-. 32r27 52r50 57r39 58r26 2|26r24 54r40 58r23
-10I9*BPM<integer> 1|23r41 53r48 2|33r23
-14I9*Footsteps<integer> 1|24r44 54r56 2|40r27
+. 32r27 53r50 64r37 64r58 2|25r24 60r37 60r58
+10I9*BPM<integer> 1|23r41 54r48 2|31r23
+14I9*Footsteps<integer> 1|24r44 55r56 2|37r27
 19R9*GPSLocation 1|25r44 12|23e17
 X 25 test.ads
-1K9*Test 2|7w6 62r7 25|10e9
-4U14*Print_UserID_Status 2|62s12
+1K9*Test 2|7w6 25|11e9
 
