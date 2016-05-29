@@ -1,11 +1,91 @@
 {
   "spark": [
     {
+      "name": "AccountManagementSystem.ReadInsurer",
+      "sloc": [
+        {
+          "file": "accountmanagementsystem.ads",
+          "line": 76
+        }
+      ],
+      "spark": "all"
+    },
+    {
       "name": "AccountManagementSystem.Init",
       "sloc": [
         {
           "file": "accountmanagementsystem.ads",
           "line": 52
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "AccountManagementSystem.CreateUser",
+      "sloc": [
+        {
+          "file": "accountmanagementsystem.ads",
+          "line": 61
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "AccountManagementSystem.UpdateVitals",
+      "sloc": [
+        {
+          "file": "accountmanagementsystem.ads",
+          "line": 104
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "AccountManagementSystem.UpdateFootsteps",
+      "sloc": [
+        {
+          "file": "accountmanagementsystem.ads",
+          "line": 108
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "AccountManagementSystem.UpdateLocation",
+      "sloc": [
+        {
+          "file": "accountmanagementsystem.ads",
+          "line": 113
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "AccountManagementSystem.ReadVitals_Alt",
+      "sloc": [
+        {
+          "file": "accountmanagementsystem.ads",
+          "line": 129
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "AccountManagementSystem.ReadFootsteps",
+      "sloc": [
+        {
+          "file": "accountmanagementsystem.ads",
+          "line": 137
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "AccountManagementSystem.ReadLocation",
+      "sloc": [
+        {
+          "file": "accountmanagementsystem.ads",
+          "line": 144
         }
       ],
       "spark": "all"
@@ -24,16 +104,32 @@
   "flow": [
     {
       "file": "accountmanagementsystem.ads",
-      "line": 52,
-      "col": 14,
+      "line": 61,
+      "col": 25,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
-        "name": "AccountManagementSystem.Init",
+        "name": "AccountManagementSystem.CreateUser",
         "sloc": [
           {
             "file": "accountmanagementsystem.ads",
-            "line": 52
+            "line": 61
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 63,
+      "col": 20,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.CreateUser",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 61
           }
         ]
       }
@@ -106,6 +202,38 @@
       "file": "accountmanagementsystem.ads",
       "line": 52,
       "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 52,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 58,
+      "col": 35,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -197,22 +325,6 @@
           }
         ]
       }
-    },
-    {
-      "file": "accountmanagementsystem.ads",
-      "line": 58,
-      "col": 35,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "AccountManagementSystem.Init",
-        "sloc": [
-          {
-            "file": "accountmanagementsystem.ads",
-            "line": 52
-          }
-        ]
-      }
     }
   ],
   "proof": [
@@ -265,6 +377,22 @@
       }
     },
     {
+      "file": "accountmanagementsystem.ads",
+      "line": 111,
+      "col": 14,
+      "rule": "postcondition",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.UpdateFootsteps",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 108
+          }
+        ]
+      }
+    },
+    {
       "file": "accountmanagementsystem.adb",
       "line": 17,
       "col": 18,
@@ -276,6 +404,54 @@
           {
             "file": "accountmanagementsystem.ads",
             "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 116,
+      "col": 14,
+      "rule": "postcondition",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.UpdateLocation",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 113
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 131,
+      "col": 17,
+      "rule": "postcondition",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.ReadVitals_Alt",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 129
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 63,
+      "col": 14,
+      "rule": "postcondition",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.CreateUser",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 61
           }
         ]
       }
@@ -298,6 +474,22 @@
     },
     {
       "file": "accountmanagementsystem.adb",
+      "line": 29,
+      "col": 35,
+      "rule": "range_check",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.CreateUser",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 61
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.adb",
       "line": 16,
       "col": 19,
       "rule": "length_check",
@@ -308,6 +500,54 @@
           {
             "file": "accountmanagementsystem.ads",
             "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.adb",
+      "line": 28,
+      "col": 26,
+      "rule": "index_check",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.CreateUser",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 61
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 139,
+      "col": 17,
+      "rule": "postcondition",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.ReadFootsteps",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 137
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 146,
+      "col": 17,
+      "rule": "postcondition",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.ReadLocation",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 144
           }
         ]
       }
@@ -327,9 +567,393 @@
           }
         ]
       }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 106,
+      "col": 14,
+      "rule": "postcondition",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.UpdateVitals",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 104
+          }
+        ]
+      }
     }
   ],
   "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "AccountManagementSystem.Init",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 52
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "AccountManagementSystem.ReadFootsteps",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 137
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "AccountManagementSystem.ReadFootsteps",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 137
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "AccountManagementSystem.ReadFootsteps",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 137
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "AccountManagementSystem.UpdateFootsteps",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 108
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "AccountManagementSystem.UpdateFootsteps",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 108
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "AccountManagementSystem.UpdateFootsteps",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 108
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "AccountManagementSystem.CreateUser",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 61
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "AccountManagementSystem.CreateUser",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 61
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "AccountManagementSystem.CreateUser",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 61
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "AccountManagementSystem.ReadVitals_Alt",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 129
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "AccountManagementSystem.ReadVitals_Alt",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 129
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "AccountManagementSystem.ReadVitals_Alt",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 129
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "AccountManagementSystem.UpdateVitals",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 104
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "AccountManagementSystem.UpdateVitals",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 104
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "AccountManagementSystem.UpdateVitals",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 104
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "AccountManagementSystem.UpdateLocation",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 113
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "AccountManagementSystem.ReadLocation",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 144
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "AccountManagementSystem.UpdateLocation",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 113
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "AccountManagementSystem.UpdateLocation",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 113
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "AccountManagementSystem.ReadLocation",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 144
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "AccountManagementSystem.ReadLocation",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 144
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "AccountManagementSystem.ReadInsurer",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 76
+            }
+          ]
+        }
+      }
+    },
     {
       "assumptions": [
       ],
@@ -351,22 +975,6 @@
       ],
       "claim": {
         "predicate": "CLAIM_EFFECTS",
-        "arg": {
-          "name": "AccountManagementSystem.Init",
-          "sloc": [
-            {
-              "file": "accountmanagementsystem.ads",
-              "line": 52
-            }
-          ]
-        }
-      }
-    },
-    {
-      "assumptions": [
-      ],
-      "claim": {
-        "predicate": "CLAIM_AORTE",
         "arg": {
           "name": "AccountManagementSystem.Init",
           "sloc": [

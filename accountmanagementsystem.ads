@@ -58,9 +58,9 @@ is
      (for all I in Users'Range => MFootsteps(I) = Footsteps'First) and
      (for all I in Users'Range => Locations(I) = (0.0, 0.0));
      
---     procedure CreateUser(NewUser : out UserID) with
---       Pre => LatestUser < UserID'Last,
---       Post => Users(NewUser) = True;
+   procedure CreateUser(NewUser : out UserID) with
+     Pre => LatestUser < UserID'Last,
+     Post => Users(NewUser) = True;
 --     
 --     
    -- ** Insurer Operation, ** added some permission check
@@ -72,9 +72,9 @@ is
 --               (VitalsPermissions(Wearer, Insurers'Old(Wearer)) = False) and
 --               (FootstepsPermissions(Wearer, Insurers'Old(Wearer)) = False) and
 --               (LocationPermissions(Wearer, Insurers'Old(Wearer)) = False);
---                
---     function ReadInsurer(Wearer : in UserID) return UserID is (Insurers(Wearer));
---  
+              
+   function ReadInsurer(Wearer : in UserID) return UserID is (Insurers(Wearer));
+
 --     procedure RemoveInsurer(Wearer : in UserID) with
 --       Pre => Insurers(Wearer) /= UserID'First,
 --       Post => (Insurers = Insurers'Old'Update(Wearer => UserID'First)) and 
@@ -101,19 +101,19 @@ is
 --               (LocationPermissions(Wearer, Friends'Old(Wearer)) = False);
 --     
 --     -- Update Data
---     procedure UpdateVitals(Wearer : in UserID; NewVitals : in BPM) with
---       Pre => Wearer in Users'Range,
---       Post => Vitals = Vitals'Old'Update(Wearer => NewVitals);
---     
---     procedure UpdateFootsteps(Wearer : in UserID; NewFootsteps : in Footsteps)
---       with
---       Pre => Wearer in Users'Range,
---       Post => MFootsteps = MFootsteps'Old'Update(Wearer => NewFootsteps);
---       
---     procedure UpdateLocation(Wearer : in UserID; NewLocation : in GPSLocation) 
---       with
---       Pre => Wearer in Users'Range,
---       Post => Locations = Locations'Old'Update(Wearer => NewLocation);
+   procedure UpdateVitals(Wearer : in UserID; NewVitals : in BPM) with
+     Pre => Wearer in Users'Range,
+     Post => Vitals = Vitals'Old'Update(Wearer => NewVitals);
+   
+   procedure UpdateFootsteps(Wearer : in UserID; NewFootsteps : in Footsteps)
+     with
+     Pre => Wearer in Users'Range,
+     Post => MFootsteps = MFootsteps'Old'Update(Wearer => NewFootsteps);
+     
+   procedure UpdateLocation(Wearer : in UserID; NewLocation : in GPSLocation) 
+     with
+     Pre => Wearer in Users'Range,
+     Post => Locations = Locations'Old'Update(Wearer => NewLocation);
 --       
 --     -- An partial, incorrect specification.
 --     -- Note that there is no need for a corresponding body for this function. 
@@ -123,31 +123,31 @@ is
 --            Vitals(TargetUser)
 --         else BPM'First);
 --     
---     -- An alternative specification using postconditions. These require package
---     -- bodies, and are better suited to functions with non-trivial control flow,
---     -- and are required for functions with preconditions
---     function ReadVitals_Alt(Requester : in UserID; TargetUser : in UserID)
---                             return BPM
---     with Post => ReadVitals_Alt'Result = (if 
---                      VitalsPermissions(TargetUser, Requester)= True
---                                             then Vitals(TargetUser)
---                                             else BPM'First);
---     
---     -- ** Continued
---     function ReadFootsteps(Requester : in UserID; TargetUser : in UserID) 
---                            return Footsteps
---     with Post => ReadFootsteps'Result = (if 
---                      FootstepsPermissions(TargetUser, Requester)= True
---                                             then MFootsteps(TargetUser)
---                                             else Footsteps'First);
---     
---     function ReadLocation(Requester : in UserID; TargetUser : in UserID)
---                           return GPSLocation
---     with Post => ReadLocation'Result = (if 
---                      LocationPermissions(TargetUser, Requester)= True
---                                             then Locations(TargetUser)
---                                             else (0.0,0.0));
---            
+   -- An alternative specification using postconditions. These require package
+   -- bodies, and are better suited to functions with non-trivial control flow,
+   -- and are required for functions with preconditions
+   function ReadVitals_Alt(Requester : in UserID; TargetUser : in UserID)
+                           return BPM
+   with Post => ReadVitals_Alt'Result = (if 
+                    VitalsPermissions(TargetUser, Requester)= True
+                                           then Vitals(TargetUser)
+                                           else BPM'First);
+   
+   -- ** Continued
+   function ReadFootsteps(Requester : in UserID; TargetUser : in UserID) 
+                          return Footsteps
+   with Post => ReadFootsteps'Result = (if 
+                    FootstepsPermissions(TargetUser, Requester)= True
+                                           then MFootsteps(TargetUser)
+                                           else Footsteps'First);
+   
+   function ReadLocation(Requester : in UserID; TargetUser : in UserID)
+                         return GPSLocation
+   with Post => ReadLocation'Result = (if 
+                    LocationPermissions(TargetUser, Requester)= True
+                                           then Locations(TargetUser)
+                                           else (0.0,0.0));
+          
 --     procedure UpdateVitalsPermissions(Wearer : in UserID; 
 --    				     Other : in UserID;
 --                                       Allow : in Boolean)

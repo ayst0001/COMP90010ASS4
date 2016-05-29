@@ -9858,12 +9858,12 @@ module Accountmanagementsystem__useruserbooleanarray
 
 end
 
-(* Module for axiomatizing type "T13s" defined at accountmanagementsystem.ads:54, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L12s__T13s
+(* Module for axiomatizing type "T25s" defined at accountmanagementsystem.ads:54, created in Gnat2Why.Types.Translate_Type *)
+module Accountmanagementsystem__init__L24s__T25s
  use import "_gnatprove_standard".Main
  use import "int".Int
 
- type t13s 
+ type t25s 
  
  function first 
    :int =
@@ -9878,19 +9878,19 @@ module Accountmanagementsystem__init__L12s__T13s
   ( (first <= x) /\ (x <= last) )
  
  clone export "ada__model".Static_Discrete with
- type t = t13s, 
+ type t = t25s, 
  function first = first, 
  function last = last, 
  predicate in_range = in_range
 
 end
 
-(* Module for axiomatizing type "T15s" defined at accountmanagementsystem.ads:55, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L14s__T15s
+(* Module for axiomatizing type "T27s" defined at accountmanagementsystem.ads:55, created in Gnat2Why.Types.Translate_Type *)
+module Accountmanagementsystem__init__L26s__T27s
  use import "_gnatprove_standard".Main
  use import "int".Int
 
- type t15s 
+ type t27s 
  
  function first 
    :int =
@@ -9905,19 +9905,19 @@ module Accountmanagementsystem__init__L14s__T15s
   ( (first <= x) /\ (x <= last) )
  
  clone export "ada__model".Static_Discrete with
- type t = t15s, 
+ type t = t27s, 
  function first = first, 
  function last = last, 
  predicate in_range = in_range
 
 end
 
-(* Module for axiomatizing type "T17s" defined at accountmanagementsystem.ads:56, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L16s__T17s
+(* Module for axiomatizing type "T29s" defined at accountmanagementsystem.ads:56, created in Gnat2Why.Types.Translate_Type *)
+module Accountmanagementsystem__init__L28s__T29s
  use import "_gnatprove_standard".Main
  use import "int".Int
 
- type t17s 
+ type t29s 
  
  function first 
    :int =
@@ -9932,19 +9932,19 @@ module Accountmanagementsystem__init__L16s__T17s
   ( (first <= x) /\ (x <= last) )
  
  clone export "ada__model".Static_Discrete with
- type t = t17s, 
+ type t = t29s, 
  function first = first, 
  function last = last, 
  predicate in_range = in_range
 
 end
 
-(* Module for axiomatizing type "T19s" defined at accountmanagementsystem.ads:57, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L18s__T19s
+(* Module for axiomatizing type "T31s" defined at accountmanagementsystem.ads:57, created in Gnat2Why.Types.Translate_Type *)
+module Accountmanagementsystem__init__L30s__T31s
  use import "_gnatprove_standard".Main
  use import "int".Int
 
- type t19s 
+ type t31s 
  
  function first 
    :int =
@@ -9959,19 +9959,19 @@ module Accountmanagementsystem__init__L18s__T19s
   ( (first <= x) /\ (x <= last) )
  
  clone export "ada__model".Static_Discrete with
- type t = t19s, 
+ type t = t31s, 
  function first = first, 
  function last = last, 
  predicate in_range = in_range
 
 end
 
-(* Module for axiomatizing type "T21s" defined at accountmanagementsystem.ads:58, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L20s__T21s
+(* Module for axiomatizing type "T33s" defined at accountmanagementsystem.ads:58, created in Gnat2Why.Types.Translate_Type *)
+module Accountmanagementsystem__init__L32s__T33s
  use import "_gnatprove_standard".Main
  use import "int".Int
 
- type t21s 
+ type t33s 
  
  function first 
    :int =
@@ -9986,19 +9986,19 @@ module Accountmanagementsystem__init__L20s__T21s
   ( (first <= x) /\ (x <= last) )
  
  clone export "ada__model".Static_Discrete with
- type t = t21s, 
+ type t = t33s, 
  function first = first, 
  function last = last, 
  predicate in_range = in_range
 
 end
 
-(* Module for axiomatizing type "T23s" defined at accountmanagementsystem.ads:59, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L22s__T23s
+(* Module for axiomatizing type "T35s" defined at accountmanagementsystem.ads:59, created in Gnat2Why.Types.Translate_Type *)
+module Accountmanagementsystem__init__L34s__T35s
  use import "_gnatprove_standard".Main
  use import "int".Int
 
- type t23s 
+ type t35s 
  
  function first 
    :int =
@@ -10013,10 +10013,231 @@ module Accountmanagementsystem__init__L22s__T23s
   ( (first <= x) /\ (x <= last) )
  
  clone export "ada__model".Static_Discrete with
- type t = t23s, 
+ type t = t35s, 
  function first = first, 
  function last = last, 
  predicate in_range = in_range
+
+end
+
+(* Module for defining the constant "wearer" defined at accountmanagementsystem.ads:76, created in Gnat2Why.Decls.Translate_Constant *)
+module Accountmanagementsystem__readinsurer__wearer
+ use import "_gnatprove_standard".Main
+ use        Measures__userid
+
+ function wearer "GP_CE_Relevant" 
+   :Measures__userid.__split
+
+end
+
+(* Module giving an empty axiom for the entity "wearer" defined at accountmanagementsystem.ads:76, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__readinsurer__wearer__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "wearer" defined at accountmanagementsystem.ads:104, created in Gnat2Why.Decls.Translate_Constant *)
+module Accountmanagementsystem__updatevitals__wearer
+ use import "_gnatprove_standard".Main
+ use        Measures__userid
+
+ function wearer "GP_CE_Relevant" 
+   :Measures__userid.__split
+
+end
+
+(* Module giving an empty axiom for the entity "wearer" defined at accountmanagementsystem.ads:104, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__updatevitals__wearer__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "newvitals" defined at accountmanagementsystem.ads:104, created in Gnat2Why.Decls.Translate_Constant *)
+module Accountmanagementsystem__updatevitals__newvitals
+ use import "_gnatprove_standard".Main
+ use        Measures__bpm
+
+ function newvitals "GP_CE_Relevant" 
+   :Measures__bpm.__split
+
+end
+
+(* Module giving an empty axiom for the entity "newvitals" defined at accountmanagementsystem.ads:104, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__updatevitals__newvitals__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "wearer" defined at accountmanagementsystem.ads:108, created in Gnat2Why.Decls.Translate_Constant *)
+module Accountmanagementsystem__updatefootsteps__wearer
+ use import "_gnatprove_standard".Main
+ use        Measures__userid
+
+ function wearer "GP_CE_Relevant" 
+   :Measures__userid.__split
+
+end
+
+(* Module giving an empty axiom for the entity "wearer" defined at accountmanagementsystem.ads:108, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__updatefootsteps__wearer__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "newfootsteps" defined at accountmanagementsystem.ads:108, created in Gnat2Why.Decls.Translate_Constant *)
+module Accountmanagementsystem__updatefootsteps__newfootsteps
+ use import "_gnatprove_standard".Main
+ use        Measures__footsteps
+
+ function newfootsteps "GP_CE_Relevant" 
+   :Measures__footsteps.__split
+
+end
+
+(* Module giving an empty axiom for the entity "newfootsteps" defined at accountmanagementsystem.ads:108, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__updatefootsteps__newfootsteps__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "wearer" defined at accountmanagementsystem.ads:113, created in Gnat2Why.Decls.Translate_Constant *)
+module Accountmanagementsystem__updatelocation__wearer
+ use import "_gnatprove_standard".Main
+ use        Measures__userid
+
+ function wearer "GP_CE_Relevant" 
+   :Measures__userid.__split
+
+end
+
+(* Module giving an empty axiom for the entity "wearer" defined at accountmanagementsystem.ads:113, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__updatelocation__wearer__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "newlocation" defined at accountmanagementsystem.ads:113, created in Gnat2Why.Decls.Translate_Constant *)
+module Accountmanagementsystem__updatelocation__newlocation
+ use import "_gnatprove_standard".Main
+ use        Measures__gpslocation
+
+ function newlocation 
+   :Measures__gpslocation.gpslocation
+
+end
+
+(* Module giving an empty axiom for the entity "newlocation" defined at accountmanagementsystem.ads:113, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__updatelocation__newlocation__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "requester" defined at accountmanagementsystem.ads:129, created in Gnat2Why.Decls.Translate_Constant *)
+module Accountmanagementsystem__readvitals_alt__requester
+ use import "_gnatprove_standard".Main
+ use        Measures__userid
+
+ function requester "GP_CE_Relevant" 
+   :Measures__userid.__split
+
+end
+
+(* Module giving an empty axiom for the entity "requester" defined at accountmanagementsystem.ads:129, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__readvitals_alt__requester__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "targetuser" defined at accountmanagementsystem.ads:129, created in Gnat2Why.Decls.Translate_Constant *)
+module Accountmanagementsystem__readvitals_alt__targetuser
+ use import "_gnatprove_standard".Main
+ use        Measures__userid
+
+ function targetuser "GP_CE_Relevant" 
+   :Measures__userid.__split
+
+end
+
+(* Module giving an empty axiom for the entity "targetuser" defined at accountmanagementsystem.ads:129, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__readvitals_alt__targetuser__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "requester" defined at accountmanagementsystem.ads:137, created in Gnat2Why.Decls.Translate_Constant *)
+module Accountmanagementsystem__readfootsteps__requester
+ use import "_gnatprove_standard".Main
+ use        Measures__userid
+
+ function requester "GP_CE_Relevant" 
+   :Measures__userid.__split
+
+end
+
+(* Module giving an empty axiom for the entity "requester" defined at accountmanagementsystem.ads:137, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__readfootsteps__requester__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "targetuser" defined at accountmanagementsystem.ads:137, created in Gnat2Why.Decls.Translate_Constant *)
+module Accountmanagementsystem__readfootsteps__targetuser
+ use import "_gnatprove_standard".Main
+ use        Measures__userid
+
+ function targetuser "GP_CE_Relevant" 
+   :Measures__userid.__split
+
+end
+
+(* Module giving an empty axiom for the entity "targetuser" defined at accountmanagementsystem.ads:137, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__readfootsteps__targetuser__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "requester" defined at accountmanagementsystem.ads:144, created in Gnat2Why.Decls.Translate_Constant *)
+module Accountmanagementsystem__readlocation__requester
+ use import "_gnatprove_standard".Main
+ use        Measures__userid
+
+ function requester "GP_CE_Relevant" 
+   :Measures__userid.__split
+
+end
+
+(* Module giving an empty axiom for the entity "requester" defined at accountmanagementsystem.ads:144, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__readlocation__requester__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "targetuser" defined at accountmanagementsystem.ads:144, created in Gnat2Why.Decls.Translate_Constant *)
+module Accountmanagementsystem__readlocation__targetuser
+ use import "_gnatprove_standard".Main
+ use        Measures__userid
+
+ function targetuser "GP_CE_Relevant" 
+   :Measures__userid.__split
+
+end
+
+(* Module giving an empty axiom for the entity "targetuser" defined at accountmanagementsystem.ads:144, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__readlocation__targetuser__axiom
+ use import "_gnatprove_standard".Main
+
 
 end
 
@@ -11573,6 +11794,25 @@ module Accountmanagementsystem__locationpermissions__axiom
 
 
 end
+
+(* Module for defining a ref holding the value of variable "newuser" defined at accountmanagementsystem.ads:61, created in Gnat2Why.Decls.Translate_Variable *)
+module Accountmanagementsystem__createuser__newuser
+ use import "_gnatprove_standard".Main
+ use        Measures__userid
+
+ val newuser "GP_CE_Relevant"  : ref Measures__userid.__split
+ 
+ function attr__ATTRIBUTE_ADDRESS "GP_CE_Relevant" 
+   :int
+
+end
+
+(* Module giving an empty axiom for the entity "newuser" defined at accountmanagementsystem.ads:61, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Accountmanagementsystem__createuser__newuser__axiom
+ use import "_gnatprove_standard".Main
+
+
+end
 (* Module for possibly declaring a logic function for "read" defined at a-stream.ads:57, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Ada__streams__read
  use import "_gnatprove_standard".Main
@@ -12245,115 +12485,299 @@ module Accountmanagementsystem__init
 
 end
 
+(* Module for possibly declaring a logic function for "createuser" defined at accountmanagementsystem.ads:61, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Accountmanagementsystem__createuser
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "readinsurer" defined at accountmanagementsystem.ads:76, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Accountmanagementsystem__readinsurer
+ use        Accountmanagementsystem__insurers
+ use import "_gnatprove_standard".Main
+ use        Measures__userid
+ use        Accountmanagementsystem__useruserarray
+
+ function readinsurer 
+   (wearer : int) (accountmanagementsystem__insurers : Accountmanagementsystem__useruserarray.useruserarray)  :Measures__userid.__split
+
+end
+
+(* Module for possibly declaring a logic function for "updatevitals" defined at accountmanagementsystem.ads:104, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Accountmanagementsystem__updatevitals
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "updatefootsteps" defined at accountmanagementsystem.ads:108, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Accountmanagementsystem__updatefootsteps
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "updatelocation" defined at accountmanagementsystem.ads:113, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Accountmanagementsystem__updatelocation
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "readvitals_alt" defined at accountmanagementsystem.ads:129, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Accountmanagementsystem__readvitals_alt
+ use        Accountmanagementsystem__vitals
+ use        Accountmanagementsystem__vitalspermissions
+ use import "_gnatprove_standard".Main
+ use        Measures__bpm
+ use        Accountmanagementsystem__vitalsarray
+ use        Accountmanagementsystem__useruserbooleanarray
+
+ function readvitals_alt 
+   (requester : int) (targetuser : int) (accountmanagementsystem__vitals : Accountmanagementsystem__vitalsarray.vitalsarray) (accountmanagementsystem__vitalspermissions : Accountmanagementsystem__useruserbooleanarray.useruserbooleanarray)  :Measures__bpm.__split
+
+end
+
+(* Module for possibly declaring a logic function for "readfootsteps" defined at accountmanagementsystem.ads:137, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Accountmanagementsystem__readfootsteps
+ use        Accountmanagementsystem__mfootsteps
+ use        Accountmanagementsystem__footstepspermissions
+ use import "_gnatprove_standard".Main
+ use        Measures__footsteps
+ use        Accountmanagementsystem__footstepsarray
+ use        Accountmanagementsystem__useruserbooleanarray
+
+ function readfootsteps 
+   (requester : int) (targetuser : int) (accountmanagementsystem__mfootsteps : Accountmanagementsystem__footstepsarray.footstepsarray) (accountmanagementsystem__footstepspermissions : Accountmanagementsystem__useruserbooleanarray.useruserbooleanarray)  :Measures__footsteps.__split
+
+end
+
+(* Module for possibly declaring a logic function for "readlocation" defined at accountmanagementsystem.ads:144, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Accountmanagementsystem__readlocation
+ use        Accountmanagementsystem__locations
+ use        Accountmanagementsystem__locationpermissions
+ use import "_gnatprove_standard".Main
+ use        Measures__gpslocation
+ use        Accountmanagementsystem__locationsarray
+ use        Accountmanagementsystem__useruserbooleanarray
+
+ function readlocation 
+   (requester : int) (targetuser : int) (accountmanagementsystem__locations : Accountmanagementsystem__locationsarray.locationsarray) (accountmanagementsystem__locationpermissions : Accountmanagementsystem__useruserbooleanarray.useruserbooleanarray)  :Measures__gpslocation.gpslocation
+
+end
+
+(* Module giving a program function and a defining axiom for the expression function "readinsurer" defined at accountmanagementsystem.ads:76, created in Gnat2Why.Subprograms.Translate_Expression_Function_Body *)
+module Accountmanagementsystem__readinsurer__axiom
+ use        Accountmanagementsystem__insurers
+ use import "_gnatprove_standard".Main
+ use        Array__Int
+ use        Measures__userid
+ use        Accountmanagementsystem__useruserarray
+ use        Accountmanagementsystem__insurers
+ use        Accountmanagementsystem__readinsurer
+
+ val readinsurer 
+   (wearer : int)  :Measures__userid.__split
+  requires { true }
+  ensures { ( (result = (Accountmanagementsystem__readinsurer.readinsurer wearer !Accountmanagementsystem__insurers.insurers)) /\ (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last result) ) }
+
+ 
+ axiom readinsurer__post_axiom :
+  (forall wearer  : int.
+  (forall accountmanagementsystem__insurers  : Accountmanagementsystem__useruserarray.useruserarray [(Accountmanagementsystem__readinsurer.readinsurer wearer accountmanagementsystem__insurers)].
+   ( (Measures__userid.in_range wearer) -> (let result = (Accountmanagementsystem__readinsurer.readinsurer wearer accountmanagementsystem__insurers) in (
+    (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last result)))
+    )))
+ 
+ axiom readinsurer__def_axiom :
+  (forall wearer  : int.
+  (forall accountmanagementsystem__insurers  : Accountmanagementsystem__useruserarray.useruserarray [(Accountmanagementsystem__readinsurer.readinsurer wearer accountmanagementsystem__insurers)].
+   ( (Measures__userid.in_range wearer) -> ((Accountmanagementsystem__readinsurer.readinsurer wearer accountmanagementsystem__insurers) = (Measures__userid.to_rep (Array__Int.get accountmanagementsystem__insurers wearer))) )))
+
+end
+
+(* Module for defining the value of the update attribute at accountmanagementsystem.ads:106, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
+module Temp___standard__accountmanagementsystem_29
+ use import "_gnatprove_standard".Main
+ use        Array__Int
+ use        Measures__userid
+ use        Measures__bpm
+ use        Accountmanagementsystem__vitalsarray
+
+ function temp___standard__accountmanagementsystem_29 
+   (temp___standard__accountmanagementsystem_31 : Accountmanagementsystem__vitalsarray.vitalsarray) (temp___standard__accountmanagementsystem_32 : Measures__userid.__split) (temp___standard__accountmanagementsystem_33 : Measures__bpm.__split)  :Accountmanagementsystem__vitalsarray.vitalsarray
+ 
+ axiom def_axiom :
+  (forall temp___standard__accountmanagementsystem_31  : Accountmanagementsystem__vitalsarray.vitalsarray.
+  (forall temp___standard__accountmanagementsystem_32  : Measures__userid.__split.
+  (forall temp___standard__accountmanagementsystem_33  : Measures__bpm.__split [(temp___standard__accountmanagementsystem_29 temp___standard__accountmanagementsystem_31 temp___standard__accountmanagementsystem_32 temp___standard__accountmanagementsystem_33)].
+   (let temp___standard__accountmanagementsystem_30 = (temp___standard__accountmanagementsystem_29 temp___standard__accountmanagementsystem_31 temp___standard__accountmanagementsystem_32 temp___standard__accountmanagementsystem_33) in (
+    (forall temp___standard__accountmanagementsystem_34  : int.
+     (if ((temp___standard__accountmanagementsystem_34 = temp___standard__accountmanagementsystem_32)) then (
+      ((Array__Int.get temp___standard__accountmanagementsystem_30 temp___standard__accountmanagementsystem_34) = (Measures__bpm.of_rep temp___standard__accountmanagementsystem_33))) else (
+      ((Array__Int.get temp___standard__accountmanagementsystem_30 temp___standard__accountmanagementsystem_34) = (Array__Int.get temp___standard__accountmanagementsystem_31 temp___standard__accountmanagementsystem_34)))))))
+  )))
+
+end
+
+(* Module for defining the value of the update attribute at accountmanagementsystem.ads:111, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
+module Temp___standard__accountmanagementsystem_37
+ use import "_gnatprove_standard".Main
+ use        Array__Int
+ use        Measures__userid
+ use        Measures__footsteps
+ use        Accountmanagementsystem__footstepsarray
+
+ function temp___standard__accountmanagementsystem_37 
+   (temp___standard__accountmanagementsystem_39 : Accountmanagementsystem__footstepsarray.footstepsarray) (temp___standard__accountmanagementsystem_40 : Measures__userid.__split) (temp___standard__accountmanagementsystem_41 : Measures__footsteps.__split)  :Accountmanagementsystem__footstepsarray.footstepsarray
+ 
+ axiom def_axiom :
+  (forall temp___standard__accountmanagementsystem_39  : Accountmanagementsystem__footstepsarray.footstepsarray.
+  (forall temp___standard__accountmanagementsystem_40  : Measures__userid.__split.
+  (forall temp___standard__accountmanagementsystem_41  : Measures__footsteps.__split [(temp___standard__accountmanagementsystem_37 temp___standard__accountmanagementsystem_39 temp___standard__accountmanagementsystem_40 temp___standard__accountmanagementsystem_41)].
+   (let temp___standard__accountmanagementsystem_38 = (temp___standard__accountmanagementsystem_37 temp___standard__accountmanagementsystem_39 temp___standard__accountmanagementsystem_40 temp___standard__accountmanagementsystem_41) in (
+    (forall temp___standard__accountmanagementsystem_42  : int.
+     (if ((temp___standard__accountmanagementsystem_42 = temp___standard__accountmanagementsystem_40)) then (
+      ((Array__Int.get temp___standard__accountmanagementsystem_38 temp___standard__accountmanagementsystem_42) = (Measures__footsteps.of_rep temp___standard__accountmanagementsystem_41))) else (
+      ((Array__Int.get temp___standard__accountmanagementsystem_38 temp___standard__accountmanagementsystem_42) = (Array__Int.get temp___standard__accountmanagementsystem_39 temp___standard__accountmanagementsystem_42)))))))
+  )))
+
+end
+
+(* Module for defining the value of the update attribute at accountmanagementsystem.ads:116, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
+module Temp___standard__accountmanagementsystem_45
+ use import "_gnatprove_standard".Main
+ use        Array__Int
+ use        Measures__userid
+ use        Measures__gpslocation
+ use        Accountmanagementsystem__locationsarray
+
+ function temp___standard__accountmanagementsystem_45 
+   (temp___standard__accountmanagementsystem_47 : Accountmanagementsystem__locationsarray.locationsarray) (temp___standard__accountmanagementsystem_48 : Measures__userid.__split) (temp___standard__accountmanagementsystem_49 : Measures__gpslocation.gpslocation)  :Accountmanagementsystem__locationsarray.locationsarray
+ 
+ axiom def_axiom :
+  (forall temp___standard__accountmanagementsystem_47  : Accountmanagementsystem__locationsarray.locationsarray.
+  (forall temp___standard__accountmanagementsystem_48  : Measures__userid.__split.
+  (forall temp___standard__accountmanagementsystem_49  : Measures__gpslocation.gpslocation [(temp___standard__accountmanagementsystem_45 temp___standard__accountmanagementsystem_47 temp___standard__accountmanagementsystem_48 temp___standard__accountmanagementsystem_49)].
+   (let temp___standard__accountmanagementsystem_46 = (temp___standard__accountmanagementsystem_45 temp___standard__accountmanagementsystem_47 temp___standard__accountmanagementsystem_48 temp___standard__accountmanagementsystem_49) in (
+    (forall temp___standard__accountmanagementsystem_50  : int.
+     (if ((temp___standard__accountmanagementsystem_50 = temp___standard__accountmanagementsystem_48)) then (
+      ((Array__Int.get temp___standard__accountmanagementsystem_46 temp___standard__accountmanagementsystem_50) = temp___standard__accountmanagementsystem_49)) else (
+      ((Array__Int.get temp___standard__accountmanagementsystem_46 temp___standard__accountmanagementsystem_50) = (Array__Int.get temp___standard__accountmanagementsystem_47 temp___standard__accountmanagementsystem_50)))))))
+  )))
+
+end
+
 (* Module for defining the value of the aggregate at accountmanagementsystem.adb:15, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_62
+module Temp___standard__accountmanagementsystem_98
  use import "_gnatprove_standard".Main
  use        Array__Int
  use        Accountmanagementsystem__init__T2b
 
- function temp___standard__accountmanagementsystem_62 
-   (temp___standard__accountmanagementsystem_64 : bool)  :Accountmanagementsystem__init__T2b.t2b
+ function temp___standard__accountmanagementsystem_98 
+   (temp___standard__accountmanagementsystem_100 : bool)  :Accountmanagementsystem__init__T2b.t2b
  
  axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_64  : bool [(temp___standard__accountmanagementsystem_62 temp___standard__accountmanagementsystem_64)].
-   (let temp___standard__accountmanagementsystem_63 = (temp___standard__accountmanagementsystem_62 temp___standard__accountmanagementsystem_64) in (
-    (forall temp___standard__accountmanagementsystem_65  : int.
-     ((Array__Int.get temp___standard__accountmanagementsystem_63 temp___standard__accountmanagementsystem_65) = temp___standard__accountmanagementsystem_64))))
+  (forall temp___standard__accountmanagementsystem_100  : bool [(temp___standard__accountmanagementsystem_98 temp___standard__accountmanagementsystem_100)].
+   (let temp___standard__accountmanagementsystem_99 = (temp___standard__accountmanagementsystem_98 temp___standard__accountmanagementsystem_100) in (
+    (forall temp___standard__accountmanagementsystem_101  : int.
+     ((Array__Int.get temp___standard__accountmanagementsystem_99 temp___standard__accountmanagementsystem_101) = temp___standard__accountmanagementsystem_100))))
   )
 
 end
 
 (* Module for defining the value of the aggregate at accountmanagementsystem.adb:16, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_66
+module Temp___standard__accountmanagementsystem_102
  use import "_gnatprove_standard".Main
  use        Array__Int
  use        Measures__userid
  use        Accountmanagementsystem__init__T4b
 
- function temp___standard__accountmanagementsystem_66 
-   (temp___standard__accountmanagementsystem_68 : Measures__userid.__split)  :Accountmanagementsystem__init__T4b.t4b
+ function temp___standard__accountmanagementsystem_102 
+   (temp___standard__accountmanagementsystem_104 : Measures__userid.__split)  :Accountmanagementsystem__init__T4b.t4b
  
  axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_68  : Measures__userid.__split [(temp___standard__accountmanagementsystem_66 temp___standard__accountmanagementsystem_68)].
-   (let temp___standard__accountmanagementsystem_67 = (temp___standard__accountmanagementsystem_66 temp___standard__accountmanagementsystem_68) in (
-    (forall temp___standard__accountmanagementsystem_69  : int.
-     ((Array__Int.get temp___standard__accountmanagementsystem_67 temp___standard__accountmanagementsystem_69) = (Measures__userid.of_rep temp___standard__accountmanagementsystem_68)))))
+  (forall temp___standard__accountmanagementsystem_104  : Measures__userid.__split [(temp___standard__accountmanagementsystem_102 temp___standard__accountmanagementsystem_104)].
+   (let temp___standard__accountmanagementsystem_103 = (temp___standard__accountmanagementsystem_102 temp___standard__accountmanagementsystem_104) in (
+    (forall temp___standard__accountmanagementsystem_105  : int.
+     ((Array__Int.get temp___standard__accountmanagementsystem_103 temp___standard__accountmanagementsystem_105) = (Measures__userid.of_rep temp___standard__accountmanagementsystem_104)))))
   )
 
 end
 
 (* Module for defining the value of the aggregate at accountmanagementsystem.adb:17, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_70
+module Temp___standard__accountmanagementsystem_106
  use import "_gnatprove_standard".Main
  use        Array__Int
  use        Measures__userid
  use        Accountmanagementsystem__init__T6b
 
- function temp___standard__accountmanagementsystem_70 
-   (temp___standard__accountmanagementsystem_72 : Measures__userid.__split)  :Accountmanagementsystem__init__T6b.t6b
+ function temp___standard__accountmanagementsystem_106 
+   (temp___standard__accountmanagementsystem_108 : Measures__userid.__split)  :Accountmanagementsystem__init__T6b.t6b
  
  axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_72  : Measures__userid.__split [(temp___standard__accountmanagementsystem_70 temp___standard__accountmanagementsystem_72)].
-   (let temp___standard__accountmanagementsystem_71 = (temp___standard__accountmanagementsystem_70 temp___standard__accountmanagementsystem_72) in (
-    (forall temp___standard__accountmanagementsystem_73  : int.
-     ((Array__Int.get temp___standard__accountmanagementsystem_71 temp___standard__accountmanagementsystem_73) = (Measures__userid.of_rep temp___standard__accountmanagementsystem_72)))))
+  (forall temp___standard__accountmanagementsystem_108  : Measures__userid.__split [(temp___standard__accountmanagementsystem_106 temp___standard__accountmanagementsystem_108)].
+   (let temp___standard__accountmanagementsystem_107 = (temp___standard__accountmanagementsystem_106 temp___standard__accountmanagementsystem_108) in (
+    (forall temp___standard__accountmanagementsystem_109  : int.
+     ((Array__Int.get temp___standard__accountmanagementsystem_107 temp___standard__accountmanagementsystem_109) = (Measures__userid.of_rep temp___standard__accountmanagementsystem_108)))))
   )
 
 end
 
 (* Module for defining the value of the aggregate at accountmanagementsystem.adb:18, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_74
+module Temp___standard__accountmanagementsystem_110
  use import "_gnatprove_standard".Main
  use        Array__Int
  use        Measures__bpm
  use        Accountmanagementsystem__init__T8b
 
- function temp___standard__accountmanagementsystem_74 
-   (temp___standard__accountmanagementsystem_76 : Measures__bpm.__split)  :Accountmanagementsystem__init__T8b.t8b
+ function temp___standard__accountmanagementsystem_110 
+   (temp___standard__accountmanagementsystem_112 : Measures__bpm.__split)  :Accountmanagementsystem__init__T8b.t8b
  
  axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_76  : Measures__bpm.__split [(temp___standard__accountmanagementsystem_74 temp___standard__accountmanagementsystem_76)].
-   (let temp___standard__accountmanagementsystem_75 = (temp___standard__accountmanagementsystem_74 temp___standard__accountmanagementsystem_76) in (
-    (forall temp___standard__accountmanagementsystem_77  : int.
-     ((Array__Int.get temp___standard__accountmanagementsystem_75 temp___standard__accountmanagementsystem_77) = (Measures__bpm.of_rep temp___standard__accountmanagementsystem_76)))))
+  (forall temp___standard__accountmanagementsystem_112  : Measures__bpm.__split [(temp___standard__accountmanagementsystem_110 temp___standard__accountmanagementsystem_112)].
+   (let temp___standard__accountmanagementsystem_111 = (temp___standard__accountmanagementsystem_110 temp___standard__accountmanagementsystem_112) in (
+    (forall temp___standard__accountmanagementsystem_113  : int.
+     ((Array__Int.get temp___standard__accountmanagementsystem_111 temp___standard__accountmanagementsystem_113) = (Measures__bpm.of_rep temp___standard__accountmanagementsystem_112)))))
   )
 
 end
 
 (* Module for defining the value of the aggregate at accountmanagementsystem.adb:19, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_78
+module Temp___standard__accountmanagementsystem_114
  use import "_gnatprove_standard".Main
  use        Array__Int
  use        Measures__footsteps
  use        Accountmanagementsystem__init__T10b
 
- function temp___standard__accountmanagementsystem_78 
-   (temp___standard__accountmanagementsystem_80 : Measures__footsteps.__split)  :Accountmanagementsystem__init__T10b.t10b
+ function temp___standard__accountmanagementsystem_114 
+   (temp___standard__accountmanagementsystem_116 : Measures__footsteps.__split)  :Accountmanagementsystem__init__T10b.t10b
  
  axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_80  : Measures__footsteps.__split [(temp___standard__accountmanagementsystem_78 temp___standard__accountmanagementsystem_80)].
-   (let temp___standard__accountmanagementsystem_79 = (temp___standard__accountmanagementsystem_78 temp___standard__accountmanagementsystem_80) in (
-    (forall temp___standard__accountmanagementsystem_81  : int.
-     ((Array__Int.get temp___standard__accountmanagementsystem_79 temp___standard__accountmanagementsystem_81) = (Measures__footsteps.of_rep temp___standard__accountmanagementsystem_80)))))
+  (forall temp___standard__accountmanagementsystem_116  : Measures__footsteps.__split [(temp___standard__accountmanagementsystem_114 temp___standard__accountmanagementsystem_116)].
+   (let temp___standard__accountmanagementsystem_115 = (temp___standard__accountmanagementsystem_114 temp___standard__accountmanagementsystem_116) in (
+    (forall temp___standard__accountmanagementsystem_117  : int.
+     ((Array__Int.get temp___standard__accountmanagementsystem_115 temp___standard__accountmanagementsystem_117) = (Measures__footsteps.of_rep temp___standard__accountmanagementsystem_116)))))
   )
 
 end
 
 (* Module for defining the value of the aggregate at accountmanagementsystem.adb:20, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_82
+module Temp___standard__accountmanagementsystem_118
  use import "_gnatprove_standard".Main
  use        Array__Int
  use        Measures__gpslocation
  use        Accountmanagementsystem__init__T12b
 
- function temp___standard__accountmanagementsystem_82 
-   (temp___standard__accountmanagementsystem_84 : Measures__gpslocation.gpslocation)  :Accountmanagementsystem__init__T12b.t12b
+ function temp___standard__accountmanagementsystem_118 
+   (temp___standard__accountmanagementsystem_120 : Measures__gpslocation.gpslocation)  :Accountmanagementsystem__init__T12b.t12b
  
  axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_84  : Measures__gpslocation.gpslocation [(temp___standard__accountmanagementsystem_82 temp___standard__accountmanagementsystem_84)].
-   (let temp___standard__accountmanagementsystem_83 = (temp___standard__accountmanagementsystem_82 temp___standard__accountmanagementsystem_84) in (
-    (forall temp___standard__accountmanagementsystem_85  : int.
-     ((Array__Int.get temp___standard__accountmanagementsystem_83 temp___standard__accountmanagementsystem_85) = temp___standard__accountmanagementsystem_84))))
+  (forall temp___standard__accountmanagementsystem_120  : Measures__gpslocation.gpslocation [(temp___standard__accountmanagementsystem_118 temp___standard__accountmanagementsystem_120)].
+   (let temp___standard__accountmanagementsystem_119 = (temp___standard__accountmanagementsystem_118 temp___standard__accountmanagementsystem_120) in (
+    (forall temp___standard__accountmanagementsystem_121  : int.
+     ((Array__Int.get temp___standard__accountmanagementsystem_119 temp___standard__accountmanagementsystem_121) = temp___standard__accountmanagementsystem_120))))
   )
 
 end
@@ -14200,43 +14624,43 @@ module Accountmanagementsystem__useruserbooleanarray__axiom
 
 end
 
-(* Module giving axioms for the type entity "T13s" defined at accountmanagementsystem.ads:54, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L12s__T13s__axiom
+(* Module giving axioms for the type entity "T25s" defined at accountmanagementsystem.ads:54, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Accountmanagementsystem__init__L24s__T25s__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "T15s" defined at accountmanagementsystem.ads:55, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L14s__T15s__axiom
+(* Module giving axioms for the type entity "T27s" defined at accountmanagementsystem.ads:55, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Accountmanagementsystem__init__L26s__T27s__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "T17s" defined at accountmanagementsystem.ads:56, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L16s__T17s__axiom
+(* Module giving axioms for the type entity "T29s" defined at accountmanagementsystem.ads:56, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Accountmanagementsystem__init__L28s__T29s__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "T19s" defined at accountmanagementsystem.ads:57, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L18s__T19s__axiom
+(* Module giving axioms for the type entity "T31s" defined at accountmanagementsystem.ads:57, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Accountmanagementsystem__init__L30s__T31s__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "T21s" defined at accountmanagementsystem.ads:58, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L20s__T21s__axiom
+(* Module giving axioms for the type entity "T33s" defined at accountmanagementsystem.ads:58, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Accountmanagementsystem__init__L32s__T33s__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "T23s" defined at accountmanagementsystem.ads:59, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L22s__T23s__axiom
+(* Module giving axioms for the type entity "T35s" defined at accountmanagementsystem.ads:59, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Accountmanagementsystem__init__L34s__T35s__axiom
  use import "_gnatprove_standard".Main
 
 
@@ -16962,6 +17386,213 @@ module Accountmanagementsystem__init__axiom
 
 end
 
+(* Module for declaring a program function (and possibly an axiom) for "createuser" defined at accountmanagementsystem.ads:61, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Accountmanagementsystem__createuser__axiom
+ use        Accountmanagementsystem__users
+ use        Accountmanagementsystem__latestuser
+ use        Accountmanagementsystem__users
+ use        Accountmanagementsystem__latestuser
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Array__Int
+ use        Measures__userid
+ use        Accountmanagementsystem__usersarray
+ use        Accountmanagementsystem__users
+ use        Accountmanagementsystem__latestuser
+
+ val createuser 
+   (newuser : ref Measures__userid.__split)  :unit
+  requires { (!Accountmanagementsystem__latestuser.latestuser < 100) }
+  ensures { ( ( ((Array__Int.get !Accountmanagementsystem__users.users !newuser) = True) <-> true ) /\ ( (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last !newuser) /\ (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last !Accountmanagementsystem__latestuser.latestuser) ) ) }
+  reads {Accountmanagementsystem__users.users, Accountmanagementsystem__latestuser.latestuser }
+  writes {Accountmanagementsystem__users.users, Accountmanagementsystem__latestuser.latestuser, newuser }
+
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "updatevitals" defined at accountmanagementsystem.ads:104, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Accountmanagementsystem__updatevitals__axiom
+ use        Accountmanagementsystem__vitals
+ use        Accountmanagementsystem__vitals
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Array__Int
+ use        Measures__userid
+ use        Accountmanagementsystem__vitalsarray
+ use        Accountmanagementsystem__vitals
+ use        Temp___standard__accountmanagementsystem_29
+
+ val updatevitals 
+   (wearer : int) (newvitals : int)  :unit
+  requires { ( (( -1 ) <= wearer) /\ (wearer <= 100) ) }
+  ensures { ((let temp___standard__accountmanagementsystem_35 = (Temp___standard__accountmanagementsystem_29.temp___standard__accountmanagementsystem_29 (old !Accountmanagementsystem__vitals.vitals ) wearer newvitals) in (
+   (Array__Int.bool_eq !Accountmanagementsystem__vitals.vitals Measures__userid.first Measures__userid.last temp___standard__accountmanagementsystem_35 Measures__userid.first Measures__userid.last)))
+   = True) }
+  reads {Accountmanagementsystem__vitals.vitals }
+  writes {Accountmanagementsystem__vitals.vitals }
+
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "updatefootsteps" defined at accountmanagementsystem.ads:108, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Accountmanagementsystem__updatefootsteps__axiom
+ use        Accountmanagementsystem__mfootsteps
+ use        Accountmanagementsystem__mfootsteps
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Array__Int
+ use        Measures__userid
+ use        Accountmanagementsystem__footstepsarray
+ use        Accountmanagementsystem__mfootsteps
+ use        Temp___standard__accountmanagementsystem_37
+
+ val updatefootsteps 
+   (wearer : int) (newfootsteps : int)  :unit
+  requires { ( (( -1 ) <= wearer) /\ (wearer <= 100) ) }
+  ensures { ((let temp___standard__accountmanagementsystem_43 = (Temp___standard__accountmanagementsystem_37.temp___standard__accountmanagementsystem_37 (old !Accountmanagementsystem__mfootsteps.mfootsteps ) wearer newfootsteps) in (
+   (Array__Int.bool_eq !Accountmanagementsystem__mfootsteps.mfootsteps Measures__userid.first Measures__userid.last temp___standard__accountmanagementsystem_43 Measures__userid.first Measures__userid.last)))
+   = True) }
+  reads {Accountmanagementsystem__mfootsteps.mfootsteps }
+  writes {Accountmanagementsystem__mfootsteps.mfootsteps }
+
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "updatelocation" defined at accountmanagementsystem.ads:113, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Accountmanagementsystem__updatelocation__axiom
+ use        Accountmanagementsystem__locations
+ use        Accountmanagementsystem__locations
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Array__Int
+ use        Measures__userid
+ use        Measures__gpslocation
+ use        Accountmanagementsystem__locationsarray
+ use        Accountmanagementsystem__locations
+ use        Temp___standard__accountmanagementsystem_45
+
+ val updatelocation 
+   (wearer : int) (newlocation : Measures__gpslocation.gpslocation)  :unit
+  requires { ( (( -1 ) <= wearer) /\ (wearer <= 100) ) }
+  ensures { ((let temp___standard__accountmanagementsystem_51 = (Temp___standard__accountmanagementsystem_45.temp___standard__accountmanagementsystem_45 (old !Accountmanagementsystem__locations.locations ) wearer newlocation) in (
+   (Array__Int.bool_eq !Accountmanagementsystem__locations.locations Measures__userid.first Measures__userid.last temp___standard__accountmanagementsystem_51 Measures__userid.first Measures__userid.last)))
+   = True) }
+  reads {Accountmanagementsystem__locations.locations }
+  writes {Accountmanagementsystem__locations.locations }
+
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "readvitals_alt" defined at accountmanagementsystem.ads:129, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Accountmanagementsystem__readvitals_alt__axiom
+ use        Accountmanagementsystem__vitals
+ use        Accountmanagementsystem__vitalspermissions
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Array__Int
+ use        Measures__userid
+ use        Measures__bpm
+ use        Accountmanagementsystem__vitalsarray
+ use        Array__Int_Int
+ use        Accountmanagementsystem__useruserbooleanarray
+ use        Accountmanagementsystem__vitals
+ use        Accountmanagementsystem__vitalspermissions
+ use        Accountmanagementsystem__readvitals_alt
+
+ val readvitals_alt 
+   (requester : int) (targetuser : int)  :Measures__bpm.__split
+  requires { true }
+  ensures { ( (result = (Accountmanagementsystem__readvitals_alt.readvitals_alt requester targetuser !Accountmanagementsystem__vitals.vitals !Accountmanagementsystem__vitalspermissions.vitalspermissions)) /\ ( (Measures__bpm.dynamic_property Measures__bpm.first Measures__bpm.last result) /\ (result = (if (( ((Array__Int_Int.get !Accountmanagementsystem__vitalspermissions.vitalspermissions targetuser requester) = True) <-> true )) then (
+   (Measures__bpm.to_rep (Array__Int.get !Accountmanagementsystem__vitals.vitals targetuser))) else (
+   ( -1 )))) ) ) }
+
+ 
+ axiom readvitals_alt__post_axiom :
+  (forall requester targetuser  : int.
+  (forall accountmanagementsystem__vitals  : Accountmanagementsystem__vitalsarray.vitalsarray.
+  (forall accountmanagementsystem__vitalspermissions  : Accountmanagementsystem__useruserbooleanarray.useruserbooleanarray [(Accountmanagementsystem__readvitals_alt.readvitals_alt requester targetuser accountmanagementsystem__vitals accountmanagementsystem__vitalspermissions)].
+   ( ( (Measures__userid.in_range requester) /\ (Measures__userid.in_range targetuser) ) -> (let result = (Accountmanagementsystem__readvitals_alt.readvitals_alt requester targetuser accountmanagementsystem__vitals accountmanagementsystem__vitalspermissions) in (
+    ( (result = (if (( ((Array__Int_Int.get accountmanagementsystem__vitalspermissions targetuser requester) = True) <-> true )) then (
+     (Measures__bpm.to_rep (Array__Int.get accountmanagementsystem__vitals targetuser))) else (
+     ( -1 )))) /\ (Measures__bpm.dynamic_property Measures__bpm.first Measures__bpm.last result) )))
+    ))))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "readfootsteps" defined at accountmanagementsystem.ads:137, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Accountmanagementsystem__readfootsteps__axiom
+ use        Accountmanagementsystem__mfootsteps
+ use        Accountmanagementsystem__footstepspermissions
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Array__Int
+ use        Measures__userid
+ use        Measures__footsteps
+ use        Accountmanagementsystem__footstepsarray
+ use        Array__Int_Int
+ use        Accountmanagementsystem__useruserbooleanarray
+ use        Accountmanagementsystem__mfootsteps
+ use        Accountmanagementsystem__footstepspermissions
+ use        Accountmanagementsystem__readfootsteps
+
+ val readfootsteps 
+   (requester : int) (targetuser : int)  :Measures__footsteps.__split
+  requires { true }
+  ensures { ( (result = (Accountmanagementsystem__readfootsteps.readfootsteps requester targetuser !Accountmanagementsystem__mfootsteps.mfootsteps !Accountmanagementsystem__footstepspermissions.footstepspermissions)) /\ ( (Measures__footsteps.dynamic_property Measures__footsteps.first Measures__footsteps.last result) /\ (result = (if (( ((Array__Int_Int.get !Accountmanagementsystem__footstepspermissions.footstepspermissions targetuser requester) = True) <-> true )) then (
+   (Measures__footsteps.to_rep (Array__Int.get !Accountmanagementsystem__mfootsteps.mfootsteps targetuser))) else (
+   0))) ) ) }
+
+ 
+ axiom readfootsteps__post_axiom :
+  (forall requester targetuser  : int.
+  (forall accountmanagementsystem__mfootsteps  : Accountmanagementsystem__footstepsarray.footstepsarray.
+  (forall accountmanagementsystem__footstepspermissions  : Accountmanagementsystem__useruserbooleanarray.useruserbooleanarray [(Accountmanagementsystem__readfootsteps.readfootsteps requester targetuser accountmanagementsystem__mfootsteps accountmanagementsystem__footstepspermissions)].
+   ( ( (Measures__userid.in_range requester) /\ (Measures__userid.in_range targetuser) ) -> (let result = (Accountmanagementsystem__readfootsteps.readfootsteps requester targetuser accountmanagementsystem__mfootsteps accountmanagementsystem__footstepspermissions) in (
+    ( (result = (if (( ((Array__Int_Int.get accountmanagementsystem__footstepspermissions targetuser requester) = True) <-> true )) then (
+     (Measures__footsteps.to_rep (Array__Int.get accountmanagementsystem__mfootsteps targetuser))) else (
+     0))) /\ (Measures__footsteps.dynamic_property Measures__footsteps.first Measures__footsteps.last result) )))
+    ))))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "readlocation" defined at accountmanagementsystem.ads:144, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Accountmanagementsystem__readlocation__axiom
+ use        Accountmanagementsystem__locations
+ use        Accountmanagementsystem__locationpermissions
+ use import "_gnatprove_standard".Main
+ use import "real".RealInfix
+ use        Array__Int
+ use        Measures__userid
+ use        Measures__latitude
+ use        Measures__longitude
+ use        Measures__gpslocation
+ use        Accountmanagementsystem__locationsarray
+ use        Array__Int_Int
+ use        Accountmanagementsystem__useruserbooleanarray
+ use        Accountmanagementsystem__locations
+ use        Accountmanagementsystem__locationpermissions
+ use        Accountmanagementsystem__readlocation
+
+ val readlocation 
+   (requester : int) (targetuser : int)  :Measures__gpslocation.gpslocation
+  requires { true }
+  ensures { ( (result = (Accountmanagementsystem__readlocation.readlocation requester targetuser !Accountmanagementsystem__locations.locations !Accountmanagementsystem__locationpermissions.locationpermissions)) /\ ((Measures__gpslocation.bool_eq result (if (( ((Array__Int_Int.get !Accountmanagementsystem__locationpermissions.locationpermissions targetuser requester) = True) <-> true )) then (
+   (Array__Int.get !Accountmanagementsystem__locations.locations targetuser)) else (
+   { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real (0.0E-1)); Measures__gpslocation.rec__long = (Measures__longitude.of_real (0.0E-1)) } }))) = True) ) }
+
+ 
+ axiom readlocation__post_axiom :
+  (forall requester targetuser  : int.
+  (forall accountmanagementsystem__locations  : Accountmanagementsystem__locationsarray.locationsarray.
+  (forall accountmanagementsystem__locationpermissions  : Accountmanagementsystem__useruserbooleanarray.useruserbooleanarray [(Accountmanagementsystem__readlocation.readlocation requester targetuser accountmanagementsystem__locations accountmanagementsystem__locationpermissions)].
+   ( ( (Measures__userid.in_range requester) /\ (Measures__userid.in_range targetuser) ) -> (let result = (Accountmanagementsystem__readlocation.readlocation requester targetuser accountmanagementsystem__locations accountmanagementsystem__locationpermissions) in (
+    ((Measures__gpslocation.bool_eq result (if (( ((Array__Int_Int.get accountmanagementsystem__locationpermissions targetuser requester) = True) <-> true )) then (
+     (Array__Int.get accountmanagementsystem__locations targetuser)) else (
+     { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real (0.0E-1)); Measures__gpslocation.rec__long = (Measures__longitude.of_real (0.0E-1)) } }))) = True)))
+    ))))
+
+end
+
 (* Module for checking absence of run-time errors and package initial condition on package elaboration of "accountmanagementsystem" defined at accountmanagementsystem.ads:13, created in Gnat2Why.Subprograms.Generate_VCs_For_Package_Elaboration *)
 module Accountmanagementsystem__package_def
  use import "_gnatprove_standard".Main
@@ -17014,13 +17645,13 @@ module Accountmanagementsystem__package_def
   abstract ensures {true}(Main.___ignore((if (((if ((Measures__userid.first <= Measures__userid.last)) then (
    ((Measures__userid.last - Measures__userid.first) + 1)) else (
    0)) > 0)) then (
-   abstract ensures {true}(Main.___ignore((let temp___standard__accountmanagementsystem_41 = (any Measures__gpslocation.gpslocation
+   abstract ensures {true}(Main.___ignore((let temp___standard__accountmanagementsystem_77 = (any Measures__gpslocation.gpslocation
    requires {true} 
    ensures {true} 
    ) in (
-    ( (if ((Measures__gpslocation.lat__pred(temp___standard__accountmanagementsystem_41))) then (
+    ( (if ((Measures__gpslocation.lat__pred(temp___standard__accountmanagementsystem_77))) then (
      abstract ensures {true}(Main.___ignore(())) end ));
-    (if ((Measures__gpslocation.long__pred(temp___standard__accountmanagementsystem_41))) then (
+    (if ((Measures__gpslocation.long__pred(temp___standard__accountmanagementsystem_77))) then (
      abstract ensures {true}(Main.___ignore(())) end )) )))
    )) end )))) end ;
   abstract ensures {true}(Main.___ignore((if ((Boolean.andb(((if ((Measures__userid.first <= Measures__userid.last)) then (
@@ -17041,7 +17672,7 @@ module Accountmanagementsystem__package_def
    ((Measures__userid.last - Measures__userid.first) + 1)) else (
    0)) > 0)))) then (
    abstract ensures {true}(Main.___ignore(())) end )))) end ;
-  ( "GP_Sloc:accountmanagementsystem.adb:270:1" () ) ) ) )
+  ( "GP_Sloc:accountmanagementsystem.adb:261:1" () ) ) ) )
 end
 
 (* Module for checking contracts and absence of run-time errors in subprogram "init" defined at accountmanagementsystem.ads:52, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
@@ -17082,12 +17713,12 @@ module Accountmanagementsystem__init__subprogram_def
  use        Accountmanagementsystem__init__T10b
  use        Accountmanagementsystem__init__T11b
  use        Accountmanagementsystem__init__T12b
- use        Temp___standard__accountmanagementsystem_62
- use        Temp___standard__accountmanagementsystem_66
- use        Temp___standard__accountmanagementsystem_70
- use        Temp___standard__accountmanagementsystem_74
- use        Temp___standard__accountmanagementsystem_78
- use        Temp___standard__accountmanagementsystem_82
+ use        Temp___standard__accountmanagementsystem_98
+ use        Temp___standard__accountmanagementsystem_102
+ use        Temp___standard__accountmanagementsystem_106
+ use        Temp___standard__accountmanagementsystem_110
+ use        Temp___standard__accountmanagementsystem_114
+ use        Temp___standard__accountmanagementsystem_118
  use        Accountmanagementsystem__usersarray__axiom
  use        Accountmanagementsystem__useruserarray__axiom
  use        Accountmanagementsystem__vitalsarray__axiom
@@ -17123,12 +17754,12 @@ module Accountmanagementsystem__init__subprogram_def
   requires { true }
   ensures { ( "GP_Reason:VC_POSTCONDITION" "GP_Id:0" "GP_Sloc:accountmanagementsystem.ads:54:6" "comment:     (for all I in Users'Range => Users(I) = False) and
      ^ accountmanagementsystem.ads:54:6:VC_POSTCONDITION" "GP_Shape:pragargs__and" "keep_on_simp" ( ( ( ( ( (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2612" "GP_Sloc:accountmanagementsystem.ads:54:35" ( ((Array__Int.get !Accountmanagementsystem__users.users i) = True) <-> false ) ) )) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2629" "GP_Sloc:accountmanagementsystem.ads:55:35" ((Measures__userid.to_rep (Array__Int.get !Accountmanagementsystem__friends.friends i)) = ( -1 )) ) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2648" "GP_Sloc:accountmanagementsystem.ads:56:35" ((Measures__userid.to_rep (Array__Int.get !Accountmanagementsystem__insurers.insurers i)) = ( -1 )) ) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2667" "GP_Sloc:accountmanagementsystem.ads:57:35" ((Measures__bpm.to_rep (Array__Int.get !Accountmanagementsystem__vitals.vitals i)) = ( -1 )) ) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2686" "GP_Sloc:accountmanagementsystem.ads:58:35" ((Measures__footsteps.to_rep (Array__Int.get !Accountmanagementsystem__mfootsteps.mfootsteps i)) = 0) ) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2704" "GP_Sloc:accountmanagementsystem.ads:59:35" ((Measures__gpslocation.bool_eq (Array__Int.get !Accountmanagementsystem__locations.locations i) { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real (0.0E-1)); Measures__gpslocation.rec__long = (Measures__longitude.of_real (0.0E-1)) } }) = True) ) )) ) ) }
+   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2889" "GP_Sloc:accountmanagementsystem.ads:54:35" ( ((Array__Int.get !Accountmanagementsystem__users.users i) = True) <-> false ) ) )) /\ (forall i  : int.
+   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2906" "GP_Sloc:accountmanagementsystem.ads:55:35" ((Measures__userid.to_rep (Array__Int.get !Accountmanagementsystem__friends.friends i)) = ( -1 )) ) )) ) /\ (forall i  : int.
+   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2925" "GP_Sloc:accountmanagementsystem.ads:56:35" ((Measures__userid.to_rep (Array__Int.get !Accountmanagementsystem__insurers.insurers i)) = ( -1 )) ) )) ) /\ (forall i  : int.
+   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2944" "GP_Sloc:accountmanagementsystem.ads:57:35" ((Measures__bpm.to_rep (Array__Int.get !Accountmanagementsystem__vitals.vitals i)) = ( -1 )) ) )) ) /\ (forall i  : int.
+   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2963" "GP_Sloc:accountmanagementsystem.ads:58:35" ((Measures__footsteps.to_rep (Array__Int.get !Accountmanagementsystem__mfootsteps.mfootsteps i)) = 0) ) )) ) /\ (forall i  : int.
+   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2981" "GP_Sloc:accountmanagementsystem.ads:59:35" ((Measures__gpslocation.bool_eq (Array__Int.get !Accountmanagementsystem__locations.locations i) { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real (0.0E-1)); Measures__gpslocation.rec__long = (Measures__longitude.of_real (0.0E-1)) } }) = True) ) )) ) ) }
 
    =
   ( () (* Assume dynamic property of params of the subprogram accountmanagementsystem.ads:52 *)
@@ -17152,42 +17783,42 @@ module Accountmanagementsystem__init__subprogram_def
     0)) = (if ((Measures__userid.first <= Measures__userid.last)) then (
     ((Measures__userid.last - Measures__userid.first) + 1)) else (
     0))) ) };
-   (Temp___standard__accountmanagementsystem_62.temp___standard__accountmanagementsystem_62((Boolean.of_int(0)))) ) ) );
+   (Temp___standard__accountmanagementsystem_98.temp___standard__accountmanagementsystem_98((Boolean.of_int(0)))) ) ) );
    ( "GP_Sloc:accountmanagementsystem.adb:16:16" Accountmanagementsystem__insurers.insurers := ( ( assert { ( "keep_on_simp" "GP_Reason:VC_LENGTH_CHECK" "GP_Id:2" "GP_Sloc:accountmanagementsystem.adb:16:19" "comment:      Insurers := (others => UserID'First);
                   ^ accountmanagementsystem.adb:16:19:VC_LENGTH_CHECK" "GP_Shape:insurers_assign__aggr" ((if ((Accountmanagementsystem__init__T3b.first <= Accountmanagementsystem__init__T3b.last)) then (
     ((Accountmanagementsystem__init__T3b.last - Accountmanagementsystem__init__T3b.first) + 1)) else (
     0)) = (if ((Measures__userid.first <= Measures__userid.last)) then (
     ((Measures__userid.last - Measures__userid.first) + 1)) else (
     0))) ) };
-   (Temp___standard__accountmanagementsystem_66.temp___standard__accountmanagementsystem_66(( -1 ))) ) ) );
+   (Temp___standard__accountmanagementsystem_102.temp___standard__accountmanagementsystem_102(( -1 ))) ) ) );
    ( "GP_Sloc:accountmanagementsystem.adb:17:15" Accountmanagementsystem__friends.friends := ( ( assert { ( "keep_on_simp" "GP_Reason:VC_LENGTH_CHECK" "GP_Id:3" "GP_Sloc:accountmanagementsystem.adb:17:18" "comment:      Friends := (others => UserID'First);
                  ^ accountmanagementsystem.adb:17:18:VC_LENGTH_CHECK" "GP_Shape:friends_assign__aggr" ((if ((Accountmanagementsystem__init__T5b.first <= Accountmanagementsystem__init__T5b.last)) then (
     ((Accountmanagementsystem__init__T5b.last - Accountmanagementsystem__init__T5b.first) + 1)) else (
     0)) = (if ((Measures__userid.first <= Measures__userid.last)) then (
     ((Measures__userid.last - Measures__userid.first) + 1)) else (
     0))) ) };
-   (Temp___standard__accountmanagementsystem_70.temp___standard__accountmanagementsystem_70(( -1 ))) ) ) );
+   (Temp___standard__accountmanagementsystem_106.temp___standard__accountmanagementsystem_106(( -1 ))) ) ) );
    ( "GP_Sloc:accountmanagementsystem.adb:18:14" Accountmanagementsystem__vitals.vitals := ( ( assert { ( "keep_on_simp" "GP_Reason:VC_LENGTH_CHECK" "GP_Id:4" "GP_Sloc:accountmanagementsystem.adb:18:17" "comment:      Vitals := (others => BPM'First);
                 ^ accountmanagementsystem.adb:18:17:VC_LENGTH_CHECK" "GP_Shape:vitals_assign__aggr" ((if ((Accountmanagementsystem__init__T7b.first <= Accountmanagementsystem__init__T7b.last)) then (
     ((Accountmanagementsystem__init__T7b.last - Accountmanagementsystem__init__T7b.first) + 1)) else (
     0)) = (if ((Measures__userid.first <= Measures__userid.last)) then (
     ((Measures__userid.last - Measures__userid.first) + 1)) else (
     0))) ) };
-   (Temp___standard__accountmanagementsystem_74.temp___standard__accountmanagementsystem_74(( -1 ))) ) ) );
+   (Temp___standard__accountmanagementsystem_110.temp___standard__accountmanagementsystem_110(( -1 ))) ) ) );
    ( "GP_Sloc:accountmanagementsystem.adb:19:18" Accountmanagementsystem__mfootsteps.mfootsteps := ( ( assert { ( "keep_on_simp" "GP_Reason:VC_LENGTH_CHECK" "GP_Id:5" "GP_Sloc:accountmanagementsystem.adb:19:21" "comment:      MFootsteps := (others => Footsteps'First);
                     ^ accountmanagementsystem.adb:19:21:VC_LENGTH_CHECK" "GP_Shape:mfootsteps_assign__aggr" ((if ((Accountmanagementsystem__init__T9b.first <= Accountmanagementsystem__init__T9b.last)) then (
     ((Accountmanagementsystem__init__T9b.last - Accountmanagementsystem__init__T9b.first) + 1)) else (
     0)) = (if ((Measures__userid.first <= Measures__userid.last)) then (
     ((Measures__userid.last - Measures__userid.first) + 1)) else (
     0))) ) };
-   (Temp___standard__accountmanagementsystem_78.temp___standard__accountmanagementsystem_78(0)) ) ) );
+   (Temp___standard__accountmanagementsystem_114.temp___standard__accountmanagementsystem_114(0)) ) ) );
    ( "GP_Sloc:accountmanagementsystem.adb:20:17" Accountmanagementsystem__locations.locations := ( ( assert { ( "keep_on_simp" "GP_Reason:VC_LENGTH_CHECK" "GP_Id:6" "GP_Sloc:accountmanagementsystem.adb:20:20" "comment:      Locations := (others => (0.0, 0.0));
                    ^ accountmanagementsystem.adb:20:20:VC_LENGTH_CHECK" "GP_Shape:locations_assign__aggr" ((if ((Accountmanagementsystem__init__T11b.first <= Accountmanagementsystem__init__T11b.last)) then (
     ((Accountmanagementsystem__init__T11b.last - Accountmanagementsystem__init__T11b.first) + 1)) else (
     0)) = (if ((Measures__userid.first <= Measures__userid.last)) then (
     ((Measures__userid.last - Measures__userid.first) + 1)) else (
     0))) ) };
-   (Temp___standard__accountmanagementsystem_82.temp___standard__accountmanagementsystem_82({ Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real((0.0E-1))); Measures__gpslocation.rec__long = (Measures__longitude.of_real((0.0E-1))) } })) ) ) );
+   (Temp___standard__accountmanagementsystem_118.temp___standard__accountmanagementsystem_118({ Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real((0.0E-1))); Measures__gpslocation.rec__long = (Measures__longitude.of_real((0.0E-1))) } })) ) ) );
    raise Return__exc )
   with
    Return__exc -> ()
@@ -17249,4 +17880,532 @@ module Accountmanagementsystem__init__subprogram_def
   ensures {( (result = True) <-> (forall i  : int.
    ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__gpslocation.bool_eq (Array__Int.get !Accountmanagementsystem__locations.locations i) { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real (0.0E-1)); Measures__gpslocation.rec__long = (Measures__longitude.of_real (0.0E-1)) } }) = True) )) )} 
   ) ))))) end  ) )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "createuser" defined at accountmanagementsystem.ads:61, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Accountmanagementsystem__createuser__subprogram_def
+ use import "int".Int
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Boolean
+ use        Array__Int
+ use        Measures__userid
+ use        Accountmanagementsystem__usersarray
+ use        Accountmanagementsystem__users
+ use        Accountmanagementsystem__latestuser
+ use        Accountmanagementsystem__createuser__newuser
+ use        Accountmanagementsystem__usersarray__axiom
+ use        Accountmanagementsystem__users__axiom
+ use        Accountmanagementsystem__latestuser__axiom
+ use        Accountmanagementsystem__createuser__newuser__axiom
+ use        Measures__userid__axiom
+
+ let def "W:diverges:N" "GP_Subp:accountmanagementsystem.ads:61" 
+   (__void_param : unit) 
+  requires { true }
+  ensures { ( "GP_Reason:VC_POSTCONDITION" "keep_on_simp" "GP_Sloc:accountmanagementsystem.ads:63:14" "GP_Id:7" "comment:     Post => Users(NewUser) = True;
+             ^ accountmanagementsystem.ads:63:14:VC_POSTCONDITION" "GP_Shape:pragargs__cmp" ( "GP_Pretty_Ada:14505" "GP_Sloc:accountmanagementsystem.ads:63:14" ( ((Array__Int.get !Accountmanagementsystem__users.users !Accountmanagementsystem__createuser__newuser.newuser) = True) <-> true ) ) ) }
+
+   =
+  ( ( () (* Assume dynamic property of params of the subprogram accountmanagementsystem.ads:61 *)
+  ;
+  assume { (if ((Measures__userid.first <= Measures__userid.last)) then (
+   (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last !Accountmanagementsystem__latestuser.latestuser)) else true) };
+  assume { (if ((Measures__userid.first <= Measures__userid.last)) then (
+   (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last !Accountmanagementsystem__createuser__newuser.newuser)) else true) } );
+  ( ( () (* Declarations introduced by the compiler at the beginning of the subprogram accountmanagementsystem.ads:61 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram accountmanagementsystem.ads:61 *)
+  ;
+  abstract ensures {true}(Main.___ignore((!Accountmanagementsystem__latestuser.latestuser < 100))) end ;
+  () (* Assume Pre of the subprogram accountmanagementsystem.ads:61 *)
+  ;
+  assume { (!Accountmanagementsystem__latestuser.latestuser < 100) } );
+  ( () (* Check additional Pres of the subprogram accountmanagementsystem.ads:61 *)
+  ;
+  () (* Body of the subprogram accountmanagementsystem.ads:61 *)
+  ;
+  try
+   ( ( "GP_Sloc:accountmanagementsystem.adb:27:7" (if ((!Accountmanagementsystem__latestuser.latestuser < 100)) then (
+    ( ( "GP_Sloc:accountmanagementsystem.adb:28:30" Accountmanagementsystem__users.users := ( (Array__Int.set(!Accountmanagementsystem__users.users) ((let temp___standard__accountmanagementsystem_128 = (!Accountmanagementsystem__latestuser.latestuser + 1) in (
+     ( assert { ( "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Id:8" "GP_Sloc:accountmanagementsystem.adb:28:26" "comment:         Users(LatestUser+1) := True;
+                         ^ accountmanagementsystem.adb:28:26:VC_INDEX_CHECK" "GP_Shape:if__users_assign__ixdcomp__add" ( (Measures__userid.first <= temp___standard__accountmanagementsystem_128) /\ (temp___standard__accountmanagementsystem_128 <= Measures__userid.last) ) ) };
+     temp___standard__accountmanagementsystem_128 )))
+    ) ((Boolean.of_int(1)))) ) );
+    ( "GP_Sloc:accountmanagementsystem.adb:29:21" Accountmanagementsystem__latestuser.latestuser := ( ( "keep_on_simp" "GP_Reason:VC_RANGE_CHECK" "GP_Id:9" "GP_Sloc:accountmanagementsystem.adb:29:35" "comment:         LatestUser := LatestUser + 1;
+                                  ^ accountmanagementsystem.adb:29:35:VC_RANGE_CHECK" "GP_Shape:if__latestuser_assign__add" (Measures__userid.range_check_((!Accountmanagementsystem__latestuser.latestuser + 1))) ) ) );
+    ( "GP_Sloc:accountmanagementsystem.adb:30:18" Accountmanagementsystem__createuser__newuser.newuser := ( !Accountmanagementsystem__latestuser.latestuser ) ) )) else (
+    ( "GP_Sloc:accountmanagementsystem.adb:32:18" Accountmanagementsystem__createuser__newuser.newuser := ( ( -1 ) ) ))) );
+   raise Return__exc )
+  with
+   Return__exc -> ()
+  end;
+  () (* Check additional Posts and RTE in Post of the subprogram accountmanagementsystem.ads:61 *)
+  ;
+  abstract ensures {true}(Main.___ignore(((Boolean.to_int((Array__Int.get(!Accountmanagementsystem__users.users) (!Accountmanagementsystem__createuser__newuser.newuser)))) = (Boolean.to_int((Boolean.of_int(1))))))) end  ) ) )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "readinsurer" defined at accountmanagementsystem.ads:76, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Accountmanagementsystem__readinsurer__subprogram_def
+ use import "int".Int
+ use import "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Main
+ use        Array__Int
+ use        Measures__userid
+ use        Accountmanagementsystem__useruserarray
+ use        Accountmanagementsystem__insurers
+ use        Accountmanagementsystem__readinsurer__wearer
+ use        Accountmanagementsystem__useruserarray__axiom
+ use        Accountmanagementsystem__insurers__axiom
+ use        Accountmanagementsystem__readinsurer__wearer__axiom
+ use        Measures__userid__axiom
+
+ val accountmanagementsystem__readinsurer__result "\"GP_Ada_Name:ReadInsurer'Result\""  : ref Measures__userid.__split
+ 
+ let def "W:diverges:N" "GP_Subp:accountmanagementsystem.ads:76" 
+   (__void_param : unit) 
+  requires { true }
+  ensures { true }
+
+   =
+  ( ( () (* Assume dynamic property of params of the subprogram accountmanagementsystem.ads:76 *)
+  ;
+  assume { (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last Accountmanagementsystem__readinsurer__wearer.wearer) } );
+  ( ( () (* Declarations introduced by the compiler at the beginning of the subprogram accountmanagementsystem.ads:76 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram accountmanagementsystem.ads:76 *)
+  ;
+  abstract ensures {true}(Main.___ignore(True)) end ;
+  () (* Assume Pre of the subprogram accountmanagementsystem.ads:76 *)
+  ;
+  assume { true } );
+  ( () (* Check additional Pres of the subprogram accountmanagementsystem.ads:76 *)
+  ;
+  () (* Body of the subprogram accountmanagementsystem.ads:76 *)
+  ;
+  try
+   ( ( "GP_Sloc:accountmanagementsystem.ads:76:63" ( accountmanagementsystem__readinsurer__result := ( (Measures__userid.to_rep((Array__Int.get(!Accountmanagementsystem__insurers.insurers) (Accountmanagementsystem__readinsurer__wearer.wearer)))) );
+   raise Return__exc ) );
+   raise Return__exc )
+  with
+   Return__exc -> ()
+  end;
+  () (* Check additional Posts and RTE in Post of the subprogram accountmanagementsystem.ads:76 *)
+  ;
+  abstract ensures {true}(Main.___ignore(True)) end ;
+  !accountmanagementsystem__readinsurer__result ) ) )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "updatevitals" defined at accountmanagementsystem.ads:104, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Accountmanagementsystem__updatevitals__subprogram_def
+ use import "int".Int
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Boolean
+ use        Array__Int
+ use        Measures__userid
+ use        Measures__bpm
+ use        Accountmanagementsystem__vitalsarray
+ use        Accountmanagementsystem__vitals
+ use        Accountmanagementsystem__updatevitals__wearer
+ use        Accountmanagementsystem__updatevitals__newvitals
+ use        Temp___standard__accountmanagementsystem_29
+ use        Accountmanagementsystem__vitalsarray__axiom
+ use        Accountmanagementsystem__vitals__axiom
+ use        Accountmanagementsystem__updatevitals__wearer__axiom
+ use        Accountmanagementsystem__updatevitals__newvitals__axiom
+ use        Measures__userid__axiom
+ use        Measures__bpm__axiom
+
+ let def "W:diverges:N" "GP_Subp:accountmanagementsystem.ads:104" 
+   (__void_param : unit) 
+  requires { true }
+  ensures { ( "GP_Reason:VC_POSTCONDITION" "keep_on_simp" "GP_Shape:pragargs__cmp" "GP_Sloc:accountmanagementsystem.ads:106:14" "GP_Id:10" "comment:     Post => Vitals = Vitals'Old'Update(Wearer => NewVitals);
+             ^ accountmanagementsystem.ads:106:14:VC_POSTCONDITION" ( "GP_Pretty_Ada:14570" "GP_Sloc:accountmanagementsystem.ads:106:14" ((let temp___standard__accountmanagementsystem_133 = (Temp___standard__accountmanagementsystem_29.temp___standard__accountmanagementsystem_29 (old !Accountmanagementsystem__vitals.vitals ) Accountmanagementsystem__updatevitals__wearer.wearer Accountmanagementsystem__updatevitals__newvitals.newvitals) in (
+   (Array__Int.bool_eq !Accountmanagementsystem__vitals.vitals Measures__userid.first Measures__userid.last temp___standard__accountmanagementsystem_133 Measures__userid.first Measures__userid.last)))
+   = True) ) ) }
+
+   =
+  ( ( () (* Assume dynamic property of params of the subprogram accountmanagementsystem.ads:104 *)
+  ;
+  assume { (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last Accountmanagementsystem__updatevitals__wearer.wearer) };
+  assume { (Measures__bpm.dynamic_property Measures__bpm.first Measures__bpm.last Accountmanagementsystem__updatevitals__newvitals.newvitals) } );
+  ( ( () (* Declarations introduced by the compiler at the beginning of the subprogram accountmanagementsystem.ads:104 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram accountmanagementsystem.ads:104 *)
+  ;
+  abstract ensures {true}(Main.___ignore((Boolean.andb((( -1 ) <= Accountmanagementsystem__updatevitals__wearer.wearer)) ((Accountmanagementsystem__updatevitals__wearer.wearer <= 100))))) end ;
+  () (* Assume Pre of the subprogram accountmanagementsystem.ads:104 *)
+  ;
+  assume { ( (( -1 ) <= Accountmanagementsystem__updatevitals__wearer.wearer) /\ (Accountmanagementsystem__updatevitals__wearer.wearer <= 100) ) } );
+  ( abstract ensures {true}(Main.___ignore(!Accountmanagementsystem__vitals.vitals)) end ;
+  (let temp___standard__accountmanagementsystem_131 = (any Accountmanagementsystem__vitalsarray.vitalsarray
+  ensures {(result = !Accountmanagementsystem__vitals.vitals)} 
+  ) in (
+   ( () (* Check additional Pres of the subprogram accountmanagementsystem.ads:104 *)
+   ;
+   () (* Body of the subprogram accountmanagementsystem.ads:104 *)
+   ;
+   try
+    ( ( "GP_Sloc:accountmanagementsystem.adb:107:25" Accountmanagementsystem__vitals.vitals := ( (Array__Int.set(!Accountmanagementsystem__vitals.vitals) (Accountmanagementsystem__updatevitals__wearer.wearer) ((Measures__bpm.of_rep(Accountmanagementsystem__updatevitals__newvitals.newvitals)))) ) );
+    raise Return__exc )
+   with
+    Return__exc -> ()
+   end;
+   () (* Check additional Posts and RTE in Post of the subprogram accountmanagementsystem.ads:104 *)
+   ;
+   abstract ensures {true}(Main.___ignore((let temp___standard__accountmanagementsystem_132 = (Temp___standard__accountmanagementsystem_29.temp___standard__accountmanagementsystem_29(temp___standard__accountmanagementsystem_131) (Accountmanagementsystem__updatevitals__wearer.wearer) (Accountmanagementsystem__updatevitals__newvitals.newvitals)) in (
+    (Array__Int.bool_eq(!Accountmanagementsystem__vitals.vitals) (Measures__userid.first) (Measures__userid.last) (temp___standard__accountmanagementsystem_132) (Measures__userid.first) (Measures__userid.last))))
+   )) end  )))
+   ) ) )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "updatefootsteps" defined at accountmanagementsystem.ads:108, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Accountmanagementsystem__updatefootsteps__subprogram_def
+ use import "int".Int
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Boolean
+ use        Array__Int
+ use        Measures__userid
+ use        Measures__footsteps
+ use        Accountmanagementsystem__footstepsarray
+ use        Accountmanagementsystem__mfootsteps
+ use        Accountmanagementsystem__updatefootsteps__wearer
+ use        Accountmanagementsystem__updatefootsteps__newfootsteps
+ use        Temp___standard__accountmanagementsystem_37
+ use        Accountmanagementsystem__footstepsarray__axiom
+ use        Accountmanagementsystem__mfootsteps__axiom
+ use        Accountmanagementsystem__updatefootsteps__wearer__axiom
+ use        Accountmanagementsystem__updatefootsteps__newfootsteps__axiom
+ use        Measures__userid__axiom
+ use        Measures__footsteps__axiom
+
+ let def "W:diverges:N" "GP_Subp:accountmanagementsystem.ads:108" 
+   (__void_param : unit) 
+  requires { true }
+  ensures { ( "GP_Reason:VC_POSTCONDITION" "keep_on_simp" "GP_Shape:pragargs__cmp" "GP_Sloc:accountmanagementsystem.ads:111:14" "GP_Id:11" "comment:     Post => MFootsteps = MFootsteps'Old'Update(Wearer => NewFootsteps);
+             ^ accountmanagementsystem.ads:111:14:VC_POSTCONDITION" ( "GP_Pretty_Ada:14612" "GP_Sloc:accountmanagementsystem.ads:111:14" ((let temp___standard__accountmanagementsystem_137 = (Temp___standard__accountmanagementsystem_37.temp___standard__accountmanagementsystem_37 (old !Accountmanagementsystem__mfootsteps.mfootsteps ) Accountmanagementsystem__updatefootsteps__wearer.wearer Accountmanagementsystem__updatefootsteps__newfootsteps.newfootsteps) in (
+   (Array__Int.bool_eq !Accountmanagementsystem__mfootsteps.mfootsteps Measures__userid.first Measures__userid.last temp___standard__accountmanagementsystem_137 Measures__userid.first Measures__userid.last)))
+   = True) ) ) }
+
+   =
+  ( ( () (* Assume dynamic property of params of the subprogram accountmanagementsystem.ads:108 *)
+  ;
+  assume { (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last Accountmanagementsystem__updatefootsteps__wearer.wearer) };
+  assume { (Measures__footsteps.dynamic_property Measures__footsteps.first Measures__footsteps.last Accountmanagementsystem__updatefootsteps__newfootsteps.newfootsteps) } );
+  ( ( () (* Declarations introduced by the compiler at the beginning of the subprogram accountmanagementsystem.ads:108 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram accountmanagementsystem.ads:108 *)
+  ;
+  abstract ensures {true}(Main.___ignore((Boolean.andb((( -1 ) <= Accountmanagementsystem__updatefootsteps__wearer.wearer)) ((Accountmanagementsystem__updatefootsteps__wearer.wearer <= 100))))) end ;
+  () (* Assume Pre of the subprogram accountmanagementsystem.ads:108 *)
+  ;
+  assume { ( (( -1 ) <= Accountmanagementsystem__updatefootsteps__wearer.wearer) /\ (Accountmanagementsystem__updatefootsteps__wearer.wearer <= 100) ) } );
+  ( abstract ensures {true}(Main.___ignore(!Accountmanagementsystem__mfootsteps.mfootsteps)) end ;
+  (let temp___standard__accountmanagementsystem_135 = (any Accountmanagementsystem__footstepsarray.footstepsarray
+  ensures {(result = !Accountmanagementsystem__mfootsteps.mfootsteps)} 
+  ) in (
+   ( () (* Check additional Pres of the subprogram accountmanagementsystem.ads:108 *)
+   ;
+   () (* Body of the subprogram accountmanagementsystem.ads:108 *)
+   ;
+   try
+    ( ( "GP_Sloc:accountmanagementsystem.adb:114:29" Accountmanagementsystem__mfootsteps.mfootsteps := ( (Array__Int.set(!Accountmanagementsystem__mfootsteps.mfootsteps) (Accountmanagementsystem__updatefootsteps__wearer.wearer) ((Measures__footsteps.of_rep(Accountmanagementsystem__updatefootsteps__newfootsteps.newfootsteps)))) ) );
+    raise Return__exc )
+   with
+    Return__exc -> ()
+   end;
+   () (* Check additional Posts and RTE in Post of the subprogram accountmanagementsystem.ads:108 *)
+   ;
+   abstract ensures {true}(Main.___ignore((let temp___standard__accountmanagementsystem_136 = (Temp___standard__accountmanagementsystem_37.temp___standard__accountmanagementsystem_37(temp___standard__accountmanagementsystem_135) (Accountmanagementsystem__updatefootsteps__wearer.wearer) (Accountmanagementsystem__updatefootsteps__newfootsteps.newfootsteps)) in (
+    (Array__Int.bool_eq(!Accountmanagementsystem__mfootsteps.mfootsteps) (Measures__userid.first) (Measures__userid.last) (temp___standard__accountmanagementsystem_136) (Measures__userid.first) (Measures__userid.last))))
+   )) end  )))
+   ) ) )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "updatelocation" defined at accountmanagementsystem.ads:113, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Accountmanagementsystem__updatelocation__subprogram_def
+ use import "int".Int
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Boolean
+ use        Array__Int
+ use        Measures__userid
+ use        Accountmanagementsystem__locationsarray
+ use        Accountmanagementsystem__locations
+ use        Accountmanagementsystem__updatelocation__wearer
+ use        Accountmanagementsystem__updatelocation__newlocation
+ use        Temp___standard__accountmanagementsystem_45
+ use        Accountmanagementsystem__locationsarray__axiom
+ use        Accountmanagementsystem__locations__axiom
+ use        Accountmanagementsystem__updatelocation__wearer__axiom
+ use        Accountmanagementsystem__updatelocation__newlocation__axiom
+ use        Measures__userid__axiom
+ use        Measures__latitude__axiom
+ use        Measures__longitude__axiom
+ use        Measures__gpslocation__axiom
+
+ let def "W:diverges:N" "GP_Subp:accountmanagementsystem.ads:113" 
+   (__void_param : unit) 
+  requires { true }
+  ensures { ( "GP_Reason:VC_POSTCONDITION" "keep_on_simp" "GP_Shape:pragargs__cmp" "GP_Sloc:accountmanagementsystem.ads:116:14" "GP_Id:12" "comment:     Post => Locations = Locations'Old'Update(Wearer => NewLocation);
+             ^ accountmanagementsystem.ads:116:14:VC_POSTCONDITION" ( "GP_Pretty_Ada:14654" "GP_Sloc:accountmanagementsystem.ads:116:14" ((let temp___standard__accountmanagementsystem_141 = (Temp___standard__accountmanagementsystem_45.temp___standard__accountmanagementsystem_45 (old !Accountmanagementsystem__locations.locations ) Accountmanagementsystem__updatelocation__wearer.wearer Accountmanagementsystem__updatelocation__newlocation.newlocation) in (
+   (Array__Int.bool_eq !Accountmanagementsystem__locations.locations Measures__userid.first Measures__userid.last temp___standard__accountmanagementsystem_141 Measures__userid.first Measures__userid.last)))
+   = True) ) ) }
+
+   =
+  ( ( () (* Assume dynamic property of params of the subprogram accountmanagementsystem.ads:113 *)
+  ;
+  assume { (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last Accountmanagementsystem__updatelocation__wearer.wearer) } );
+  ( ( () (* Declarations introduced by the compiler at the beginning of the subprogram accountmanagementsystem.ads:113 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram accountmanagementsystem.ads:113 *)
+  ;
+  abstract ensures {true}(Main.___ignore((Boolean.andb((( -1 ) <= Accountmanagementsystem__updatelocation__wearer.wearer)) ((Accountmanagementsystem__updatelocation__wearer.wearer <= 100))))) end ;
+  () (* Assume Pre of the subprogram accountmanagementsystem.ads:113 *)
+  ;
+  assume { ( (( -1 ) <= Accountmanagementsystem__updatelocation__wearer.wearer) /\ (Accountmanagementsystem__updatelocation__wearer.wearer <= 100) ) } );
+  ( abstract ensures {true}(Main.___ignore(!Accountmanagementsystem__locations.locations)) end ;
+  (let temp___standard__accountmanagementsystem_139 = (any Accountmanagementsystem__locationsarray.locationsarray
+  ensures {(result = !Accountmanagementsystem__locations.locations)} 
+  ) in (
+   ( () (* Check additional Pres of the subprogram accountmanagementsystem.ads:113 *)
+   ;
+   () (* Body of the subprogram accountmanagementsystem.ads:113 *)
+   ;
+   try
+    ( ( "GP_Sloc:accountmanagementsystem.adb:121:28" Accountmanagementsystem__locations.locations := ( (Array__Int.set(!Accountmanagementsystem__locations.locations) (Accountmanagementsystem__updatelocation__wearer.wearer) (Accountmanagementsystem__updatelocation__newlocation.newlocation)) ) );
+    raise Return__exc )
+   with
+    Return__exc -> ()
+   end;
+   () (* Check additional Posts and RTE in Post of the subprogram accountmanagementsystem.ads:113 *)
+   ;
+   abstract ensures {true}(Main.___ignore((let temp___standard__accountmanagementsystem_140 = (Temp___standard__accountmanagementsystem_45.temp___standard__accountmanagementsystem_45(temp___standard__accountmanagementsystem_139) (Accountmanagementsystem__updatelocation__wearer.wearer) (Accountmanagementsystem__updatelocation__newlocation.newlocation)) in (
+    (Array__Int.bool_eq(!Accountmanagementsystem__locations.locations) (Measures__userid.first) (Measures__userid.last) (temp___standard__accountmanagementsystem_140) (Measures__userid.first) (Measures__userid.last))))
+   )) end  )))
+   ) ) )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "readvitals_alt" defined at accountmanagementsystem.ads:129, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Accountmanagementsystem__readvitals_alt__subprogram_def
+ use import "int".Int
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Boolean
+ use        Array__Int
+ use        Measures__userid
+ use        Measures__bpm
+ use        Accountmanagementsystem__vitalsarray
+ use        Array__Int_Int
+ use        Accountmanagementsystem__useruserbooleanarray
+ use        Accountmanagementsystem__vitals
+ use        Accountmanagementsystem__vitalspermissions
+ use        Accountmanagementsystem__readvitals_alt__requester
+ use        Accountmanagementsystem__readvitals_alt__targetuser
+ use        Accountmanagementsystem__vitalsarray__axiom
+ use        Accountmanagementsystem__useruserbooleanarray__axiom
+ use        Accountmanagementsystem__vitals__axiom
+ use        Accountmanagementsystem__vitalspermissions__axiom
+ use        Accountmanagementsystem__readvitals_alt__requester__axiom
+ use        Accountmanagementsystem__readvitals_alt__targetuser__axiom
+ use        Measures__userid__axiom
+ use        Measures__bpm__axiom
+
+ val accountmanagementsystem__readvitals_alt__result "\"GP_Ada_Name:ReadVitals_Alt'Result\""  : ref Measures__bpm.__split
+ 
+ let def "W:diverges:N" "GP_Subp:accountmanagementsystem.ads:129" 
+   (__void_param : unit) 
+  requires { true }
+  ensures { ( "GP_Reason:VC_POSTCONDITION" "keep_on_simp" "GP_Shape:pragargs__cmp" "GP_Sloc:accountmanagementsystem.ads:131:17" "GP_Id:13" "comment:   with Post => ReadVitals_Alt'Result = (if 
+                ^ accountmanagementsystem.ads:131:17:VC_POSTCONDITION" ( "GP_Pretty_Ada:14691" "GP_Sloc:accountmanagementsystem.ads:131:17" (!accountmanagementsystem__readvitals_alt__result = (if (( ((Array__Int_Int.get !Accountmanagementsystem__vitalspermissions.vitalspermissions Accountmanagementsystem__readvitals_alt__targetuser.targetuser Accountmanagementsystem__readvitals_alt__requester.requester) = True) <-> true )) then (
+   (Measures__bpm.to_rep (Array__Int.get !Accountmanagementsystem__vitals.vitals Accountmanagementsystem__readvitals_alt__targetuser.targetuser))) else (
+   ( -1 )))) ) ) }
+
+   =
+  ( ( () (* Assume dynamic property of params of the subprogram accountmanagementsystem.ads:129 *)
+  ;
+  assume { (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last Accountmanagementsystem__readvitals_alt__requester.requester) };
+  assume { (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last Accountmanagementsystem__readvitals_alt__targetuser.targetuser) } );
+  ( ( () (* Declarations introduced by the compiler at the beginning of the subprogram accountmanagementsystem.ads:129 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram accountmanagementsystem.ads:129 *)
+  ;
+  abstract ensures {true}(Main.___ignore(True)) end ;
+  () (* Assume Pre of the subprogram accountmanagementsystem.ads:129 *)
+  ;
+  assume { true } );
+  ( () (* Check additional Pres of the subprogram accountmanagementsystem.ads:129 *)
+  ;
+  () (* Body of the subprogram accountmanagementsystem.ads:129 *)
+  ;
+  try
+   ( ( "GP_Sloc:accountmanagementsystem.adb:131:7" (if ((Array__Int_Int.get(!Accountmanagementsystem__vitalspermissions.vitalspermissions) (Accountmanagementsystem__readvitals_alt__targetuser.targetuser) (Accountmanagementsystem__readvitals_alt__requester.requester))) then (
+    ( "GP_Sloc:accountmanagementsystem.adb:132:10" ( accountmanagementsystem__readvitals_alt__result := ( (Measures__bpm.to_rep((Array__Int.get(!Accountmanagementsystem__vitals.vitals) (Accountmanagementsystem__readvitals_alt__targetuser.targetuser)))) );
+    raise Return__exc ) )) else (
+    ( "GP_Sloc:accountmanagementsystem.adb:134:10" ( accountmanagementsystem__readvitals_alt__result := ( ( -1 ) );
+    raise Return__exc ) ))) );
+   raise Return__exc )
+  with
+   Return__exc -> ()
+  end;
+  () (* Check additional Posts and RTE in Post of the subprogram accountmanagementsystem.ads:129 *)
+  ;
+  abstract ensures {true}(Main.___ignore((!accountmanagementsystem__readvitals_alt__result = (if (((Boolean.to_int((Array__Int_Int.get(!Accountmanagementsystem__vitalspermissions.vitalspermissions) (Accountmanagementsystem__readvitals_alt__targetuser.targetuser) (Accountmanagementsystem__readvitals_alt__requester.requester)))) = (Boolean.to_int((Boolean.of_int(1)))))) then (
+   (Measures__bpm.to_rep((Array__Int.get(!Accountmanagementsystem__vitals.vitals) (Accountmanagementsystem__readvitals_alt__targetuser.targetuser))))) else (
+   ( -1 )))))) end ;
+  !accountmanagementsystem__readvitals_alt__result ) ) )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "readfootsteps" defined at accountmanagementsystem.ads:137, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Accountmanagementsystem__readfootsteps__subprogram_def
+ use import "int".Int
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Boolean
+ use        Array__Int
+ use        Measures__userid
+ use        Measures__footsteps
+ use        Accountmanagementsystem__footstepsarray
+ use        Array__Int_Int
+ use        Accountmanagementsystem__useruserbooleanarray
+ use        Accountmanagementsystem__mfootsteps
+ use        Accountmanagementsystem__footstepspermissions
+ use        Accountmanagementsystem__readfootsteps__requester
+ use        Accountmanagementsystem__readfootsteps__targetuser
+ use        Accountmanagementsystem__footstepsarray__axiom
+ use        Accountmanagementsystem__useruserbooleanarray__axiom
+ use        Accountmanagementsystem__mfootsteps__axiom
+ use        Accountmanagementsystem__footstepspermissions__axiom
+ use        Accountmanagementsystem__readfootsteps__requester__axiom
+ use        Accountmanagementsystem__readfootsteps__targetuser__axiom
+ use        Measures__userid__axiom
+ use        Measures__footsteps__axiom
+
+ val accountmanagementsystem__readfootsteps__result "\"GP_Ada_Name:ReadFootsteps'Result\""  : ref Measures__footsteps.__split
+ 
+ let def "W:diverges:N" "GP_Subp:accountmanagementsystem.ads:137" 
+   (__void_param : unit) 
+  requires { true }
+  ensures { ( "GP_Reason:VC_POSTCONDITION" "keep_on_simp" "GP_Shape:pragargs__cmp" "GP_Sloc:accountmanagementsystem.ads:139:17" "GP_Id:14" "comment:   with Post => ReadFootsteps'Result = (if 
+                ^ accountmanagementsystem.ads:139:17:VC_POSTCONDITION" ( "GP_Pretty_Ada:14721" "GP_Sloc:accountmanagementsystem.ads:139:17" (!accountmanagementsystem__readfootsteps__result = (if (( ((Array__Int_Int.get !Accountmanagementsystem__footstepspermissions.footstepspermissions Accountmanagementsystem__readfootsteps__targetuser.targetuser Accountmanagementsystem__readfootsteps__requester.requester) = True) <-> true )) then (
+   (Measures__footsteps.to_rep (Array__Int.get !Accountmanagementsystem__mfootsteps.mfootsteps Accountmanagementsystem__readfootsteps__targetuser.targetuser))) else (
+   0))) ) ) }
+
+   =
+  ( ( () (* Assume dynamic property of params of the subprogram accountmanagementsystem.ads:137 *)
+  ;
+  assume { (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last Accountmanagementsystem__readfootsteps__requester.requester) };
+  assume { (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last Accountmanagementsystem__readfootsteps__targetuser.targetuser) } );
+  ( ( () (* Declarations introduced by the compiler at the beginning of the subprogram accountmanagementsystem.ads:137 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram accountmanagementsystem.ads:137 *)
+  ;
+  abstract ensures {true}(Main.___ignore(True)) end ;
+  () (* Assume Pre of the subprogram accountmanagementsystem.ads:137 *)
+  ;
+  assume { true } );
+  ( () (* Check additional Pres of the subprogram accountmanagementsystem.ads:137 *)
+  ;
+  () (* Body of the subprogram accountmanagementsystem.ads:137 *)
+  ;
+  try
+   ( ( "GP_Sloc:accountmanagementsystem.adb:145:7" (if ((Array__Int_Int.get(!Accountmanagementsystem__footstepspermissions.footstepspermissions) (Accountmanagementsystem__readfootsteps__targetuser.targetuser) (Accountmanagementsystem__readfootsteps__requester.requester))) then (
+    ( "GP_Sloc:accountmanagementsystem.adb:146:10" ( accountmanagementsystem__readfootsteps__result := ( (Measures__footsteps.to_rep((Array__Int.get(!Accountmanagementsystem__mfootsteps.mfootsteps) (Accountmanagementsystem__readfootsteps__targetuser.targetuser)))) );
+    raise Return__exc ) )) else (
+    ( "GP_Sloc:accountmanagementsystem.adb:148:10" ( accountmanagementsystem__readfootsteps__result := ( 0 );
+    raise Return__exc ) ))) );
+   raise Return__exc )
+  with
+   Return__exc -> ()
+  end;
+  () (* Check additional Posts and RTE in Post of the subprogram accountmanagementsystem.ads:137 *)
+  ;
+  abstract ensures {true}(Main.___ignore((!accountmanagementsystem__readfootsteps__result = (if (((Boolean.to_int((Array__Int_Int.get(!Accountmanagementsystem__footstepspermissions.footstepspermissions) (Accountmanagementsystem__readfootsteps__targetuser.targetuser) (Accountmanagementsystem__readfootsteps__requester.requester)))) = (Boolean.to_int((Boolean.of_int(1)))))) then (
+   (Measures__footsteps.to_rep((Array__Int.get(!Accountmanagementsystem__mfootsteps.mfootsteps) (Accountmanagementsystem__readfootsteps__targetuser.targetuser))))) else (
+   0))))) end ;
+  !accountmanagementsystem__readfootsteps__result ) ) )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "readlocation" defined at accountmanagementsystem.ads:144, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Accountmanagementsystem__readlocation__subprogram_def
+ use import "int".Int
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use import "real".RealInfix
+ use        "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Boolean
+ use        Array__Int
+ use        Measures__userid
+ use        Measures__latitude
+ use        Measures__longitude
+ use        Measures__gpslocation
+ use        Accountmanagementsystem__locationsarray
+ use        Array__Int_Int
+ use        Accountmanagementsystem__useruserbooleanarray
+ use        Accountmanagementsystem__locations
+ use        Accountmanagementsystem__locationpermissions
+ use        Accountmanagementsystem__readlocation__requester
+ use        Accountmanagementsystem__readlocation__targetuser
+ use        Accountmanagementsystem__locationsarray__axiom
+ use        Accountmanagementsystem__useruserbooleanarray__axiom
+ use        Accountmanagementsystem__locations__axiom
+ use        Accountmanagementsystem__locationpermissions__axiom
+ use        Accountmanagementsystem__readlocation__requester__axiom
+ use        Accountmanagementsystem__readlocation__targetuser__axiom
+ use        Measures__userid__axiom
+ use        Measures__latitude__axiom
+ use        Measures__longitude__axiom
+ use        Measures__gpslocation__axiom
+
+ val accountmanagementsystem__readlocation__result "\"GP_Ada_Name:ReadLocation'Result\""  : ref Measures__gpslocation.gpslocation
+ 
+ let def "W:diverges:N" "GP_Subp:accountmanagementsystem.ads:144" 
+   (__void_param : unit) 
+  requires { true }
+  ensures { ( "GP_Reason:VC_POSTCONDITION" "keep_on_simp" "GP_Shape:pragargs__cmp" "GP_Sloc:accountmanagementsystem.ads:146:17" "GP_Id:15" "comment:   with Post => ReadLocation'Result = (if 
+                ^ accountmanagementsystem.ads:146:17:VC_POSTCONDITION" ( "GP_Pretty_Ada:14752" "GP_Sloc:accountmanagementsystem.ads:146:17" ((Measures__gpslocation.bool_eq !accountmanagementsystem__readlocation__result (if (( ((Array__Int_Int.get !Accountmanagementsystem__locationpermissions.locationpermissions Accountmanagementsystem__readlocation__targetuser.targetuser Accountmanagementsystem__readlocation__requester.requester) = True) <-> true )) then (
+   (Array__Int.get !Accountmanagementsystem__locations.locations Accountmanagementsystem__readlocation__targetuser.targetuser)) else (
+   { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real (0.0E-1)); Measures__gpslocation.rec__long = (Measures__longitude.of_real (0.0E-1)) } }))) = True) ) ) }
+
+   =
+  ( ( () (* Assume dynamic property of params of the subprogram accountmanagementsystem.ads:144 *)
+  ;
+  assume { (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last Accountmanagementsystem__readlocation__requester.requester) };
+  assume { (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last Accountmanagementsystem__readlocation__targetuser.targetuser) } );
+  ( ( () (* Declarations introduced by the compiler at the beginning of the subprogram accountmanagementsystem.ads:144 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram accountmanagementsystem.ads:144 *)
+  ;
+  abstract ensures {true}(Main.___ignore(True)) end ;
+  () (* Assume Pre of the subprogram accountmanagementsystem.ads:144 *)
+  ;
+  assume { true } );
+  ( () (* Check additional Pres of the subprogram accountmanagementsystem.ads:144 *)
+  ;
+  () (* Body of the subprogram accountmanagementsystem.ads:144 *)
+  ;
+  try
+   ( ( "GP_Sloc:accountmanagementsystem.adb:159:7" (if ((Array__Int_Int.get(!Accountmanagementsystem__locationpermissions.locationpermissions) (Accountmanagementsystem__readlocation__targetuser.targetuser) (Accountmanagementsystem__readlocation__requester.requester))) then (
+    ( "GP_Sloc:accountmanagementsystem.adb:160:10" ( accountmanagementsystem__readlocation__result := ( (Array__Int.get(!Accountmanagementsystem__locations.locations) (Accountmanagementsystem__readlocation__targetuser.targetuser)) );
+    raise Return__exc ) )) else (
+    ( "GP_Sloc:accountmanagementsystem.adb:162:10" ( accountmanagementsystem__readlocation__result := ( { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real((0.0E-1))); Measures__gpslocation.rec__long = (Measures__longitude.of_real((0.0E-1))) } } );
+    raise Return__exc ) ))) );
+   raise Return__exc )
+  with
+   Return__exc -> ()
+  end;
+  () (* Check additional Posts and RTE in Post of the subprogram accountmanagementsystem.ads:144 *)
+  ;
+  abstract ensures {true}(Main.___ignore((Measures__gpslocation.bool_eq(!accountmanagementsystem__readlocation__result) ((if (((Boolean.to_int((Array__Int_Int.get(!Accountmanagementsystem__locationpermissions.locationpermissions) (Accountmanagementsystem__readlocation__targetuser.targetuser) (Accountmanagementsystem__readlocation__requester.requester)))) = (Boolean.to_int((Boolean.of_int(1)))))) then (
+   (Array__Int.get(!Accountmanagementsystem__locations.locations) (Accountmanagementsystem__readlocation__targetuser.targetuser))) else (
+   { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real((0.0E-1))); Measures__gpslocation.rec__long = (Measures__longitude.of_real((0.0E-1))) } })))))) end ;
+  !accountmanagementsystem__readlocation__result ) ) )
 end

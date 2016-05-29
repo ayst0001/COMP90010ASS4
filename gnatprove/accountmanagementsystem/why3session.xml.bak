@@ -1489,17 +1489,69 @@
 </theory>
 <theory name="Accountmanagementsystem__useruserbooleanarray" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Accountmanagementsystem__init__L12s__T13s" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__init__L24s__T25s" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Accountmanagementsystem__init__L14s__T15s" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__init__L26s__T27s" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Accountmanagementsystem__init__L16s__T17s" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__init__L28s__T29s" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Accountmanagementsystem__init__L18s__T19s" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__init__L30s__T31s" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Accountmanagementsystem__init__L20s__T21s" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__init__L32s__T33s" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Accountmanagementsystem__init__L22s__T23s" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__init__L34s__T35s" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readinsurer__wearer" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readinsurer__wearer__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatevitals__wearer" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatevitals__wearer__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatevitals__newvitals" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatevitals__newvitals__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatefootsteps__wearer" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatefootsteps__wearer__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatefootsteps__newfootsteps" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatefootsteps__newfootsteps__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatelocation__wearer" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatelocation__wearer__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatelocation__newlocation" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatelocation__newlocation__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readvitals_alt__requester" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readvitals_alt__requester__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readvitals_alt__targetuser" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readvitals_alt__targetuser__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readfootsteps__requester" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readfootsteps__requester__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readfootsteps__targetuser" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readfootsteps__targetuser__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readlocation__requester" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readlocation__requester__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readlocation__targetuser" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readlocation__targetuser__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
 <theory name="Accountmanagementsystem__init__T1b" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
@@ -1745,6 +1797,10 @@
 </theory>
 <theory name="Accountmanagementsystem__locationpermissions__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
+<theory name="Accountmanagementsystem__createuser__newuser" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__createuser__newuser__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
 <theory name="Ada__streams__read" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
 <theory name="Ada__streams__write" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
@@ -1913,17 +1969,41 @@
 </theory>
 <theory name="Accountmanagementsystem__init" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Temp___standard__accountmanagementsystem_62" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__createuser" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Temp___standard__accountmanagementsystem_66" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__readinsurer" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Temp___standard__accountmanagementsystem_70" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__updatevitals" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Temp___standard__accountmanagementsystem_74" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__updatefootsteps" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Temp___standard__accountmanagementsystem_78" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__updatelocation" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Temp___standard__accountmanagementsystem_82" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__readvitals_alt" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readfootsteps" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readlocation" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readinsurer__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Temp___standard__accountmanagementsystem_29" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Temp___standard__accountmanagementsystem_37" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Temp___standard__accountmanagementsystem_45" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Temp___standard__accountmanagementsystem_98" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Temp___standard__accountmanagementsystem_102" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Temp___standard__accountmanagementsystem_106" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Temp___standard__accountmanagementsystem_110" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Temp___standard__accountmanagementsystem_114" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Temp___standard__accountmanagementsystem_118" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
 <theory name="Standard__short_short_integer__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
@@ -2355,17 +2435,17 @@
 </theory>
 <theory name="Accountmanagementsystem__useruserbooleanarray__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Accountmanagementsystem__init__L12s__T13s__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__init__L24s__T25s__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Accountmanagementsystem__init__L14s__T15s__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__init__L26s__T27s__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Accountmanagementsystem__init__L16s__T17s__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__init__L28s__T29s__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Accountmanagementsystem__init__L18s__T19s__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__init__L30s__T31s__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Accountmanagementsystem__init__L20s__T21s__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__init__L32s__T33s__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
-<theory name="Accountmanagementsystem__init__L22s__T23s__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+<theory name="Accountmanagementsystem__init__L34s__T35s__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
 <theory name="Accountmanagementsystem__init__T1b__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
@@ -2691,6 +2771,20 @@
 </theory>
 <theory name="Accountmanagementsystem__init__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
 </theory>
+<theory name="Accountmanagementsystem__createuser__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatevitals__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatefootsteps__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__updatelocation__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readvitals_alt__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readfootsteps__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
+<theory name="Accountmanagementsystem__readlocation__axiom" sum="d41d8cd98f00b204e9800998ecf8427e" expanded="true">
+</theory>
 <theory name="Accountmanagementsystem__package_def" sum="a12754f33c404bf9c6c9fea02288b680" expanded="true">
  <goal name="WP_parameter def" expl="VC for def" expanded="true">
  <transf name="split_goal_wp" expanded="true">
@@ -2721,6 +2815,84 @@
   </goal>
   <goal name="WP_parameter def.7" expl="7. VC for def">
   <proof prover="1"><result status="valid" time="0.25"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Accountmanagementsystem__createuser__subprogram_def" sum="9410f99b6b4db22649fe0517b5db8fbc" expanded="true">
+ <goal name="WP_parameter def" expl="VC for def" expanded="true">
+ <transf name="split_goal_wp" expanded="true">
+  <goal name="WP_parameter def.1" expl="1. VC for def">
+  <proof prover="1"><result status="valid" time="0.03"/></proof>
+  </goal>
+  <goal name="WP_parameter def.2" expl="2. VC for def">
+  <proof prover="1"><result status="valid" time="0.02"/></proof>
+  </goal>
+  <goal name="WP_parameter def.3" expl="3. VC for def">
+  <proof prover="1"><result status="valid" time="0.03"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Accountmanagementsystem__readinsurer__subprogram_def" sum="04a3695dee8a44b8845aa4fca4ce79f7" expanded="true">
+ <goal name="WP_parameter def" expl="VC for def" expanded="true">
+ <transf name="split_goal_wp" expanded="true">
+ </transf>
+ </goal>
+</theory>
+<theory name="Accountmanagementsystem__updatevitals__subprogram_def" sum="04544413dcaa859666d458c26b8886b6" expanded="true">
+ <goal name="WP_parameter def" expl="VC for def" expanded="true">
+ <transf name="split_goal_wp" expanded="true">
+  <goal name="WP_parameter def.1" expl="1. VC for def">
+  <proof prover="0" obsolete="true"><result status="unknown" time="0.03"/></proof>
+  <proof prover="1"><result status="valid" time="0.04"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Accountmanagementsystem__updatefootsteps__subprogram_def" sum="529d049ce1fa5265d8cfd63366fa2219" expanded="true">
+ <goal name="WP_parameter def" expl="VC for def" expanded="true">
+ <transf name="split_goal_wp" expanded="true">
+  <goal name="WP_parameter def.1" expl="1. VC for def">
+  <proof prover="0" obsolete="true"><result status="unknown" time="0.04"/></proof>
+  <proof prover="1"><result status="valid" time="0.04"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Accountmanagementsystem__updatelocation__subprogram_def" sum="bb9020b078513d8f9d22f080a52d74f7" expanded="true">
+ <goal name="WP_parameter def" expl="VC for def" expanded="true">
+ <transf name="split_goal_wp" expanded="true">
+  <goal name="WP_parameter def.1" expl="1. VC for def">
+  <proof prover="0" obsolete="true"><result status="timeout" time="0.99"/></proof>
+  <proof prover="1"><result status="valid" time="0.10"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Accountmanagementsystem__readvitals_alt__subprogram_def" sum="ee747a7d3448f67f54c447e5be260268" expanded="true">
+ <goal name="WP_parameter def" expl="VC for def" expanded="true">
+ <transf name="split_goal_wp" expanded="true">
+  <goal name="WP_parameter def.1" expl="1. VC for def">
+  <proof prover="1"><result status="valid" time="0.04"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Accountmanagementsystem__readfootsteps__subprogram_def" sum="8d206b0b4543adc73380a3b462feda67" expanded="true">
+ <goal name="WP_parameter def" expl="VC for def" expanded="true">
+ <transf name="split_goal_wp" expanded="true">
+  <goal name="WP_parameter def.1" expl="1. VC for def">
+  <proof prover="1"><result status="valid" time="0.05"/></proof>
+  </goal>
+ </transf>
+ </goal>
+</theory>
+<theory name="Accountmanagementsystem__readlocation__subprogram_def" sum="2dbf77ed682dbbffd0b9e71fe5e36e46" expanded="true">
+ <goal name="WP_parameter def" expl="VC for def" expanded="true">
+ <transf name="split_goal_wp" expanded="true">
+  <goal name="WP_parameter def.1" expl="1. VC for def">
+  <proof prover="1"><result status="valid" time="0.07"/></proof>
   </goal>
  </transf>
  </goal>
