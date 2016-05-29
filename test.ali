@@ -12,7 +12,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U test%b		test.adb		1fb885b2 NE OO PK
+U test%b		test.adb		3877f2a9 NE OO PK
 W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
 W measures%s		measures.ads		measures.ali
 W system.img_bool%s	s-imgboo.adb		s-imgboo.ali
@@ -22,7 +22,7 @@ W text_io%s		text_io.ads		text_io.ali
 
 U test%s		test.ads		107b8052 EE NE OO PK
 
-D accountmanagementsystem.ads  20160529035542 04c54919 accountmanagementsystem%s
+D accountmanagementsystem.ads  20160529041415 230a3e02 accountmanagementsystem%s
 D ada.ads		20150506105328 3ffc8e18 ada%s
 D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
 D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
@@ -30,6 +30,7 @@ D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
 D a-tags.ads		20150506105332 dc4d0634 ada.tags%s
 D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
 D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
+D emergency.ads		20160515131714 e5d9f819 emergency%s
 D interfac.ads		20150506105327 6033a23f interfaces%s
 D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
 D measures.ads		20160321052727 7e180b3d measures%s
@@ -52,47 +53,47 @@ D test.ads		20160528155029 107b8052 test%s
 D test.adb		20160528155029 30c8610d test%b
 D text_io.ads		20150506105330 45d626c9 text_io%s
 X 1 accountmanagementsystem.ads
-12K9*AccountManagementSystem 207e28 28|4w6 4r35
-17A9*UsersArray(boolean)<11|6I9>
-20A9*UserUserArray(11|6I9)<11|6I9>
-23A9*VitalsArray(11|10I9)<11|6I9>
-24A9*FootstepsArray(11|14I9)<11|6I9>
-25A9*LocationsArray(11|19R9)<11|6I9>
-32a4*Users{17A9} 28|14r16 18r33
-36a4*Insurers{20A9} 28|36r16 40r32
-37a4*Friends{20A9} 28|25r16 29r32
-40a4*Vitals{23A9} 28|47r16 51r29
-41a4*MFootsteps{24A9} 28|58r16 62r35
-42a4*Locations{25A9} 28|69r16 73r29 75r30
+13K9*AccountManagementSystem 207e28 29|4w6 4r35
+18A9*UsersArray(boolean)<12|6I9>
+21A9*UserUserArray(12|6I9)<12|6I9>
+24A9*VitalsArray(12|10I9)<12|6I9>
+25A9*FootstepsArray(12|14I9)<12|6I9>
+26A9*LocationsArray(12|19R9)<12|6I9>
+33a4*Users{18A9} 29|14r16 18r33
+37a4*Insurers{21A9} 29|36r16 40r32
+38a4*Friends{21A9} 29|25r16 29r32
+41a4*Vitals{24A9} 29|47r16 51r29
+42a4*MFootsteps{25A9} 29|58r16 62r35
+43a4*Locations{26A9} 29|69r16 73r29 75r30
 X 7 a-textio.ads
-242U14*Put 28|15s10 16s10 17s10 26s10 27s10 28s10 37s10 38s10 39s10 48s10
+242U14*Put 29|15s10 16s10 17s10 26s10 27s10 28s10 37s10 38s10 39s10 48s10
 . 49s10 50s10 59s10 60s10 61s10 70s10 71s10 72s10 73s10 74s10 75s10
-263U14*Put_Line 28|13s7 18s10 24s7 29s10 35s7 40s10 46s7 51s10 57s7 62s10
+263U14*Put_Line 29|13s7 18s10 24s7 29s10 35s7 40s10 46s7 51s10 57s7 62s10
 . 68s7 76s10
-X 11 measures.ads
-2K9*Measures 25e13 28|6w6 6r20
-6I9*UserID<integer> 28|16r14 27r14 29r19 38r14 40r19 49r15 60r14 71r14
-10I9*BPM<integer> 28|51r19
-14I9*Footsteps<integer> 28|62r19
-17F9*Latitude<float> 28|73r14
-18F9*Longitude<float> 28|75r14
-21f10*Lat{17F9} 28|73r42
-22f10*Long{18F9} 28|75r43
-X 27 test.ads
-1K9*Test 11l5 11e9 28|8b14 83l5 83t9
-4U14*Print_UserID_Status 28|11b14 20l8 20t27
-5U14*Print_Everyones_Friend 28|22b14 31l8 31t30
-6U14*Print_Everyones_Vitals 28|44b14 53l8 53t30
-7U14*Print_Everyones_Footsteps 28|55b14 64l11 64t36
-8U14*Print_Everyones_Location 28|66b14 79l8 79t32
-9U14*Print_Everyones_Insurer 28|33b14 42l11 42t34
-X 28 test.adb
+X 12 measures.ads
+2K9*Measures 25e13 29|6w6 6r20
+6I9*UserID<integer> 29|16r14 27r14 29r19 38r14 40r19 49r15 60r14 71r14
+10I9*BPM<integer> 29|51r19
+14I9*Footsteps<integer> 29|62r19
+17F9*Latitude<float> 29|73r14
+18F9*Longitude<float> 29|75r14
+21f10*Lat{17F9} 29|73r42
+22f10*Long{18F9} 29|75r43
+X 28 test.ads
+1K9*Test 11l5 11e9 29|8b14 83l5 83t9
+4U14*Print_UserID_Status 29|11b14 20l8 20t27
+5U14*Print_Everyones_Friend 29|22b14 31l8 31t30
+6U14*Print_Everyones_Vitals 29|44b14 53l8 53t30
+7U14*Print_Everyones_Footsteps 29|55b14 64l11 64t36
+8U14*Print_Everyones_Location 29|66b14 79l8 79t32
+9U14*Print_Everyones_Insurer 29|33b14 42l11 42t34
+X 29 test.adb
 14i11 I<integer> 16r27 18r39
 25i11 I<integer> 27r27 29r40
 36i11 I<integer> 38r27 40r41
 47i11 I<integer> 49r28 51r36
 58i11 I<integer> 60r27 62r46
 69i11 I<integer> 71r27 73r39 75r40
-X 29 text_io.ads
-24K9*Text_IO=24:29 28|5w6 5r19
+X 30 text_io.ads
+24K9*Text_IO=24:29 29|5w6 5r19
 

@@ -2,6 +2,7 @@
 -- "**" means the code under this comment is added or modified
 
 with Measures; use Measures;
+with Emergency; use Emergency;
 
 -- NOTE: This package exposes the types and variables of the package.
 -- This makes the assignment a bit simpler, but is generally not
@@ -198,10 +199,9 @@ is
                  (Wearer, Other), Allow)
                );
 
---   procedure ContactEmergency(Wearer : in UserID; 
---                            Location : in GPSLocation; 
---                              Vitals : in BPM)
---     with
---       Pre => Wearer in Users'Range and Other in Users'Range;
+   procedure ContactEmergency(Wearer : in UserID; 
+                            Location : in GPSLocation; 
+                              Vitals : in BPM) with
+        Pre => Wearer in Users'Range and Emergency in Users'Range;
 
 end AccountManagementSystem;

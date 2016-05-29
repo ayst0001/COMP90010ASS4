@@ -7,23 +7,24 @@ with Ada.Exceptions;
 package body ada_main is
    pragma Warnings (Off);
 
-   E74 : Short_Integer; pragma Import (Ada, E74, "system__os_lib_E");
-   E15 : Short_Integer; pragma Import (Ada, E15, "system__soft_links_E");
-   E85 : Short_Integer; pragma Import (Ada, E85, "system__fat_llf_E");
-   E25 : Short_Integer; pragma Import (Ada, E25, "system__exception_table_E");
-   E61 : Short_Integer; pragma Import (Ada, E61, "ada__io_exceptions_E");
-   E08 : Short_Integer; pragma Import (Ada, E08, "ada__tags_E");
-   E60 : Short_Integer; pragma Import (Ada, E60, "ada__streams_E");
-   E72 : Short_Integer; pragma Import (Ada, E72, "interfaces__c_E");
-   E27 : Short_Integer; pragma Import (Ada, E27, "system__exceptions_E");
-   E77 : Short_Integer; pragma Import (Ada, E77, "system__file_control_block_E");
-   E66 : Short_Integer; pragma Import (Ada, E66, "system__file_io_E");
-   E70 : Short_Integer; pragma Import (Ada, E70, "system__finalization_root_E");
-   E68 : Short_Integer; pragma Import (Ada, E68, "ada__finalization_E");
-   E19 : Short_Integer; pragma Import (Ada, E19, "system__secondary_stack_E");
-   E58 : Short_Integer; pragma Import (Ada, E58, "ada__text_io_E");
-   E05 : Short_Integer; pragma Import (Ada, E05, "accountmanagementsystem_E");
-   E80 : Short_Integer; pragma Import (Ada, E80, "test_E");
+   E074 : Short_Integer; pragma Import (Ada, E074, "system__os_lib_E");
+   E015 : Short_Integer; pragma Import (Ada, E015, "system__soft_links_E");
+   E091 : Short_Integer; pragma Import (Ada, E091, "system__fat_llf_E");
+   E025 : Short_Integer; pragma Import (Ada, E025, "system__exception_table_E");
+   E061 : Short_Integer; pragma Import (Ada, E061, "ada__io_exceptions_E");
+   E008 : Short_Integer; pragma Import (Ada, E008, "ada__tags_E");
+   E060 : Short_Integer; pragma Import (Ada, E060, "ada__streams_E");
+   E072 : Short_Integer; pragma Import (Ada, E072, "interfaces__c_E");
+   E027 : Short_Integer; pragma Import (Ada, E027, "system__exceptions_E");
+   E077 : Short_Integer; pragma Import (Ada, E077, "system__file_control_block_E");
+   E066 : Short_Integer; pragma Import (Ada, E066, "system__file_io_E");
+   E070 : Short_Integer; pragma Import (Ada, E070, "system__finalization_root_E");
+   E068 : Short_Integer; pragma Import (Ada, E068, "ada__finalization_E");
+   E019 : Short_Integer; pragma Import (Ada, E019, "system__secondary_stack_E");
+   E058 : Short_Integer; pragma Import (Ada, E058, "ada__text_io_E");
+   E079 : Short_Integer; pragma Import (Ada, E079, "emergency_E");
+   E005 : Short_Integer; pragma Import (Ada, E005, "accountmanagementsystem_E");
+   E100 : Short_Integer; pragma Import (Ada, E100, "test_E");
 
    Local_Priority_Specific_Dispatching : constant String := "";
    Local_Interrupt_States : constant String := "";
@@ -32,7 +33,7 @@ package body ada_main is
 
    procedure finalize_library is
    begin
-      E58 := E58 - 1;
+      E058 := E058 - 1;
       declare
          procedure F1;
          pragma Import (Ada, F1, "ada__text_io__finalize_spec");
@@ -43,7 +44,7 @@ package body ada_main is
          procedure F2;
          pragma Import (Ada, F2, "system__file_io__finalize_body");
       begin
-         E66 := E66 - 1;
+         E066 := E066 - 1;
          F2;
       end;
       declare
@@ -137,39 +138,40 @@ package body ada_main is
 
       System.Soft_Links'Elab_Spec;
       System.Fat_Llf'Elab_Spec;
-      E85 := E85 + 1;
+      E091 := E091 + 1;
       System.Exception_Table'Elab_Body;
-      E25 := E25 + 1;
+      E025 := E025 + 1;
       Ada.Io_Exceptions'Elab_Spec;
-      E61 := E61 + 1;
+      E061 := E061 + 1;
       Ada.Tags'Elab_Spec;
       Ada.Streams'Elab_Spec;
-      E60 := E60 + 1;
+      E060 := E060 + 1;
       Interfaces.C'Elab_Spec;
       System.Exceptions'Elab_Spec;
-      E27 := E27 + 1;
+      E027 := E027 + 1;
       System.File_Control_Block'Elab_Spec;
-      E77 := E77 + 1;
+      E077 := E077 + 1;
       System.Finalization_Root'Elab_Spec;
-      E70 := E70 + 1;
+      E070 := E070 + 1;
       Ada.Finalization'Elab_Spec;
-      E68 := E68 + 1;
+      E068 := E068 + 1;
       System.File_Io'Elab_Body;
-      E66 := E66 + 1;
-      E72 := E72 + 1;
+      E066 := E066 + 1;
+      E072 := E072 + 1;
       Ada.Tags'Elab_Body;
-      E08 := E08 + 1;
+      E008 := E008 + 1;
       System.Soft_Links'Elab_Body;
-      E15 := E15 + 1;
+      E015 := E015 + 1;
       System.Os_Lib'Elab_Body;
-      E74 := E74 + 1;
+      E074 := E074 + 1;
       System.Secondary_Stack'Elab_Body;
-      E19 := E19 + 1;
+      E019 := E019 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
-      E58 := E58 + 1;
-      E80 := E80 + 1;
-      E05 := E05 + 1;
+      E058 := E058 + 1;
+      E079 := E079 + 1;
+      E100 := E100 + 1;
+      E005 := E005 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -206,6 +208,7 @@ package body ada_main is
 
 --  BEGIN Object file/option list
    --   /Users/raywong/Documents/workspace/Ada/Assignment4/measures.o
+   --   /Users/raywong/Documents/workspace/Ada/Assignment4/emergency.o
    --   /Users/raywong/Documents/workspace/Ada/Assignment4/Test.o
    --   /Users/raywong/Documents/workspace/Ada/Assignment4/accountmanagementsystem.o
    --   /Users/raywong/Documents/workspace/Ada/Assignment4/Run.o

@@ -4,6 +4,7 @@
 
 with Measures; use Measures;
 with Ada.Text_IO; use Ada.Text_IO;
+with Emergency; use Emergency;
 with Test;
 
 package body AccountManagementSystem
@@ -289,6 +290,14 @@ is
          end if;
       end if;
    end UpdateLocationPermissions;
+
+   procedure ContactEmergency(Wearer : in UserID;
+                            Location : in GPSLocation;
+                              Vitals : in BPM) is
+   begin
+      ContactEmergency(Wearer, Vitals, Location);
+   end ContactEmergency;
+
 
 
 end AccountManagementSystem;
