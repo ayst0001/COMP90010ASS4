@@ -21,41 +21,46 @@ is
 
       -- ** Reset all users' friend to -1
       -- ** (for all I in Friends'Range => Friends(I) = UserID'First)
-      for I in Friends'Range loop
+      for I in Users'Range loop
          Friends(I) := UserID'First;
+      end loop;
+
+      -- ** Reset all user's insure to -1
+      -- ** (for all I in Insurers'Range => Insurers(I) = UserID'First)
+      for I in Users'Range loop
+         Insurers(I) := UserID'First;
       end loop;
 
       -- ** Reset Vital records
       -- **(for all I in Vitals'Range => Vitals(I) = BPM'First)
-      for I in Vitals'Range loop
+      for I in Users'Range loop
          Vitals(I) := BPM'First;
       end loop;
 
       -- ** Reset Footsteps records
       -- ** (for all I in MFootsteps'Range => MFootsteps(I) = Footsteps'First)
-      for I in MFootsteps'Range loop
+      for I in Users'Range loop
          MFootsteps(I) := Footsteps'First;
       end loop;
 
       -- ** Reset location records
       -- ** (for all I in Locations'Range => Locations(I) = (0.0, 0.0))
-      for I in Locations'Range loop
+      for I in Users'Range loop
          Locations(I) := (0.0,0.0);
       end loop;
 
       -- ** Put_Line("Initialization finished");
    end Init;
 
---   procedure CreateUser (NewUser : out UserID) is
---   begin
+   procedure CreateUser (NewUser : out UserID) is
+   begin
      -- ** Pre => LatestUser < UserID'Last,
      -- ** Post => Users(NewUser) = True;
---      if LatestUser < UserID'Last then
---         Users(LatestUser) := True;
---         NewUser := LatestUser;
---      end if;
---      Test.Print_UserID_Status;
---   end CreateUser;
+      if LatestUser < UserID'Last then
+         Users(LatestUser+1) := True;
+         LatestUser := LatestUser + 1;
+      end if;
+   end CreateUser;
 
    procedure SetInsurer(Wearer : in UserID; Insurer : in UserID) is
    begin

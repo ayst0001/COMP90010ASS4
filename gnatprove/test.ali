@@ -5,14 +5,14 @@ P GP ZX
 RN
 RV NO_ELABORATION_CODE
 
-U test%b		test.adb		37958111 OO PK
+U test%b		test.adb		a99ff2d9 OO PK
 W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
 W measures%s		measures.ads		measures.ali
 W text_io%s		text_io.ads		text_io.ali
 
 U test%s		test.ads		107b8052 EE OO PK
 
-D accountmanagementsystem.ads  20160528121734 5d4cc46c accountmanagementsystem%s
+D accountmanagementsystem.ads  20160528153931 b2e23e72 accountmanagementsystem%s
 D ada.ads		20150506105328 3ffc8e18 ada%s
 D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
@@ -25,11 +25,11 @@ D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
 D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
 D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
-D test.ads		20160528104710 107b8052 test%s
-D test.adb		20160528104744 416ce8db test%b
+D test.ads		20160528155029 107b8052 test%s
+D test.adb		20160528155029 30c8610d test%b
 D text_io.ads		20150506105330 45d626c9 text_io%s
 X 1 accountmanagementsystem.ads
-12K9*AccountManagementSystem 206e28 15|4w6 4r35
+12K9*AccountManagementSystem 205e28 15|4w6 4r35
 17A9*UsersArray(boolean)<8|6I9>
 20A9*UserUserArray(8|6I9)<8|6I9>
 23A9*VitalsArray(8|10I9)<8|6I9>
@@ -40,7 +40,7 @@ X 1 accountmanagementsystem.ads
 36a4*Friends{20A9} 15|25r16 29r32
 39a4*Vitals{23A9} 15|47r16 51r29
 40a4*MFootsteps{24A9} 15|58r16 62r35
-41a4*Locations{25A9} 15|69r16 73r30 75r29
+41a4*Locations{25A9} 15|69r16 73r29 75r30
 X 5 a-textio.ads
 242U14*Put 15|15s10 16s10 17s10 26s10 27s10 28s10 37s10 38s10 39s10 48s10
 . 49s10 50s10 59s10 60s10 61s10 70s10 71s10 72s10 73s10 74s10 75s10
@@ -51,12 +51,12 @@ X 8 measures.ads
 6I9*UserID<integer> 15|16r14 27r14 29r19 38r14 40r19 49r15 60r14 71r14
 10I9*BPM<integer> 15|51r19
 14I9*Footsteps<integer> 15|62r19
-17F9*Latitude<float> 15|75r14
-18F9*Longitude<float> 15|73r14
-21f10*Lat{17F9} 15|75r42
-22f10*Long{18F9} 15|73r43
+17F9*Latitude<float> 15|73r14
+18F9*Longitude<float> 15|75r14
+21f10*Lat{17F9} 15|73r42
+22f10*Long{18F9} 15|75r43
 X 14 test.ads
-1K9*Test 11l5 11e9 15|8b14 81l5 81t9
+1K9*Test 11l5 11e9 15|8b14 83l5 83t9
 4U14*Print_UserID_Status 15|11b14 20l8 20t27
 5U14*Print_Everyones_Friend 15|22b14 31l8 31t30
 6U14*Print_Everyones_Vitals 15|44b14 53l8 53t30
@@ -69,7 +69,7 @@ X 15 test.adb
 36i11 I<integer> 38r27 40r41
 47i11 I<integer> 49r28 51r36
 58i11 I<integer> 60r27 62r46
-69i11 I<integer> 71r27 73r40 75r39
+69i11 I<integer> 71r27 73r39 75r40
 X 16 text_io.ads
 24K9*Text_IO=24:29 15|5w6 5r19
 FD 1 accountmanagementsystem.ads
@@ -77,7 +77,21 @@ FS .1 12K9 accountmanagementsystem
 FS .2 51U14 accountmanagementsystem__init
 FS .3 64U14 accountmanagementsystem__setinsurer
 FS .4 73V13 accountmanagementsystem__readinsurer
-FS .5 73V13 accountmanagementsystem__readinsurer -> 1.4
+FS .5 84U14 accountmanagementsystem__setfriend
+FS .6 91V13 accountmanagementsystem__readfriend
+FS .7 102U14 accountmanagementsystem__updatevitals
+FS .8 106U14 accountmanagementsystem__updatefootsteps
+FS .9 111U14 accountmanagementsystem__updatelocation
+FS .10 119V13 accountmanagementsystem__readvitals
+FS .11 127V13 accountmanagementsystem__readvitals_alt
+FS .12 135V13 accountmanagementsystem__readfootsteps
+FS .13 142V13 accountmanagementsystem__readlocation
+FS .14 149U14 accountmanagementsystem__updatevitalspermissions
+FS .15 165U14 accountmanagementsystem__updatefootstepspermissions
+FS .16 182U14 accountmanagementsystem__updatelocationpermissions
+FS .17 73V13 accountmanagementsystem__readinsurer -> 1.4
+FS .18 91V13 accountmanagementsystem__readfriend -> 1.6
+FS .19 119V13 accountmanagementsystem__readvitals -> 1.10
 FD 2 ada.ads
 FS .1 16K9 ada
 FD 3 a-ioexce.ads
@@ -308,7 +322,7 @@ F 35*4 accountmanagementsystem__insurers 15|.4:36r16 40r32
 F 36*4 accountmanagementsystem__friends 15|.3:25r16 29r32
 F 39*4 accountmanagementsystem__vitals 15|.5:47r16 51r29
 F 40*4 accountmanagementsystem__mfootsteps 15|.6:58r16 62r35
-F 41*4 accountmanagementsystem__locations 15|.7:69r16 73r30 75r29
+F 41*4 accountmanagementsystem__locations 15|.7:69r16 73r29 75r30
 FX 5 a-textio.ads .1 ada__text_io
 F 242*14 ada__text_io__put__4 15|.2:15s10 16s10 17s10 .3:26s10 27s10 28s10
 . .4:37s10 38s10 39s10 .5:48s10 49s10 50s10 .6:59s10 60s10 61s10 .7:70s10
@@ -326,5 +340,5 @@ F 47*11 test__print_everyones_vitals__L_4__i 49c28 51c36
 FX 15 test.adb .6 test__print_everyones_footsteps
 F 58*11 test__print_everyones_footsteps__L_5__i 60c27 62c46
 FX 15 test.adb .7 test__print_everyones_location
-F 69*11 test__print_everyones_location__L_6__i 71c27 73c40 75c39
+F 69*11 test__print_everyones_location__L_6__i 71c27 73c39 75c40
 

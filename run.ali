@@ -12,7 +12,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U run%b			run.adb			2676b8e0 NE OO SU
+U run%b			run.adb			388853e5 NE OO SU
 W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -21,8 +21,8 @@ W system.img_bool%s	s-imgboo.adb		s-imgboo.ali
 W system.img_int%s	s-imgint.adb		s-imgint.ali
 W test%s		test.adb		test.ali
 
-D accountmanagementsystem.ads  20160528153931 b2e23e72 accountmanagementsystem%s
-D accountmanagementsystem.adb  20160528153938 79a9779f accountmanagementsystem%b
+D accountmanagementsystem.ads  20160529032831 ac1cd577 accountmanagementsystem%s
+D accountmanagementsystem.adb  20160529032819 8793ef96 accountmanagementsystem%b
 D ada.ads		20150506105328 3ffc8e18 ada%s
 D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
 D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
@@ -50,16 +50,16 @@ D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
 D test.ads		20160528155029 107b8052 test%s
 X 1 accountmanagementsystem.ads
-12K9*AccountManagementSystem 205e28 13|3w6 3r35 8r4 17r4 18r4 21r4 24r26
+12K9*AccountManagementSystem 206e28 13|3w6 3r35 8r4 17r4 18r4 21r4 24r26
 . 35r4
 17A9*UsersArray(boolean)<12|6I9>
 28A9*UserUserBooleanArray(boolean)<12|6I9><12|6I9>
 31a4*Users{17A9} 13|17m28 18m28
 45a4*VitalsPermissions{28A9} 13|36r27
 51U14*Init 13|8s28
-84U14*SetFriend 13|21s28
-91V13*ReadFriend{12|6I9} 13|24s50
-149U14*UpdateVitalsPermissions 13|35s28
+85U14*SetFriend 13|21s28
+92V13*ReadFriend{12|6I9} 13|24s50
+150U14*UpdateVitalsPermissions 13|35s28
 X 3 ada.ads
 16K9*Ada 19e8 13|2r6 2r23
 X 8 a-textio.ads

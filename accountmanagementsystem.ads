@@ -50,14 +50,15 @@ is
    -- Create and initialise the account management system
    procedure Init with 
      Post => (for all I in Users'Range => Users(I) = False) and
-     (for all I in Friends'Range => Friends(I) = UserID'First) and
-     (for all I in Vitals'Range => Vitals(I) = BPM'First) and
-     (for all I in MFootsteps'Range => MFootsteps(I) = Footsteps'First) and
-     (for all I in Locations'Range => Locations(I) = (0.0, 0.0));
+     (for all I in Users'Range => Friends(I) = UserID'First) and
+     (for all I in Users'Range => Insurers(I) = UserID'First) and
+     (for all I in Users'Range => Vitals(I) = BPM'First) and
+     (for all I in Users'Range => MFootsteps(I) = Footsteps'First) and
+     (for all I in Users'Range => Locations(I) = (0.0, 0.0));
      
---   procedure CreateUser(NewUser : out UserID) with
---     Pre => LatestUser < UserID'Last,
---     Post => Users(NewUser) = True;
+   procedure CreateUser(NewUser : out UserID) with
+     Pre => LatestUser < UserID'Last,
+     Post => Users(NewUser) = True;
    
    
    -- ** Insurer Operation, ** added some permission check
