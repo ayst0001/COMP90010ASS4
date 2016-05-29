@@ -1,0 +1,31 @@
+// accountmanagementsystem_Globals_Graph
+digraph G {
+   graph [splines=True];
+   edge [labelfloat=True];
+    1 [label="accountmanagementsystem__users"];
+    2 [label="accountmanagementsystem__insurers"];
+    3 [label="accountmanagementsystem__friends"];
+    4 [label="accountmanagementsystem__vitals"];
+    5 [label="accountmanagementsystem__mfootsteps"];
+    6 [label="accountmanagementsystem__locations"];
+    7 [label="accountmanagementsystem__init'Ins",shape="box"];
+    8 [label="accountmanagementsystem__init'Outs",shape="box"];
+    9 [label="accountmanagementsystem__init'Proof_Ins",shape="box"];
+    10 [label="ada__text_io__put_line__2'Ins",shape="box"];
+    11 [label="ada__text_io__put_line__2'Outs",shape="box"];
+    12 [label="ada__text_io__put_line__2'Proof_Ins",shape="box"];
+    13 [label="emergency__contactemergency'Ins",shape="box"];
+    14 [label="emergency__contactemergency'Outs",shape="box"];
+    15 [label="emergency__contactemergency'Proof_Ins",shape="box"];
+
+    8 ->  1 [arrowType="normal"];
+    8 ->  2 [arrowType="normal"];
+    8 ->  3 [arrowType="normal"];
+    8 ->  4 [arrowType="normal"];
+    8 ->  5 [arrowType="normal"];
+    8 ->  6 [arrowType="normal"];
+    13 ->  10 [arrowType="normal"];
+    13 ->  11 [arrowType="normal"];
+    14 ->  11 [arrowType="normal"];
+    15 ->  12 [arrowType="normal"];
+}

@@ -5,17 +5,7 @@
       "sloc": [
         {
           "file": "accountmanagementsystem.ads",
-          "line": 50
-        }
-      ],
-      "spark": "all"
-    },
-    {
-      "name": "AccountManagementSystem.CreateUser",
-      "sloc": [
-        {
-          "file": "accountmanagementsystem.ads",
-          "line": 57
+          "line": 52
         }
       ],
       "spark": "all"
@@ -25,7 +15,7 @@
       "sloc": [
         {
           "file": "accountmanagementsystem.ads",
-          "line": 12
+          "line": 13
         }
       ],
       "spark": "all"
@@ -34,41 +24,7 @@
   "flow": [
     {
       "file": "accountmanagementsystem.ads",
-      "line": 57,
-      "col": 25,
-      "rule": "UNINITIALIZED",
-      "severity": "medium",
-      "entity": {
-        "name": "AccountManagementSystem.CreateUser",
-        "sloc": [
-          {
-            "file": "accountmanagementsystem.ads",
-            "line": 57
-          }
-        ]
-      },
-      "msg_id": 0
-    },
-    {
-      "file": "accountmanagementsystem.ads",
-      "line": 59,
-      "col": 20,
-      "rule": "UNINITIALIZED",
-      "severity": "medium",
-      "entity": {
-        "name": "AccountManagementSystem.CreateUser",
-        "sloc": [
-          {
-            "file": "accountmanagementsystem.ads",
-            "line": 57
-          }
-        ]
-      },
-      "msg_id": 1
-    },
-    {
-      "file": "accountmanagementsystem.ads",
-      "line": 50,
+      "line": 52,
       "col": 14,
       "rule": "UNINITIALIZED",
       "severity": "info",
@@ -77,135 +33,7 @@
         "sloc": [
           {
             "file": "accountmanagementsystem.ads",
-            "line": 50
-          }
-        ]
-      }
-    },
-    {
-      "file": "accountmanagementsystem.ads",
-      "line": 50,
-      "col": 14,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "AccountManagementSystem.Init",
-        "sloc": [
-          {
-            "file": "accountmanagementsystem.ads",
-            "line": 50
-          }
-        ]
-      }
-    },
-    {
-      "file": "accountmanagementsystem.ads",
-      "line": 50,
-      "col": 14,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "AccountManagementSystem.Init",
-        "sloc": [
-          {
-            "file": "accountmanagementsystem.ads",
-            "line": 50
-          }
-        ]
-      }
-    },
-    {
-      "file": "accountmanagementsystem.ads",
-      "line": 50,
-      "col": 14,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "AccountManagementSystem.Init",
-        "sloc": [
-          {
-            "file": "accountmanagementsystem.ads",
-            "line": 50
-          }
-        ]
-      }
-    },
-    {
-      "file": "accountmanagementsystem.ads",
-      "line": 50,
-      "col": 14,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "AccountManagementSystem.Init",
-        "sloc": [
-          {
-            "file": "accountmanagementsystem.ads",
-            "line": 50
-          }
-        ]
-      }
-    },
-    {
-      "file": "accountmanagementsystem.ads",
-      "line": 53,
-      "col": 36,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "AccountManagementSystem.Init",
-        "sloc": [
-          {
-            "file": "accountmanagementsystem.ads",
-            "line": 50
-          }
-        ]
-      }
-    },
-    {
-      "file": "accountmanagementsystem.ads",
-      "line": 54,
-      "col": 40,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "AccountManagementSystem.Init",
-        "sloc": [
-          {
-            "file": "accountmanagementsystem.ads",
-            "line": 50
-          }
-        ]
-      }
-    },
-    {
-      "file": "accountmanagementsystem.ads",
-      "line": 51,
-      "col": 43,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "AccountManagementSystem.Init",
-        "sloc": [
-          {
-            "file": "accountmanagementsystem.ads",
-            "line": 50
-          }
-        ]
-      }
-    },
-    {
-      "file": "accountmanagementsystem.ads",
-      "line": 55,
-      "col": 39,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "AccountManagementSystem.Init",
-        "sloc": [
-          {
-            "file": "accountmanagementsystem.ads",
-            "line": 50
+            "line": 52
           }
         ]
       }
@@ -213,7 +41,7 @@
     {
       "file": "accountmanagementsystem.ads",
       "line": 52,
-      "col": 37,
+      "col": 14,
       "rule": "UNINITIALIZED",
       "severity": "info",
       "entity": {
@@ -221,7 +49,185 @@
         "sloc": [
           {
             "file": "accountmanagementsystem.ads",
-            "line": 50
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 52,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 52,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 52,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 52,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 54,
+      "col": 35,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 59,
+      "col": 35,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 56,
+      "col": 35,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 55,
+      "col": 35,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 57,
+      "col": 35,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 58,
+      "col": 35,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    }
+  ],
+  "proof": [
+    {
+      "file": "accountmanagementsystem.ads",
+      "line": 54,
+      "col": 6,
+      "rule": "postcondition",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
           }
         ]
       }
@@ -229,79 +235,95 @@
     {
       "file": "accountmanagementsystem.adb",
       "line": 19,
-      "col": 19,
-      "rule": "UNINITIALIZED",
-      "severity": "info",
-      "entity": {
-        "name": "AccountManagementSystem.Init",
-        "sloc": [
-          {
-            "file": "accountmanagementsystem.ads",
-            "line": 50
-          }
-        ]
-      }
-    },
-    {
-      "file": "accountmanagementsystem.adb",
-      "line": 26,
       "col": 21,
-      "rule": "UNINITIALIZED",
+      "rule": "length_check",
       "severity": "info",
       "entity": {
         "name": "AccountManagementSystem.Init",
         "sloc": [
           {
             "file": "accountmanagementsystem.ads",
-            "line": 50
+            "line": 52
           }
         ]
       }
     },
     {
       "file": "accountmanagementsystem.adb",
-      "line": 33,
+      "line": 18,
+      "col": 17,
+      "rule": "length_check",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.adb",
+      "line": 17,
+      "col": 18,
+      "rule": "length_check",
+      "severity": "info",
+      "entity": {
+        "name": "AccountManagementSystem.Init",
+        "sloc": [
+          {
+            "file": "accountmanagementsystem.ads",
+            "line": 52
+          }
+        ]
+      }
+    },
+    {
+      "file": "accountmanagementsystem.adb",
+      "line": 20,
       "col": 20,
-      "rule": "UNINITIALIZED",
+      "rule": "length_check",
       "severity": "info",
       "entity": {
         "name": "AccountManagementSystem.Init",
         "sloc": [
           {
             "file": "accountmanagementsystem.ads",
-            "line": 50
+            "line": 52
           }
         ]
       }
     },
     {
       "file": "accountmanagementsystem.adb",
-      "line": 40,
-      "col": 24,
-      "rule": "UNINITIALIZED",
+      "line": 16,
+      "col": 19,
+      "rule": "length_check",
       "severity": "info",
       "entity": {
         "name": "AccountManagementSystem.Init",
         "sloc": [
           {
             "file": "accountmanagementsystem.ads",
-            "line": 50
+            "line": 52
           }
         ]
       }
     },
     {
       "file": "accountmanagementsystem.adb",
-      "line": 47,
-      "col": 23,
-      "rule": "UNINITIALIZED",
+      "line": 15,
+      "col": 16,
+      "rule": "length_check",
       "severity": "info",
       "entity": {
         "name": "AccountManagementSystem.Init",
         "sloc": [
           {
             "file": "accountmanagementsystem.ads",
-            "line": 50
+            "line": 52
           }
         ]
       }
@@ -312,13 +334,45 @@
       "assumptions": [
       ],
       "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "AccountManagementSystem.Init",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 52
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
         "predicate": "CLAIM_EFFECTS",
         "arg": {
           "name": "AccountManagementSystem.Init",
           "sloc": [
             {
               "file": "accountmanagementsystem.ads",
-              "line": 50
+              "line": 52
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "AccountManagementSystem.Init",
+          "sloc": [
+            {
+              "file": "accountmanagementsystem.ads",
+              "line": 52
             }
           ]
         }

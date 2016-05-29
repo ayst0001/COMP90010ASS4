@@ -46,11 +46,21 @@ test.adb:60:10: warning: no Global contract available for "Put"
 test.adb:60:10: warning: assuming "Put" has no effect on global items
 test.adb:61:10: warning: no Global contract available for "Put"
 test.adb:61:10: warning: assuming "Put" has no effect on global items
-test.adb:62:10: warning: no Global contract available for "Put"
-test.adb:62:10: warning: assuming "Put" has no effect on global items
-test.adb:63:10: warning: no Global contract available for "Put"
-test.adb:63:10: warning: assuming "Put" has no effect on global items
-test.adb:64:10: warning: no Global contract available for "Put"
-test.adb:64:10: warning: assuming "Put" has no effect on global items
-test.adb:65:10: warning: no Global contract available for "Put_Line"
-test.adb:65:10: warning: assuming "Put_Line" has no effect on global items
+test.adb:62:10: warning: no Global contract available for "Put_Line"
+test.adb:62:10: warning: assuming "Put_Line" has no effect on global items
+test.adb:68:07: warning: no Global contract available for "Put_Line"
+test.adb:68:07: warning: assuming "Put_Line" has no effect on global items
+test.adb:70:10: warning: no Global contract available for "Put"
+test.adb:70:10: warning: assuming "Put" has no effect on global items
+test.adb:71:10: warning: no Global contract available for "Put"
+test.adb:71:10: warning: assuming "Put" has no effect on global items
+test.adb:72:10: warning: no Global contract available for "Put"
+test.adb:72:10: warning: assuming "Put" has no effect on global items
+test.adb:73:10: warning: no Global contract available for "Put"
+test.adb:73:10: warning: assuming "Put" has no effect on global items
+test.adb:74:10: warning: no Global contract available for "Put"
+test.adb:74:10: warning: assuming "Put" has no effect on global items
+test.adb:75:10: warning: no Global contract available for "Put"
+test.adb:75:10: warning: assuming "Put" has no effect on global items
+test.adb:76:10: warning: no Global contract available for "Put_Line"
+test.adb:76:10: warning: assuming "Put_Line" has no effect on global items

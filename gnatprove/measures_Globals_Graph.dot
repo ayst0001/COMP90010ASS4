@@ -1,0 +1,6 @@
+// measures_Globals_Graph
+digraph G {
+   graph [splines=True];
+   edge [labelfloat=True];
+
+}

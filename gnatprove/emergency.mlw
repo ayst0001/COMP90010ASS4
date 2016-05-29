@@ -757,374 +757,6 @@ module Standard__universal_real
 
 end
 
-(* Module for defining the constant "max_userid" defined at measures.ads:5, created in Gnat2Why.Decls.Translate_Constant *)
-module Measures__max_userid
- use import "_gnatprove_standard".Main
- use        Standard__integer
-
- function max_userid "GP_CE_Relevant" 
-   :Standard__integer.__split
-
-end
-
-(* Module for axiomatizing type "TuseridB" defined at measures.ads:6, created in Gnat2Why.Types.Translate_Type *)
-module Measures__TuseridB
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type tuseridB 
- 
- function first 
-   :int =
-  ( -2147483648 )
- 
- function last 
-   :int =
-  2147483647
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = tuseridB, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "userid" defined at measures.ads:6, created in Gnat2Why.Types.Translate_Type *)
-module Measures__userid
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type userid 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = userid, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for defining the constant "max_bpm" defined at measures.ads:9, created in Gnat2Why.Decls.Translate_Constant *)
-module Measures__max_bpm
- use import "_gnatprove_standard".Main
- use        Standard__integer
-
- function max_bpm "GP_CE_Relevant" 
-   :Standard__integer.__split
-
-end
-
-(* Module for axiomatizing type "TbpmB" defined at measures.ads:10, created in Gnat2Why.Types.Translate_Type *)
-module Measures__TbpmB
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type tbpmB 
- 
- function first 
-   :int =
-  ( -2147483648 )
- 
- function last 
-   :int =
-  2147483647
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = tbpmB, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "bpm" defined at measures.ads:10, created in Gnat2Why.Types.Translate_Type *)
-module Measures__bpm
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type bpm 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  300
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = bpm, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for defining the constant "max_footsteps" defined at measures.ads:13, created in Gnat2Why.Decls.Translate_Constant *)
-module Measures__max_footsteps
- use import "_gnatprove_standard".Main
- use        Standard__integer
-
- function max_footsteps "GP_CE_Relevant" 
-   :Standard__integer.__split
-
-end
-
-(* Module for axiomatizing type "TfootstepsB" defined at measures.ads:14, created in Gnat2Why.Types.Translate_Type *)
-module Measures__TfootstepsB
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type tfootstepsB 
- 
- function first 
-   :int =
-  ( -2147483648 )
- 
- function last 
-   :int =
-  2147483647
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = tfootstepsB, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "footsteps" defined at measures.ads:14, created in Gnat2Why.Types.Translate_Type *)
-module Measures__footsteps
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type footsteps 
- 
- function first 
-   :int =
-  0
- 
- function last 
-   :int =
-  100000
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = footsteps, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "TlatitudeB" defined at measures.ads:17, created in Gnat2Why.Types.Translate_Type *)
-module Measures__TlatitudeB
- use import "_gnatprove_standard".Main
- use import "real".RealInfix
- use        "_gnatprove_standard".Floating
-
- type tlatitudeB 
- 
- function first 
-   :real =
-  (-.340282346638528859811704183484516925440.0)
- 
- function last 
-   :real =
-  (340282346638528859811704183484516925440.0)
- 
- predicate in_range
-   (x : real)  =
-  ( (first <=. x) /\ (x <=. last) )
- 
- clone export "ada__model".Static_Floating_Point with
- type t = tlatitudeB, 
- function round_real_tmp = Floating.round_single, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "latitude" defined at measures.ads:17, created in Gnat2Why.Types.Translate_Type *)
-module Measures__latitude
- use import "_gnatprove_standard".Main
- use import "real".RealInfix
- use        "_gnatprove_standard".Floating
-
- type latitude 
- 
- function first 
-   :real =
-  (-.90.0)
- 
- function last 
-   :real =
-  (90.0)
- 
- predicate in_range
-   (x : real)  =
-  ( (first <=. x) /\ (x <=. last) )
- 
- clone export "ada__model".Static_Floating_Point with
- type t = latitude, 
- function round_real_tmp = Floating.round_single, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "TlongitudeB" defined at measures.ads:18, created in Gnat2Why.Types.Translate_Type *)
-module Measures__TlongitudeB
- use import "_gnatprove_standard".Main
- use import "real".RealInfix
- use        "_gnatprove_standard".Floating
-
- type tlongitudeB 
- 
- function first 
-   :real =
-  (-.340282346638528859811704183484516925440.0)
- 
- function last 
-   :real =
-  (340282346638528859811704183484516925440.0)
- 
- predicate in_range
-   (x : real)  =
-  ( (first <=. x) /\ (x <=. last) )
- 
- clone export "ada__model".Static_Floating_Point with
- type t = tlongitudeB, 
- function round_real_tmp = Floating.round_single, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "longitude" defined at measures.ads:18, created in Gnat2Why.Types.Translate_Type *)
-module Measures__longitude
- use import "_gnatprove_standard".Main
- use import "real".RealInfix
- use        "_gnatprove_standard".Floating
-
- type longitude 
- 
- function first 
-   :real =
-  (-.180.0)
- 
- function last 
-   :real =
-  (180.0)
- 
- predicate in_range
-   (x : real)  =
-  ( (first <=. x) /\ (x <=. last) )
- 
- clone export "ada__model".Static_Floating_Point with
- type t = longitude, 
- function round_real_tmp = Floating.round_single, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "gpslocation" defined at measures.ads:19, created in Gnat2Why.Types.Translate_Type *)
-module Measures__gpslocation
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Measures__latitude
- use        Measures__longitude
-
- type __split_fields  = 
-  { rec__lat : Measures__latitude.latitude; rec__long : Measures__longitude.longitude }
- 
- type gpslocation  = 
-  { __split_fields : __split_fields }
- 
- predicate lat__pred
-   (a : gpslocation)  =
-  true
- 
- val rec__lat_ 
-   (a : gpslocation)  :Measures__latitude.latitude
-  requires { (lat__pred a) }
-  ensures { (result = a.__split_fields.rec__lat) }
-
- 
- predicate long__pred
-   (a : gpslocation)  =
-  true
- 
- val rec__long_ 
-   (a : gpslocation)  :Measures__longitude.longitude
-  requires { (long__pred a) }
-  ensures { (result = a.__split_fields.rec__long) }
-
- 
- function bool_eq 
-   (a : gpslocation) (b : gpslocation)  :bool =
-  (if (( ((Measures__latitude.to_real a.__split_fields.rec__lat) = (Measures__latitude.to_real b.__split_fields.rec__lat)) /\ ((Measures__longitude.to_real a.__split_fields.rec__long) = (Measures__longitude.to_real b.__split_fields.rec__long)) )) then (
-   True) else (
-   False))
- 
- function user_eq 
-   (a : gpslocation) (b : gpslocation)  :bool
- 
- function value__size 
-   :int
- 
- function object__size 
-   (a : gpslocation)  :int
- 
- axiom value__size_axiom :
-  ((value__size ) >= 0)
- 
- axiom object__size_axiom :
-  (forall a  : gpslocation.
-   ((object__size a) >= 0))
- 
- function dummy 
-   :gpslocation
-
-end
-
 (* Module for axiomatizing type "root_stream_type" defined at a-stream.ads:70, created in Gnat2Why.Types.Translate_Type *)
 module Ada__streams__root_stream_type
  use import "_gnatprove_standard".Main
@@ -9203,6 +8835,374 @@ module Ada__text_io__eof_char
 
 end
 
+(* Module for defining the constant "max_userid" defined at measures.ads:5, created in Gnat2Why.Decls.Translate_Constant *)
+module Measures__max_userid
+ use import "_gnatprove_standard".Main
+ use        Standard__integer
+
+ function max_userid "GP_CE_Relevant" 
+   :Standard__integer.__split
+
+end
+
+(* Module for axiomatizing type "TuseridB" defined at measures.ads:6, created in Gnat2Why.Types.Translate_Type *)
+module Measures__TuseridB
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type tuseridB 
+ 
+ function first 
+   :int =
+  ( -2147483648 )
+ 
+ function last 
+   :int =
+  2147483647
+ 
+ predicate in_range
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = tuseridB, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+
+end
+
+(* Module for axiomatizing type "userid" defined at measures.ads:6, created in Gnat2Why.Types.Translate_Type *)
+module Measures__userid
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type userid 
+ 
+ function first 
+   :int =
+  ( -1 )
+ 
+ function last 
+   :int =
+  100
+ 
+ predicate in_range
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = userid, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+
+end
+
+(* Module for defining the constant "max_bpm" defined at measures.ads:9, created in Gnat2Why.Decls.Translate_Constant *)
+module Measures__max_bpm
+ use import "_gnatprove_standard".Main
+ use        Standard__integer
+
+ function max_bpm "GP_CE_Relevant" 
+   :Standard__integer.__split
+
+end
+
+(* Module for axiomatizing type "TbpmB" defined at measures.ads:10, created in Gnat2Why.Types.Translate_Type *)
+module Measures__TbpmB
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type tbpmB 
+ 
+ function first 
+   :int =
+  ( -2147483648 )
+ 
+ function last 
+   :int =
+  2147483647
+ 
+ predicate in_range
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = tbpmB, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+
+end
+
+(* Module for axiomatizing type "bpm" defined at measures.ads:10, created in Gnat2Why.Types.Translate_Type *)
+module Measures__bpm
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type bpm 
+ 
+ function first 
+   :int =
+  ( -1 )
+ 
+ function last 
+   :int =
+  300
+ 
+ predicate in_range
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = bpm, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+
+end
+
+(* Module for defining the constant "max_footsteps" defined at measures.ads:13, created in Gnat2Why.Decls.Translate_Constant *)
+module Measures__max_footsteps
+ use import "_gnatprove_standard".Main
+ use        Standard__integer
+
+ function max_footsteps "GP_CE_Relevant" 
+   :Standard__integer.__split
+
+end
+
+(* Module for axiomatizing type "TfootstepsB" defined at measures.ads:14, created in Gnat2Why.Types.Translate_Type *)
+module Measures__TfootstepsB
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type tfootstepsB 
+ 
+ function first 
+   :int =
+  ( -2147483648 )
+ 
+ function last 
+   :int =
+  2147483647
+ 
+ predicate in_range
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = tfootstepsB, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+
+end
+
+(* Module for axiomatizing type "footsteps" defined at measures.ads:14, created in Gnat2Why.Types.Translate_Type *)
+module Measures__footsteps
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type footsteps 
+ 
+ function first 
+   :int =
+  0
+ 
+ function last 
+   :int =
+  100000
+ 
+ predicate in_range
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = footsteps, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+
+end
+
+(* Module for axiomatizing type "TlatitudeB" defined at measures.ads:17, created in Gnat2Why.Types.Translate_Type *)
+module Measures__TlatitudeB
+ use import "_gnatprove_standard".Main
+ use import "real".RealInfix
+ use        "_gnatprove_standard".Floating
+
+ type tlatitudeB 
+ 
+ function first 
+   :real =
+  (-.340282346638528859811704183484516925440.0)
+ 
+ function last 
+   :real =
+  (340282346638528859811704183484516925440.0)
+ 
+ predicate in_range
+   (x : real)  =
+  ( (first <=. x) /\ (x <=. last) )
+ 
+ clone export "ada__model".Static_Floating_Point with
+ type t = tlatitudeB, 
+ function round_real_tmp = Floating.round_single, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+
+end
+
+(* Module for axiomatizing type "latitude" defined at measures.ads:17, created in Gnat2Why.Types.Translate_Type *)
+module Measures__latitude
+ use import "_gnatprove_standard".Main
+ use import "real".RealInfix
+ use        "_gnatprove_standard".Floating
+
+ type latitude 
+ 
+ function first 
+   :real =
+  (-.90.0)
+ 
+ function last 
+   :real =
+  (90.0)
+ 
+ predicate in_range
+   (x : real)  =
+  ( (first <=. x) /\ (x <=. last) )
+ 
+ clone export "ada__model".Static_Floating_Point with
+ type t = latitude, 
+ function round_real_tmp = Floating.round_single, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+
+end
+
+(* Module for axiomatizing type "TlongitudeB" defined at measures.ads:18, created in Gnat2Why.Types.Translate_Type *)
+module Measures__TlongitudeB
+ use import "_gnatprove_standard".Main
+ use import "real".RealInfix
+ use        "_gnatprove_standard".Floating
+
+ type tlongitudeB 
+ 
+ function first 
+   :real =
+  (-.340282346638528859811704183484516925440.0)
+ 
+ function last 
+   :real =
+  (340282346638528859811704183484516925440.0)
+ 
+ predicate in_range
+   (x : real)  =
+  ( (first <=. x) /\ (x <=. last) )
+ 
+ clone export "ada__model".Static_Floating_Point with
+ type t = tlongitudeB, 
+ function round_real_tmp = Floating.round_single, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+
+end
+
+(* Module for axiomatizing type "longitude" defined at measures.ads:18, created in Gnat2Why.Types.Translate_Type *)
+module Measures__longitude
+ use import "_gnatprove_standard".Main
+ use import "real".RealInfix
+ use        "_gnatprove_standard".Floating
+
+ type longitude 
+ 
+ function first 
+   :real =
+  (-.180.0)
+ 
+ function last 
+   :real =
+  (180.0)
+ 
+ predicate in_range
+   (x : real)  =
+  ( (first <=. x) /\ (x <=. last) )
+ 
+ clone export "ada__model".Static_Floating_Point with
+ type t = longitude, 
+ function round_real_tmp = Floating.round_single, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+
+end
+
+(* Module for axiomatizing type "gpslocation" defined at measures.ads:19, created in Gnat2Why.Types.Translate_Type *)
+module Measures__gpslocation
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Measures__latitude
+ use        Measures__longitude
+
+ type __split_fields  = 
+  { rec__lat : Measures__latitude.latitude; rec__long : Measures__longitude.longitude }
+ 
+ type gpslocation  = 
+  { __split_fields : __split_fields }
+ 
+ predicate lat__pred
+   (a : gpslocation)  =
+  true
+ 
+ val rec__lat_ 
+   (a : gpslocation)  :Measures__latitude.latitude
+  requires { (lat__pred a) }
+  ensures { (result = a.__split_fields.rec__lat) }
+
+ 
+ predicate long__pred
+   (a : gpslocation)  =
+  true
+ 
+ val rec__long_ 
+   (a : gpslocation)  :Measures__longitude.longitude
+  requires { (long__pred a) }
+  ensures { (result = a.__split_fields.rec__long) }
+
+ 
+ function bool_eq 
+   (a : gpslocation) (b : gpslocation)  :bool =
+  (if (( ((Measures__latitude.to_real a.__split_fields.rec__lat) = (Measures__latitude.to_real b.__split_fields.rec__lat)) /\ ((Measures__longitude.to_real a.__split_fields.rec__long) = (Measures__longitude.to_real b.__split_fields.rec__long)) )) then (
+   True) else (
+   False))
+ 
+ function user_eq 
+   (a : gpslocation) (b : gpslocation)  :bool
+ 
+ function value__size 
+   :int
+ 
+ function object__size 
+   (a : gpslocation)  :int
+ 
+ axiom value__size_axiom :
+  ((value__size ) >= 0)
+ 
+ axiom object__size_axiom :
+  (forall a  : gpslocation.
+   ((object__size a) >= 0))
+ 
+ function dummy 
+   :gpslocation
+
+end
+
 (* Module for defining the constant "wearer" defined at emergency.ads:12, created in Gnat2Why.Decls.Translate_Constant *)
 module Emergency__contactemergency__wearer
  use import "_gnatprove_standard".Main
@@ -9251,1224 +9251,6 @@ end
 module Emergency__contactemergency__location__axiom
  use import "_gnatprove_standard".Main
 
-
-end
-
-(* Module for axiomatizing type "TusersarrayB" defined at accountmanagementsystem.ads:18, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__TusersarrayB
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        "_gnatprove_standard".Boolean
- use        Array__Int
- use        Measures__TuseridB
- use        Measures__userid
-
- type component_type  = 
-  bool
- 
- function index_1_id 
-   (x : int)  :int =
-  x
- 
- clone export "ada__model".Unconstr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- type index_base_type = Measures__TuseridB.tuseridB, 
- type index_rep_type = int, 
- function to_rep = Measures__TuseridB.to_rep, 
- function rep_to_int = index_1_id, 
- predicate in_range_base = Measures__TuseridB.in_range, 
- predicate index_dynamic_property = Measures__userid.dynamic_property, 
- predicate index_rep_le = Int.(<=)
- 
- type tusersarrayB  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Boolean.to_int, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
- 
- clone export "ada__model".Standard_Array_Logical_Op_Axioms with
- type map = Array__Int.map component_type, 
- function get = Array__Int.get, 
- function xorb = Array__Int.xorb, 
- function andb = Array__Int.andb, 
- function orb = Array__Int.orb, 
- function notb = Array__Int.notb, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one
-
-end
-
-(* Module for axiomatizing type "usersarray" defined at accountmanagementsystem.ads:18, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__usersarray
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        "_gnatprove_standard".Boolean
- use        Array__Int
-
- type component_type  = 
-  bool
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- clone export "ada__model".Constr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- function first = first, 
- function last = last, 
- type index_rep_type = int
- 
- type usersarray  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Boolean.to_int, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
- 
- clone export "ada__model".Standard_Array_Logical_Op_Axioms with
- type map = Array__Int.map component_type, 
- function get = Array__Int.get, 
- function xorb = Array__Int.xorb, 
- function andb = Array__Int.andb, 
- function orb = Array__Int.orb, 
- function notb = Array__Int.notb, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one
-
-end
-
-(* Module for axiomatizing type "TuseruserarrayB" defined at accountmanagementsystem.ads:21, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__TuseruserarrayB
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int
- use        Measures__TuseridB
- use        Measures__userid
-
- type component_type  = 
-  Measures__userid.userid
- 
- function index_1_id 
-   (x : int)  :int =
-  x
- 
- clone export "ada__model".Unconstr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- type index_base_type = Measures__TuseridB.tuseridB, 
- type index_rep_type = int, 
- function to_rep = Measures__TuseridB.to_rep, 
- function rep_to_int = index_1_id, 
- predicate in_range_base = Measures__TuseridB.in_range, 
- predicate index_dynamic_property = Measures__userid.dynamic_property, 
- predicate index_rep_le = Int.(<=)
- 
- type tuseruserarrayB  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Measures__userid.to_rep, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
-
-end
-
-(* Module for axiomatizing type "useruserarray" defined at accountmanagementsystem.ads:21, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__useruserarray
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int
- use        Measures__userid
-
- type component_type  = 
-  Measures__userid.userid
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- clone export "ada__model".Constr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- function first = first, 
- function last = last, 
- type index_rep_type = int
- 
- type useruserarray  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Measures__userid.to_rep, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
-
-end
-
-(* Module for axiomatizing type "TvitalsarrayB" defined at accountmanagementsystem.ads:24, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__TvitalsarrayB
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int
- use        Measures__TuseridB
- use        Measures__userid
- use        Measures__bpm
-
- type component_type  = 
-  Measures__bpm.bpm
- 
- function index_1_id 
-   (x : int)  :int =
-  x
- 
- clone export "ada__model".Unconstr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- type index_base_type = Measures__TuseridB.tuseridB, 
- type index_rep_type = int, 
- function to_rep = Measures__TuseridB.to_rep, 
- function rep_to_int = index_1_id, 
- predicate in_range_base = Measures__TuseridB.in_range, 
- predicate index_dynamic_property = Measures__userid.dynamic_property, 
- predicate index_rep_le = Int.(<=)
- 
- type tvitalsarrayB  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Measures__bpm.to_rep, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
-
-end
-
-(* Module for axiomatizing type "vitalsarray" defined at accountmanagementsystem.ads:24, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__vitalsarray
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int
- use        Measures__bpm
-
- type component_type  = 
-  Measures__bpm.bpm
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- clone export "ada__model".Constr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- function first = first, 
- function last = last, 
- type index_rep_type = int
- 
- type vitalsarray  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Measures__bpm.to_rep, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
-
-end
-
-(* Module for axiomatizing type "TfootstepsarrayB" defined at accountmanagementsystem.ads:25, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__TfootstepsarrayB
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int
- use        Measures__TuseridB
- use        Measures__userid
- use        Measures__footsteps
-
- type component_type  = 
-  Measures__footsteps.footsteps
- 
- function index_1_id 
-   (x : int)  :int =
-  x
- 
- clone export "ada__model".Unconstr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- type index_base_type = Measures__TuseridB.tuseridB, 
- type index_rep_type = int, 
- function to_rep = Measures__TuseridB.to_rep, 
- function rep_to_int = index_1_id, 
- predicate in_range_base = Measures__TuseridB.in_range, 
- predicate index_dynamic_property = Measures__userid.dynamic_property, 
- predicate index_rep_le = Int.(<=)
- 
- type tfootstepsarrayB  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Measures__footsteps.to_rep, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
-
-end
-
-(* Module for axiomatizing type "footstepsarray" defined at accountmanagementsystem.ads:25, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__footstepsarray
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int
- use        Measures__footsteps
-
- type component_type  = 
-  Measures__footsteps.footsteps
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- clone export "ada__model".Constr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- function first = first, 
- function last = last, 
- type index_rep_type = int
- 
- type footstepsarray  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Measures__footsteps.to_rep, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
-
-end
-
-(* Module for axiomatizing type "TlocationsarrayB" defined at accountmanagementsystem.ads:26, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__TlocationsarrayB
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int
- use        Measures__TuseridB
- use        Measures__userid
- use        Measures__gpslocation
-
- type component_type  = 
-  Measures__gpslocation.gpslocation
- 
- function index_1_id 
-   (x : int)  :int =
-  x
- 
- clone export "ada__model".Unconstr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- type index_base_type = Measures__TuseridB.tuseridB, 
- type index_rep_type = int, 
- function to_rep = Measures__TuseridB.to_rep, 
- function rep_to_int = index_1_id, 
- predicate in_range_base = Measures__TuseridB.in_range, 
- predicate index_dynamic_property = Measures__userid.dynamic_property, 
- predicate index_rep_le = Int.(<=)
- 
- type tlocationsarrayB  = 
-  __t
-
-end
-
-(* Module for axiomatizing type "locationsarray" defined at accountmanagementsystem.ads:26, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__locationsarray
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int
- use        Measures__gpslocation
-
- type component_type  = 
-  Measures__gpslocation.gpslocation
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- clone export "ada__model".Constr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- function first = first, 
- function last = last, 
- type index_rep_type = int
- 
- type locationsarray  = 
-  __t
-
-end
-
-(* Module for axiomatizing The array theory associated to type "TuseruserbooleanarrayB" defined at accountmanagementsystem.ads:29, created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
-module Array__Int_Int
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- function index_I1_one 
-   :int =
-  1
- 
- function index_I2_one 
-   :int =
-  1
- 
- clone export "_gnatprove_standard".Array__2 with
- type I1.t = int, 
- predicate I1.le = Int.(<=), 
- predicate I1.lt = Int.(<), 
- predicate I1.gt = Int.(>), 
- function I1.add = Int.(+), 
- function I1.sub = Int.(-), 
- function I1.one = index_I1_one, 
- type I2.t = int, 
- predicate I2.le = Int.(<=), 
- predicate I2.lt = Int.(<), 
- predicate I2.gt = Int.(>), 
- function I2.add = Int.(+), 
- function I2.sub = Int.(-), 
- function I2.one = index_I2_one
-
-end
-
-(* Module for axiomatizing type "TuseruserbooleanarrayB" defined at accountmanagementsystem.ads:29, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__TuseruserbooleanarrayB
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Measures__TuseridB
- use        Measures__userid
- use        Array__Int_Int
-
- type component_type  = 
-  bool
- 
- function index_1_id 
-   (x : int)  :int =
-  x
- 
- function index_2_id 
-   (x : int)  :int =
-  x
- 
- clone export "ada__model".Unconstr_Array_2 with
- type map = Array__Int_Int.map component_type, 
- function array_bool_eq = Array__Int_Int.bool_eq, 
- type index_base_type = Measures__TuseridB.tuseridB, 
- type index_rep_type = int, 
- function to_rep = Measures__TuseridB.to_rep, 
- function rep_to_int = index_1_id, 
- predicate in_range_base = Measures__TuseridB.in_range, 
- predicate index_dynamic_property = Measures__userid.dynamic_property, 
- predicate index_rep_le = Int.(<=), 
- type index_base_type_2 = Measures__TuseridB.tuseridB, 
- type index_rep_type_2 = int, 
- function to_rep_2 = Measures__TuseridB.to_rep, 
- function rep_to_int_2 = index_2_id, 
- predicate in_range_base_2 = Measures__TuseridB.in_range, 
- predicate index_dynamic_property_2 = Measures__userid.dynamic_property, 
- predicate index_rep_le_2 = Int.(<=)
- 
- type tuseruserbooleanarrayB  = 
-  __t
-
-end
-
-(* Module for axiomatizing type "useruserbooleanarray" defined at accountmanagementsystem.ads:29, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__useruserbooleanarray
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int_Int
-
- type component_type  = 
-  bool
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- function first_2 
-   :int =
-  ( -1 )
- 
- function last_2 
-   :int =
-  100
- 
- clone export "ada__model".Constr_Array_2 with
- type map = Array__Int_Int.map component_type, 
- function array_bool_eq = Array__Int_Int.bool_eq, 
- function first = first, 
- function last = last, 
- type index_rep_type = int, 
- function first_2 = first_2, 
- function last_2 = last_2, 
- type index_rep_type_2 = int
- 
- type useruserbooleanarray  = 
-  __t
-
-end
-
-(* Module for axiomatizing type "T13s" defined at accountmanagementsystem.ads:54, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L12s__T13s
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t13s 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t13s, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "T15s" defined at accountmanagementsystem.ads:55, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L14s__T15s
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t15s 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t15s, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "T17s" defined at accountmanagementsystem.ads:56, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L16s__T17s
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t17s 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t17s, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "T19s" defined at accountmanagementsystem.ads:57, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L18s__T19s
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t19s 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t19s, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "T21s" defined at accountmanagementsystem.ads:58, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L20s__T21s
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t21s 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t21s, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "T23s" defined at accountmanagementsystem.ads:59, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__L22s__T23s
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t23s 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t23s, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "T1b" defined at accountmanagementsystem.adb:15, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T1b
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t1b 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t1b, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "T2b" defined at accountmanagementsystem.adb:15, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T2b
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        "_gnatprove_standard".Boolean
- use        Array__Int
-
- type component_type  = 
-  bool
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- clone export "ada__model".Constr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- function first = first, 
- function last = last, 
- type index_rep_type = int
- 
- type t2b  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Boolean.to_int, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
- 
- clone export "ada__model".Standard_Array_Logical_Op_Axioms with
- type map = Array__Int.map component_type, 
- function get = Array__Int.get, 
- function xorb = Array__Int.xorb, 
- function andb = Array__Int.andb, 
- function orb = Array__Int.orb, 
- function notb = Array__Int.notb, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one
-
-end
-
-(* Module for axiomatizing type "T3b" defined at accountmanagementsystem.adb:16, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T3b
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t3b 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t3b, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "T4b" defined at accountmanagementsystem.adb:16, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T4b
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int
- use        Measures__userid
-
- type component_type  = 
-  Measures__userid.userid
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- clone export "ada__model".Constr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- function first = first, 
- function last = last, 
- type index_rep_type = int
- 
- type t4b  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Measures__userid.to_rep, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
-
-end
-
-(* Module for axiomatizing type "T5b" defined at accountmanagementsystem.adb:17, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T5b
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t5b 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t5b, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "T6b" defined at accountmanagementsystem.adb:17, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T6b
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int
- use        Measures__userid
-
- type component_type  = 
-  Measures__userid.userid
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- clone export "ada__model".Constr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- function first = first, 
- function last = last, 
- type index_rep_type = int
- 
- type t6b  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Measures__userid.to_rep, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
-
-end
-
-(* Module for axiomatizing type "T7b" defined at accountmanagementsystem.adb:18, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T7b
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t7b 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t7b, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "T8b" defined at accountmanagementsystem.adb:18, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T8b
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int
- use        Measures__bpm
-
- type component_type  = 
-  Measures__bpm.bpm
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- clone export "ada__model".Constr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- function first = first, 
- function last = last, 
- type index_rep_type = int
- 
- type t8b  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Measures__bpm.to_rep, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
-
-end
-
-(* Module for axiomatizing type "T9b" defined at accountmanagementsystem.adb:19, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T9b
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t9b 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t9b, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "T10b" defined at accountmanagementsystem.adb:19, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T10b
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int
- use        Measures__footsteps
-
- type component_type  = 
-  Measures__footsteps.footsteps
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- clone export "ada__model".Constr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- function first = first, 
- function last = last, 
- type index_rep_type = int
- 
- type t10b  = 
-  __t
- 
- function index_Index_one 
-   :int =
-  1
- 
- clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
- type component_type = component_type, 
- function to_rep = Measures__footsteps.to_rep, 
- type map = Array__Int.map component_type, 
- type Index.t = int, 
- predicate Index.le = Int.(<=), 
- predicate Index.lt = Int.(<), 
- predicate Index.gt = Int.(>), 
- function Index.add = Int.(+), 
- function Index.sub = Int.(-), 
- function Index.one = index_Index_one, 
- function get = Array__Int.get, 
- function compare = Array__Int.compare, 
- function bool_eq = Array__Int.bool_eq
-
-end
-
-(* Module for axiomatizing type "T11b" defined at accountmanagementsystem.adb:20, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T11b
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t11b 
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- predicate in_range
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t11b, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
-
-end
-
-(* Module for axiomatizing type "T12b" defined at accountmanagementsystem.adb:20, created in Gnat2Why.Types.Translate_Type *)
-module Accountmanagementsystem__init__T12b
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Array__Int
- use        Measures__gpslocation
-
- type component_type  = 
-  Measures__gpslocation.gpslocation
- 
- function first 
-   :int =
-  ( -1 )
- 
- function last 
-   :int =
-  100
- 
- clone export "ada__model".Constr_Array with
- type map = Array__Int.map component_type, 
- function array_bool_eq = Array__Int.bool_eq, 
- function first = first, 
- function last = last, 
- type index_rep_type = int
- 
- type t12b  = 
-  __t
 
 end
 (* Module for defining a ref holding the value of variable "stream" defined at a-stream.ads:58, created in Gnat2Why.Decls.Translate_Variable *)
@@ -11364,215 +10146,6 @@ module Ada__text_io__current_err__axiom
 
 
 end
-
-(* Module for defining a ref holding the value of variable "emergency" defined at accountmanagementsystem.ads:32, created in Gnat2Why.Decls.Translate_Variable *)
-module Accountmanagementsystem__emergency
- use import "_gnatprove_standard".Main
- use        Measures__userid
-
- val emergency "GP_CE_Relevant"  : ref Measures__userid.__split
- 
- function attr__ATTRIBUTE_ADDRESS "GP_CE_Relevant" 
-   :int
-
-end
-
-(* Module giving an empty axiom for the entity "emergency" defined at accountmanagementsystem.ads:32, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
-module Accountmanagementsystem__emergency__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining a ref holding the value of variable "users" defined at accountmanagementsystem.ads:33, created in Gnat2Why.Decls.Translate_Variable *)
-module Accountmanagementsystem__users
- use import "_gnatprove_standard".Main
- use        Accountmanagementsystem__usersarray
-
- val users  : ref Accountmanagementsystem__usersarray.usersarray
- 
- function attr__ATTRIBUTE_ADDRESS 
-   :int
-
-end
-
-(* Module giving an empty axiom for the entity "users" defined at accountmanagementsystem.ads:33, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
-module Accountmanagementsystem__users__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining a ref holding the value of variable "latestuser" defined at accountmanagementsystem.ads:34, created in Gnat2Why.Decls.Translate_Variable *)
-module Accountmanagementsystem__latestuser
- use import "_gnatprove_standard".Main
- use        Measures__userid
-
- val latestuser "GP_CE_Relevant"  : ref Measures__userid.__split
- 
- function attr__ATTRIBUTE_ADDRESS "GP_CE_Relevant" 
-   :int
-
-end
-
-(* Module giving an empty axiom for the entity "latestuser" defined at accountmanagementsystem.ads:34, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
-module Accountmanagementsystem__latestuser__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining a ref holding the value of variable "insurers" defined at accountmanagementsystem.ads:37, created in Gnat2Why.Decls.Translate_Variable *)
-module Accountmanagementsystem__insurers
- use import "_gnatprove_standard".Main
- use        Accountmanagementsystem__useruserarray
-
- val insurers  : ref Accountmanagementsystem__useruserarray.useruserarray
- 
- function attr__ATTRIBUTE_ADDRESS 
-   :int
-
-end
-
-(* Module giving an empty axiom for the entity "insurers" defined at accountmanagementsystem.ads:37, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
-module Accountmanagementsystem__insurers__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining a ref holding the value of variable "friends" defined at accountmanagementsystem.ads:38, created in Gnat2Why.Decls.Translate_Variable *)
-module Accountmanagementsystem__friends
- use import "_gnatprove_standard".Main
- use        Accountmanagementsystem__useruserarray
-
- val friends  : ref Accountmanagementsystem__useruserarray.useruserarray
- 
- function attr__ATTRIBUTE_ADDRESS 
-   :int
-
-end
-
-(* Module giving an empty axiom for the entity "friends" defined at accountmanagementsystem.ads:38, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
-module Accountmanagementsystem__friends__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining a ref holding the value of variable "vitals" defined at accountmanagementsystem.ads:41, created in Gnat2Why.Decls.Translate_Variable *)
-module Accountmanagementsystem__vitals
- use import "_gnatprove_standard".Main
- use        Accountmanagementsystem__vitalsarray
-
- val vitals  : ref Accountmanagementsystem__vitalsarray.vitalsarray
- 
- function attr__ATTRIBUTE_ADDRESS 
-   :int
-
-end
-
-(* Module giving an empty axiom for the entity "vitals" defined at accountmanagementsystem.ads:41, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
-module Accountmanagementsystem__vitals__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining a ref holding the value of variable "mfootsteps" defined at accountmanagementsystem.ads:42, created in Gnat2Why.Decls.Translate_Variable *)
-module Accountmanagementsystem__mfootsteps
- use import "_gnatprove_standard".Main
- use        Accountmanagementsystem__footstepsarray
-
- val mfootsteps  : ref Accountmanagementsystem__footstepsarray.footstepsarray
- 
- function attr__ATTRIBUTE_ADDRESS 
-   :int
-
-end
-
-(* Module giving an empty axiom for the entity "mfootsteps" defined at accountmanagementsystem.ads:42, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
-module Accountmanagementsystem__mfootsteps__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining a ref holding the value of variable "locations" defined at accountmanagementsystem.ads:43, created in Gnat2Why.Decls.Translate_Variable *)
-module Accountmanagementsystem__locations
- use import "_gnatprove_standard".Main
- use        Accountmanagementsystem__locationsarray
-
- val locations  : ref Accountmanagementsystem__locationsarray.locationsarray
- 
- function attr__ATTRIBUTE_ADDRESS 
-   :int
-
-end
-
-(* Module giving an empty axiom for the entity "locations" defined at accountmanagementsystem.ads:43, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
-module Accountmanagementsystem__locations__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining a ref holding the value of variable "vitalspermissions" defined at accountmanagementsystem.ads:47, created in Gnat2Why.Decls.Translate_Variable *)
-module Accountmanagementsystem__vitalspermissions
- use import "_gnatprove_standard".Main
- use        Accountmanagementsystem__useruserbooleanarray
-
- val vitalspermissions  : ref Accountmanagementsystem__useruserbooleanarray.useruserbooleanarray
- 
- function attr__ATTRIBUTE_ADDRESS 
-   :int
-
-end
-
-(* Module giving an empty axiom for the entity "vitalspermissions" defined at accountmanagementsystem.ads:47, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
-module Accountmanagementsystem__vitalspermissions__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining a ref holding the value of variable "footstepspermissions" defined at accountmanagementsystem.ads:48, created in Gnat2Why.Decls.Translate_Variable *)
-module Accountmanagementsystem__footstepspermissions
- use import "_gnatprove_standard".Main
- use        Accountmanagementsystem__useruserbooleanarray
-
- val footstepspermissions  : ref Accountmanagementsystem__useruserbooleanarray.useruserbooleanarray
- 
- function attr__ATTRIBUTE_ADDRESS 
-   :int
-
-end
-
-(* Module giving an empty axiom for the entity "footstepspermissions" defined at accountmanagementsystem.ads:48, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
-module Accountmanagementsystem__footstepspermissions__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining a ref holding the value of variable "locationpermissions" defined at accountmanagementsystem.ads:49, created in Gnat2Why.Decls.Translate_Variable *)
-module Accountmanagementsystem__locationpermissions
- use import "_gnatprove_standard".Main
- use        Accountmanagementsystem__useruserbooleanarray
-
- val locationpermissions  : ref Accountmanagementsystem__useruserbooleanarray.useruserbooleanarray
- 
- function attr__ATTRIBUTE_ADDRESS 
-   :int
-
-end
-
-(* Module giving an empty axiom for the entity "locationpermissions" defined at accountmanagementsystem.ads:49, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
-module Accountmanagementsystem__locationpermissions__axiom
- use import "_gnatprove_standard".Main
-
-
-end
 (* Module for possibly declaring a logic function for "read" defined at a-stream.ads:57, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
 module Ada__streams__read
  use import "_gnatprove_standard".Main
@@ -11718,11 +10291,11 @@ module System__parameters__long_bits
 end
 
 (* Module for defining a value for string literal  defined at s-parame.ads:119, created in Gnat2Why.Expr.Transform_String_Literal *)
-module Temp___standard__accountmanagementsystem_0
+module Temp___standard__emergency_0
  use import "_gnatprove_standard".Main
  use        System__parameters__T1s
 
- function temp___standard__accountmanagementsystem_0 
+ function temp___standard__emergency_0 
    :System__parameters__T1s.t1s
 
 end
@@ -11842,20 +10415,20 @@ module Interfaces__c_streams__full_name
 end
 
 (* Module for defining the value of the aggregate at s-wchcon.ads:170, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_1
+module Temp___standard__emergency_1
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        Standard__character
  use        Array__Int
  use        System__wch_con__T4s
 
- function temp___standard__accountmanagementsystem_1 
-   (temp___standard__accountmanagementsystem_3 : Standard__character.__split) (temp___standard__accountmanagementsystem_4 : Standard__character.__split) (temp___standard__accountmanagementsystem_5 : Standard__character.__split) (temp___standard__accountmanagementsystem_6 : Standard__character.__split) (temp___standard__accountmanagementsystem_7 : Standard__character.__split) (temp___standard__accountmanagementsystem_8 : Standard__character.__split)  :System__wch_con__T4s.t4s
+ function temp___standard__emergency_1 
+   (temp___standard__emergency_3 : Standard__character.__split) (temp___standard__emergency_4 : Standard__character.__split) (temp___standard__emergency_5 : Standard__character.__split) (temp___standard__emergency_6 : Standard__character.__split) (temp___standard__emergency_7 : Standard__character.__split) (temp___standard__emergency_8 : Standard__character.__split)  :System__wch_con__T4s.t4s
  
  axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_3 temp___standard__accountmanagementsystem_4 temp___standard__accountmanagementsystem_5 temp___standard__accountmanagementsystem_6 temp___standard__accountmanagementsystem_7 temp___standard__accountmanagementsystem_8  : Standard__character.__split [(temp___standard__accountmanagementsystem_1 temp___standard__accountmanagementsystem_3 temp___standard__accountmanagementsystem_4 temp___standard__accountmanagementsystem_5 temp___standard__accountmanagementsystem_6 temp___standard__accountmanagementsystem_7 temp___standard__accountmanagementsystem_8)].
-   (let temp___standard__accountmanagementsystem_2 = (temp___standard__accountmanagementsystem_1 temp___standard__accountmanagementsystem_3 temp___standard__accountmanagementsystem_4 temp___standard__accountmanagementsystem_5 temp___standard__accountmanagementsystem_6 temp___standard__accountmanagementsystem_7 temp___standard__accountmanagementsystem_8) in (
-    ( ( ( ( ( ((Array__Int.get temp___standard__accountmanagementsystem_2 1) = (Standard__character.of_rep temp___standard__accountmanagementsystem_3)) /\ ((Array__Int.get temp___standard__accountmanagementsystem_2 2) = (Standard__character.of_rep temp___standard__accountmanagementsystem_4)) ) /\ ((Array__Int.get temp___standard__accountmanagementsystem_2 3) = (Standard__character.of_rep temp___standard__accountmanagementsystem_5)) ) /\ ((Array__Int.get temp___standard__accountmanagementsystem_2 4) = (Standard__character.of_rep temp___standard__accountmanagementsystem_6)) ) /\ ((Array__Int.get temp___standard__accountmanagementsystem_2 5) = (Standard__character.of_rep temp___standard__accountmanagementsystem_7)) ) /\ ((Array__Int.get temp___standard__accountmanagementsystem_2 6) = (Standard__character.of_rep temp___standard__accountmanagementsystem_8)) )))
+  (forall temp___standard__emergency_3 temp___standard__emergency_4 temp___standard__emergency_5 temp___standard__emergency_6 temp___standard__emergency_7 temp___standard__emergency_8  : Standard__character.__split [(temp___standard__emergency_1 temp___standard__emergency_3 temp___standard__emergency_4 temp___standard__emergency_5 temp___standard__emergency_6 temp___standard__emergency_7 temp___standard__emergency_8)].
+   (let temp___standard__emergency_2 = (temp___standard__emergency_1 temp___standard__emergency_3 temp___standard__emergency_4 temp___standard__emergency_5 temp___standard__emergency_6 temp___standard__emergency_7 temp___standard__emergency_8) in (
+    ( ( ( ( ( ((Array__Int.get temp___standard__emergency_2 1) = (Standard__character.of_rep temp___standard__emergency_3)) /\ ((Array__Int.get temp___standard__emergency_2 2) = (Standard__character.of_rep temp___standard__emergency_4)) ) /\ ((Array__Int.get temp___standard__emergency_2 3) = (Standard__character.of_rep temp___standard__emergency_5)) ) /\ ((Array__Int.get temp___standard__emergency_2 4) = (Standard__character.of_rep temp___standard__emergency_6)) ) /\ ((Array__Int.get temp___standard__emergency_2 5) = (Standard__character.of_rep temp___standard__emergency_7)) ) /\ ((Array__Int.get temp___standard__emergency_2 6) = (Standard__character.of_rep temp___standard__emergency_8)) )))
   )
 
 end
@@ -11871,20 +10444,20 @@ module System__wch_con__wc_longest_sequence
 end
 
 (* Module for defining the value of the aggregate at s-wchcon.ads:194, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_10
+module Temp___standard__emergency_10
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        Standard__natural
  use        Array__Int
  use        System__wch_con__T8s
 
- function temp___standard__accountmanagementsystem_10 
-   (temp___standard__accountmanagementsystem_12 : Standard__natural.__split) (temp___standard__accountmanagementsystem_13 : Standard__natural.__split) (temp___standard__accountmanagementsystem_14 : Standard__natural.__split) (temp___standard__accountmanagementsystem_15 : Standard__natural.__split) (temp___standard__accountmanagementsystem_16 : Standard__natural.__split) (temp___standard__accountmanagementsystem_17 : Standard__natural.__split)  :System__wch_con__T8s.t8s
+ function temp___standard__emergency_10 
+   (temp___standard__emergency_12 : Standard__natural.__split) (temp___standard__emergency_13 : Standard__natural.__split) (temp___standard__emergency_14 : Standard__natural.__split) (temp___standard__emergency_15 : Standard__natural.__split) (temp___standard__emergency_16 : Standard__natural.__split) (temp___standard__emergency_17 : Standard__natural.__split)  :System__wch_con__T8s.t8s
  
  axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_12 temp___standard__accountmanagementsystem_13 temp___standard__accountmanagementsystem_14 temp___standard__accountmanagementsystem_15 temp___standard__accountmanagementsystem_16 temp___standard__accountmanagementsystem_17  : Standard__natural.__split [(temp___standard__accountmanagementsystem_10 temp___standard__accountmanagementsystem_12 temp___standard__accountmanagementsystem_13 temp___standard__accountmanagementsystem_14 temp___standard__accountmanagementsystem_15 temp___standard__accountmanagementsystem_16 temp___standard__accountmanagementsystem_17)].
-   (let temp___standard__accountmanagementsystem_11 = (temp___standard__accountmanagementsystem_10 temp___standard__accountmanagementsystem_12 temp___standard__accountmanagementsystem_13 temp___standard__accountmanagementsystem_14 temp___standard__accountmanagementsystem_15 temp___standard__accountmanagementsystem_16 temp___standard__accountmanagementsystem_17) in (
-    ( ( ( ( ( ((Array__Int.get temp___standard__accountmanagementsystem_11 1) = (Standard__natural.of_rep temp___standard__accountmanagementsystem_12)) /\ ((Array__Int.get temp___standard__accountmanagementsystem_11 2) = (Standard__natural.of_rep temp___standard__accountmanagementsystem_13)) ) /\ ((Array__Int.get temp___standard__accountmanagementsystem_11 3) = (Standard__natural.of_rep temp___standard__accountmanagementsystem_14)) ) /\ ((Array__Int.get temp___standard__accountmanagementsystem_11 4) = (Standard__natural.of_rep temp___standard__accountmanagementsystem_15)) ) /\ ((Array__Int.get temp___standard__accountmanagementsystem_11 5) = (Standard__natural.of_rep temp___standard__accountmanagementsystem_16)) ) /\ ((Array__Int.get temp___standard__accountmanagementsystem_11 6) = (Standard__natural.of_rep temp___standard__accountmanagementsystem_17)) )))
+  (forall temp___standard__emergency_12 temp___standard__emergency_13 temp___standard__emergency_14 temp___standard__emergency_15 temp___standard__emergency_16 temp___standard__emergency_17  : Standard__natural.__split [(temp___standard__emergency_10 temp___standard__emergency_12 temp___standard__emergency_13 temp___standard__emergency_14 temp___standard__emergency_15 temp___standard__emergency_16 temp___standard__emergency_17)].
+   (let temp___standard__emergency_11 = (temp___standard__emergency_10 temp___standard__emergency_12 temp___standard__emergency_13 temp___standard__emergency_14 temp___standard__emergency_15 temp___standard__emergency_16 temp___standard__emergency_17) in (
+    ( ( ( ( ( ((Array__Int.get temp___standard__emergency_11 1) = (Standard__natural.of_rep temp___standard__emergency_12)) /\ ((Array__Int.get temp___standard__emergency_11 2) = (Standard__natural.of_rep temp___standard__emergency_13)) ) /\ ((Array__Int.get temp___standard__emergency_11 3) = (Standard__natural.of_rep temp___standard__emergency_14)) ) /\ ((Array__Int.get temp___standard__emergency_11 4) = (Standard__natural.of_rep temp___standard__emergency_15)) ) /\ ((Array__Int.get temp___standard__emergency_11 5) = (Standard__natural.of_rep temp___standard__emergency_16)) ) /\ ((Array__Int.get temp___standard__emergency_11 6) = (Standard__natural.of_rep temp___standard__emergency_17)) )))
   )
 
 end
@@ -12237,126 +10810,6 @@ module Emergency__contactemergency
 
 
 end
-
-(* Module for possibly declaring a logic function for "init" defined at accountmanagementsystem.ads:52, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
-module Accountmanagementsystem__init
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining the value of the aggregate at accountmanagementsystem.adb:15, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_62
- use import "_gnatprove_standard".Main
- use        Array__Int
- use        Accountmanagementsystem__init__T2b
-
- function temp___standard__accountmanagementsystem_62 
-   (temp___standard__accountmanagementsystem_64 : bool)  :Accountmanagementsystem__init__T2b.t2b
- 
- axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_64  : bool [(temp___standard__accountmanagementsystem_62 temp___standard__accountmanagementsystem_64)].
-   (let temp___standard__accountmanagementsystem_63 = (temp___standard__accountmanagementsystem_62 temp___standard__accountmanagementsystem_64) in (
-    (forall temp___standard__accountmanagementsystem_65  : int.
-     ((Array__Int.get temp___standard__accountmanagementsystem_63 temp___standard__accountmanagementsystem_65) = temp___standard__accountmanagementsystem_64))))
-  )
-
-end
-
-(* Module for defining the value of the aggregate at accountmanagementsystem.adb:16, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_66
- use import "_gnatprove_standard".Main
- use        Array__Int
- use        Measures__userid
- use        Accountmanagementsystem__init__T4b
-
- function temp___standard__accountmanagementsystem_66 
-   (temp___standard__accountmanagementsystem_68 : Measures__userid.__split)  :Accountmanagementsystem__init__T4b.t4b
- 
- axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_68  : Measures__userid.__split [(temp___standard__accountmanagementsystem_66 temp___standard__accountmanagementsystem_68)].
-   (let temp___standard__accountmanagementsystem_67 = (temp___standard__accountmanagementsystem_66 temp___standard__accountmanagementsystem_68) in (
-    (forall temp___standard__accountmanagementsystem_69  : int.
-     ((Array__Int.get temp___standard__accountmanagementsystem_67 temp___standard__accountmanagementsystem_69) = (Measures__userid.of_rep temp___standard__accountmanagementsystem_68)))))
-  )
-
-end
-
-(* Module for defining the value of the aggregate at accountmanagementsystem.adb:17, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_70
- use import "_gnatprove_standard".Main
- use        Array__Int
- use        Measures__userid
- use        Accountmanagementsystem__init__T6b
-
- function temp___standard__accountmanagementsystem_70 
-   (temp___standard__accountmanagementsystem_72 : Measures__userid.__split)  :Accountmanagementsystem__init__T6b.t6b
- 
- axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_72  : Measures__userid.__split [(temp___standard__accountmanagementsystem_70 temp___standard__accountmanagementsystem_72)].
-   (let temp___standard__accountmanagementsystem_71 = (temp___standard__accountmanagementsystem_70 temp___standard__accountmanagementsystem_72) in (
-    (forall temp___standard__accountmanagementsystem_73  : int.
-     ((Array__Int.get temp___standard__accountmanagementsystem_71 temp___standard__accountmanagementsystem_73) = (Measures__userid.of_rep temp___standard__accountmanagementsystem_72)))))
-  )
-
-end
-
-(* Module for defining the value of the aggregate at accountmanagementsystem.adb:18, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_74
- use import "_gnatprove_standard".Main
- use        Array__Int
- use        Measures__bpm
- use        Accountmanagementsystem__init__T8b
-
- function temp___standard__accountmanagementsystem_74 
-   (temp___standard__accountmanagementsystem_76 : Measures__bpm.__split)  :Accountmanagementsystem__init__T8b.t8b
- 
- axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_76  : Measures__bpm.__split [(temp___standard__accountmanagementsystem_74 temp___standard__accountmanagementsystem_76)].
-   (let temp___standard__accountmanagementsystem_75 = (temp___standard__accountmanagementsystem_74 temp___standard__accountmanagementsystem_76) in (
-    (forall temp___standard__accountmanagementsystem_77  : int.
-     ((Array__Int.get temp___standard__accountmanagementsystem_75 temp___standard__accountmanagementsystem_77) = (Measures__bpm.of_rep temp___standard__accountmanagementsystem_76)))))
-  )
-
-end
-
-(* Module for defining the value of the aggregate at accountmanagementsystem.adb:19, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_78
- use import "_gnatprove_standard".Main
- use        Array__Int
- use        Measures__footsteps
- use        Accountmanagementsystem__init__T10b
-
- function temp___standard__accountmanagementsystem_78 
-   (temp___standard__accountmanagementsystem_80 : Measures__footsteps.__split)  :Accountmanagementsystem__init__T10b.t10b
- 
- axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_80  : Measures__footsteps.__split [(temp___standard__accountmanagementsystem_78 temp___standard__accountmanagementsystem_80)].
-   (let temp___standard__accountmanagementsystem_79 = (temp___standard__accountmanagementsystem_78 temp___standard__accountmanagementsystem_80) in (
-    (forall temp___standard__accountmanagementsystem_81  : int.
-     ((Array__Int.get temp___standard__accountmanagementsystem_79 temp___standard__accountmanagementsystem_81) = (Measures__footsteps.of_rep temp___standard__accountmanagementsystem_80)))))
-  )
-
-end
-
-(* Module for defining the value of the aggregate at accountmanagementsystem.adb:20, created in Gnat2Why.Expr.Transform_Aggregate.Generate_Logic_Function *)
-module Temp___standard__accountmanagementsystem_82
- use import "_gnatprove_standard".Main
- use        Array__Int
- use        Measures__gpslocation
- use        Accountmanagementsystem__init__T12b
-
- function temp___standard__accountmanagementsystem_82 
-   (temp___standard__accountmanagementsystem_84 : Measures__gpslocation.gpslocation)  :Accountmanagementsystem__init__T12b.t12b
- 
- axiom def_axiom :
-  (forall temp___standard__accountmanagementsystem_84  : Measures__gpslocation.gpslocation [(temp___standard__accountmanagementsystem_82 temp___standard__accountmanagementsystem_84)].
-   (let temp___standard__accountmanagementsystem_83 = (temp___standard__accountmanagementsystem_82 temp___standard__accountmanagementsystem_84) in (
-    (forall temp___standard__accountmanagementsystem_85  : int.
-     ((Array__Int.get temp___standard__accountmanagementsystem_83 temp___standard__accountmanagementsystem_85) = temp___standard__accountmanagementsystem_84))))
-  )
-
-end
 (* Module giving axioms for the type entity "short_short_integer", created in Gnat2Why.Types.Generate_Type_Completion *)
 module Standard__short_short_integer__axiom
  use import "_gnatprove_standard".Main
@@ -12520,116 +10973,6 @@ end
 
 (* Module giving axioms for the type entity "universal_real", created in Gnat2Why.Types.Generate_Type_Completion *)
 module Standard__universal_real__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining the value of constant "max_userid" defined at measures.ads:5, created in Gnat2Why.Decls.Translate_Constant_Value *)
-module Measures__max_userid__axiom
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Measures__max_userid
-
- axiom max_userid__def_axiom :
-  ((Measures__max_userid.max_userid ) = 100)
-
-end
-
-(* Module giving axioms for the type entity "TuseridB" defined at measures.ads:6, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Measures__TuseridB__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "userid" defined at measures.ads:6, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Measures__userid__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining the value of constant "max_bpm" defined at measures.ads:9, created in Gnat2Why.Decls.Translate_Constant_Value *)
-module Measures__max_bpm__axiom
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Measures__max_bpm
-
- axiom max_bpm__def_axiom :
-  ((Measures__max_bpm.max_bpm ) = 300)
-
-end
-
-(* Module giving axioms for the type entity "TbpmB" defined at measures.ads:10, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Measures__TbpmB__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "bpm" defined at measures.ads:10, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Measures__bpm__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module for defining the value of constant "max_footsteps" defined at measures.ads:13, created in Gnat2Why.Decls.Translate_Constant_Value *)
-module Measures__max_footsteps__axiom
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Measures__max_footsteps
-
- axiom max_footsteps__def_axiom :
-  ((Measures__max_footsteps.max_footsteps ) = 100000)
-
-end
-
-(* Module giving axioms for the type entity "TfootstepsB" defined at measures.ads:14, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Measures__TfootstepsB__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "footsteps" defined at measures.ads:14, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Measures__footsteps__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "TlatitudeB" defined at measures.ads:17, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Measures__TlatitudeB__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "latitude" defined at measures.ads:17, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Measures__latitude__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "TlongitudeB" defined at measures.ads:18, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Measures__TlongitudeB__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "longitude" defined at measures.ads:18, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Measures__longitude__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "gpslocation" defined at measures.ads:19, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Measures__gpslocation__axiom
  use import "_gnatprove_standard".Main
 
 
@@ -13361,10 +11704,10 @@ module System__parameters__c_malloc_linkname__axiom
  use import "int".Int
  use        Standard__string
  use        System__parameters__c_malloc_linkname
- use        Temp___standard__accountmanagementsystem_0
+ use        Temp___standard__emergency_0
 
  axiom c_malloc_linkname__def_axiom :
-  ((System__parameters__c_malloc_linkname.c_malloc_linkname ) = (Standard__string.of_array Temp___standard__accountmanagementsystem_0.temp___standard__accountmanagementsystem_0 1 13))
+  ((System__parameters__c_malloc_linkname.c_malloc_linkname ) = (Standard__string.of_array Temp___standard__emergency_0.temp___standard__emergency_0 1 13))
 
 end
 
@@ -13953,10 +12296,10 @@ module System__wch_con__wc_encoding_letters__axiom
  use        System__wch_con__Twc_encoding_lettersT
  use        System__wch_con__T4s
  use        System__wch_con__wc_encoding_letters
- use        Temp___standard__accountmanagementsystem_1
+ use        Temp___standard__emergency_1
 
  axiom wc_encoding_letters__def_axiom :
-  ((System__wch_con__wc_encoding_letters.wc_encoding_letters ) = (Temp___standard__accountmanagementsystem_1.temp___standard__accountmanagementsystem_1 104 117 115 101 56 98))
+  ((System__wch_con__wc_encoding_letters.wc_encoding_letters ) = (Temp___standard__emergency_1.temp___standard__emergency_1 104 117 115 101 56 98))
 
 end
 
@@ -14020,10 +12363,10 @@ module System__wch_con__wc_longest_sequences__axiom
  use        System__wch_con__Twc_longest_sequencesT
  use        System__wch_con__T8s
  use        System__wch_con__wc_longest_sequences
- use        Temp___standard__accountmanagementsystem_10
+ use        Temp___standard__emergency_10
 
  axiom wc_longest_sequences__def_axiom :
-  ((System__wch_con__wc_longest_sequences.wc_longest_sequences ) = (Temp___standard__accountmanagementsystem_10.temp___standard__accountmanagementsystem_10 5 2 2 2 6 12))
+  ((System__wch_con__wc_longest_sequences.wc_longest_sequences ) = (Temp___standard__emergency_10.temp___standard__emergency_10 5 2 2 2 6 12))
 
 end
 
@@ -14116,211 +12459,111 @@ module Ada__text_io__pm__axiom
 
 end
 
-(* Module giving axioms for the type entity "TusersarrayB" defined at accountmanagementsystem.ads:18, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__TusersarrayB__axiom
+(* Module for defining the value of constant "max_userid" defined at measures.ads:5, created in Gnat2Why.Decls.Translate_Constant_Value *)
+module Measures__max_userid__axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Measures__max_userid
+
+ axiom max_userid__def_axiom :
+  ((Measures__max_userid.max_userid ) = 100)
+
+end
+
+(* Module giving axioms for the type entity "TuseridB" defined at measures.ads:6, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Measures__TuseridB__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "usersarray" defined at accountmanagementsystem.ads:18, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__usersarray__axiom
+(* Module giving axioms for the type entity "userid" defined at measures.ads:6, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Measures__userid__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "TuseruserarrayB" defined at accountmanagementsystem.ads:21, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__TuseruserarrayB__axiom
+(* Module for defining the value of constant "max_bpm" defined at measures.ads:9, created in Gnat2Why.Decls.Translate_Constant_Value *)
+module Measures__max_bpm__axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Measures__max_bpm
+
+ axiom max_bpm__def_axiom :
+  ((Measures__max_bpm.max_bpm ) = 300)
+
+end
+
+(* Module giving axioms for the type entity "TbpmB" defined at measures.ads:10, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Measures__TbpmB__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "useruserarray" defined at accountmanagementsystem.ads:21, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__useruserarray__axiom
+(* Module giving axioms for the type entity "bpm" defined at measures.ads:10, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Measures__bpm__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "TvitalsarrayB" defined at accountmanagementsystem.ads:24, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__TvitalsarrayB__axiom
+(* Module for defining the value of constant "max_footsteps" defined at measures.ads:13, created in Gnat2Why.Decls.Translate_Constant_Value *)
+module Measures__max_footsteps__axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Measures__max_footsteps
+
+ axiom max_footsteps__def_axiom :
+  ((Measures__max_footsteps.max_footsteps ) = 100000)
+
+end
+
+(* Module giving axioms for the type entity "TfootstepsB" defined at measures.ads:14, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Measures__TfootstepsB__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "vitalsarray" defined at accountmanagementsystem.ads:24, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__vitalsarray__axiom
+(* Module giving axioms for the type entity "footsteps" defined at measures.ads:14, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Measures__footsteps__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "TfootstepsarrayB" defined at accountmanagementsystem.ads:25, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__TfootstepsarrayB__axiom
+(* Module giving axioms for the type entity "TlatitudeB" defined at measures.ads:17, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Measures__TlatitudeB__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "footstepsarray" defined at accountmanagementsystem.ads:25, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__footstepsarray__axiom
+(* Module giving axioms for the type entity "latitude" defined at measures.ads:17, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Measures__latitude__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "TlocationsarrayB" defined at accountmanagementsystem.ads:26, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__TlocationsarrayB__axiom
+(* Module giving axioms for the type entity "TlongitudeB" defined at measures.ads:18, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Measures__TlongitudeB__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "locationsarray" defined at accountmanagementsystem.ads:26, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__locationsarray__axiom
+(* Module giving axioms for the type entity "longitude" defined at measures.ads:18, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Measures__longitude__axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for the type entity "TuseruserbooleanarrayB" defined at accountmanagementsystem.ads:29, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__TuseruserbooleanarrayB__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "useruserbooleanarray" defined at accountmanagementsystem.ads:29, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__useruserbooleanarray__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T13s" defined at accountmanagementsystem.ads:54, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L12s__T13s__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T15s" defined at accountmanagementsystem.ads:55, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L14s__T15s__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T17s" defined at accountmanagementsystem.ads:56, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L16s__T17s__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T19s" defined at accountmanagementsystem.ads:57, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L18s__T19s__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T21s" defined at accountmanagementsystem.ads:58, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L20s__T21s__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T23s" defined at accountmanagementsystem.ads:59, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__L22s__T23s__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T1b" defined at accountmanagementsystem.adb:15, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T1b__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T2b" defined at accountmanagementsystem.adb:15, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T2b__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T3b" defined at accountmanagementsystem.adb:16, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T3b__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T4b" defined at accountmanagementsystem.adb:16, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T4b__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T5b" defined at accountmanagementsystem.adb:17, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T5b__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T6b" defined at accountmanagementsystem.adb:17, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T6b__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T7b" defined at accountmanagementsystem.adb:18, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T7b__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T8b" defined at accountmanagementsystem.adb:18, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T8b__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T9b" defined at accountmanagementsystem.adb:19, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T9b__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T10b" defined at accountmanagementsystem.adb:19, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T10b__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T11b" defined at accountmanagementsystem.adb:20, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T11b__axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for the type entity "T12b" defined at accountmanagementsystem.adb:20, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Accountmanagementsystem__init__T12b__axiom
+(* Module giving axioms for the type entity "gpslocation" defined at measures.ads:19, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Measures__gpslocation__axiom
  use import "_gnatprove_standard".Main
 
 
@@ -16917,336 +15160,39 @@ module Emergency__contactemergency__axiom
 
 end
 
-(* Module for declaring a program function (and possibly an axiom) for "init" defined at accountmanagementsystem.ads:52, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
-module Accountmanagementsystem__init__axiom
- use        Accountmanagementsystem__users
- use        Accountmanagementsystem__insurers
- use        Accountmanagementsystem__friends
- use        Accountmanagementsystem__vitals
- use        Accountmanagementsystem__mfootsteps
- use        Accountmanagementsystem__locations
+(* Module for checking absence of run-time errors and package initial condition on package elaboration of "emergency" defined at emergency.ads:5, created in Gnat2Why.Subprograms.Generate_VCs_For_Package_Elaboration *)
+module Emergency__package_def
  use import "_gnatprove_standard".Main
- use import "int".Int
- use import "real".RealInfix
- use        Array__Int
- use        Measures__userid
- use        Measures__bpm
- use        Measures__footsteps
- use        Measures__latitude
- use        Measures__longitude
- use        Measures__gpslocation
- use        Accountmanagementsystem__usersarray
- use        Accountmanagementsystem__useruserarray
- use        Accountmanagementsystem__vitalsarray
- use        Accountmanagementsystem__footstepsarray
- use        Accountmanagementsystem__locationsarray
- use        Accountmanagementsystem__users
- use        Accountmanagementsystem__insurers
- use        Accountmanagementsystem__friends
- use        Accountmanagementsystem__vitals
- use        Accountmanagementsystem__mfootsteps
- use        Accountmanagementsystem__locations
 
- val init 
-   (__void_param : unit)  :unit
-  requires { true }
-  ensures { ( ( ( ( ( (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( ((Array__Int.get !Accountmanagementsystem__users.users i) = True) <-> false ) )) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__userid.to_rep (Array__Int.get !Accountmanagementsystem__friends.friends i)) = ( -1 )) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__userid.to_rep (Array__Int.get !Accountmanagementsystem__insurers.insurers i)) = ( -1 )) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__bpm.to_rep (Array__Int.get !Accountmanagementsystem__vitals.vitals i)) = ( -1 )) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__footsteps.to_rep (Array__Int.get !Accountmanagementsystem__mfootsteps.mfootsteps i)) = 0) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__gpslocation.bool_eq (Array__Int.get !Accountmanagementsystem__locations.locations i) { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real (0.0E-1)); Measures__gpslocation.rec__long = (Measures__longitude.of_real (0.0E-1)) } }) = True) )) ) }
-  writes {Accountmanagementsystem__users.users, Accountmanagementsystem__insurers.insurers, Accountmanagementsystem__friends.friends, Accountmanagementsystem__vitals.vitals, Accountmanagementsystem__mfootsteps.mfootsteps, Accountmanagementsystem__locations.locations }
-
-
-end
-
-(* Module for checking absence of run-time errors and package initial condition on package elaboration of "accountmanagementsystem" defined at accountmanagementsystem.ads:13, created in Gnat2Why.Subprograms.Generate_VCs_For_Package_Elaboration *)
-module Accountmanagementsystem__package_def
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        "_gnatprove_standard".Main
- use        "_gnatprove_standard".Boolean
- use        Measures__userid
- use        Measures__gpslocation
- use        Accountmanagementsystem__emergency
- use        Accountmanagementsystem__latestuser
- use        Accountmanagementsystem__emergency__axiom
- use        Accountmanagementsystem__latestuser__axiom
- use        Measures__userid__axiom
- use        Measures__latitude__axiom
- use        Measures__longitude__axiom
- use        Measures__gpslocation__axiom
-
- let def "GP_Subp:accountmanagementsystem.ads:13" "W:diverges:N" 
+ let def "GP_Subp:emergency.ads:5" "W:diverges:N" 
    (__void_param : unit) 
   requires { true }
   ensures { true }
 
    =
-  ( ( abstract ensures {true}(Main.___ignore(())) end ;
-  assume { (if ((Measures__userid.first <= Measures__userid.last)) then (
-   (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last !Accountmanagementsystem__emergency.emergency)) else true) } );
-  ( abstract ensures {true}(Main.___ignore((if (((if ((Measures__userid.first <= Measures__userid.last)) then (
-   ((Measures__userid.last - Measures__userid.first) + 1)) else (
-   0)) > 0)) then (
-   abstract ensures {true}(Main.___ignore(())) end )))) end ;
-  ( Accountmanagementsystem__latestuser.latestuser := ( ( -1 ) );
-  assume { (if ((Measures__userid.first <= Measures__userid.last)) then (
-   (Measures__userid.dynamic_property Measures__userid.first Measures__userid.last !Accountmanagementsystem__latestuser.latestuser)) else true) } );
-  ( abstract ensures {true}(Main.___ignore((if (((if ((Measures__userid.first <= Measures__userid.last)) then (
-   ((Measures__userid.last - Measures__userid.first) + 1)) else (
-   0)) > 0)) then (
-   abstract ensures {true}(Main.___ignore(())) end )))) end ;
-  abstract ensures {true}(Main.___ignore((if (((if ((Measures__userid.first <= Measures__userid.last)) then (
-   ((Measures__userid.last - Measures__userid.first) + 1)) else (
-   0)) > 0)) then (
-   abstract ensures {true}(Main.___ignore(())) end )))) end ;
-  abstract ensures {true}(Main.___ignore((if (((if ((Measures__userid.first <= Measures__userid.last)) then (
-   ((Measures__userid.last - Measures__userid.first) + 1)) else (
-   0)) > 0)) then (
-   abstract ensures {true}(Main.___ignore(())) end )))) end ;
-  abstract ensures {true}(Main.___ignore((if (((if ((Measures__userid.first <= Measures__userid.last)) then (
-   ((Measures__userid.last - Measures__userid.first) + 1)) else (
-   0)) > 0)) then (
-   abstract ensures {true}(Main.___ignore(())) end )))) end ;
-  abstract ensures {true}(Main.___ignore((if (((if ((Measures__userid.first <= Measures__userid.last)) then (
-   ((Measures__userid.last - Measures__userid.first) + 1)) else (
-   0)) > 0)) then (
-   abstract ensures {true}(Main.___ignore((let temp___standard__accountmanagementsystem_41 = (any Measures__gpslocation.gpslocation
-   requires {true} 
-   ensures {true} 
-   ) in (
-    ( (if ((Measures__gpslocation.lat__pred(temp___standard__accountmanagementsystem_41))) then (
-     abstract ensures {true}(Main.___ignore(())) end ));
-    (if ((Measures__gpslocation.long__pred(temp___standard__accountmanagementsystem_41))) then (
-     abstract ensures {true}(Main.___ignore(())) end )) )))
-   )) end )))) end ;
-  abstract ensures {true}(Main.___ignore((if ((Boolean.andb(((if ((Measures__userid.first <= Measures__userid.last)) then (
-   ((Measures__userid.last - Measures__userid.first) + 1)) else (
-   0)) > 0)) (((if ((Measures__userid.first <= Measures__userid.last)) then (
-   ((Measures__userid.last - Measures__userid.first) + 1)) else (
-   0)) > 0)))) then (
-   abstract ensures {true}(Main.___ignore(())) end )))) end ;
-  abstract ensures {true}(Main.___ignore((if ((Boolean.andb(((if ((Measures__userid.first <= Measures__userid.last)) then (
-   ((Measures__userid.last - Measures__userid.first) + 1)) else (
-   0)) > 0)) (((if ((Measures__userid.first <= Measures__userid.last)) then (
-   ((Measures__userid.last - Measures__userid.first) + 1)) else (
-   0)) > 0)))) then (
-   abstract ensures {true}(Main.___ignore(())) end )))) end ;
-  abstract ensures {true}(Main.___ignore((if ((Boolean.andb(((if ((Measures__userid.first <= Measures__userid.last)) then (
-   ((Measures__userid.last - Measures__userid.first) + 1)) else (
-   0)) > 0)) (((if ((Measures__userid.first <= Measures__userid.last)) then (
-   ((Measures__userid.last - Measures__userid.first) + 1)) else (
-   0)) > 0)))) then (
-   abstract ensures {true}(Main.___ignore(())) end )))) end ;
-  ( "GP_Sloc:accountmanagementsystem.adb:270:1" () ) ) ) )
+  ( "GP_Sloc:emergency.adb:23:1" () )
 end
 
-(* Module for checking contracts and absence of run-time errors in subprogram "init" defined at accountmanagementsystem.ads:52, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
-module Accountmanagementsystem__init__subprogram_def
+(* Module for checking contracts and absence of run-time errors in subprogram "contactemergency" defined at emergency.ads:12, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Emergency__contactemergency__subprogram_def
  use import "int".Int
  use import "_gnatprove_standard".Main
- use import "int".Int
- use import "real".RealInfix
  use        "_gnatprove_standard".Main
- use        "_gnatprove_standard".Boolean
- use        Array__Int
- use        Measures__userid
- use        Measures__bpm
- use        Measures__footsteps
- use        Measures__latitude
- use        Measures__longitude
- use        Measures__gpslocation
- use        Accountmanagementsystem__usersarray
- use        Accountmanagementsystem__useruserarray
- use        Accountmanagementsystem__vitalsarray
- use        Accountmanagementsystem__footstepsarray
- use        Accountmanagementsystem__locationsarray
- use        Accountmanagementsystem__users
- use        Accountmanagementsystem__insurers
- use        Accountmanagementsystem__friends
- use        Accountmanagementsystem__vitals
- use        Accountmanagementsystem__mfootsteps
- use        Accountmanagementsystem__locations
- use        Accountmanagementsystem__init__T1b
- use        Accountmanagementsystem__init__T2b
- use        Accountmanagementsystem__init__T3b
- use        Accountmanagementsystem__init__T4b
- use        Accountmanagementsystem__init__T5b
- use        Accountmanagementsystem__init__T6b
- use        Accountmanagementsystem__init__T7b
- use        Accountmanagementsystem__init__T8b
- use        Accountmanagementsystem__init__T9b
- use        Accountmanagementsystem__init__T10b
- use        Accountmanagementsystem__init__T11b
- use        Accountmanagementsystem__init__T12b
- use        Temp___standard__accountmanagementsystem_62
- use        Temp___standard__accountmanagementsystem_66
- use        Temp___standard__accountmanagementsystem_70
- use        Temp___standard__accountmanagementsystem_74
- use        Temp___standard__accountmanagementsystem_78
- use        Temp___standard__accountmanagementsystem_82
- use        Accountmanagementsystem__usersarray__axiom
- use        Accountmanagementsystem__useruserarray__axiom
- use        Accountmanagementsystem__vitalsarray__axiom
- use        Accountmanagementsystem__footstepsarray__axiom
- use        Accountmanagementsystem__locationsarray__axiom
- use        Accountmanagementsystem__users__axiom
- use        Accountmanagementsystem__insurers__axiom
- use        Accountmanagementsystem__friends__axiom
- use        Accountmanagementsystem__vitals__axiom
- use        Accountmanagementsystem__mfootsteps__axiom
- use        Accountmanagementsystem__locations__axiom
- use        Measures__userid__axiom
- use        Measures__bpm__axiom
- use        Measures__footsteps__axiom
- use        Measures__latitude__axiom
- use        Measures__longitude__axiom
- use        Measures__gpslocation__axiom
- use        Accountmanagementsystem__init__T1b__axiom
- use        Accountmanagementsystem__init__T2b__axiom
- use        Accountmanagementsystem__init__T3b__axiom
- use        Accountmanagementsystem__init__T4b__axiom
- use        Accountmanagementsystem__init__T5b__axiom
- use        Accountmanagementsystem__init__T6b__axiom
- use        Accountmanagementsystem__init__T7b__axiom
- use        Accountmanagementsystem__init__T8b__axiom
- use        Accountmanagementsystem__init__T9b__axiom
- use        Accountmanagementsystem__init__T10b__axiom
- use        Accountmanagementsystem__init__T11b__axiom
- use        Accountmanagementsystem__init__T12b__axiom
 
- let def "W:diverges:N" "GP_Subp:accountmanagementsystem.ads:52" 
+ let def "W:diverges:N" "GP_Subp:emergency.ads:12" 
    (__void_param : unit) 
   requires { true }
-  ensures { ( "GP_Reason:VC_POSTCONDITION" "GP_Id:0" "GP_Sloc:accountmanagementsystem.ads:54:6" "comment:     (for all I in Users'Range => Users(I) = False) and
-     ^ accountmanagementsystem.ads:54:6:VC_POSTCONDITION" "GP_Shape:pragargs__and" "keep_on_simp" ( ( ( ( ( (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2612" "GP_Sloc:accountmanagementsystem.ads:54:35" ( ((Array__Int.get !Accountmanagementsystem__users.users i) = True) <-> false ) ) )) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2629" "GP_Sloc:accountmanagementsystem.ads:55:35" ((Measures__userid.to_rep (Array__Int.get !Accountmanagementsystem__friends.friends i)) = ( -1 )) ) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2648" "GP_Sloc:accountmanagementsystem.ads:56:35" ((Measures__userid.to_rep (Array__Int.get !Accountmanagementsystem__insurers.insurers i)) = ( -1 )) ) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2667" "GP_Sloc:accountmanagementsystem.ads:57:35" ((Measures__bpm.to_rep (Array__Int.get !Accountmanagementsystem__vitals.vitals i)) = ( -1 )) ) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2686" "GP_Sloc:accountmanagementsystem.ads:58:35" ((Measures__footsteps.to_rep (Array__Int.get !Accountmanagementsystem__mfootsteps.mfootsteps i)) = 0) ) )) ) /\ (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( "GP_Pretty_Ada:2704" "GP_Sloc:accountmanagementsystem.ads:59:35" ((Measures__gpslocation.bool_eq (Array__Int.get !Accountmanagementsystem__locations.locations i) { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real (0.0E-1)); Measures__gpslocation.rec__long = (Measures__longitude.of_real (0.0E-1)) } }) = True) ) )) ) ) }
+  ensures { true }
 
    =
-  ( () (* Assume dynamic property of params of the subprogram accountmanagementsystem.ads:52 *)
+  ( () (* Assume dynamic property of params of the subprogram emergency.ads:12 *)
   ;
-  ( () (* Declarations introduced by the compiler at the beginning of the subprogram accountmanagementsystem.ads:52 *)
+  () (* Declarations introduced by the compiler at the beginning of the subprogram emergency.ads:12 *)
   ;
-  () (* Check for RTE in the Pre of the subprogram accountmanagementsystem.ads:52 *)
+  () (* Check for RTE in the Pre of the subprogram emergency.ads:12 *)
   ;
   abstract ensures {true}(Main.___ignore(True)) end ;
-  () (* Assume Pre of the subprogram accountmanagementsystem.ads:52 *)
+  () (* Assume Pre of the subprogram emergency.ads:12 *)
   ;
-  assume { true } );
-  ( () (* Check additional Pres of the subprogram accountmanagementsystem.ads:52 *)
-  ;
-  () (* Body of the subprogram accountmanagementsystem.ads:52 *)
-  ;
-  try
-   ( ( "GP_Sloc:accountmanagementsystem.adb:15:13" Accountmanagementsystem__users.users := ( ( assert { ( "keep_on_simp" "GP_Reason:VC_LENGTH_CHECK" "GP_Id:1" "GP_Sloc:accountmanagementsystem.adb:15:16" "comment:      Users := (others => False);
-               ^ accountmanagementsystem.adb:15:16:VC_LENGTH_CHECK" "GP_Shape:users_assign__aggr" ((if ((Accountmanagementsystem__init__T1b.first <= Accountmanagementsystem__init__T1b.last)) then (
-    ((Accountmanagementsystem__init__T1b.last - Accountmanagementsystem__init__T1b.first) + 1)) else (
-    0)) = (if ((Measures__userid.first <= Measures__userid.last)) then (
-    ((Measures__userid.last - Measures__userid.first) + 1)) else (
-    0))) ) };
-   (Temp___standard__accountmanagementsystem_62.temp___standard__accountmanagementsystem_62((Boolean.of_int(0)))) ) ) );
-   ( "GP_Sloc:accountmanagementsystem.adb:16:16" Accountmanagementsystem__insurers.insurers := ( ( assert { ( "keep_on_simp" "GP_Reason:VC_LENGTH_CHECK" "GP_Id:2" "GP_Sloc:accountmanagementsystem.adb:16:19" "comment:      Insurers := (others => UserID'First);
-                  ^ accountmanagementsystem.adb:16:19:VC_LENGTH_CHECK" "GP_Shape:insurers_assign__aggr" ((if ((Accountmanagementsystem__init__T3b.first <= Accountmanagementsystem__init__T3b.last)) then (
-    ((Accountmanagementsystem__init__T3b.last - Accountmanagementsystem__init__T3b.first) + 1)) else (
-    0)) = (if ((Measures__userid.first <= Measures__userid.last)) then (
-    ((Measures__userid.last - Measures__userid.first) + 1)) else (
-    0))) ) };
-   (Temp___standard__accountmanagementsystem_66.temp___standard__accountmanagementsystem_66(( -1 ))) ) ) );
-   ( "GP_Sloc:accountmanagementsystem.adb:17:15" Accountmanagementsystem__friends.friends := ( ( assert { ( "keep_on_simp" "GP_Reason:VC_LENGTH_CHECK" "GP_Id:3" "GP_Sloc:accountmanagementsystem.adb:17:18" "comment:      Friends := (others => UserID'First);
-                 ^ accountmanagementsystem.adb:17:18:VC_LENGTH_CHECK" "GP_Shape:friends_assign__aggr" ((if ((Accountmanagementsystem__init__T5b.first <= Accountmanagementsystem__init__T5b.last)) then (
-    ((Accountmanagementsystem__init__T5b.last - Accountmanagementsystem__init__T5b.first) + 1)) else (
-    0)) = (if ((Measures__userid.first <= Measures__userid.last)) then (
-    ((Measures__userid.last - Measures__userid.first) + 1)) else (
-    0))) ) };
-   (Temp___standard__accountmanagementsystem_70.temp___standard__accountmanagementsystem_70(( -1 ))) ) ) );
-   ( "GP_Sloc:accountmanagementsystem.adb:18:14" Accountmanagementsystem__vitals.vitals := ( ( assert { ( "keep_on_simp" "GP_Reason:VC_LENGTH_CHECK" "GP_Id:4" "GP_Sloc:accountmanagementsystem.adb:18:17" "comment:      Vitals := (others => BPM'First);
-                ^ accountmanagementsystem.adb:18:17:VC_LENGTH_CHECK" "GP_Shape:vitals_assign__aggr" ((if ((Accountmanagementsystem__init__T7b.first <= Accountmanagementsystem__init__T7b.last)) then (
-    ((Accountmanagementsystem__init__T7b.last - Accountmanagementsystem__init__T7b.first) + 1)) else (
-    0)) = (if ((Measures__userid.first <= Measures__userid.last)) then (
-    ((Measures__userid.last - Measures__userid.first) + 1)) else (
-    0))) ) };
-   (Temp___standard__accountmanagementsystem_74.temp___standard__accountmanagementsystem_74(( -1 ))) ) ) );
-   ( "GP_Sloc:accountmanagementsystem.adb:19:18" Accountmanagementsystem__mfootsteps.mfootsteps := ( ( assert { ( "keep_on_simp" "GP_Reason:VC_LENGTH_CHECK" "GP_Id:5" "GP_Sloc:accountmanagementsystem.adb:19:21" "comment:      MFootsteps := (others => Footsteps'First);
-                    ^ accountmanagementsystem.adb:19:21:VC_LENGTH_CHECK" "GP_Shape:mfootsteps_assign__aggr" ((if ((Accountmanagementsystem__init__T9b.first <= Accountmanagementsystem__init__T9b.last)) then (
-    ((Accountmanagementsystem__init__T9b.last - Accountmanagementsystem__init__T9b.first) + 1)) else (
-    0)) = (if ((Measures__userid.first <= Measures__userid.last)) then (
-    ((Measures__userid.last - Measures__userid.first) + 1)) else (
-    0))) ) };
-   (Temp___standard__accountmanagementsystem_78.temp___standard__accountmanagementsystem_78(0)) ) ) );
-   ( "GP_Sloc:accountmanagementsystem.adb:20:17" Accountmanagementsystem__locations.locations := ( ( assert { ( "keep_on_simp" "GP_Reason:VC_LENGTH_CHECK" "GP_Id:6" "GP_Sloc:accountmanagementsystem.adb:20:20" "comment:      Locations := (others => (0.0, 0.0));
-                   ^ accountmanagementsystem.adb:20:20:VC_LENGTH_CHECK" "GP_Shape:locations_assign__aggr" ((if ((Accountmanagementsystem__init__T11b.first <= Accountmanagementsystem__init__T11b.last)) then (
-    ((Accountmanagementsystem__init__T11b.last - Accountmanagementsystem__init__T11b.first) + 1)) else (
-    0)) = (if ((Measures__userid.first <= Measures__userid.last)) then (
-    ((Measures__userid.last - Measures__userid.first) + 1)) else (
-    0))) ) };
-   (Temp___standard__accountmanagementsystem_82.temp___standard__accountmanagementsystem_82({ Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real((0.0E-1))); Measures__gpslocation.rec__long = (Measures__longitude.of_real((0.0E-1))) } })) ) ) );
-   raise Return__exc )
-  with
-   Return__exc -> ()
-  end;
-  () (* Check additional Posts and RTE in Post of the subprogram accountmanagementsystem.ads:52 *)
-  ;
-  abstract ensures {true}(Main.___ignore((Boolean.andb((Boolean.andb((Boolean.andb((Boolean.andb((Boolean.andb(( (let i = (any int
-  ) in (
-   (if ((Boolean.andb((( -1 ) <= i)) ((i <= 100)))) then (
-    abstract ensures {true}(Main.___ignore(((Boolean.to_int((Array__Int.get(!Accountmanagementsystem__users.users) (i)))) = (Boolean.to_int((Boolean.of_int(0))))))) end ))))
-  ;
-  (any bool
-  requires {true} 
-  ensures {( (result = True) <-> (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ( ((Array__Int.get !Accountmanagementsystem__users.users i) = True) <-> false ) )) )} 
-  ) )) (( (let i = (any int
-  ) in (
-   (if ((Boolean.andb((( -1 ) <= i)) ((i <= 100)))) then (
-    abstract ensures {true}(Main.___ignore(((Measures__userid.to_rep((Array__Int.get(!Accountmanagementsystem__friends.friends) (i)))) = ( -1 )))) end ))))
-  ;
-  (any bool
-  requires {true} 
-  ensures {( (result = True) <-> (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__userid.to_rep (Array__Int.get !Accountmanagementsystem__friends.friends i)) = ( -1 )) )) )} 
-  ) )))) (( (let i = (any int
-  ) in (
-   (if ((Boolean.andb((( -1 ) <= i)) ((i <= 100)))) then (
-    abstract ensures {true}(Main.___ignore(((Measures__userid.to_rep((Array__Int.get(!Accountmanagementsystem__insurers.insurers) (i)))) = ( -1 )))) end ))))
-  ;
-  (any bool
-  requires {true} 
-  ensures {( (result = True) <-> (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__userid.to_rep (Array__Int.get !Accountmanagementsystem__insurers.insurers i)) = ( -1 )) )) )} 
-  ) )))) (( (let i = (any int
-  ) in (
-   (if ((Boolean.andb((( -1 ) <= i)) ((i <= 100)))) then (
-    abstract ensures {true}(Main.___ignore(((Measures__bpm.to_rep((Array__Int.get(!Accountmanagementsystem__vitals.vitals) (i)))) = ( -1 )))) end ))))
-  ;
-  (any bool
-  requires {true} 
-  ensures {( (result = True) <-> (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__bpm.to_rep (Array__Int.get !Accountmanagementsystem__vitals.vitals i)) = ( -1 )) )) )} 
-  ) )))) (( (let i = (any int
-  ) in (
-   (if ((Boolean.andb((( -1 ) <= i)) ((i <= 100)))) then (
-    abstract ensures {true}(Main.___ignore(((Measures__footsteps.to_rep((Array__Int.get(!Accountmanagementsystem__mfootsteps.mfootsteps) (i)))) = 0))) end ))))
-  ;
-  (any bool
-  requires {true} 
-  ensures {( (result = True) <-> (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__footsteps.to_rep (Array__Int.get !Accountmanagementsystem__mfootsteps.mfootsteps i)) = 0) )) )} 
-  ) )))) (( (let i = (any int
-  ) in (
-   (if ((Boolean.andb((( -1 ) <= i)) ((i <= 100)))) then (
-    abstract ensures {true}(Main.___ignore((Measures__gpslocation.bool_eq((Array__Int.get(!Accountmanagementsystem__locations.locations) (i))) ({ Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real((0.0E-1))); Measures__gpslocation.rec__long = (Measures__longitude.of_real((0.0E-1))) } })))) end ))))
-  ;
-  (any bool
-  requires {true} 
-  ensures {( (result = True) <-> (forall i  : int.
-   ( ( (( -1 ) <= i) /\ (i <= 100) ) -> ((Measures__gpslocation.bool_eq (Array__Int.get !Accountmanagementsystem__locations.locations i) { Measures__gpslocation.__split_fields = { Measures__gpslocation.rec__lat = (Measures__latitude.of_real (0.0E-1)); Measures__gpslocation.rec__long = (Measures__longitude.of_real (0.0E-1)) } }) = True) )) )} 
-  ) ))))) end  ) )
+  assume { true } )
 end

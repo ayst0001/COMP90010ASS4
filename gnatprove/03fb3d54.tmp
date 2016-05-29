@@ -1,4 +1,5 @@
 warning_mode=NORMAL
+debug
 ide_mode
 single_file
 report_mode=GPR_FAIL
@@ -8,6 +9,7 @@ why3_args=--timeout
 why3_args=1
 why3_args=--socket
 why3_args=why3server3155976001.sock
+why3_args=--debug
 why3_args=--proof
 why3_args=no_split
 why3_args=-j

@@ -5,21 +5,23 @@ P GP ZX
 RN
 RV NO_ELABORATION_CODE
 
-U accountmanagementsystem%b  accountmanagementsystem.adb  9a77fd30 OO PK
+U accountmanagementsystem%b  accountmanagementsystem.adb  38ac9f35 OO PK
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-W measures%s		measures.ads		measures.ali
-W test%s		test.adb		test.ali
-
-U accountmanagementsystem%s  accountmanagementsystem.ads  7add4224 EE OO PK
+W emergency%s		emergency.adb		emergency.ali
 W measures%s		measures.ads		measures.ali
 
-D accountmanagementsystem.ads  20160529035542 04c54919 accountmanagementsystem%s
-D accountmanagementsystem.adb  20160529035959 c8bcca92 accountmanagementsystem%b
+U accountmanagementsystem%s  accountmanagementsystem.ads  79b1731a EE OO PK
+W emergency%s		emergency.adb		emergency.ali
+W measures%s		measures.ads		measures.ali
+
+D accountmanagementsystem.ads  20160529061633 e270803e accountmanagementsystem%s
+D accountmanagementsystem.adb  20160529061659 797019fb accountmanagementsystem%b
 D ada.ads		20150506105328 3ffc8e18 ada%s
 D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
 D a-textio.ads		20150506105332 386df5d4 ada.text_io%s
+D emergency.ads		20160515131714 e5d9f819 emergency%s
 D interfac.ads		20150506105327 6033a23f interfaces%s
 D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
 D measures.ads		20160321052727 7e180b3d measures%s
@@ -28,169 +30,51 @@ D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20150506105333 078245e4 system.file_control_block%s
 D s-parame.ads		20150506105331 7e2a0d7f system.parameters%s
 D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
-D test.ads		20160528155029 107b8052 test%s
 X 1 accountmanagementsystem.ads
-12K9*AccountManagementSystem 207l5 207e28 2|9b14 294l5 294t28
-17A9*UsersArray(boolean)<9|6I9> 32r12
-20A9*UserUserArray(9|6I9)<9|6I9> 36r15 37r14
-23A9*VitalsArray(9|10I9)<9|6I9> 40r13
-24A9*FootstepsArray(9|14I9)<9|6I9> 41r17
-25A9*LocationsArray(9|19R9)<9|6I9> 42r16
-28A9*UserUserBooleanArray(boolean)<9|6I9><9|6I9> 46r24 47r27 48r26
-31i4*Emergency{9|6I9} 2|52m18
-32a4*Users{17A9} 53r28 53r43 54r20 55r20 56r20 57r20 58r20 63r14 68r23 68r50
-. 88r23 88r49 105r23 110r23 115r23 155r25 155r50 171r25 171r50 188r25 188r50
-. 2|18r16 19m10 24r16 30r16 36r16 42r16 48r16 62m10 71r11 71r29 107r11 107r29
-. 141r11 150r11 159r11 212r11 212r29 240r11 240r29 269r11 269r29
-33i4*LatestUser{9|6I9} 59r6 62r13 2|61r10 62r16 63m10 63r24 64r21
-36a4*Insurers{20A9} 55r35 69r15 69r26 72r41 73r44 74r43 76r63 79r13 80r15
-. 80r26 81r41 82r44 83r43 157r27 173r27 178r28 190r27 2|31m10 75r36 76r39
-. 77r38 79m10 92r10 97r36 98r39 99r38 100m10 224r25 253r25 256r48 282r24
-37a4*Friends{20A9} 54r35 89r15 89r25 90r41 91r44 92r43 94r62 97r13 98r15
-. 98r25 99r41 100r44 101r43 122r11 158r26 174r27 191r27 2|25m10 111r35 112r39
-. 113r38 115m10 125r11 130r36 131r39 132r38 133m10 225r27 254r27 283r23
-40a4*Vitals{23A9} 56r35 106r14 106r23 123r11 133r49 2|37m10 143m10 173r17
-41a4*MFootsteps{24A9} 57r35 111r14 111r27 141r49 2|43m10 152m10 187r17
-42a4*Locations{25A9} 58r35 116r14 116r26 148r49 2|49m10 161m10 201r17
-46a4*VitalsPermissions{28A9} 72r15 81r15 90r15 99r15 132r21 163r17 163r37
-. 2|75m10 97m10 111m10 130m10 172r10 228m19
-47a4*FootstepsPermissions{28A9} 70r15 70r38 73r15 82r15 91r15 100r15 140r21
-. 180r17 180r40 2|76m10 82m10 98m10 112m10 131m10 186r10 257m19
-48a4*LocationPermissions{28A9} 74r15 83r15 92r15 101r15 147r21 197r17 197r39
-. 2|77m10 99m10 113m10 132m10 200r10 286m19
-52U14*Init 2|13b14 55l8 55t12
-53i23 I<integer> 53r49
-54i15 I<integer> 54r43
-55i15 I<integer> 55r44
-56i15 I<integer> 56r42
-57i15 I<integer> 57r46
-58i15 I<integer> 58r45
-61U14*CreateUser 61<25 2|52s7 57b14 66l8 66t18
-61i25 NewUser{9|6I9} 63r20 2|57b26 64m10
-67U14*SetInsurer 67>25 67>45 2|68b14 87l8 87t18
-67i25 Wearer{9|6I9} 68r13 69r46 72r33 72r54 73r36 73r57 74r35 74r56 2|68b25
-. 71r17 75r28 75r45 76r31 76r48 77r30 77r47 79r19 82r31
-67i45 Insurer{9|6I9} 68r39 69r56 2|68b45 71r35 79r30 82r39
-76V13*ReadInsurer{9|6I9} 76>25
-76i25 Wearer{9|6I9} 76r72
-78U14*RemoveInsurer 78>28 2|89b14 102l8 102t21
-78i28 Wearer{9|6I9} 79r22 80r46 81r33 81r54 82r36 82r57 83r35 83r56 2|89b28
-. 92r19 97r28 97r45 98r31 98r48 99r30 99r47 100r19
-87U14*SetFriend 87>24 87>44 2|104b14 120l8 120t17
-87i24 Wearer{9|6I9} 88r13 89r44 90r33 90r53 91r36 91r56 92r35 92r55 2|104b24
-. 107r17 111r28 111r43 112r31 112r47 113r30 113r46 115r18
-87i44 Friend{9|6I9} 88r39 89r54 2|104b44 107r35 115r29
-94V13*ReadFriend{9|6I9} 94>24
-94i24 Wearer{9|6I9} 94r70
-96U14*RemoveFriend 96>27 2|122b14 135l8 135t20
-96i27 Wearer{9|6I9} 97r21 98r44 99r33 99r53 100r36 100r56 101r35 101r55 2|122b27
-. 125r19 130r28 130r44 131r31 131r47 132r30 132r46 133r18
-104U14*UpdateVitals 104>27 104>47 2|138b14 145l8 145t20
-104i27 Wearer{9|6I9} 105r13 106r41 2|138b27 141r17 143r17
-104i47 NewVitals{9|10I9} 106r51 2|138b47 143r28
-108U14*UpdateFootsteps 108>30 108>50 2|147b14 154l8 154t23
-108i30 Wearer{9|6I9} 110r13 111r49 2|147b30 150r17 152r21
-108i50 NewFootsteps{9|14I9} 111r59 2|147b50 152r32
-113U14*UpdateLocation 113>29 113>49 2|156b14 163l8 163t22
-113i29 Wearer{9|6I9} 115r13 116r47 2|156b29 159r17 161r20
-113r49 NewLocation{9|19R9} 116r57 2|156b49 161r31
-121V13*ReadVitals{9|10I9} 121>24 121>47
-121i24 Requester{9|6I9} 122r33
-121i47 TargetUser{9|6I9} 122r19 123r18
-129V13*ReadVitals_Alt{9|10I9} 129>28 129>51 131r17 2|165b13 177l8 177t22
-129i28 Requester{9|6I9} 132r51 2|165b28 172r40
-129i51 TargetUser{9|6I9} 132r39 133r56 2|165b51 172r28 173r24
-137V13*ReadFootsteps{9|14I9} 137>27 137>50 139r17 2|179b13 191l8 191t21
-137i27 Requester{9|6I9} 140r54 2|179b27 186r43
-137i50 TargetUser{9|6I9} 140r42 141r60 2|179b50 186r31 187r28
-144V13*ReadLocation{9|19R9} 144>26 144>49 146r17 2|193b13 205l8 205t20
-144i26 Requester{9|6I9} 147r53 2|193b26 200r42
-144i49 TargetUser{9|6I9} 147r41 148r59 2|193b49 200r30 201r27
-151U14*UpdateVitalsPermissions 151>38 152>38 153>38 2|207b14 233l8 233t31
-151i38 Wearer{9|6I9} 155r15 157r36 158r34 161r28 2|207b38 212r17 224r34 225r35
-. 227r29 228r37
-152i38 Other{9|6I9} 155r41 157r19 158r18 159r19 161r19 2|208b38 212r35 224r17
-. 225r19 226r19 227r20 228r45
-153b38 Allow{boolean} 156r20 2|209b38 223r13
-167U14*UpdateFootstepsPermissions 167>41 168>41 169>41 2|235b14 262l8 262t34
-167i41 Wearer{9|6I9} 171r15 173r36 174r35 177r28 178r37 2|235b41 240r17 253r34
-. 254r35 256r28 256r57 257r40
-168i41 Other{9|6I9} 171r41 173r19 174r19 175r19 177r19 178r19 2|236b41 240r35
-. 253r17 254r19 255r19 256r19 256r39 257r48
-169b41 Allow{boolean} 172r20 2|237b41 252r13
-184U14*UpdateLocationPermissions 184>40 185>40 186>40 2|264b14 291l8 291t33
-184i40 Wearer{9|6I9} 188r15 190r36 191r35 194r28 2|264b40 269r17 282r33 283r31
-. 285r28 286r39
-185i40 Other{9|6I9} 188r41 190r19 191r19 192r19 194r19 195r19 2|265b40 269r35
-. 282r16 283r15 284r15 285r19 285r39 286r46
-186b40 Allow{boolean} 189r20 2|266b40 281r13
-X 2 accountmanagementsystem.adb
-18i11 I<integer> 19r16
-24i11 I<integer> 25r18
-30i11 I<integer> 31r19
-36i11 I<integer> 37r17
-42i11 I<integer> 43r21
-48i11 I<integer> 49r20
+13K9*AccountManagementSystem 206l5 206e28 2|9b14 270l5 270t28
+18A9*UsersArray(boolean)<10|6I9> 33r12
+21A9*UserUserArray(10|6I9)<10|6I9> 37r15 38r14
+24A9*VitalsArray(10|10I9)<10|6I9> 41r13
+25A9*FootstepsArray(10|14I9)<10|6I9> 42r17
+26A9*LocationsArray(10|19R9)<10|6I9> 43r16
+29A9*UserUserBooleanArray(boolean)<10|6I9><10|6I9> 47r24 48r27 49r26
+32i4*Emergency{10|6I9}
+33a4*Users{18A9} 54r20 54r35 55r20 56r20 57r20 58r20 59r20 2|15m7
+34i4*LatestUser{10|6I9}
+37a4*Insurers{21A9} 56r35 2|16m7
+38a4*Friends{21A9} 55r35 2|17m7
+41a4*Vitals{24A9} 57r35 2|18m7
+42a4*MFootsteps{25A9} 58r35 2|19m7
+43a4*Locations{26A9} 59r35 2|20m7
+47a4*VitalsPermissions{29A9}
+48a4*FootstepsPermissions{29A9}
+49a4*LocationPermissions{29A9}
+52U14*Init 2|13b14 21l8 21t12
+54i15 I<integer> 54r41
+55i15 I<integer> 55r43
+56i15 I<integer> 56r44
+57i15 I<integer> 57r42
+58i15 I<integer> 58r46
+59i15 I<integer> 59r45
 X 3 ada.ads
 16K9*Ada 2|6r6 6r23 3|19e8
 X 6 a-textio.ads
 49K13*Text_IO 2|6w10 6r27 6|471e16
-X 9 measures.ads
-2K9*Measures 1|4w6 4r20 2|5w6 5r20 9|25e13
-6I9*UserID<integer> 1|17r29 20r32 20r43 23r30 24r33 25r33 28r39 28r47 31r16
-. 33r17 33r27 54r48 55r49 61r39 62r26 67r37 67r58 76r37 76r52 78r40 79r33
-. 80r56 87r36 87r56 94r36 94r51 96r39 97r32 98r54 104r39 108r42 113r41 121r39
-. 121r63 129r43 129r67 137r42 137r66 144r41 144r65 151r50 152r49 167r53 168r52
-. 184r52 185r51 2|25r24 31r25 57r40 61r23 68r37 68r58 89r40 92r30 100r30
-. 104r36 104r56 122r39 125r30 133r29 138r39 147r42 156r41 165r43 165r67 179r42
-. 179r66 193r41 193r65 207r50 208r49 235r53 236r52 264r52 265r51
-10I9*BPM<integer> 1|23r41 56r47 104r62 121r78 124r13 130r35 134r49 2|37r23
-. 138r62 166r35 175r17
-14I9*Footsteps<integer> 1|24r44 57r51 108r68 138r34 142r49 2|43r27 147r68
-. 180r34 189r17
-19R9*GPSLocation 1|25r44 113r66 145r33 2|156r66 194r33 9|23e17
-X 15 test.ads
-1K9*Test 2|7w6 15|11e9
+X 7 emergency.ads
+5K9*Emergency 1|5w6 5r21 2|7w6 7r21 7|15e14
+X 10 measures.ads
+2K9*Measures 1|4w6 4r20 2|5w6 5r20 10|25e13
+6I9*UserID<integer> 1|18r29 21r32 21r43 24r30 25r33 26r33 29r39 29r47 32r16
+. 34r17 34r27 55r48 56r49 2|16r30 17r29
+10I9*BPM<integer> 1|24r41 57r47 2|18r28
+14I9*Footsteps<integer> 1|25r44 58r51 2|19r32
+19R9*GPSLocation 1|26r44 10|23e17
 FD 1 accountmanagementsystem.ads
-FS .1 12K9 accountmanagementsystem
+FS .1 13K9 accountmanagementsystem
 FS .2 52U14 accountmanagementsystem__init
-FS .3 61U14 accountmanagementsystem__createuser
-FS .4 67U14 accountmanagementsystem__setinsurer
-FS .5 76V13 accountmanagementsystem__readinsurer
-FS .6 78U14 accountmanagementsystem__removeinsurer
-FS .7 87U14 accountmanagementsystem__setfriend
-FS .8 94V13 accountmanagementsystem__readfriend
-FS .9 96U14 accountmanagementsystem__removefriend
-FS .10 104U14 accountmanagementsystem__updatevitals
-FS .11 108U14 accountmanagementsystem__updatefootsteps
-FS .12 113U14 accountmanagementsystem__updatelocation
-FS .13 121V13 accountmanagementsystem__readvitals
-FS .14 129V13 accountmanagementsystem__readvitals_alt
-FS .15 137V13 accountmanagementsystem__readfootsteps
-FS .16 144V13 accountmanagementsystem__readlocation
-FS .17 151U14 accountmanagementsystem__updatevitalspermissions
-FS .18 167U14 accountmanagementsystem__updatefootstepspermissions
-FS .19 184U14 accountmanagementsystem__updatelocationpermissions
-FS .20 76V13 accountmanagementsystem__readinsurer -> 1.5
-FS .21 94V13 accountmanagementsystem__readfriend -> 1.8
-FS .22 121V13 accountmanagementsystem__readvitals -> 1.13
 FD 2 accountmanagementsystem.adb
 FS .1 9K14 standard__accountmanagementsystem -> 1.1
 FS .2 13U14 accountmanagementsystem__init -> 1.2
-FS .3 57U14 accountmanagementsystem__createuser -> 1.3
-FS .4 68U14 accountmanagementsystem__setinsurer -> 1.4
-FS .5 89U14 accountmanagementsystem__removeinsurer -> 1.6
-FS .6 104U14 accountmanagementsystem__setfriend -> 1.7
-FS .7 122U14 accountmanagementsystem__removefriend -> 1.9
-FS .8 138U14 accountmanagementsystem__updatevitals -> 1.10
-FS .9 147U14 accountmanagementsystem__updatefootsteps -> 1.11
-FS .10 156U14 accountmanagementsystem__updatelocation -> 1.12
-FS .11 165V13 accountmanagementsystem__readvitals_alt -> 1.14
-FS .12 179V13 accountmanagementsystem__readfootsteps -> 1.15
-FS .13 193V13 accountmanagementsystem__readlocation -> 1.16
-FS .14 207U14 accountmanagementsystem__updatevitalspermissions -> 1.17
-FS .15 235U14 accountmanagementsystem__updatefootstepspermissions -> 1.18
-FS .16 264U14 accountmanagementsystem__updatelocationpermissions -> 1.19
 FD 3 ada.ads
 FS .1 16K9 ada
 FD 4 a-ioexce.ads
@@ -291,7 +175,10 @@ FS .84 431U14 ada__text_io__read__2
 FS .85 437U14 ada__text_io__write__2
 FS .86 460V13 ada__text_io__eof_char
 FS .87 466U14 ada__text_io__initialize_standard_files
-FD 7 interfac.ads
+FD 7 emergency.ads
+FS .1 5K9 emergency
+FS .2 12U14 emergency__contactemergency
+FD 8 interfac.ads
 FS .1 38K9 interfaces
 FS .2 75V13 interfaces__shift_left
 FS .3 79V13 interfaces__shift_right
@@ -313,7 +200,7 @@ FS .18 139V13 interfaces__shift_right__4
 FS .19 143V13 interfaces__shift_right_arithmetic__4
 FS .20 147V13 interfaces__rotate_left__4
 FS .21 151V13 interfaces__rotate_right__4
-FD 8 i-cstrea.ads
+FD 9 i-cstrea.ads
 FS .1 37K20 interfaces__c_streams
 FS .2 72V13 interfaces__c_streams__stdin
 FS .3 73V13 interfaces__c_streams__stdout
@@ -331,16 +218,16 @@ FS .14 223U14 interfaces__c_streams__set_binary_mode
 FS .15 224U14 interfaces__c_streams__set_text_mode
 FS .16 254U14 interfaces__c_streams__set_mode
 FS .17 262U14 interfaces__c_streams__full_name
-FD 9 measures.ads
+FD 10 measures.ads
 FS .1 2K9 measures
-FD 10 system.ads
+FD 11 system.ads
 FS .1 37K9 system
 FS .2 77V13 system__Olt
 FS .3 78V13 system__Ole
 FS .4 79V13 system__Ogt
 FS .5 80V13 system__Oge
 FS .6 81V13 system__Oeq
-FD 11 s-crtl.ads
+FD 12 s-crtl.ads
 FS .1 38K16 system__crtl
 FS .2 85V13 system__crtl__strlen
 FS .3 88U14 system__crtl__strncpy
@@ -386,147 +273,40 @@ FS .42 229V13 system__crtl__open
 FS .43 232V13 system__crtl__close
 FS .44 235V13 system__crtl__read
 FS .45 238V13 system__crtl__write
-FD 12 s-ficobl.ads
+FD 13 s-ficobl.ads
 FS .1 42K16 system__file_control_block
-FD 13 s-parame.ads
+FD 14 s-parame.ads
 FS .1 51K16 system__parameters
 FS .2 81V13 system__parameters__default_stack_size
 FS .3 84V13 system__parameters__minimum_stack_size
 FS .4 87V13 system__parameters__adjust_storage_size
-FD 14 s-wchcon.ads
+FD 15 s-wchcon.ads
 FS .1 41K16 system__wch_con
 FS .2 203V13 system__wch_con__get_wc_encoding_method
 FS .3 207V13 system__wch_con__get_wc_encoding_method__2
 FS .4 212V13 system__wch_con__is_start_of_encoding
-FD 15 test.ads
-FS .1 1K9 test
-FS .2 4U14 test__print_userid_status
-FS .3 5U14 test__print_everyones_friend
-FS .4 6U14 test__print_everyones_vitals
-FS .5 7U14 test__print_everyones_footsteps
-FS .6 8U14 test__print_everyones_location
-FS .7 9U14 test__print_everyones_insurer
 FX 1 accountmanagementsystem.ads .1 accountmanagementsystem
-F 31*4 accountmanagementsystem__emergency 2|.2:52m18
-F 32*4 accountmanagementsystem__users .2:53r28 53r43 54r20 55r20 56r20 57r20
-. 58r20 .3:63r14 .4:68r23 68r50 .7:88r23 88r49 .10:105r23 .11:110r23 .12:115r23
-. .17:155r25 155r50 .18:171r25 171r50 .19:188r25 188r50 2|.2:18r16 19m10
-. 24r16 30r16 36r16 42r16 48r16 .3:62m10 .4:71r11 71r29 .6:107r11 107r29
-. .8:141r11 .9:150r11 .10:159r11 .14:212r11 212r29 .15:240r11 240r29 .16:269r11
-. 269r29
-F 33*4 accountmanagementsystem__latestuser .2:59r6 .3:62r13 2|.3:61r10 62r16
-. 63m10 63r24 64r21
-F 36*4 accountmanagementsystem__insurers .2:55r35 .4:69r15 69r26 72r41 73r44
-. 74r43 .6:79r13 80r15 80r26 81r41 82r44 83r43 .17:157r27 .18:173r27 178r28
-. .19:190r27 .20:76r63 2|.2:31m10 .4:75r36 76r39 77r38 79m10 .5:92r10 97r36
-. 98r39 99r38 100m10 .14:224r25 .15:253r25 256r48 .16:282r24
-F 37*4 accountmanagementsystem__friends .2:54r35 .7:89r15 89r25 90r41 91r44
-. 92r43 .9:97r13 98r15 98r25 99r41 100r44 101r43 .17:158r26 .18:174r27 .19:191r27
-. .21:94r62 .22:122r11 2|.2:25m10 .6:111r35 112r39 113r38 115m10 .7:125r11
-. 130r36 131r39 132r38 133m10 .14:225r27 .15:254r27 .16:283r23
-F 40*4 accountmanagementsystem__vitals .2:56r35 .10:106r14 106r23 .14:133r49
-. .22:123r11 2|.2:37m10 .8:143m10 .11:173r17
-F 41*4 accountmanagementsystem__mfootsteps .2:57r35 .11:111r14 111r27 .15:141r49
-. 2|.2:43m10 .9:152m10 .12:187r17
-F 42*4 accountmanagementsystem__locations .2:58r35 .12:116r14 116r26 .16:148r49
-. 2|.2:49m10 .10:161m10 .13:201r17
-F 46*4 accountmanagementsystem__vitalspermissions .4:72r15 .6:81r15 .7:90r15
-. .9:99r15 .14:132r21 .17:163r17 163r37 2|.4:75m10 .5:97m10 .6:111m10 .7:130m10
-. .11:172r10 .14:228m19
-F 47*4 accountmanagementsystem__footstepspermissions .4:70r15 70r38 73r15
-. .6:82r15 .7:91r15 .9:100r15 .15:140r21 .18:180r17 180r40 2|.4:76m10 82m10
-. .5:98m10 .6:112m10 .7:131m10 .12:186r10 .15:257m19
-F 48*4 accountmanagementsystem__locationpermissions .4:74r15 .6:83r15 .7:92r15
-. .9:101r15 .16:147r21 .19:197r17 197r39 2|.4:77m10 .5:99m10 .6:113m10 .7:132m10
-. .13:200r10 .16:286m19
-F 61*14 accountmanagementsystem__createuser 2|.2:52s7
+F 33*4 accountmanagementsystem__users .2:54r20 54r35 55r20 56r20 57r20 58r20
+. 59r20 2|.2:15m7
+F 37*4 accountmanagementsystem__insurers .2:56r35 2|.2:16m7
+F 38*4 accountmanagementsystem__friends .2:55r35 2|.2:17m7
+F 41*4 accountmanagementsystem__vitals .2:57r35 2|.2:18m7
+F 42*4 accountmanagementsystem__mfootsteps .2:58r35 2|.2:19m7
+F 43*4 accountmanagementsystem__locations .2:59r35 2|.2:20m7
 FX 1 accountmanagementsystem.ads .2 accountmanagementsystem__init
-F 53*23 accountmanagementsystem__init__L40s__i 53c49
-F 54*15 accountmanagementsystem__init__L42s__i 54c43
-F 55*15 accountmanagementsystem__init__L44s__i 55c44
-F 56*15 accountmanagementsystem__init__L46s__i 56c42
-F 57*15 accountmanagementsystem__init__L48s__i 57c46
-F 58*15 accountmanagementsystem__init__L50s__i 58c45
-FX 1 accountmanagementsystem.ads .3 accountmanagementsystem__createuser
-F 61<25 accountmanagementsystem__createuser__newuser 63r20 2|.3:64m10
-FX 1 accountmanagementsystem.ads .4 accountmanagementsystem__setinsurer
-F 67>25 accountmanagementsystem__setinsurer__wearer 68c13 69c46 72c33 72c54
-. 73c36 73c57 74c35 74c56 2|.4:71c17 75c28 75c45 76c31 76c48 77c30 77c47
-. 79c19 82c31
-F 67>45 accountmanagementsystem__setinsurer__insurer 68c39 69c56 2|.4:71c35
-. 79c30 82c39
-FX 1 accountmanagementsystem.ads .5 accountmanagementsystem__readinsurer
-F 76>25 accountmanagementsystem__readinsurer__wearer .20:76c72
-FX 1 accountmanagementsystem.ads .6 accountmanagementsystem__removeinsurer
-F 78>28 accountmanagementsystem__removeinsurer__wearer 79c22 80c46 81c33
-. 81c54 82c36 82c57 83c35 83c56 2|.5:92c19 97c28 97c45 98c31 98c48 99c30
-. 99c47 100c19
-FX 1 accountmanagementsystem.ads .7 accountmanagementsystem__setfriend
-F 87>24 accountmanagementsystem__setfriend__wearer 88c13 89c44 90c33 90c53
-. 91c36 91c56 92c35 92c55 2|.6:107c17 111c28 111c43 112c31 112c47 113c30
-. 113c46 115c18
-F 87>44 accountmanagementsystem__setfriend__friend 88c39 89c54 2|.6:107c35
-. 115c29
-FX 1 accountmanagementsystem.ads .8 accountmanagementsystem__readfriend
-F 94>24 accountmanagementsystem__readfriend__wearer .21:94c70
-FX 1 accountmanagementsystem.ads .9 accountmanagementsystem__removefriend
-F 96>27 accountmanagementsystem__removefriend__wearer 97c21 98c44 99c33 99c53
-. 100c36 100c56 101c35 101c55 2|.7:125c19 130c28 130c44 131c31 131c47 132c30
-. 132c46 133c18
-FX 1 accountmanagementsystem.ads .10 accountmanagementsystem__updatevitals
-F 104>27 accountmanagementsystem__updatevitals__wearer 105c13 106c41 2|.8:141c17
-. 143c17
-F 104>47 accountmanagementsystem__updatevitals__newvitals 106c51 2|.8:143c28
-FX 1 accountmanagementsystem.ads .11 accountmanagementsystem__updatefootsteps
-F 108>30 accountmanagementsystem__updatefootsteps__wearer 110c13 111c49 2|.9:150c17
-. 152c21
-F 108>50 accountmanagementsystem__updatefootsteps__newfootsteps 111c59 2|.9:152c32
-FX 1 accountmanagementsystem.ads .12 accountmanagementsystem__updatelocation
-F 113>29 accountmanagementsystem__updatelocation__wearer 115c13 116c47 2|.10:159c17
-. 161c20
-F 113>49 accountmanagementsystem__updatelocation__newlocation 116c57 2|.10:161c31
-FX 1 accountmanagementsystem.ads .13 accountmanagementsystem__readvitals
-F 121>24 accountmanagementsystem__readvitals__requester .22:122c33
-F 121>47 accountmanagementsystem__readvitals__targetuser .22:122c19 123c18
-FX 1 accountmanagementsystem.ads .14 accountmanagementsystem__readvitals_alt
-F 129>28 accountmanagementsystem__readvitals_alt__requester 132c51 2|.11:172c40
-F 129>51 accountmanagementsystem__readvitals_alt__targetuser 132c39 133c56
-. 2|.11:172c28 173c24
-FX 1 accountmanagementsystem.ads .15 accountmanagementsystem__readfootsteps
-F 137>27 accountmanagementsystem__readfootsteps__requester 140c54 2|.12:186c43
-F 137>50 accountmanagementsystem__readfootsteps__targetuser 140c42 141c60
-. 2|.12:186c31 187c28
-FX 1 accountmanagementsystem.ads .16 accountmanagementsystem__readlocation
-F 144>26 accountmanagementsystem__readlocation__requester 147c53 2|.13:200c42
-F 144>49 accountmanagementsystem__readlocation__targetuser 147c41 148c59
-. 2|.13:200c30 201c27
-FX 1 accountmanagementsystem.ads .17 accountmanagementsystem__updatevitalspermissions
-F 151>38 accountmanagementsystem__updatevitalspermissions__wearer 155c15
-. 157c36 158c34 161c28 2|.14:212c17 224c34 225c35 227c29 228c37
-F 152>38 accountmanagementsystem__updatevitalspermissions__other 155c41 157c19
-. 158c18 159c19 161c19 2|.14:212c35 224c17 225c19 226c19 227c20 228c45
-F 153>38 accountmanagementsystem__updatevitalspermissions__allow 156c20 2|.14:223c13
-FX 1 accountmanagementsystem.ads .18 accountmanagementsystem__updatefootstepspermissions
-F 167>41 accountmanagementsystem__updatefootstepspermissions__wearer 171c15
-. 173c36 174c35 177c28 178c37 2|.15:240c17 253c34 254c35 256c28 256c57 257c40
-F 168>41 accountmanagementsystem__updatefootstepspermissions__other 171c41
-. 173c19 174c19 175c19 177c19 178c19 2|.15:240c35 253c17 254c19 255c19 256c19
-. 256c39 257c48
-F 169>41 accountmanagementsystem__updatefootstepspermissions__allow 172c20
-. 2|.15:252c13
-FX 1 accountmanagementsystem.ads .19 accountmanagementsystem__updatelocationpermissions
-F 184>40 accountmanagementsystem__updatelocationpermissions__wearer 188c15
-. 190c36 191c35 194c28 2|.16:269c17 282c33 283c31 285c28 286c39
-F 185>40 accountmanagementsystem__updatelocationpermissions__other 188c41
-. 190c19 191c19 192c19 194c19 195c19 2|.16:269c35 282c16 283c15 284c15 285c19
-. 285c39 286c46
-F 186>40 accountmanagementsystem__updatelocationpermissions__allow 189c20
-. 2|.16:281c13
-FX 2 accountmanagementsystem.adb .2 accountmanagementsystem__init
-F 18*11 accountmanagementsystem__init__L_1__i 19c16
-F 24*11 accountmanagementsystem__init__L_2__i 25c18
-F 30*11 accountmanagementsystem__init__L_3__i 31c19
-F 36*11 accountmanagementsystem__init__L_4__i 37c17
-F 42*11 accountmanagementsystem__init__L_5__i 43c21
-F 48*11 accountmanagementsystem__init__L_6__i 49c20
+F 54*15 accountmanagementsystem__init__L12s__i 54c41
+F 55*15 accountmanagementsystem__init__L14s__i 55c43
+F 56*15 accountmanagementsystem__init__L16s__i 56c44
+F 57*15 accountmanagementsystem__init__L18s__i 57c42
+F 58*15 accountmanagementsystem__init__L20s__i 58c46
+F 59*15 accountmanagementsystem__init__L22s__i 59c45
 
+GG S FA accountmanagementsystem__init
+GG VP
+GG VI
+GG VO accountmanagementsystem__users accountmanagementsystem__insurers accountmanagementsystem__friends accountmanagementsystem__vitals accountmanagementsystem__mfootsteps accountmanagementsystem__locations
+GG CP
+GG CD
+GG CC
+GG LV
+GG LS

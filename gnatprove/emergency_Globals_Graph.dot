@@ -1,0 +1,16 @@
+// emergency_Globals_Graph
+digraph G {
+   graph [splines=True];
+   edge [labelfloat=True];
+    1 [label="emergency__contactemergency'Ins",shape="box"];
+    2 [label="emergency__contactemergency'Outs",shape="box"];
+    3 [label="emergency__contactemergency'Proof_Ins",shape="box"];
+    4 [label="ada__text_io__put_line__2'Ins",shape="box"];
+    5 [label="ada__text_io__put_line__2'Outs",shape="box"];
+    6 [label="ada__text_io__put_line__2'Proof_Ins",shape="box"];
+
+    1 ->  4 [arrowType="normal"];
+    1 ->  5 [arrowType="normal"];
+    2 ->  5 [arrowType="normal"];
+    3 ->  6 [arrowType="normal"];
+}

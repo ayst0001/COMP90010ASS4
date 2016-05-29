@@ -1,6 +1,5 @@
 project Assignment4 is
 
-   for Main use ("Run.adb");
 
 end Assignment4;
 
