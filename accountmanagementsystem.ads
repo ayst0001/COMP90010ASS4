@@ -75,12 +75,12 @@ is
               
    function ReadInsurer(Wearer : in UserID) return UserID is (Insurers(Wearer));
 
---   procedure RemoveInsurer(Wearer : in UserID) with
---     Pre => Insurers(Wearer) /= UserID'First,
---     Post => (Insurers = Insurers'Old'Update(Wearer => UserID'First)) and 
---             (VitalsPermissions(Wearer, Insurers'Old(Wearer)) = False) and
---             (FootstepsPermissions(Wearer, Insurers'Old(Wearer)) = False) and
---             (LocationPermissions(Wearer, Insurers'Old(Wearer)) = False);
+   procedure RemoveInsurer(Wearer : in UserID) with
+     Pre => Insurers(Wearer) /= UserID'First,
+     Post => (Insurers = Insurers'Old'Update(Wearer => UserID'First)) and 
+             (VitalsPermissions(Wearer, Insurers'Old(Wearer)) = False) and
+             (FootstepsPermissions(Wearer, Insurers'Old(Wearer)) = False) and
+             (LocationPermissions(Wearer, Insurers'Old(Wearer)) = False);
    
 
    -- ** Friend Operation, ** added some permission check
@@ -93,14 +93,13 @@ is
               
    function ReadFriend(Wearer : in UserID) return UserID is (Friends(Wearer));
 
---   procedure RemoveFriend(Wearer : in UserID) with
---     Pre => Friends(Wearer) /= UserID'First,
---     Post => (Friends = Friends'Old'Update(Wearer => UserID'First)) and 
---             (VitalsPermissions(Wearer, Friends'Old(Wearer)) = False) and
---             (FootstepsPermissions(Wearer, Friends'Old(Wearer)) = False) and
---             (LocationPermissions(Wearer, Friends'Old(Wearer)) = False);
+   procedure RemoveFriend(Wearer : in UserID) with
+     Pre => Friends(Wearer) /= UserID'First,
+     Post => (Friends = Friends'Old'Update(Wearer => UserID'First)) and 
+             (VitalsPermissions(Wearer, Friends'Old(Wearer)) = False) and
+             (FootstepsPermissions(Wearer, Friends'Old(Wearer)) = False) and
+             (LocationPermissions(Wearer, Friends'Old(Wearer)) = False);
    
-
    -- Update Data
    procedure UpdateVitals(Wearer : in UserID; NewVitals : in BPM) with
      Pre => Wearer in Users'Range,

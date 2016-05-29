@@ -11,14 +11,14 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U run%b			run.adb			492d7629 NE OO SU
+U run%b			run.adb			a1053d36 NE OO SU
 W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W measures%s		measures.ads		measures.ali
 W test%s		test.adb		test.ali
 
-D accountmanagementsystem.ads  20160529034442 4016559c accountmanagementsystem%s
+D accountmanagementsystem.ads  20160529035542 04c54919 accountmanagementsystem%s
 D ada.ads		20150506105328 3ffc8e18 ada%s
 D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
 D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
@@ -29,7 +29,7 @@ D a-unccon.ads		20150506105331 f9eb8f06 ada.unchecked_conversion%s
 D interfac.ads		20150506105327 6033a23f interfaces%s
 D i-cstrea.ads		20150506105327 e53d8b8e interfaces.c_streams%s
 D measures.ads		20160321052727 7e180b3d measures%s
-D run.adb		20160529034248 5f355d0e run%b
+D run.adb		20160529035912 f3ce0a94 run%b
 D system.ads		20150506105331 100301f7 system%s
 D s-crtl.ads		20150506105326 0ebbdb71 system.crtl%s
 D s-exctab.ads		20150506105331 54135002 system.exception_table%s
@@ -44,7 +44,7 @@ D s-unstyp.ads		20150506105330 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20150506105330 1b7d22d2 system.wch_con%s
 D test.ads		20160528155029 107b8052 test%s
 X 1 accountmanagementsystem.ads
-12K9*AccountManagementSystem 208e28 12|3w6 3r35 10r4 18r4
+12K9*AccountManagementSystem 207e28 12|3w6 3r35 10r4 18r4
 52U14*Init 12|10s28
 61U14*CreateUser 12|18s28
 X 2 ada.ads
@@ -58,6 +58,5 @@ X 12 run.adb
 6U11*Run 6b11 42l5 42t8
 7i4 Temp_User{11|6I9} 18m39
 X 25 test.ads
-1K9*Test 12|4w6 4r16 19r4 25|11e9
-4U14*Print_UserID_Status 12|19s9
+1K9*Test 12|4w6 4r16 25|11e9
 

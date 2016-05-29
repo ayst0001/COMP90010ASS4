@@ -86,6 +86,21 @@ is
          end if;
    end SetInsurer;
 
+   procedure RemoveInsurer(Wearer : in UserID) is
+   begin
+      -- Pre => Insurers(Wearer) /= UserID'First
+      if Insurers(Wearer) /= UserID'First then
+         -- Post => (Insurers = Insurers'Old'Update(Wearer => UserID'First))
+         --         (VitalsPermissions(Wearer, Insurers'Old(Wearer)) = False)
+         --         (FootstepsPermissions(Wearer, Insurers'Old(Wearer)) = False)
+         --         (LocationPermissions(Wearer, Insurers'Old(Wearer)) = False)
+         VitalsPermissions(Wearer, Insurers(Wearer)) := False;
+         FootstepsPermissions(Wearer, Insurers(Wearer)) := False;
+         LocationPermissions(Wearer, Insurers(Wearer)) := False;
+         Insurers(Wearer) := UserID'First;
+      end if;
+   end RemoveInsurer;
+
    procedure SetFriend(Wearer : in UserID; Friend : in UserID) is
    begin
       -- ** Pre => Wearer in Users'Range and Friend in Users'Range
@@ -103,6 +118,22 @@ is
          -- ** Put_Line("Wearer or Friend specified does not exist!");
       end if;
    end SetFriend;
+
+   procedure RemoveFriend(Wearer : in UserID) is
+   begin
+      -- Pre => Friends(Wearer) /= UserID'First
+      if (Friends(Wearer) /= UserID'First) then
+      --   Post => (Friends = Friends'Old'Update(Wearer => UserID'First)) and
+      --        (VitalsPermissions(Wearer, Friends'Old(Wearer)) = False) and
+      --        (FootstepsPermissions(Wearer, Friends'Old(Wearer)) = False) and
+      --        (LocationPermissions(Wearer, Friends'Old(Wearer)) = False);
+         VitalsPermissions(Wearer, Friends(Wearer)) := False;
+         FootstepsPermissions(Wearer, Friends(Wearer)) := False;
+         LocationPermissions(Wearer, Friends(Wearer)) := False;
+         Friends(Wearer) := UserID'First;
+      end if;
+   end RemoveFriend;
+
 
    procedure UpdateVitals(Wearer : in UserID; NewVitals : in BPM) is
    begin
