@@ -5,18 +5,18 @@ P GP ZX
 RN
 RV NO_ELABORATION_CODE
 
-U accountmanagementsystem%b  accountmanagementsystem.adb  01284379 OO PK
+U accountmanagementsystem%b  accountmanagementsystem.adb  a7ae2dc1 OO PK
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W emergency%s		emergency.adb		emergency.ali
 W measures%s		measures.ads		measures.ali
 
-U accountmanagementsystem%s  accountmanagementsystem.ads  258c6fc3 EE OO PK
+U accountmanagementsystem%s  accountmanagementsystem.ads  592693b4 EE OO PK
 W emergency%s		emergency.adb		emergency.ali
 W measures%s		measures.ads		measures.ali
 
-D accountmanagementsystem.ads  20160529065301 be4d9ce7 accountmanagementsystem%s
-D accountmanagementsystem.adb  20160529065304 1cc9d96e accountmanagementsystem%b
+D accountmanagementsystem.ads  20160529093159 c2e76090 accountmanagementsystem%s
+D accountmanagementsystem.adb  20160529093159 c6e54ba1 accountmanagementsystem%b
 D ada.ads		20150506105328 3ffc8e18 ada%s
 D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
 D a-stream.ads		20150506105329 119b8fb3 ada.streams%s
@@ -39,17 +39,18 @@ X 1 accountmanagementsystem.ads
 26A9*LocationsArray(10|19R9)<10|6I9> 43r16
 29A9*UserUserBooleanArray(boolean)<10|6I9><10|6I9> 47r24 48r27 49r26
 32i4*Emergency{10|6I9}
-33a4*Users{18A9} 54r20 54r35 55r20 56r20 57r20 58r20 59r20 63r14 105r23 110r23
-. 115r23 2|15m7 28m10
+33a4*Users{18A9} 54r20 54r35 55r20 56r20 57r20 58r20 59r20 63r14 68r23 68r50
+. 105r23 110r23 115r23 2|15m7 28m10
 34i4*LatestUser{10|6I9} 62r13 2|27r10 28r16 29m10 29r24 30r21
-37a4*Insurers{21A9} 56r35 76r63 2|16m7
+37a4*Insurers{21A9} 56r35 69r15 69r26 72r41 73r44 74r43 76r63 2|16m7 42r36
+. 43r39 44r38 46m10
 38a4*Friends{21A9} 55r35 2|17m7
 41a4*Vitals{24A9} 57r35 106r14 106r23 133r49 2|18m7 107m10 132r17
 42a4*MFootsteps{25A9} 58r35 111r14 111r27 141r49 2|19m7 114m10 146r17
 43a4*Locations{26A9} 59r35 116r14 116r26 148r49 2|20m7 121m10 160r17
-47a4*VitalsPermissions{29A9} 132r21 2|131r10
-48a4*FootstepsPermissions{29A9} 140r21 2|145r10
-49a4*LocationPermissions{29A9} 147r21 2|159r10
+47a4*VitalsPermissions{29A9} 72r15 132r21 2|42m10 131r10
+48a4*FootstepsPermissions{29A9} 70r15 70r38 73r15 140r21 2|43m10 49m10 145r10
+49a4*LocationPermissions{29A9} 74r15 147r21 2|44m10 159r10
 52U14*Init 2|13b14 21l8 21t12
 54i15 I<integer> 54r41
 55i15 I<integer> 55r43
@@ -59,6 +60,10 @@ X 1 accountmanagementsystem.ads
 59i15 I<integer> 59r45
 61U14*CreateUser 61<25 2|23b14 34l8 34t18
 61i25 NewUser{10|6I9} 63r20 2|23b26 30m10 32m10
+67U14*SetInsurer 67>25 67>45 2|36b14 53l8 53t18
+67i25 Wearer{10|6I9} 68r13 69r46 72r33 72r54 73r36 73r57 74r35 74r56 2|36b25
+. 42r28 42r45 43r31 43r48 44r30 44r47 46r19 49r31
+67i45 Insurer{10|6I9} 68r39 69r56 2|36b45 46r30 49r39
 76V13*ReadInsurer{10|6I9} 76>25
 76i25 Wearer{10|6I9} 76r72
 104U14*UpdateVitals 104>27 104>47 2|103b14 108l8 108t20
@@ -88,9 +93,10 @@ X 7 emergency.ads
 X 10 measures.ads
 2K9*Measures 1|4w6 4r20 2|5w6 5r20 10|25e13
 6I9*UserID<integer> 1|18r29 21r32 21r43 24r30 25r33 26r33 29r39 29r47 32r16
-. 34r17 34r27 55r48 56r49 61r39 62r26 76r37 76r52 104r39 108r42 113r41 129r43
-. 129r67 137r42 137r66 144r41 144r65 2|16r30 17r29 23r40 27r23 32r21 103r39
-. 110r42 117r41 124r43 124r67 138r42 138r66 152r41 152r65
+. 34r17 34r27 55r48 56r49 61r39 62r26 67r37 67r58 76r37 76r52 104r39 108r42
+. 113r41 129r43 129r67 137r42 137r66 144r41 144r65 2|16r30 17r29 23r40 27r23
+. 32r21 36r37 36r58 103r39 110r42 117r41 124r43 124r67 138r42 138r66 152r41
+. 152r65
 10I9*BPM<integer> 1|24r41 57r47 104r62 130r35 134r49 2|18r28 103r62 125r35
 . 134r17
 14I9*Footsteps<integer> 1|25r44 58r51 108r68 138r34 142r49 2|19r32 110r68
@@ -100,24 +106,26 @@ FD 1 accountmanagementsystem.ads
 FS .1 13K9 accountmanagementsystem
 FS .2 52U14 accountmanagementsystem__init
 FS .3 61U14 accountmanagementsystem__createuser
-FS .4 76V13 accountmanagementsystem__readinsurer
-FS .5 104U14 accountmanagementsystem__updatevitals
-FS .6 108U14 accountmanagementsystem__updatefootsteps
-FS .7 113U14 accountmanagementsystem__updatelocation
-FS .8 129V13 accountmanagementsystem__readvitals_alt
-FS .9 137V13 accountmanagementsystem__readfootsteps
-FS .10 144V13 accountmanagementsystem__readlocation
-FS .11 76V13 accountmanagementsystem__readinsurer -> 1.4
+FS .4 67U14 accountmanagementsystem__setinsurer
+FS .5 76V13 accountmanagementsystem__readinsurer
+FS .6 104U14 accountmanagementsystem__updatevitals
+FS .7 108U14 accountmanagementsystem__updatefootsteps
+FS .8 113U14 accountmanagementsystem__updatelocation
+FS .9 129V13 accountmanagementsystem__readvitals_alt
+FS .10 137V13 accountmanagementsystem__readfootsteps
+FS .11 144V13 accountmanagementsystem__readlocation
+FS .12 76V13 accountmanagementsystem__readinsurer -> 1.5
 FD 2 accountmanagementsystem.adb
 FS .1 9K14 standard__accountmanagementsystem -> 1.1
 FS .2 13U14 accountmanagementsystem__init -> 1.2
 FS .3 23U14 accountmanagementsystem__createuser -> 1.3
-FS .4 103U14 accountmanagementsystem__updatevitals -> 1.5
-FS .5 110U14 accountmanagementsystem__updatefootsteps -> 1.6
-FS .6 117U14 accountmanagementsystem__updatelocation -> 1.7
-FS .7 124V13 accountmanagementsystem__readvitals_alt -> 1.8
-FS .8 138V13 accountmanagementsystem__readfootsteps -> 1.9
-FS .9 152V13 accountmanagementsystem__readlocation -> 1.10
+FS .4 36U14 accountmanagementsystem__setinsurer -> 1.4
+FS .5 103U14 accountmanagementsystem__updatevitals -> 1.6
+FS .6 110U14 accountmanagementsystem__updatefootsteps -> 1.7
+FS .7 117U14 accountmanagementsystem__updatelocation -> 1.8
+FS .8 124V13 accountmanagementsystem__readvitals_alt -> 1.9
+FS .9 138V13 accountmanagementsystem__readfootsteps -> 1.10
+FS .10 152V13 accountmanagementsystem__readlocation -> 1.11
 FD 3 ada.ads
 FS .1 16K9 ada
 FD 4 a-ioexce.ads
@@ -330,131 +338,60 @@ FS .3 207V13 system__wch_con__get_wc_encoding_method__2
 FS .4 212V13 system__wch_con__is_start_of_encoding
 FX 1 accountmanagementsystem.ads .1 accountmanagementsystem
 F 33*4 accountmanagementsystem__users .2:54r20 54r35 55r20 56r20 57r20 58r20
-. 59r20 .3:63r14 .5:105r23 .6:110r23 .7:115r23 2|.2:15m7 .3:28m10
+. 59r20 .3:63r14 .4:68r23 68r50 .6:105r23 .7:110r23 .8:115r23 2|.2:15m7 .3:28m10
 F 34*4 accountmanagementsystem__latestuser .3:62r13 2|.3:27r10 28r16 29m10
 . 29r24 30r21
-F 37*4 accountmanagementsystem__insurers .2:56r35 .11:76r63 2|.2:16m7
+F 37*4 accountmanagementsystem__insurers .2:56r35 .4:69r15 69r26 72r41 73r44
+. 74r43 .12:76r63 2|.2:16m7 .4:42r36 43r39 44r38 46m10
 F 38*4 accountmanagementsystem__friends .2:55r35 2|.2:17m7
-F 41*4 accountmanagementsystem__vitals .2:57r35 .5:106r14 106r23 .8:133r49
-. 2|.2:18m7 .4:107m10 .7:132r17
-F 42*4 accountmanagementsystem__mfootsteps .2:58r35 .6:111r14 111r27 .9:141r49
-. 2|.2:19m7 .5:114m10 .8:146r17
-F 43*4 accountmanagementsystem__locations .2:59r35 .7:116r14 116r26 .10:148r49
-. 2|.2:20m7 .6:121m10 .9:160r17
-F 47*4 accountmanagementsystem__vitalspermissions .8:132r21 2|.7:131r10
-F 48*4 accountmanagementsystem__footstepspermissions .9:140r21 2|.8:145r10
-F 49*4 accountmanagementsystem__locationpermissions .10:147r21 2|.9:159r10
+F 41*4 accountmanagementsystem__vitals .2:57r35 .6:106r14 106r23 .9:133r49
+. 2|.2:18m7 .5:107m10 .8:132r17
+F 42*4 accountmanagementsystem__mfootsteps .2:58r35 .7:111r14 111r27 .10:141r49
+. 2|.2:19m7 .6:114m10 .9:146r17
+F 43*4 accountmanagementsystem__locations .2:59r35 .8:116r14 116r26 .11:148r49
+. 2|.2:20m7 .7:121m10 .10:160r17
+F 47*4 accountmanagementsystem__vitalspermissions .4:72r15 .9:132r21 2|.4:42m10
+. .8:131r10
+F 48*4 accountmanagementsystem__footstepspermissions .4:70r15 70r38 73r15
+. .10:140r21 2|.4:43m10 49m10 .9:145r10
+F 49*4 accountmanagementsystem__locationpermissions .4:74r15 .11:147r21 2|.4:44m10
+. .10:159r10
 FX 1 accountmanagementsystem.ads .2 accountmanagementsystem__init
-F 54*15 accountmanagementsystem__init__L24s__i 54c41
-F 55*15 accountmanagementsystem__init__L26s__i 55c43
-F 56*15 accountmanagementsystem__init__L28s__i 56c44
-F 57*15 accountmanagementsystem__init__L30s__i 57c42
-F 58*15 accountmanagementsystem__init__L32s__i 58c46
-F 59*15 accountmanagementsystem__init__L34s__i 59c45
+F 54*15 accountmanagementsystem__init__L26s__i 54c41
+F 55*15 accountmanagementsystem__init__L28s__i 55c43
+F 56*15 accountmanagementsystem__init__L30s__i 56c44
+F 57*15 accountmanagementsystem__init__L32s__i 57c42
+F 58*15 accountmanagementsystem__init__L34s__i 58c46
+F 59*15 accountmanagementsystem__init__L36s__i 59c45
 FX 1 accountmanagementsystem.ads .3 accountmanagementsystem__createuser
 F 61<25 accountmanagementsystem__createuser__newuser 63r20 2|.3:30m10 32m10
-FX 1 accountmanagementsystem.ads .4 accountmanagementsystem__readinsurer
-F 76>25 accountmanagementsystem__readinsurer__wearer .11:76c72
-FX 1 accountmanagementsystem.ads .5 accountmanagementsystem__updatevitals
-F 104>27 accountmanagementsystem__updatevitals__wearer 105c13 106c41 2|.4:107c17
-F 104>47 accountmanagementsystem__updatevitals__newvitals 106c51 2|.4:107c28
-FX 1 accountmanagementsystem.ads .6 accountmanagementsystem__updatefootsteps
-F 108>30 accountmanagementsystem__updatefootsteps__wearer 110c13 111c49 2|.5:114c21
-F 108>50 accountmanagementsystem__updatefootsteps__newfootsteps 111c59 2|.5:114c32
-FX 1 accountmanagementsystem.ads .7 accountmanagementsystem__updatelocation
-F 113>29 accountmanagementsystem__updatelocation__wearer 115c13 116c47 2|.6:121c20
-F 113>49 accountmanagementsystem__updatelocation__newlocation 116c57 2|.6:121c31
-FX 1 accountmanagementsystem.ads .8 accountmanagementsystem__readvitals_alt
-F 129>28 accountmanagementsystem__readvitals_alt__requester 132c51 2|.7:131c40
+FX 1 accountmanagementsystem.ads .4 accountmanagementsystem__setinsurer
+F 67>25 accountmanagementsystem__setinsurer__wearer 68c13 69c46 72c33 72c54
+. 73c36 73c57 74c35 74c56 2|.4:42c28 42c45 43c31 43c48 44c30 44c47 46c19
+. 49c31
+F 67>45 accountmanagementsystem__setinsurer__insurer 68c39 69c56 2|.4:46c30
+. 49c39
+FX 1 accountmanagementsystem.ads .5 accountmanagementsystem__readinsurer
+F 76>25 accountmanagementsystem__readinsurer__wearer .12:76c72
+FX 1 accountmanagementsystem.ads .6 accountmanagementsystem__updatevitals
+F 104>27 accountmanagementsystem__updatevitals__wearer 105c13 106c41 2|.5:107c17
+F 104>47 accountmanagementsystem__updatevitals__newvitals 106c51 2|.5:107c28
+FX 1 accountmanagementsystem.ads .7 accountmanagementsystem__updatefootsteps
+F 108>30 accountmanagementsystem__updatefootsteps__wearer 110c13 111c49 2|.6:114c21
+F 108>50 accountmanagementsystem__updatefootsteps__newfootsteps 111c59 2|.6:114c32
+FX 1 accountmanagementsystem.ads .8 accountmanagementsystem__updatelocation
+F 113>29 accountmanagementsystem__updatelocation__wearer 115c13 116c47 2|.7:121c20
+F 113>49 accountmanagementsystem__updatelocation__newlocation 116c57 2|.7:121c31
+FX 1 accountmanagementsystem.ads .9 accountmanagementsystem__readvitals_alt
+F 129>28 accountmanagementsystem__readvitals_alt__requester 132c51 2|.8:131c40
 F 129>51 accountmanagementsystem__readvitals_alt__targetuser 132c39 133c56
-. 2|.7:131c28 132c24
-FX 1 accountmanagementsystem.ads .9 accountmanagementsystem__readfootsteps
-F 137>27 accountmanagementsystem__readfootsteps__requester 140c54 2|.8:145c43
+. 2|.8:131c28 132c24
+FX 1 accountmanagementsystem.ads .10 accountmanagementsystem__readfootsteps
+F 137>27 accountmanagementsystem__readfootsteps__requester 140c54 2|.9:145c43
 F 137>50 accountmanagementsystem__readfootsteps__targetuser 140c42 141c60
-. 2|.8:145c31 146c28
-FX 1 accountmanagementsystem.ads .10 accountmanagementsystem__readlocation
-F 144>26 accountmanagementsystem__readlocation__requester 147c53 2|.9:159c42
+. 2|.9:145c31 146c28
+FX 1 accountmanagementsystem.ads .11 accountmanagementsystem__readlocation
+F 144>26 accountmanagementsystem__readlocation__requester 147c53 2|.10:159c42
 F 144>49 accountmanagementsystem__readlocation__targetuser 147c41 148c59
-. 2|.9:159c30 160c27
+. 2|.10:159c30 160c27
 
-GG S FA accountmanagementsystem__readvitals_alt
-GG VP
-GG VI accountmanagementsystem__vitals accountmanagementsystem__vitalspermissions
-GG VO
-GG CP
-GG CD
-GG CC
-GG LV accountmanagementsystem__readvitals_alt__targetuser accountmanagementsystem__readvitals_alt__requester
-GG LS
-GG S FA accountmanagementsystem__readfootsteps
-GG VP
-GG VI accountmanagementsystem__mfootsteps accountmanagementsystem__footstepspermissions
-GG VO
-GG CP
-GG CD
-GG CC
-GG LV accountmanagementsystem__readfootsteps__targetuser accountmanagementsystem__readfootsteps__requester
-GG LS
-GG S FA accountmanagementsystem__readlocation
-GG VP
-GG VI accountmanagementsystem__locations accountmanagementsystem__locationpermissions
-GG VO
-GG CP
-GG CD
-GG CC
-GG LV accountmanagementsystem__readlocation__targetuser accountmanagementsystem__readlocation__requester
-GG LS
-GG S FA accountmanagementsystem__init
-GG VP
-GG VI
-GG VO accountmanagementsystem__users accountmanagementsystem__insurers accountmanagementsystem__friends accountmanagementsystem__vitals accountmanagementsystem__mfootsteps accountmanagementsystem__locations
-GG CP
-GG CD
-GG CC
-GG LV
-GG LS
-GG S FA accountmanagementsystem__createuser
-GG VP
-GG VI accountmanagementsystem__users accountmanagementsystem__latestuser
-GG VO accountmanagementsystem__users accountmanagementsystem__latestuser
-GG CP
-GG CD
-GG CC
-GG LV accountmanagementsystem__createuser__newuser
-GG LS
-GG S FA accountmanagementsystem__readinsurer
-GG VP
-GG VI accountmanagementsystem__insurers
-GG VO
-GG CP
-GG CD
-GG CC
-GG LV accountmanagementsystem__readinsurer__wearer
-GG LS
-GG S FA accountmanagementsystem__updatevitals
-GG VP
-GG VI accountmanagementsystem__vitals
-GG VO accountmanagementsystem__vitals
-GG CP
-GG CD
-GG CC
-GG LV accountmanagementsystem__updatevitals__newvitals accountmanagementsystem__updatevitals__wearer
-GG LS
-GG S FA accountmanagementsystem__updatefootsteps
-GG VP
-GG VI accountmanagementsystem__mfootsteps
-GG VO accountmanagementsystem__mfootsteps
-GG CP
-GG CD
-GG CC
-GG LV accountmanagementsystem__updatefootsteps__wearer accountmanagementsystem__updatefootsteps__newfootsteps
-GG LS
-GG S FA accountmanagementsystem__updatelocation
-GG VP
-GG VI accountmanagementsystem__locations
-GG VO accountmanagementsystem__locations
-GG CP
-GG CD
-GG CC
-GG LV accountmanagementsystem__updatelocation__wearer accountmanagementsystem__updatelocation__newlocation
-GG LS

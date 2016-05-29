@@ -1,0 +1,26 @@
++===========================GNAT BUG DETECTED==============================+
+| GPL 2015 (20150428) (spark) Program_Error spark_definition.adb:3035 explicit raise|
+| Error detected at a-textio.ads:363:35                                    |
+| Please submit a bug report by email to report@adacore.com.               |
+| GAP members can alternatively use GNAT Tracker:                          |
+| http://www.adacore.com/ section 'send a report'.                         |
+| See gnatinfo.txt for full info on procedure for submitting bugs.         |
+| Use a subject line meaningful to you and us to track the bug.            |
+| Include the entire contents of this bug box in the report.               |
+| Include the exact command that you entered.                              |
+| Also include sources listed below.                                       |
+| Use plain ASCII or MIME attachment(s).                                   |
++==========================================================================+
+
+Please include these source files with error report
+Note that list may not be accurate in some cases,
+so please double check that the problem can still
+be reproduced with the set of files listed.
+Consider also -gnatd.n switch (see debug.adb).
+
+/Users/raywong/Documents/workspace/Ada/Assignment4/accountmanagementsystem.adb
+/Users/raywong/Documents/workspace/Ada/Assignment4/accountmanagementsystem.ads
+/Users/raywong/Documents/workspace/Ada/Assignment4/measures.ads
+/Users/raywong/Documents/workspace/Ada/Assignment4/emergency.ads
+
+compilation abandoned
