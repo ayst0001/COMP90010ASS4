@@ -49,6 +49,8 @@ is
          Locations(I) := (0.0,0.0);
       end loop;
 
+      CreateUser(Emergency);
+
       -- ** Put_Line("Initialization finished");
    end Init;
 
@@ -59,6 +61,7 @@ is
       if LatestUser < UserID'Last then
          Users(LatestUser+1) := True;
          LatestUser := LatestUser + 1;
+         NewUser := LatestUser;
       end if;
    end CreateUser;
 

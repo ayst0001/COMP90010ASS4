@@ -12,7 +12,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U test%b		test.adb		b76119dc NE OO PK
+U test%b		test.adb		5b6b9937 NE OO PK
 W accountmanagementsystem%s  accountmanagementsystem.adb  accountmanagementsystem.ali
 W measures%s		measures.ads		measures.ali
 W system.img_bool%s	s-imgboo.adb		s-imgboo.ali
@@ -22,7 +22,7 @@ W text_io%s		text_io.ads		text_io.ali
 
 U test%s		test.ads		107b8052 EE NE OO PK
 
-D accountmanagementsystem.ads  20160529032831 ac1cd577 accountmanagementsystem%s
+D accountmanagementsystem.ads  20160529034442 4016559c accountmanagementsystem%s
 D ada.ads		20150506105328 3ffc8e18 ada%s
 D a-except.ads		20150506105328 5250cb69 ada.exceptions%s
 D a-ioexce.ads		20150506105327 e4a01f64 ada.io_exceptions%s
@@ -52,18 +52,18 @@ D test.ads		20160528155029 107b8052 test%s
 D test.adb		20160528155029 30c8610d test%b
 D text_io.ads		20150506105330 45d626c9 text_io%s
 X 1 accountmanagementsystem.ads
-12K9*AccountManagementSystem 206e28 28|4w6 4r35
+12K9*AccountManagementSystem 208e28 28|4w6 4r35
 17A9*UsersArray(boolean)<11|6I9>
 20A9*UserUserArray(11|6I9)<11|6I9>
 23A9*VitalsArray(11|10I9)<11|6I9>
 24A9*FootstepsArray(11|14I9)<11|6I9>
 25A9*LocationsArray(11|19R9)<11|6I9>
-31a4*Users{17A9} 28|14r16 18r33
-35a4*Insurers{20A9} 28|36r16 40r32
-36a4*Friends{20A9} 28|25r16 29r32
-39a4*Vitals{23A9} 28|47r16 51r29
-40a4*MFootsteps{24A9} 28|58r16 62r35
-41a4*Locations{25A9} 28|69r16 73r29 75r30
+32a4*Users{17A9} 28|14r16 18r33
+36a4*Insurers{20A9} 28|36r16 40r32
+37a4*Friends{20A9} 28|25r16 29r32
+40a4*Vitals{23A9} 28|47r16 51r29
+41a4*MFootsteps{24A9} 28|58r16 62r35
+42a4*Locations{25A9} 28|69r16 73r29 75r30
 X 7 a-textio.ads
 242U14*Put 28|15s10 16s10 17s10 26s10 27s10 28s10 37s10 38s10 39s10 48s10
 . 49s10 50s10 59s10 60s10 61s10 70s10 71s10 72s10 73s10 74s10 75s10

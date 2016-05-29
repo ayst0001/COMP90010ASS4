@@ -28,6 +28,7 @@ is
    type UserUserBooleanArray is array(UserID, UserID) of Boolean;
    
    -- The list of users, and the latest user
+   Emergency : UserID;
    Users : UsersArray; 
    LatestUser : UserID := UserID'First;
 
@@ -54,7 +55,8 @@ is
      (for all I in Users'Range => Insurers(I) = UserID'First) and
      (for all I in Users'Range => Vitals(I) = BPM'First) and
      (for all I in Users'Range => MFootsteps(I) = Footsteps'First) and
-     (for all I in Users'Range => Locations(I) = (0.0, 0.0));
+     (for all I in Users'Range => Locations(I) = (0.0, 0.0)) and
+     LatestUser = 0;
      
    procedure CreateUser(NewUser : out UserID) with
      Pre => LatestUser < UserID'Last,
